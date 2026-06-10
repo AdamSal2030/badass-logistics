@@ -26,6 +26,12 @@ const BLOG_POSTS = [
   'flatbed-vs-step-deck-vs-rgn-trailers',
   'what-is-industrial-rigging',
   'truck-dispatcher-vs-freight-broker',
+  'how-to-ship-an-excavator',
+  'ltl-vs-ftl-freight',
+  'what-is-drayage',
+  'hot-shot-trucking-explained',
+  'pilot-car-escort-requirements',
+  'how-to-move-a-cnc-machine',
 ];
 
 // State-level facts: region (for nearby-metro internal links) + the real
@@ -175,6 +181,8 @@ function page(loc, i, all) {
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" href="../assets/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+<link rel="preload" as="image" href="../assets/img/${hero}" fetchpriority="high">
 <link rel="stylesheet" href="../css/styles.css">
 <style>
   .map-frame { border:3px solid var(--ink); box-shadow:var(--shadow); background:var(--white); overflow:hidden; }
@@ -301,6 +309,21 @@ if (locHtml.includes(startTag) && locHtml.includes(endTag)) {
     new RegExp(`${startTag}[\\s\\S]*?${endTag}`),
     `${startTag}\n  ${gridBlock}\n  ${endTag}`
   );
+  // ItemList schema for the 48-location hub (idempotent via data-loc-itemlist marker)
+  const itemList = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Badass Logistics Locations",
+    "numberOfItems": built.length,
+    "itemListElement": built.map((l, n) => ({
+      "@type": "ListItem", "position": n + 1,
+      "name": `${l.city}, ${l.state}`,
+      "url": `${site.domain}/locations/${l.slug}.html`
+    }))
+  };
+  const ilTag = `<script type="application/ld+json" data-loc-itemlist>\n${JSON.stringify(itemList, null, 2)}\n</script>`;
+  locHtml = locHtml.replace(/<script type="application\/ld\+json" data-loc-itemlist>[\s\S]*?<\/script>\n?/, '');
+  locHtml = locHtml.replace('</head>', `${ilTag}\n</head>`);
   fs.writeFileSync(locPath, locHtml);
 }
 

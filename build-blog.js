@@ -15,7 +15,7 @@ const site = JSON.parse(fs.readFileSync(path.join(ROOT, 'data/site.json'), 'utf8
 const OG = `${site.domain}/assets/img/og-default.jpg`;
 
 const NAV = `
-<div class="topbar"><div class="wrap"><div>📍 48 locations nationwide &nbsp;·&nbsp; <strong>HQ:</strong> ${site.hqCity}, ${site.hqState}</div><div><a href="tel:${site.phoneHref}">📞 ${site.phone}</a> &nbsp;·&nbsp; <a href="../contact.html"><strong>Get a Quote</strong></a></div></div></div>
+<div class="topbar"><div class="wrap"><div>📍 48 locations nationwide &nbsp;·&nbsp; <strong>All 50 states</strong></div><div><a href="tel:${site.phoneHref}">📞 ${site.phone}</a> &nbsp;·&nbsp; <a href="../contact.html"><strong>Get a Quote</strong></a></div></div></div>
 <header class="site-header"><div class="wrap">
   <a class="logo" href="../index.html"><span class="brand"><span class="l1">BADASS</span><span class="l2">LOGISTICS</span></span></a>
   <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
@@ -30,7 +30,7 @@ const FOOTER = `
   <div><h4>Badass Logistics</h4><p style="opacity:.85;max-width:280px;">Rigging, heavy haul, dispatch &amp; freight moving. One-stop shop for everything oversized and overweight.</p></div>
   <div><h4>Services</h4><a href="../services/rigging.html">Industrial Rigging</a><a href="../services/heavy-haul.html">Heavy Haul Transport</a><a href="../services/dispatching.html">Truck Dispatching</a><a href="../services/freight-moving.html">Freight Moving</a></div>
   <div><h4>Company</h4><a href="../about.html">About Us</a><a href="../locations.html">Locations</a><a href="../blog/index.html">Blog</a><a href="../contact.html">Contact</a></div>
-  <div><h4>Headquarters</h4><address>${site.hqStreet}<br>${site.hqCity}, ${site.hqState} ${site.hqZip}<br><a href="tel:${site.phoneHref}">${site.phone}</a><br><a href="mailto:${site.email}">${site.email}</a></address></div>
+  <div><h4>Contact</h4><address><a href="tel:${site.phoneHref}">${site.phone}</a><br><a href="mailto:${site.email}">${site.email}</a></address></div>
 </div><div class="legal"><span>© 2026 Badass Logistics. All rights reserved.</span><span class="hand">made to move heavy things.</span></div></div></footer>`;
 
 const BLOG_CSS = `<style>
@@ -412,6 +412,314 @@ const POSTS = [
       { h: 'Get a Quote', u: '../contact.html' },
     ],
   },
+
+  {
+    slug: 'how-to-ship-an-excavator',
+    cat: 'Heavy Haul',
+    hero: 'rgn-load.jpg',
+    date: '2026-06-10',
+    title: 'How to Ship an Excavator: Trailers, Permits & What It Costs',
+    desc: 'Shipping an excavator the right way: choosing between RGN and lowboy, when you need oversize permits, how loading works, and what drives the transport price.',
+    dek: 'A mini-ex rides a gooseneck. A 90,000-lb mining excavator is a multi-state permit project. Here is how to ship anything in between.',
+    body: `
+<p>Excavators are one of the most-shipped pieces of heavy equipment in the country — and one of the easiest to ship wrong. The same word covers a 7,000-lb mini-excavator and a 200,000-lb mining machine, and everything about the move (trailer, permits, escorts, price) changes with the size. Here is how to get it right the first time.</p>
+
+<h2>Step 1: know your exact specs</h2>
+<p>Before anyone can quote or plan the move, you need four numbers from the spec sheet (or a tape measure):</p>
+<ul>
+  <li><strong>Operating weight</strong> — not the "class," the actual pounds, with attachments.</li>
+  <li><strong>Transport height</strong> — with the boom lowered and, if applicable, the cab folded.</li>
+  <li><strong>Width</strong> — tracks or blade, whichever is wider.</li>
+  <li><strong>Transport length</strong> — boom and stick in travel position.</li>
+</ul>
+<p>An inch matters here: 8'6" wide is legal almost everywhere; 8'7" needs a permit in every state it crosses. See our <a href="oversize-load-permits-guide.html">oversize permit guide</a> for the full limits.</p>
+
+<h2>Step 2: match the machine to the trailer</h2>
+<ul>
+  <li><strong>Mini-excavators (under ~10,000 lbs):</strong> a heavy-duty tag or gooseneck trailer behind a one-ton — often a <a href="hot-shot-trucking-explained.html">hot shot</a> move.</li>
+  <li><strong>Midi and small standard machines (10,000–25,000 lbs):</strong> step deck or small lowboy, usually still legal dimensions.</li>
+  <li><strong>Standard excavators (25,000–80,000 lbs):</strong> RGN or lowboy. Height is the usual permit trigger — most 20-ton-plus machines run over 10' tall even with the boom down.</li>
+  <li><strong>Large and mining-class (80,000 lbs+):</strong> multi-axle RGN, overweight permits in every state, often escorts. Some machines ship with the counterweight or boom removed and reinstalled — that's a <a href="../services/rigging.html">rigging job</a> on both ends.</li>
+</ul>
+<p>The RGN wins for most excavators because the detachable gooseneck turns the trailer into a ramp — the machine drives on under its own power. More in our <a href="flatbed-vs-step-deck-vs-rgn-trailers.html">trailer guide</a>.</p>
+
+<div class="keyfacts">
+  <h3>Why excavators usually need an RGN, not a flatbed</h3>
+  <p>A 45,000-lb excavator is typically ~10' tall with the boom down. On a 5'-high flatbed that's 15' total — illegal everywhere. On a 2'-high RGN deck it's ~12' — legal or lightly-permitted. Deck height decides the move.</p>
+</div>
+
+<h2>Step 3: loading, securement, and the haul</h2>
+<p>The machine drives onto the RGN under its own power (or gets winched if dead). Securement follows FMCSA rules: a minimum of four tie-downs on independent anchor points for heavy equipment, plus boom/attachment securement, with chains and binders rated for the load. Tracks get chocked, the blade and boom get lowered to the deck, and the operator's manual transport pins go in. Then it's a heavy haul move like any other — route, permits, and timing handled by the carrier.</p>
+
+<h2>What it costs</h2>
+<p>The same levers as all <a href="how-much-does-heavy-haul-cost.html">heavy haul pricing</a>: distance, weight class, whether dimensions trigger permits, escort requirements, and how far the right trailer has to deadhead to reach you. A legal-size mini-ex moves for a fraction of what a permitted 50-ton machine costs. Exact specs get you an exact number — guesses get you a guess.</p>
+
+<p>Ready to move iron? <a href="../services/heavy-haul.html">See our heavy haul service</a> or <a href="../contact.html">send the machine's specs for a same-day quote</a>.</p>
+`,
+    faq: [
+      { q: 'Do I need a permit to ship my excavator?', a: 'If the loaded dimensions exceed 8\'6" wide, 13\'6" total height, or 80,000 lbs gross combined weight, yes — in every state the load crosses. Most 20-ton-plus excavators trigger at least an over-height or overweight permit on an RGN.' },
+      { q: 'What trailer do I need to ship an excavator?', a: 'Most standard excavators ship on an RGN or lowboy — the low deck handles the height and the detachable gooseneck lets the machine drive on. Mini-excavators can ride a heavy gooseneck or hot shot setup.' },
+      { q: 'Can you ship a non-running excavator?', a: 'Yes — dead machines get winched or loaded with assist equipment instead of driving on. Tell us up front so the right gear is on the truck.' },
+    ],
+    related: [
+      { h: 'Heavy Haul Transport', u: '../services/heavy-haul.html' },
+      { h: 'Flatbed vs Step Deck vs RGN', u: 'flatbed-vs-step-deck-vs-rgn-trailers.html' },
+      { h: 'Oversize Load Permits Guide', u: 'oversize-load-permits-guide.html' },
+      { h: 'Get a Quote', u: '../contact.html' },
+    ],
+  },
+
+  {
+    slug: 'ltl-vs-ftl-freight',
+    cat: 'Freight Moving',
+    hero: 'brokerage-dryvan.jpg',
+    date: '2026-06-10',
+    title: 'LTL vs FTL Freight: Which One Actually Saves You Money?',
+    desc: 'Less-than-truckload vs full truckload, explained with real decision rules: weight and pallet thresholds, transit time, handling risk, and when partial loads beat both.',
+    dek: 'LTL is cheaper until it isn\'t. The real decision comes down to pallet count, fragility, and how much you care about the calendar.',
+    body: `
+<p>Every shipper learns the LTL-vs-FTL decision the expensive way: either paying for a whole truck they didn't fill, or watching a "cheap" LTL shipment arrive late, re-handled, and dinged. The rules of thumb below are how dispatchers actually make the call.</p>
+
+<h2>The difference in one minute</h2>
+<p><strong>FTL (full truckload)</strong>: the entire trailer is yours. One pickup, one delivery, nobody else's freight on board. <strong>LTL (less-than-truckload)</strong>: you pay for the space you use, and the carrier fills the rest of the trailer with other shippers' freight, routing everything through cross-dock terminals along the way.</p>
+
+<h2>When LTL wins</h2>
+<ul>
+  <li><strong>1–6 pallets, under ~5,000 lbs.</strong> This is LTL's sweet spot — you'd be paying for 40 feet of empty deck on an FTL.</li>
+  <li><strong>Flexible delivery windows.</strong> Terminal routing adds days and variability; if the date is soft, the savings are real.</li>
+  <li><strong>Durable, well-packaged freight.</strong> LTL freight gets forklifted at every terminal. Crated and banded survives; shrink-wrap-and-hope doesn't.</li>
+</ul>
+
+<h2>When FTL wins</h2>
+<ul>
+  <li><strong>10+ pallets or 15,000+ lbs.</strong> At that volume the per-pallet math usually flips to FTL outright.</li>
+  <li><strong>Tight deadlines.</strong> FTL is door-to-door with no terminal stops — the transit time is the drive time.</li>
+  <li><strong>Fragile, high-value, or hard-to-replace freight.</strong> Zero re-handling means dramatically less damage risk. If a damaged shipment shuts your line down, FTL is cheap insurance.</li>
+  <li><strong>Anything that can't be stacked or mixed</strong> — hazmat combinations, overlength pieces, freight that needs the doors opened once.</li>
+</ul>
+
+<div class="keyfacts">
+  <h3>The middle path: partial / volume loads</h3>
+  <p>Got 6–12 pallets? A <strong>partial truckload</strong> shares a trailer like LTL but skips the terminals — your freight stays on one truck with one or two other direct shipments. Cheaper than FTL, gentler and faster than LTL. It's one of the most underused options in freight.</p>
+</div>
+
+<h2>The hidden LTL costs people forget</h2>
+<p>LTL pricing runs on freight class, dimensions, and accessorials — and the surprises live in the accessorials: liftgate fees, residential delivery, limited-access pickups, reweigh corrections, and detention. A quoted LTL rate can grow 30–40% by the time it hits your invoice. When you compare against FTL or partial, compare <em>landed</em> cost, not the base quote.</p>
+
+<h2>How we run it</h2>
+<p>Our <a href="../services/freight-moving.html">freight moving service</a> quotes FTL, LTL, and partial side by side, in dry van, reefer, and flatbed — and tells you straight which one the math favors for your lane. If it's oversized, it graduates to <a href="../services/heavy-haul.html">heavy haul</a>. Either way you get one answer instead of three vendors.</p>
+
+<p><a href="../contact.html">Send us the pallet count, weight, and lane</a> — we'll price it both ways.</p>
+`,
+    faq: [
+      { q: 'At what weight should I switch from LTL to FTL?', a: 'As a rule of thumb, shipments over roughly 10–12 pallets or 15,000 lbs usually price better as full truckload — and partial truckload often wins in the 6–12 pallet middle zone. Compare landed cost including accessorials, not base rates.' },
+      { q: 'Why did my LTL shipment take so long?', a: 'LTL freight routes through carrier terminals where it is unloaded, sorted, and reloaded between trucks. Each cross-dock adds time and variability. FTL and partial loads skip terminals entirely.' },
+      { q: 'What is partial truckload?', a: 'A shared trailer without terminal handling — your freight rides with one or two other direct shipments and stays on the same truck door to door. It typically beats LTL on speed and damage risk and beats FTL on price for 6–12 pallets.' },
+    ],
+    related: [
+      { h: 'Freight Moving', u: '../services/freight-moving.html' },
+      { h: 'What Is Drayage?', u: 'what-is-drayage.html' },
+      { h: 'Hot Shot Trucking Explained', u: 'hot-shot-trucking-explained.html' },
+      { h: 'Get a Quote', u: '../contact.html' },
+    ],
+  },
+
+  {
+    slug: 'what-is-drayage',
+    cat: 'Freight Moving',
+    hero: 'loads/load-reels-container.jpg',
+    date: '2026-06-10',
+    title: 'What Is Drayage? Container Trucking From Port to Door, Explained',
+    desc: 'Drayage is the short-haul truck move that gets shipping containers from ports and rail ramps to warehouses. How it works, what per diem and demurrage really mean, and how to avoid the fees.',
+    dek: 'Your container crossed the ocean for cheap. The last 40 miles is where the fees hide — and where drayage saves or costs you thousands.',
+    body: `
+<p><strong>Drayage</strong> is the short-haul trucking that moves shipping containers between a port or rail ramp and a nearby warehouse, yard, or doorstep. It's the shortest leg of an international shipment and routinely the most operationally painful — because it's where ocean schedules, terminal appointments, chassis availability, and free-time clocks all collide.</p>
+
+<h2>How a drayage move works</h2>
+<ul>
+  <li><strong>Your container discharges</strong> from the vessel (or arrives at the rail ramp) and the terminal makes it available for pickup.</li>
+  <li><strong>The clock starts.</strong> Terminals give a few free days ("free time") before storage charges — <strong>demurrage</strong> — begin accruing daily.</li>
+  <li><strong>A drayage driver with port credentials</strong> (TWIC card, terminal appointments, UIIA interchange agreement) picks up the box on a chassis.</li>
+  <li><strong>The container is delivered</strong> to your dock — either live-unloaded while the driver waits, or dropped and picked up later.</li>
+  <li><strong>The empty goes back.</strong> Keep the container or chassis past the rental free time and <strong>per diem / detention</strong> charges stack daily until it's returned.</li>
+</ul>
+
+<div class="keyfacts">
+  <h3>The fee glossary that saves you money</h3>
+  <p><strong>Demurrage:</strong> the terminal charging you for the container sitting at the port past free time.<br>
+  <strong>Per diem (detention):</strong> the ocean carrier charging you for keeping their container/chassis out too long.<br>
+  <strong>Chassis split:</strong> an extra trip because the chassis wasn't where the container was.<br>
+  These run from roughly $75 to several hundred dollars per container per day — and they compound fast over a weekend.</p>
+</div>
+
+<h2>Why drayage goes wrong</h2>
+<p>Almost every drayage horror story is a timing story: the container discharged Friday, free time ran out Tuesday, nobody had an appointment until Thursday. A good drayage operation watches vessel ETAs, books terminal appointments before the box hits the ground, secures the chassis, and lines up your dock door — so the container moves inside free time and the fee clocks never start.</p>
+
+<h2>Drayage + everything after it</h2>
+<p>A container rarely ends its journey at the first warehouse. We handle the dray, the <a href="ltl-vs-ftl-freight.html">LTL/FTL distribution</a> after deconsolidation, and — when what's inside the box is a machine — the <a href="../services/rigging.html">rigging</a> to take it off the floor and set it in place. Port cities like <a href="../locations/houston-tx.html">Houston</a>, <a href="../locations/charleston-sc.html">Charleston</a>, <a href="../locations/norfolk-va.html">Norfolk</a>, and <a href="../locations/los-angeles-ca.html">Los Angeles</a> are exactly where our drayage and heavy work overlap.</p>
+
+<p>Got boxes hitting a port? <a href="../services/freight-moving.html">See freight moving</a> or <a href="../contact.html">send us the ETA and the delivery address</a> — we'll keep the clocks at zero.</p>
+`,
+    faq: [
+      { q: 'What is the difference between drayage and trucking?', a: 'Drayage is a specialized subset of trucking: short-haul container moves to and from ports and rail ramps, requiring port credentials (TWIC), terminal appointments, interchange agreements, and chassis management that ordinary OTR trucking doesn\'t involve.' },
+      { q: 'What is the difference between demurrage and per diem?', a: 'Demurrage is charged by the terminal for the container sitting at the port past free time. Per diem (detention) is charged by the ocean carrier for keeping the container or chassis out past its return window. Both accrue daily.' },
+      { q: 'How much does drayage cost?', a: 'The truck move itself is priced by distance, port, and whether it\'s a live unload or a drop. The real budget risk is the fee side — demurrage, per diem, and chassis charges — which good scheduling avoids entirely.' },
+    ],
+    related: [
+      { h: 'Freight Moving', u: '../services/freight-moving.html' },
+      { h: 'LTL vs FTL Freight', u: 'ltl-vs-ftl-freight.html' },
+      { h: 'All Locations', u: '../locations.html' },
+      { h: 'Get a Quote', u: '../contact.html' },
+    ],
+  },
+
+  {
+    slug: 'hot-shot-trucking-explained',
+    cat: 'Dispatch',
+    hero: 'loads/load-oversize-tank.jpg',
+    date: '2026-06-10',
+    title: 'Hot Shot Trucking Explained: When a One-Ton Beats a Semi',
+    desc: 'What hot shot trucking is, the truck-and-gooseneck setup, what loads fit, CDL and MC requirements, and when hot shot beats a full-size semi on speed and price.',
+    dek: 'A dually pickup, a 40-foot gooseneck, and a driver who leaves NOW. That\'s hot shot — and for the right load it beats a semi every time.',
+    body: `
+<p><strong>Hot shot trucking</strong> is expedited freight hauled with a medium-duty pickup (think one-ton dually) pulling a 30–40 foot gooseneck trailer, instead of a class-8 semi. It exists for one reason: when a load is urgent and doesn't need a full trailer, a hot shot leaves immediately and costs less than dispatching a semi.</p>
+
+<h2>Where hot shot came from — and where it shines</h2>
+<p>The name comes from the oilfield: a part breaks on a rig, the rig is burning thousands of dollars an hour, and somebody drives the replacement out <em>right now</em>. That's still the core use case, and it generalizes:</p>
+<ul>
+  <li><strong>Time-critical parts and equipment</strong> — a machine down at a plant, a contractor's skid steer needed on site tomorrow morning.</li>
+  <li><strong>Small equipment moves</strong> — mini-excavators, attachments, compressors, generators, pallets of steel.</li>
+  <li><strong>Loads under ~16,500 lbs and within legal dimensions</strong> — the practical ceiling for most hot shot rigs.</li>
+  <li><strong>Lanes a semi doesn't want</strong> — short notice, odd hours, rural pickups, partial loads that would otherwise wait days for consolidation.</li>
+</ul>
+
+<div class="keyfacts">
+  <h3>Hot shot vs. semi: the quick math</h3>
+  <p>A hot shot wins when the load fits (weight under ~16,500 lbs, length under ~40') and the clock matters — you're paying for one dedicated, fast vehicle instead of waiting on semi availability. A semi wins on full loads, heavy loads, and long lanes where per-mile economics favor the big truck.</p>
+</div>
+
+<h2>The regulatory reality (it's still trucking)</h2>
+<p>Hot shot is not a loophole. Run commercially across state lines and the rig needs <strong>DOT and MC operating authority</strong>, insurance, and — once the truck-plus-trailer combined weight rating crosses 26,001 lbs with a trailer over 10,000 lbs — a <strong>CDL</strong>. Hours-of-service and ELD rules apply like any other carrier. Loads still get secured to FMCSA standards, and an over-width piece on a gooseneck needs the same <a href="oversize-load-permits-guide.html">permits</a> as anything else.</p>
+
+<h2>Where dispatch makes or breaks hot shot</h2>
+<p>Hot shot economics live and die on deadhead. The truck only earns loaded, and small trucks burn margin fast running empty between jobs. That's exactly the problem our <a href="../services/dispatching.html">dispatch service</a> solves for owner-operators: keeping the calendar full, stacking loads in sensible lanes, negotiating the rate up, and handling the paperwork while the driver drives. And when a customer's load is too big for a hot shot, we move it on the right equipment through <a href="../services/freight-moving.html">freight moving</a> or <a href="../services/heavy-haul.html">heavy haul</a> instead of forcing it onto the wrong trailer.</p>
+
+<p>Need something moved yesterday — or running a hot shot rig that needs loads? <a href="../contact.html">Talk to us</a>; both sides of that problem are our job.</p>
+`,
+    faq: [
+      { q: 'How much weight can a hot shot truck haul?', a: 'Practically, most one-ton hot shot setups carry up to roughly 16,000–16,500 lbs of cargo on a 40-foot gooseneck before combined weight ratings and axle limits cap them. Heavier loads belong on a semi or an RGN.' },
+      { q: 'Does hot shot trucking require a CDL?', a: 'Yes, in most commercial configurations: once the combined weight rating of the truck and trailer exceeds 26,001 lbs with a trailer rated over 10,000 lbs, interstate commercial operation requires a CDL — and DOT/MC authority, insurance, and hours-of-service rules apply regardless.' },
+      { q: 'Is hot shot cheaper than regular freight?', a: 'For small, urgent loads, usually — you avoid paying for a full semi or waiting for consolidation. For full or heavy loads, a semi\'s per-mile economics win. The decision is load size plus urgency.' },
+    ],
+    related: [
+      { h: 'Truck Dispatching', u: '../services/dispatching.html' },
+      { h: 'Freight Moving', u: '../services/freight-moving.html' },
+      { h: 'Truck Dispatcher vs Freight Broker', u: 'truck-dispatcher-vs-freight-broker.html' },
+      { h: 'Get a Quote', u: '../contact.html' },
+    ],
+  },
+
+  {
+    slug: 'pilot-car-escort-requirements',
+    cat: 'Permits & Compliance',
+    hero: 'heavyhaul-real.jpg',
+    date: '2026-06-10',
+    title: 'Pilot Car & Escort Requirements for Oversize Loads: The Practical Guide',
+    desc: 'When an oversize load needs pilot cars, what escorts actually do, height poles, police escorts, certification rules, and why escort planning decides your delivery date.',
+    dek: 'Past a certain width, your load legally cannot move without escort vehicles. Here is when that happens and how the whole system works.',
+    body: `
+<p>Pilot cars — escort vehicles — are the part of oversize trucking the public actually sees: the pickups with the flashing ambers and "OVERSIZE LOAD" signs bracketing something enormous on the highway. They are not decoration. Past certain dimensions they are a legal requirement in every state, and getting them wrong strands loads.</p>
+
+<h2>What escorts actually do</h2>
+<ul>
+  <li><strong>Warn traffic</strong> ahead of and behind the load so vehicles aren't surprised by something 14 feet wide around a curve.</li>
+  <li><strong>Run the height pole.</strong> On over-height loads, the lead car carries a flexible pole set just above load height — if the pole strikes a bridge or wire, the convoy stops before the load does. This is the single cheapest insurance in heavy haul.</li>
+  <li><strong>Block and manage</strong> lane changes, turns, and bridge crossings where the load needs both lanes.</li>
+  <li><strong>Communicate</strong> continuously with the driver about obstructions, traffic, and clearances the driver can't see.</li>
+</ul>
+
+<h2>When you need them</h2>
+<p>Exact thresholds are set state by state, but the pattern is consistent enough to plan around:</p>
+<div class="keyfacts">
+  <h3>Typical escort triggers</h3>
+  <p><strong>~12' wide:</strong> one escort on two-lane roads in most states; many require one on interstates too.<br>
+  <strong>~14' wide:</strong> two escorts (front and rear) almost everywhere.<br>
+  <strong>Over-height (over ~14'6"–15'):</strong> lead car with height pole.<br>
+  <strong>Overlength (90'–100'+):</strong> rear escort in most states.<br>
+  <strong>Extreme dimensions / superloads:</strong> police escort, sometimes with rolling road closures and utility crews lifting lines.</p>
+</div>
+<p>Because each state on the route sets its own rules, a single cross-country move can need different escort configurations in different states — the plan changes at the state line, and the <a href="oversize-load-permits-guide.html">permits</a> spell out exactly what's required where.</p>
+
+<h2>Who can escort</h2>
+<p>A growing list of states requires <strong>certified</strong> pilot car operators — trained, tested, insured, and equipped to spec (signs, flags, lights, radios, height pole, stop paddle). Certifications from one state are honored by many others, but not all; part of route planning is making sure the escorts booked are legal in every state they'll cross.</p>
+
+<h2>Why this decides your delivery date</h2>
+<p>Escorted loads move on the schedule of the most restrictive state on the route: daylight-only travel, no rush-hour metro transits, weekend and holiday bans. Add escort availability in rural areas and the difference between a clean plan and a bad one is measured in days. When we run a <a href="../services/heavy-haul.html">heavy haul move</a>, escort booking, permit conditions, and travel windows are planned as one system — so the load keeps rolling instead of waiting on a missing pilot car. It's also a meaningful line in <a href="how-much-does-heavy-haul-cost.html">what the move costs</a>: every escort is a vehicle, a driver, and a day.</p>
+
+<p>Moving something wide, tall, or long? <a href="../contact.html">Send the dimensions and the route</a> — we'll tell you exactly what it triggers.</p>
+`,
+    faq: [
+      { q: 'At what width does a load need a pilot car?', a: 'In most states, one escort around 12 feet wide and two escorts (front and rear) around 14 feet. Exact thresholds vary by state and road type — the permit for each state on the route specifies the requirement.' },
+      { q: 'What does the height pole on a pilot car do?', a: 'It rides on the lead escort, set slightly taller than the load. If the pole strikes a bridge, sign, or wire, the convoy stops before the load hits — preventing catastrophic bridge and load damage on over-height moves.' },
+      { q: 'How much does a pilot car cost?', a: 'Escorts are typically priced per mile plus daily minimums, and a multi-day move pays for each escort vehicle for the duration. On wide superloads with police escorts, escort costs can rival the freight itself — which is why they\'re factored into the quote up front.' },
+    ],
+    related: [
+      { h: 'Oversize Load Permits Guide', u: 'oversize-load-permits-guide.html' },
+      { h: 'Heavy Haul Transport', u: '../services/heavy-haul.html' },
+      { h: 'How Much Does Heavy Haul Cost?', u: 'how-much-does-heavy-haul-cost.html' },
+      { h: 'Get a Quote', u: '../contact.html' },
+    ],
+  },
+
+  {
+    slug: 'how-to-move-a-cnc-machine',
+    cat: 'Rigging',
+    hero: 'loads/load-machine-loadout.jpg',
+    date: '2026-06-10',
+    title: 'How to Move a CNC Machine Without Wrecking It',
+    desc: 'Moving a CNC machine or machining center: OEM prep, rigging with toe jacks and skates, why you never lift from the wrong points, transport on air-ride, and re-leveling at the destination.',
+    dek: 'A CNC machine is a precision instrument that weighs as much as a truck. Moving one is equal parts paperwork, physics, and patience.',
+    body: `
+<p>A CNC machine is the worst combination of properties a load can have: extremely heavy (5,000 to 60,000+ lbs), top-heavy with a high center of gravity, full of precision-ground surfaces that hold tolerances in ten-thousandths — and usually parked in the middle of a working shop with 30 inches of clearance on either side. This is precisely the job <a href="what-is-industrial-rigging.html">industrial rigging</a> exists for.</p>
+
+<h2>Before anything moves: machine prep</h2>
+<ul>
+  <li><strong>Power down and lock out</strong> — electrical disconnect by a qualified electrician, air and coolant lines drained and capped.</li>
+  <li><strong>Secure the moving axes.</strong> The spindle head, table, and tool changer get brought to their transport positions and locked with the OEM's shipping brackets or fabricated bracing. An unsecured axis sliding mid-lift can destroy ways and ballscrews.</li>
+  <li><strong>Remove what should travel separately</strong> — tooling, chip conveyor, probes, sheet-metal guarding that blocks rigging points.</li>
+  <li><strong>Photograph and document everything</strong> — connections, leveling-foot positions, alignment references — so reassembly isn't archaeology.</li>
+</ul>
+
+<h2>The lift: where machines get ruined</h2>
+<p>CNC machines have <strong>designated lift points</strong> in the manual, and only those. Lift from the casting in the wrong place — or worse, pry under the sheet metal — and you twist the machine's geometry; it'll power on fine and never cut straight again. The standard rigging sequence:</p>
+<ul>
+  <li><strong>Toe jacks</strong> raise the machine inches at a time from the proper jacking points.</li>
+  <li><strong>Machine skates</strong> (or air skates on delicate floors) go underneath, and the machine rolls along a planned, floor-load-checked path.</li>
+  <li>Where a vertical lift is needed, it's a <strong>gantry or crane pick from the manual's lift points</strong>, slings padded and angles kept inside spec, with the high center of gravity respected at every step.</li>
+</ul>
+
+<div class="keyfacts">
+  <h3>The numbers that matter</h3>
+  <p>Weight and C.G. from the manual, not a guess · doorway and path clearances measured to the inch · floor capacity along the route · lift points per the OEM · transport on air-ride only · re-level at destination to the builder's spec before first cut.</p>
+</div>
+
+<h2>Transport and reinstallation</h2>
+<p>Machining centers ride <strong>air-ride trailers</strong>, tarped or shrink-wrapped against weather, often with shock indicators on the crate. Oversized machines move as <a href="../services/heavy-haul.html">heavy haul</a> with the same permit logic as any big load. At the destination the process reverses — skate in, set on the new pad, then <strong>level to the manufacturer's spec</strong> and recommission. Leveling isn't cosmetic: machine geometry, circularity, and positioning accuracy all start from a level casting.</p>
+
+<p>One crew that rigs it out, hauls it, and sets it back down — that's the whole point of doing <a href="../services/rigging.html">rigging</a> and transport under one roof. Moving a VMC, lathe, or a whole machine shop? <a href="../contact.html">Send us the model list and both floor plans</a> — we'll plan the move machine by machine.</p>
+`,
+    faq: [
+      { q: 'How much does it cost to move a CNC machine?', a: 'Drivers are machine weight and size, rigging complexity at both ends (clearances, floor capacity, crane vs. skate), distance, and OEM prep requirements. A small VMC across town is a different job than a 40,000-lb horizontal machining center across the country — send the model and both site layouts for a real number.' },
+      { q: 'Can I move a CNC machine with a forklift?', a: 'Only if the manual explicitly allows fork lifting at designated points and the truck has the capacity at that load center — many machines are too heavy, too top-heavy, or have no safe fork pockets. Lifting from the wrong points can permanently distort machine geometry.' },
+      { q: 'Does a CNC machine need to be re-leveled after a move?', a: 'Yes, always. The machine must be set on its new foundation and leveled to the builder\'s specification before cutting — geometry, accuracy, and repeatability all depend on it. Plan for leveling and recommissioning time in the move schedule.' },
+    ],
+    related: [
+      { h: 'Industrial Rigging', u: '../services/rigging.html' },
+      { h: 'What Is Industrial Rigging?', u: 'what-is-industrial-rigging.html' },
+      { h: 'How to Move an MRI Machine', u: 'how-to-move-an-mri-machine.html' },
+      { h: 'Get a Quote', u: '../contact.html' },
+    ],
+  },
 ];
 
 // ---------------------------------------------------------------------------
@@ -477,6 +785,8 @@ function articleHtml(post) {
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" href="../assets/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
+<link rel="preload" as="image" href="../assets/img/${post.hero}" fetchpriority="high">
 <link rel="stylesheet" href="../css/styles.css">
 ${BLOG_CSS}
 <script type="application/ld+json">
@@ -572,6 +882,7 @@ function indexHtml() {
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="icon" href="../assets/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
 <link rel="stylesheet" href="../css/styles.css">
 ${BLOG_CSS}
 <script type="application/ld+json">
