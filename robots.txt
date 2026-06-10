@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://badasslogistics.com/sitemap.xml

@@ -1,0 +1,12 @@
+{
+  "brand": "Badass Logistics",
+  "domain": "https://badasslogistics.com",
+  "phone": "(307) 284-1332",
+  "phoneHref": "3072841332",
+  "email": "info@badasslogistics.com",
+  "hqStreet": "1001 S Main St, STE 500",
+  "hqCity": "Kalispell",
+  "hqState": "MT",
+  "hqZip": "59901",
+  "_note": "Phone/email are LIVE (from load photos). hqStreet is still a placeholder — send the real HQ address when ready, then re-run: node build-locations.js"
+}
