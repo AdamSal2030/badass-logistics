@@ -39,8 +39,25 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-img { max-width: 100%; display: block; }
+img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; text-decoration: none; }
+body { overflow-x: hidden; }
+a, button { -webkit-tap-highlight-color: transparent; }
+
+/* ---------- page transition: truck veil (subtle, ~0.45s) ---------- */
+@keyframes pageveil {
+  0%   { opacity: 1; }
+  100% { opacity: 0; visibility: hidden; }
+}
+body::after {
+  content: ""; position: fixed; inset: 0; z-index: 9999; pointer-events: none;
+  background: var(--cream) url('../assets/favicon.png') center / clamp(72px, 14vw, 104px) no-repeat;
+  animation: pageveil .35s ease .1s both;
+}
+@media (prefers-reduced-motion: reduce) {
+  body::after { display: none; }
+  html { scroll-behavior: auto; }
+}
 
 .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 24px; }
 
@@ -285,6 +302,28 @@ address { font-style: normal; opacity: .85; line-height: 1.7; }
   .split { grid-template-columns: 1fr; }
   footer .cols { grid-template-columns: 1fr 1fr; }
   .annot { display: none; }
+  .cap-grid { grid-template-columns: repeat(2, 1fr); }
+}
+@media (max-width: 760px) {
+  section { padding: 44px 0; }
+  .hero { padding: 52px 0 60px; }
+  .hero .lead, .page-hero .lead { font-size: 18px; }
+  .photo-band { min-height: 210px; }
+  .topbar { font-size: 13px; }
+  .topbar .wrap { justify-content: center; text-align: center; row-gap: 2px; padding-top: 6px; padding-bottom: 6px; }
+  .svc-card { padding: 22px; padding-top: 0; }
+  .svc-card .thumb { margin: 0 -22px 14px; height: 170px; }
+  .stat .n { font-size: 44px; }
+  .step-list li::before { width: 38px; height: 38px; flex-basis: 38px; font-size: 19px; }
+  .faq summary { font-size: 16px; padding: 14px 16px; }
+  .media-split { gap: 18px; }
+  .btn { font-size: 16px; padding: 13px 22px; }
+}
+@media (max-width: 560px) {
+  .cap-grid { grid-template-columns: 1fr; }
+  .cta-band p { font-size: 17px; }
+  .logo .brand .l1, .logo .brand .l2 { font-size: 23px; }
+  .logo .brand { gap: 7px; }
 }
 @media (max-width: 480px) {
   footer .cols { grid-template-columns: 1fr; }
@@ -297,3 +336,5 @@ address { font-style: normal; opacity: .85; line-height: 1.7; }
 .load-gallery img { width: 100%; height: 200px; object-fit: cover; display: block; }
 @media (max-width: 860px) { .load-gallery { grid-template-columns: repeat(2, 1fr); } }
 @media (max-width: 480px) { .load-gallery { grid-template-columns: 1fr; } }
+
+.load-gallery figcaption { font-family:"Architects Daughter",cursive; font-size:14px; padding:8px 10px 10px; opacity:.8; }

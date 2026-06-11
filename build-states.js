@@ -56,6 +56,16 @@ const STATE = {
   MA: { name: 'Massachusetts', region: 'the Northeast', ix: 'I-90, I-95 and I-93' },
 };
 
+const cleanUrls = (x) => x
+  .split('badasslogistics.com/index.html').join('badasslogistics.com/')
+  .split('="../index.html"').join('="/"')
+  .split('="/index.html"').join('="/"')
+  .split('="index.html"').join('="/"')
+  .split('blog/index.html').join('blog/')
+  .split('.html"').join('"')
+  .split('.html#').join('#')
+  .split('.html</loc>').join('</loc>');
+
 const citySlug = (city, st) =>
   `${city.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}-${st.toLowerCase()}`;
 const stateSlug = (st) => STATE[st].name.toLowerCase().replace(/ /g, '-');
@@ -79,7 +89,7 @@ const FOOTER = `
 <footer><div class="wrap"><div class="cols">
   <div><h4>Badass Logistics</h4><p style="opacity:.85;max-width:280px;">Rigging, heavy haul, dispatch &amp; freight moving. One-stop shop for everything oversized and overweight.</p></div>
   <div><h4>Services</h4><a href="../services/rigging.html">Industrial Rigging</a><a href="../services/heavy-haul.html">Heavy Haul Transport</a><a href="../services/dispatching.html">Truck Dispatching</a><a href="../services/freight-moving.html">Freight Moving</a></div>
-  <div><h4>Company</h4><a href="../about.html">About Us</a><a href="../locations.html">Locations</a><a href="../blog/index.html">Blog</a><a href="../contact.html">Contact</a></div>
+  <div><h4>Company</h4><a href="../about.html">About Us</a><a href="../locations.html">Locations</a><a href="../blog/index.html">Blog</a><a href="../contact.html">Contact</a><a href="../privacy.html">Privacy</a></div>
   <div><h4>Contact</h4><address><a href="tel:${site.phoneHref}">${site.phone}</a><br><a href="mailto:${site.email}">${site.email}</a></address></div>
 </div><div class="legal"><span>© 2026 Badass Logistics. All rights reserved.</span><span class="hand">made to move heavy things.</span></div></div></footer>`;
 
@@ -111,7 +121,7 @@ function statePage(st, cities, idx, allStates) {
     "@type": "Service",
     "serviceType": "Heavy Haul, Rigging & Freight Services",
     "areaServed": { "@type": "State", "name": name },
-    "provider": { "@type": "MovingCompany", "name": site.brand, "telephone": site.phone, "email": site.email, "url": pageUrl },
+    "provider": { "@type": "LocalBusiness", "@id": site.domain + "/#organization", "name": site.brand, "telephone": site.phone, "email": site.email, "url": site.domain + "/" },
     "description": `${site.brand} provides rigging, heavy haul, dispatch and freight moving throughout ${name}.`
   };
   const breadcrumb = {
@@ -158,9 +168,11 @@ function statePage(st, cities, idx, allStates) {
 <meta name="twitter:title" content="${title}">
 <meta name="twitter:description" content="Statewide ${name} heavy haul, rigging, dispatch &amp; freight moving.">
 <meta name="twitter:image" content="${site.domain}/assets/img/og-default.jpg">
+<link rel="sitemap" type="application/xml" href="${site.domain}/sitemap.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Barlow:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Barlow:wght@400;500;600;700&display=swap"></noscript>
 <link rel="icon" href="../assets/favicon.png">
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
 <link rel="preload" as="image" href="../assets/img/${hero}" fetchpriority="high">
@@ -255,7 +267,7 @@ const states = Object.keys(byState).sort((a, b) => STATE[a].name.localeCompare(S
 
 const outDir = path.join(ROOT, 'locations');
 states.forEach((st, i) => {
-  fs.writeFileSync(path.join(outDir, `${stateSlug(st)}.html`), statePage(st, byState[st], i, states));
+  fs.writeFileSync(path.join(outDir, `${stateSlug(st)}.html`), cleanUrls(statePage(st, byState[st], i, states)));
 });
 console.log(`✓ Built ${states.length} state hub pages in /locations`);
 
@@ -276,6 +288,6 @@ if (locHtml.includes('<!--STATE_CHIPS_START-->')) {
 } else {
   locHtml = locHtml.replace('<!--LOC_GRID_END-->', `<!--LOC_GRID_END-->\n  ${block}`);
 }
-fs.writeFileSync(locPath, locHtml);
+fs.writeFileSync(locPath, cleanUrls(locHtml));
 console.log('✓ Injected state chips into locations.html');
 console.log('  States:', states.map(s => STATE[s].name).join(', '));

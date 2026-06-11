@@ -114,7 +114,7 @@ const FOOTER = `
 <footer><div class="wrap"><div class="cols">
   <div><h4>Badass Logistics</h4><p style="opacity:.85;max-width:280px;">Rigging, heavy haul, dispatch &amp; freight moving. One-stop shop for everything oversized and overweight.</p></div>
   <div><h4>Services</h4><a href="../services/rigging.html">Industrial Rigging</a><a href="../services/heavy-haul.html">Heavy Haul Transport</a><a href="../services/dispatching.html">Truck Dispatching</a><a href="../services/freight-moving.html">Freight Moving</a></div>
-  <div><h4>Company</h4><a href="../about.html">About Us</a><a href="../locations.html">Locations</a><a href="../blog/index.html">Blog</a><a href="../contact.html">Contact</a></div>
+  <div><h4>Company</h4><a href="../about.html">About Us</a><a href="../locations.html">Locations</a><a href="../blog/index.html">Blog</a><a href="../contact.html">Contact</a><a href="../privacy.html">Privacy</a></div>
   <div><h4>Contact</h4><address><a href="tel:${site.phoneHref}">${site.phone}</a><br><a href="mailto:${site.email}">${site.email}</a></address></div>
 </div><div class="legal"><span>© 2026 Badass Logistics. All rights reserved.</span><span class="hand">made to move heavy things.</span></div></div></footer>`;
 
@@ -152,11 +152,12 @@ function page(loc, i, all) {
     "serviceType": "Rigging & Heavy Haul Transport",
     "areaServed": { "@type": "City", "name": CS },
     "provider": {
-      "@type": "MovingCompany",
+      "@type": "LocalBusiness",
+      "@id": `${site.domain}/#organization`,
       "name": site.brand,
       "telephone": site.phone,
       "email": site.email,
-      "url": pageUrl
+      "url": `${site.domain}/`
     },
     "description": `${site.brand} provides rigging, heavy haul, dispatch and freight moving across ${CS}.`
   };
@@ -201,9 +202,11 @@ function page(loc, i, all) {
 <meta name="twitter:title" content="${title}">
 <meta name="twitter:description" content="Rigging, heavy haul, dispatch &amp; freight moving in ${CS}.">
 <meta name="twitter:image" content="${site.domain}/assets/img/og-default.jpg">
+<link rel="sitemap" type="application/xml" href="${site.domain}/sitemap.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Barlow:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Barlow:wght@400;500;600;700&display=swap"></noscript>
 <link rel="icon" href="../assets/favicon.png">
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
 <link rel="preload" as="image" href="../assets/img/${hero}" fetchpriority="high">
@@ -377,4 +380,4 @@ fs.writeFileSync(path.join(ROOT, 'sitemap.xml'),
 
 console.log(`✓ Built ${built.length} location pages in /locations`);
 console.log(`✓ Rewrote grid in locations.html`);
-console.log(`✓ Regenerated sitemap.xml (${staticPages.length + BLOG_POSTS.length + built.length} urls)`);
+console.log(`✓ Regenerated sitemap.xml (${staticPages.length + BLOG_POSTS.length + distinctStates.length + built.length} urls)`);

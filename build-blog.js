@@ -29,7 +29,7 @@ const FOOTER = `
 <footer><div class="wrap"><div class="cols">
   <div><h4>Badass Logistics</h4><p style="opacity:.85;max-width:280px;">Rigging, heavy haul, dispatch &amp; freight moving. One-stop shop for everything oversized and overweight.</p></div>
   <div><h4>Services</h4><a href="../services/rigging.html">Industrial Rigging</a><a href="../services/heavy-haul.html">Heavy Haul Transport</a><a href="../services/dispatching.html">Truck Dispatching</a><a href="../services/freight-moving.html">Freight Moving</a></div>
-  <div><h4>Company</h4><a href="../about.html">About Us</a><a href="../locations.html">Locations</a><a href="../blog/index.html">Blog</a><a href="../contact.html">Contact</a></div>
+  <div><h4>Company</h4><a href="../about.html">About Us</a><a href="../locations.html">Locations</a><a href="../blog/index.html">Blog</a><a href="../contact.html">Contact</a><a href="../privacy.html">Privacy</a></div>
   <div><h4>Contact</h4><address><a href="tel:${site.phoneHref}">${site.phone}</a><br><a href="mailto:${site.email}">${site.email}</a></address></div>
 </div><div class="legal"><span>© 2026 Badass Logistics. All rights reserved.</span><span class="hand">made to move heavy things.</span></div></div></footer>`;
 
@@ -69,7 +69,7 @@ const POSTS = [
     hero: 'heavyhaul-hero.jpg',
     date: '2026-05-12',
     title: 'How Much Does Heavy Haul Trucking Cost? A 2026 Pricing Guide',
-    desc: 'What drives heavy haul and oversized load pricing — distance, dimensions, weight, permits, escorts and trailer type — plus how to get an accurate quote fast.',
+    desc: 'Heavy haul is priced on dimensions, weight, permits, escorts, and trailer type — not a flat per-mile rate. A legal flatbed load, a permitted oversize load, and a superload are three different prices. Here is what drives the number.',
     dek: 'There is no flat rate for an oversized load. Here is exactly what moves the number — and how to get a real quote instead of a guess.',
     body: `
 <p>The honest answer to "what does heavy haul cost" is: <strong>it depends on the load and the route</strong> — and anyone who quotes you a flat per-mile rate before seeing your dimensions is guessing. A legal flatbed load and a 16-foot-wide superload are not the same job, and they should not cost the same. What you can do is understand the levers, because once you know what drives the price you can give a carrier the exact details that get you an accurate number on the first call.</p>
@@ -92,9 +92,10 @@ const POSTS = [
   <p><strong>Legal load:</strong> within 8'6" × 13'6" × 53' and under 80,000 lbs — standard flatbed/step-deck rates, no permits.<br>
   <strong>Oversize / overweight:</strong> over one or more legal limits — add per-state permits and possibly escorts.<br>
   <strong>Superload:</strong> extreme dimensions or weight — engineered routing, bridge studies, police escorts, and sometimes utility coordination to lift lines.</p>
+  <p class="hand" style="font-size:13px;opacity:.7;margin-top:8px;">Last reviewed June 2026</p>
 </div>
 
-<h2>How to get an accurate quote (not a guess)</h2>
+<h2>How do you get an accurate heavy haul quote?</h2>
 <p>Give us five things and we can turn a real number around fast — usually same day:</p>
 <ul>
   <li>Exact <strong>dimensions</strong> (length × width × height) and <strong>weight</strong></li>
@@ -224,8 +225,8 @@ const POSTS = [
   <p>Magnet weight and model · whether it craned in/out or rolled out a door · distance and access on both ends · crane and rigging gear required · OEM coordination and cryogen handling · how much wall/window/roof work the path needs.</p>
 </div>
 
-<h2>Why experience matters here</h2>
-<p>This is exactly the kind of load most carriers pass on — and exactly what we are built for. We have rigged and hauled MRI and medical equipment at live hospital sites, on tight timelines, with the machine treated like the seven-figure instrument it is. See the <a href="../services/rigging.html">MRI &amp; medical equipment rigging</a> section of our rigging service for more.</p>
+<h2>What should you look for in an MRI rigging company?</h2>
+<p>Look for a crew that treats the move as engineering, not muscle. In our MRI rigging work, the path of travel is surveyed before rig day — every doorway, corridor, elevator, and floor-load rating between the magnet room and the truck gets measured, and if the path does not work at ground level we plan a crane-in or crane-out instead of forcing it. The magnet itself — typically 5,000 to over 12,000 lbs for a superconducting unit — rides skates or rollers along that planned path, ships secured on air-ride equipment, and the whole schedule is coordinated with the OEM's field service engineers around ramp-down and cryogen handling. We have rigged and hauled MRI and medical equipment at live hospital sites on tight clinical timelines — the photos in this guide are from our own moves. See the <a href="../services/rigging.html">MRI &amp; medical equipment rigging</a> section of our rigging service for more.</p>
 
 <p>Moving a scanner, CT, or other imaging equipment? <a href="../contact.html">Send us the model, the floor, and the dates</a> — we'll plan the lift.</p>
 `,
@@ -321,7 +322,7 @@ const POSTS = [
   <li><strong>Set</strong> — place it exactly where it needs to go, then level and anchor it to spec.</li>
 </ul>
 
-<h2>The equipment</h2>
+<h2>What equipment does a rigger use?</h2>
 <ul>
   <li><strong>Cranes and gantries</strong> — for vertical lifts, from shop gantries to large mobile cranes.</li>
   <li><strong>Hydraulic jacks and gantry systems</strong> — to raise enormous loads in controlled increments where a crane can't reach.</li>
@@ -339,7 +340,7 @@ const POSTS = [
 </ul>
 
 <h2>Why it's an engineering problem first</h2>
-<p>Good rigging is decided on paper before anyone touches the load. A proper plan accounts for the load's <strong>weight and center of gravity</strong>, crane <strong>load charts</strong> and radius, sling angles and rated capacities, and the <strong>floor loading</strong> along the path of travel. Skip that and you get dropped loads, cracked floors, and hurt people. That is why we measure dimensions, weights, and clearances — and why we treat every lift like the engineering job it is.</p>
+<p>At Badass Logistics, every lift starts on paper before anyone touches the load. A proper plan accounts for the load's <strong>weight and center of gravity</strong>, crane <strong>load charts</strong> and radius, sling angles and rated capacities, and the <strong>floor loading</strong> along the path of travel. Skip that and you get dropped loads, cracked floors, and hurt people. That is why we measure dimensions, weights, and clearances — and why we treat every lift like the engineering job it is.</p>
 
 <div class="keyfacts">
   <h3>Rigging vs. heavy haul — what's the difference?</h3>
@@ -536,6 +537,7 @@ const POSTS = [
 <p><strong>Drayage</strong> is the short-haul trucking that moves shipping containers between a port or rail ramp and a nearby warehouse, yard, or doorstep. It's the shortest leg of an international shipment and routinely the most operationally painful — because it's where ocean schedules, terminal appointments, chassis availability, and free-time clocks all collide.</p>
 
 <h2>How a drayage move works</h2>
+<p>Drayage is the short-haul truck move that picks up your shipping container from a port terminal or rail ramp and delivers it to your warehouse — usually within about 50 miles. A credentialed driver with a TWIC card and a terminal appointment picks the box up on a chassis inside the port's free-time window, then either live-unloads at your dock or drops the container for a later pickup. The critical variable is not the truck rate; it is whether the box moves before free time expires. Miss that window and demurrage charges from the terminal and per-diem charges from the ocean carrier start stacking daily — typically $75 to several hundred dollars per container, per day. Step by step, it looks like this:</p>
 <ul>
   <li><strong>Your container discharges</strong> from the vessel (or arrives at the rail ramp) and the terminal makes it available for pickup.</li>
   <li><strong>The clock starts.</strong> Terminals give a few free days ("free time") before storage charges — <strong>demurrage</strong> — begin accruing daily.</li>
@@ -550,6 +552,7 @@ const POSTS = [
   <strong>Per diem (detention):</strong> the ocean carrier charging you for keeping their container/chassis out too long.<br>
   <strong>Chassis split:</strong> an extra trip because the chassis wasn't where the container was.<br>
   These run from roughly $75 to several hundred dollars per container per day — and they compound fast over a weekend.</p>
+  <p class="hand" style="font-size:13px;opacity:.7;margin-top:8px;">Last reviewed June 2026</p>
 </div>
 
 <h2>Why drayage goes wrong</h2>
@@ -734,6 +737,7 @@ const cleanUrls = s => s
   .split('.html</loc>').join('</loc>');
 
 function articleHtml(post) {
+  const heroAbs = `${site.domain}/assets/img/${post.hero}`;
   const url = `${site.domain}/blog/${post.slug}.html`;
   const faqList = post.faq.map(f => `
     <details><summary>${f.q}</summary><div class="a">${f.a}</div></details>`).join('');
@@ -743,7 +747,7 @@ function articleHtml(post) {
     "@type": "Article",
     "headline": post.title.replace(/&amp;/g, '&'),
     "description": post.desc,
-    "image": OG,
+    "image": heroAbs,
     "datePublished": post.date,
     "dateModified": post.date,
     "author": { "@type": "Organization", "name": site.brand, "url": site.domain + "/" },
@@ -786,14 +790,16 @@ function articleHtml(post) {
 <meta property="og:title" content="${post.title}">
 <meta property="og:description" content="${post.desc}">
 <meta property="og:url" content="${url}">
-<meta property="og:image" content="${OG}">
+<meta property="og:image" content="${heroAbs}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${post.title}">
 <meta name="twitter:description" content="${post.desc}">
-<meta name="twitter:image" content="${OG}">
+<meta name="twitter:image" content="${heroAbs}">
+<link rel="sitemap" type="application/xml" href="${site.domain}/sitemap.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Barlow:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Barlow:wght@400;500;600;700&display=swap"></noscript>
 <link rel="icon" href="../assets/favicon.png">
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
 <link rel="preload" as="image" href="../assets/img/${post.hero}" fetchpriority="high">
@@ -822,7 +828,7 @@ ${NAV}
 
 <section><div class="wrap">
   <article class="post prose post-body">
-    <p class="meta">${post.cat} · ${new Date(post.date + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+    <p class="meta">${post.cat} · By the Badass Logistics crew · ${new Date(post.date + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
     ${post.body.trim()}
     <div class="faq" style="margin-top:40px;">
       <h2>Frequently asked questions</h2>
@@ -888,9 +894,11 @@ function indexHtml() {
 <meta property="og:image" content="${OG}">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="${OG}">
+<link rel="sitemap" type="application/xml" href="${site.domain}/sitemap.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Barlow:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Barlow:wght@400;500;600;700&display=swap"></noscript>
 <link rel="icon" href="../assets/favicon.png">
 <link rel="apple-touch-icon" sizes="180x180" href="../assets/apple-touch-icon.png">
 <link rel="stylesheet" href="../css/styles.css">

@@ -120,7 +120,8 @@ for (const rel of FILES) {
   }
 
   // 5) lazy-load content images
-  h = h.replace(/<img (?!loading=)/g, '<img loading="lazy" ');
+  h = h.replace(/<img (?![^>]*loading=)/g, '<img loading="lazy" ');
+  h = h.replace(/(<img\b[^>]*?)\sloading="lazy"([^>]*?)\sloading="lazy"/g, '$1 loading="lazy"$2');
 
   // 6) apple-touch-icon (after favicon link)
   if (!h.includes('apple-touch-icon')) {
@@ -151,6 +152,24 @@ ${cards}
 
 <div class="cta-band">`;
     h = h.replace('<div class="cta-band">', section);
+  }
+
+  // 9) async Google Fonts (render-blocking fix)
+  h = h.replace(`<link href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Barlow:wght@400;500;600;700&display=swap" rel="stylesheet">`, `<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Barlow:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Barlow:wght@400;500;600;700&display=swap"></noscript>`);
+
+  // 10) sitemap link element
+  if (!h.includes('rel="sitemap"')) {
+    h = h.replace('<link rel="preconnect" href="https://fonts.googleapis.com">',
+      `<link rel="sitemap" type="application/xml" href="${site.domain}/sitemap.xml">\n<link rel="preconnect" href="https://fonts.googleapis.com">`);
+  }
+
+  // 11) privacy link in footer
+  if (!h.includes('privacy')) {
+    h = h.replace(`<a href="${P}contact.html">Contact</a></div>`,
+      `<a href="${P}contact.html">Contact</a><a href="${P}privacy.html">Privacy</a></div>`);
+    h = h.replace(`<a href="${P}contact">Contact</a></div>`,
+      `<a href="${P}contact">Contact</a><a href="${P}privacy">Privacy</a></div>`);
   }
 
   h = cleanUrls(h);
