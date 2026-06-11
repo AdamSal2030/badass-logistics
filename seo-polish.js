@@ -52,6 +52,16 @@ const SERVICE_NAMES = {
   'services/freight-moving.html': 'Freight Moving',
 };
 
+const cleanUrls = s => s
+  .split('badasslogistics.com/index.html').join('badasslogistics.com/')
+  .split('="../index.html"').join('="/"')
+  .split('="/index.html"').join('="/"')
+  .split('="index.html"').join('="/"')
+  .split('blog/index.html').join('blog/')
+  .split('.html"').join('"')
+  .split('.html#').join('#')
+  .split('.html</loc>').join('</loc>');
+
 const grab = (re, s) => { const m = s.match(re); return m ? m[1] : ''; };
 
 for (const rel of FILES) {
@@ -143,6 +153,7 @@ ${cards}
     h = h.replace('<div class="cta-band">', section);
   }
 
+  h = cleanUrls(h);
   if (h !== before) {
     fs.writeFileSync(fp, h);
     console.log(`✓ polished ${rel}`);

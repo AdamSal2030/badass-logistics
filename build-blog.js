@@ -723,6 +723,16 @@ const POSTS = [
 ];
 
 // ---------------------------------------------------------------------------
+const cleanUrls = s => s
+  .split('badasslogistics.com/index.html').join('badasslogistics.com/')
+  .split('="../index.html"').join('="/"')
+  .split('="/index.html"').join('="/"')
+  .split('="index.html"').join('="/"')
+  .split('blog/index.html').join('blog/')
+  .split('.html"').join('"')
+  .split('.html#').join('#')
+  .split('.html</loc>').join('</loc>');
+
 function articleHtml(post) {
   const url = `${site.domain}/blog/${post.slug}.html`;
   const faqList = post.faq.map(f => `
@@ -919,8 +929,8 @@ ${FOOTER}
 // ---- write everything ----
 const outDir = path.join(ROOT, 'blog');
 if (!fs.existsSync(outDir)) fs.mkdirSync(outDir);
-POSTS.forEach(p => fs.writeFileSync(path.join(outDir, `${p.slug}.html`), articleHtml(p)));
-fs.writeFileSync(path.join(outDir, 'index.html'), indexHtml());
+POSTS.forEach(p => fs.writeFileSync(path.join(outDir, `${p.slug}.html`), cleanUrls(articleHtml(p))));
+fs.writeFileSync(path.join(outDir, 'index.html'), cleanUrls(indexHtml()));
 
 console.log(`✓ Built ${POSTS.length} blog articles + index in /blog`);
 POSTS.forEach(p => console.log(`   - blog/${p.slug}.html`));
