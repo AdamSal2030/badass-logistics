@@ -210,13 +210,21 @@ ${NAV}
   <span class="annot hand a4">${meta.ix.split(',')[0]} CORRIDOR ✓</span>
 </section>
 
-<section><div class="wrap prose">
+<section class="notes-bg">
+  <span class="bgnote" style="top:12%;right:5%;transform:rotate(-4deg)">${st} DOT PERMITS ✓</span>
+  <span class="bgnote" style="top:48%;left:3%;transform:rotate(3deg)">${meta.ix} CORRIDORS</span>
+  <span class="bgnote" style="bottom:12%;right:7%;transform:rotate(-3deg)">STATEWIDE ✓</span>
+  <div class="wrap prose">
   <h2>Heavy haul &amp; rigging across ${name}</h2>
   <p>${site.brand} runs rigging, heavy haul, dispatch, and freight moving throughout ${name}, with local coverage built around ${cityList}. The state's freight moves on the ${meta.ix} corridors, and our crews move with it — machinery, oversize loads, plant relocations, and everyday FTL and LTL freight in the ${industries} ${plural ? 'markets' : 'market'}.</p>
   <p>Every oversize or overweight move through ${name} needs to be legal on every mile: state permits, routing around restricted bridges, travel-time windows, and escorts where dimensions require them. We handle the ${name} DOT paperwork, the route survey, and the pilot cars as part of the job — read our <a href="../blog/oversize-load-permits-guide.html">permit guide</a> and <a href="../blog/how-much-does-heavy-haul-cost.html">cost guide</a> for what to expect, then send us the load.</p>
 </div></section>
 
-<section class="bg-paper" style="border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);"><div class="wrap">
+<section class="bg-paper notes-bg" style="border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);">
+  <span class="bgnote" style="top:10%;right:4%;transform:rotate(-4deg)">RIG · HAUL · DISPATCH · FREIGHT</span>
+  <span class="bgnote" style="top:52%;left:3%;transform:rotate(3deg)">NEAREST CREW →</span>
+  <span class="bgnote" style="bottom:10%;right:6%;transform:rotate(-3deg)">OVERSIZE • OVERWEIGHT</span>
+  <div class="wrap">
   <span class="section-tag hand">where we work in ${name}</span>
   <h2 class="section-title">${name} ${plural ? 'cities' : 'coverage'}</h2>
   <div class="grid-services">${cityCards}
@@ -224,7 +232,10 @@ ${NAV}
   ${townsSample.length ? `<p style="margin-top:24px;font-weight:600;">Also moving freight near ${townsSample.join(', ')} — and everywhere in between. <a href="../contact.html" style="color:var(--yellow-deep);text-decoration:underline;">Tell us where</a>.</p>` : ''}
 </div></section>
 
-<section><div class="wrap">
+<section class="notes-bg">
+  <span class="bgnote" style="top:14%;right:5%;transform:rotate(-4deg)">EVERY MILE LEGAL ✓</span>
+  <span class="bgnote" style="bottom:12%;left:4%;transform:rotate(4deg)">48 LOCATIONS NATIONWIDE</span>
+  <div class="wrap">
   <span class="section-tag hand">on the map</span>
   <h2 class="section-title">${name} coverage map</h2>
   <p class="section-intro">Statewide ${name} — rigging, heavy haul, dispatch, and freight moving, backed by a nationwide network of 48 locations.</p>
@@ -238,7 +249,11 @@ ${NAV}
   <span class="annot hand a6">OVERSIZE • OVERWEIGHT</span>
 </div>
 
-<section class="bg-paper" style="border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);"><div class="wrap">
+<section class="bg-paper notes-bg" style="border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);">
+  <span class="bgnote" style="top:14%;right:5%;transform:rotate(-4deg)">PERMITTED &amp; PILOTED</span>
+  <span class="bgnote" style="top:52%;left:3%;transform:rotate(3deg)">MEASURE TWICE — HAUL ONCE</span>
+  <span class="bgnote" style="bottom:10%;right:6%;transform:rotate(-3deg)">SAME-DAY QUOTE</span>
+  <div class="wrap">
   <span class="section-tag hand">questions</span>
   <h2 class="section-title">${name} heavy haul FAQ</h2>
   <div class="faq">

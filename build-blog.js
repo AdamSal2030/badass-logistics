@@ -825,9 +825,16 @@ ${NAV}
   <span class="section-tag hand">// ${post.cat.toLowerCase()}</span>
   <h1>${post.title}</h1>
   <p class="lead">${post.dek}</p>
-</div></section>
+</div>
+  <span class="annot hand tag warn a1">FIELD GUIDE</span>
+  <span class="annot hand a4">BY THE CREW ✓</span>
+</section>
 
-<section><div class="wrap">
+<section class="notes-bg">
+  <span class="bgnote" style="top:6%;right:4%;transform:rotate(-4deg)">REAL LOADS — REAL NUMBERS</span>
+  <span class="bgnote" style="top:38%;right:6%;transform:rotate(3deg)">NO FLUFF, JUST SPECS</span>
+  <span class="bgnote" style="top:70%;right:4%;transform:rotate(-3deg)">FROM THE DISPATCH DESK</span>
+  <div class="wrap">
   <article class="post prose post-body">
     <p class="meta">${post.cat} · By the Badass Logistics crew · ${new Date(post.date + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
     ${post.body.trim()}
@@ -913,7 +920,10 @@ ${NAV}
 
 <div class="wrap breadcrumb"><a href="../index.html">Home</a> / Blog</div>
 
-<section class="page-hero"><div class="wrap">
+<section class="page-hero notes-bg">
+  <span class="bgnote" style="top:24%;right:5%;transform:rotate(-4deg)">MEASURED &amp; MOVED</span>
+  <span class="bgnote" style="bottom:16%;right:9%;transform:rotate(3deg)">FIELD NOTES ✓</span>
+  <div class="wrap">
   <span class="section-tag hand">// field notes</span>
   <h1>The <span class="y">Badass</span> Blog</h1>
   <p class="lead">No fluff — just straight answers on heavy haul cost, oversize permits, rigging, trailers, and dispatch from the crew that moves this stuff for a living.</p>
