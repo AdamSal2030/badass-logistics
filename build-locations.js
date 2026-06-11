@@ -116,7 +116,7 @@ const FOOTER = `
   <div><h4>Services</h4><a href="../services/rigging.html">Industrial Rigging</a><a href="../services/heavy-haul.html">Heavy Haul Transport</a><a href="../services/dispatching.html">Truck Dispatching</a><a href="../services/freight-moving.html">Freight Moving</a></div>
   <div><h4>Company</h4><a href="../about.html">About Us</a><a href="../locations.html">Locations</a><a href="../blog/index.html">Blog</a><a href="../contact.html">Contact</a><a href="../privacy.html">Privacy</a></div>
   <div><h4>Contact</h4><address><a href="tel:${site.phoneHref}">${site.phone}</a><br><a href="mailto:${site.email}">${site.email}</a></address></div>
-</div><div class="legal"><span>© 2026 Badass Logistics. All rights reserved.</span><span class="hand">made to move heavy things.</span></div></div></footer>`;
+</div><div class="legal"><span>© 2022–2026 Badass Logistics. All rights reserved.</span><span class="hand">made to move heavy things.</span></div></div></footer>`;
 
 const cleanUrls = s => s
   .split('badasslogistics.com/index.html').join('badasslogistics.com/')
