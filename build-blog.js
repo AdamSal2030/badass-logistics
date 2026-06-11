@@ -28,7 +28,7 @@ const NAV = `
 const FOOTER = `
 <footer><div class="wrap"><div class="cols">
   <div><h4>Badass Logistics</h4><p style="opacity:.85;max-width:280px;">Rigging, heavy haul, dispatch &amp; freight moving. One-stop shop for everything oversized and overweight.</p></div>
-  <div><h4>Services</h4><a href="../services/rigging.html">Industrial Rigging</a><a href="../services/heavy-haul.html">Heavy Haul Transport</a><a href="../services/dispatching.html">Truck Dispatching</a><a href="../services/freight-moving.html">Freight Moving</a></div>
+  <div><h4>Services</h4><a href="../services/rigging.html">Industrial Rigging</a><a href="../services/heavy-haul.html">Heavy Haul Transport</a><a href="../services/machinery-moving.html">Machinery Moving</a><a href="../services/dispatching.html">Truck Dispatching</a><a href="../services/freight-moving.html">Freight Moving</a></div>
   <div><h4>Company</h4><a href="../about.html">About Us</a><a href="../locations.html">Locations</a><a href="../blog/index.html">Blog</a><a href="../contact.html">Contact</a><a href="../privacy.html">Privacy</a></div>
   <div><h4>Contact</h4><address><a href="tel:${site.phoneHref}">${site.phone}</a><br><a href="mailto:${site.email}">${site.email}</a></address></div>
 </div><div class="covstrip">Coverage: <a href="../locations/texas.html">Texas</a> · <a href="../locations/california.html">California</a> · <a href="../locations/florida.html">Florida</a> · <a href="../locations/georgia.html">Georgia</a> · <a href="../locations/illinois.html">Illinois</a> · <a href="../locations/ohio.html">Ohio</a> · <a href="../locations/pennsylvania.html">Pennsylvania</a> · <a href="../locations/new-york.html">New York</a> · <a href="../locations.html"><strong>All 48 locations →</strong></a></div>
@@ -110,7 +110,7 @@ const POSTS = [
 <h2>Can you make it cheaper?</h2>
 <p>Sometimes. Flexible pickup dates let us combine your load with backhauls and avoid deadhead. Breaking a single superload into two permittable loads can occasionally beat the cost of police escorts and bridge studies. And routing matters — the shortest route is not always the legal or the cheapest one. We will tell you straight when there is a smarter way to move it.</p>
 
-<p>Ready for a number? <a href="../services/heavy-haul.html">See our heavy haul service</a> or <a href="../contact.html">send us the specs for a fast quote</a>.</p>
+<p>Ready for a number? See our <a href="../services/heavy-haul.html">heavy haul trucking company</a> page or <a href="../contact.html">send us the specs for a fast quote</a>.</p>
 `,
     faq: [
       { q: 'Is heavy haul priced per mile?', a: 'Loaded miles are part of it, but oversized pricing also factors in permits, escorts, trailer type, deadhead, and route restrictions — so a flat per-mile rate rarely reflects the real cost. Send dimensions and weight for an accurate quote.' },
@@ -456,7 +456,7 @@ const POSTS = [
 <h2>What it costs</h2>
 <p>The same levers as all <a href="how-much-does-heavy-haul-cost.html">heavy haul pricing</a>: distance, weight class, whether dimensions trigger permits, escort requirements, and how far the right trailer has to deadhead to reach you. A legal-size mini-ex moves for a fraction of what a permitted 50-ton machine costs. Exact specs get you an exact number — guesses get you a guess.</p>
 
-<p>Ready to move iron? <a href="../services/heavy-haul.html">See our heavy haul service</a> or <a href="../contact.html">send the machine's specs for a same-day quote</a>.</p>
+<p>Ready to move iron? See how we run <a href="../services/heavy-haul.html">heavy haul trucking for construction equipment</a> or <a href="../contact.html">send the machine's specs for a same-day quote</a>.</p>
 `,
     faq: [
       { q: 'Do I need a permit to ship my excavator?', a: 'If the loaded dimensions exceed 8\'6" wide, 13\'6" total height, or 80,000 lbs gross combined weight, yes — in every state the load crosses. Most 20-ton-plus excavators trigger at least an over-height or overweight permit on an RGN.' },

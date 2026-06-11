@@ -20,6 +20,7 @@ const FILES = [
   'index.html', 'about.html', 'contact.html', 'locations.html',
   'services/rigging.html', 'services/heavy-haul.html',
   'services/dispatching.html', 'services/freight-moving.html',
+  'services/machinery-moving.html',
 ];
 
 // "From the field guide" — 3 matched blog articles per service page.
@@ -50,6 +51,7 @@ const SERVICE_NAMES = {
   'services/heavy-haul.html': 'Heavy Haul Transport',
   'services/dispatching.html': 'Truck Dispatching',
   'services/freight-moving.html': 'Freight Moving',
+  'services/machinery-moving.html': 'Machinery Moving',
 };
 
 const cleanUrls = s => s
