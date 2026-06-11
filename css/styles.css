@@ -338,3 +338,6 @@ address { font-style: normal; opacity: .85; line-height: 1.7; }
 @media (max-width: 480px) { .load-gallery { grid-template-columns: 1fr; } }
 
 .load-gallery figcaption { font-family:"Architects Daughter",cursive; font-size:14px; padding:8px 10px 10px; opacity:.8; }
+
+footer .covstrip { font-size: 14px; opacity: .85; margin-bottom: 16px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,.15); }
+footer .covstrip a { display: inline; margin: 0; }

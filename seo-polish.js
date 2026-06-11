@@ -172,6 +172,16 @@ ${cards}
       `<a href="${P}contact">Contact</a><a href="${P}privacy">Privacy</a></div>`);
   }
 
+  // 12) service pages: og:image should be the page's own hero, not the generic card
+  if (SERVICE_NAMES[rel] && h.includes('og-default.jpg')) {
+    const pm = h.match(/rel="preload" as="image" href="\.\.\/(assets\/img\/[^"]+)"/);
+    if (pm) {
+      const heroAbs = `${site.domain}/${pm[1]}`;
+      h = h.replace(/(property="og:image" content=")[^"]+(")/, `$1${heroAbs}$2`);
+      h = h.replace(/(name="twitter:image" content=")[^"]+(")/, `$1${heroAbs}$2`);
+    }
+  }
+
   h = cleanUrls(h);
   if (h !== before) {
     fs.writeFileSync(fp, h);
