@@ -233,7 +233,7 @@ address { font-style: normal; opacity: .85; line-height: 1.7; }
 }
 .bg-paper .bgnote { opacity: .18; }
 .band .bgnote, footer .bgnote { color: var(--cream); opacity: .18; }
-@media (max-width: 760px){ .bgnote { display: none; } }
+@media (max-width: 760px){ .bgnote { font-size: 14px; opacity: .13; letter-spacing: .5px; } .bg-paper .bgnote { opacity: .15; } }
 
 /* ---------- MRI / specialty split ---------- */
 .media-split { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; align-items: center; margin-top: 30px; }
@@ -301,12 +301,20 @@ address { font-style: normal; opacity: .85; line-height: 1.7; }
   .stats { grid-template-columns: repeat(2,1fr); gap: 32px; }
   .split { grid-template-columns: 1fr; }
   footer .cols { grid-template-columns: 1fr 1fr; }
+  /* annotations become a tidy chip row under hero content on mobile */
   .annot { display: none; }
+  .hero.photo .annot, .page-hero.photo .annot {
+    display: inline-block; position: static; transform: none;
+    font-size: 13px; line-height: 1.35; margin: 12px 0 0 24px; opacity: .92;
+  }
+  .annot .lbl { display: inline; margin-right: 5px; }
+  .photo-band .annot { display: inline-block; font-size: 12px; }
   .cap-grid { grid-template-columns: repeat(2, 1fr); }
 }
 @media (max-width: 760px) {
   section { padding: 44px 0; }
-  .hero { padding: 52px 0 60px; }
+  .hero { padding: 52px 0 42px; }
+  .hero.photo, .page-hero.photo { padding-bottom: 34px; }
   .hero .lead, .page-hero .lead { font-size: 18px; }
   .photo-band { min-height: 210px; }
   .topbar { font-size: 13px; }
