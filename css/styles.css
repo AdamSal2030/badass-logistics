@@ -183,7 +183,14 @@ section { padding: 64px 0; }
 
 /* ---------- footer ---------- */
 footer { background: var(--ink); color: var(--cream); padding: 56px 0 28px; }
-footer .cols { display: grid; grid-template-columns: 1.4fr 1fr 1fr 1fr; gap: 32px; }
+footer .cols { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 32px; }
+.footer-nap { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 0; border-top: 1px solid rgba(255,255,255,.15); margin-top: 30px; padding-top: 22px; font-size: 15px; line-height: 1.4; }
+.footer-nap span { display: inline-flex; align-items: center; opacity: .9; }
+.footer-nap span + span::before { content: "·"; opacity: .45; margin: 0 14px; }
+.footer-nap .nap-name { font-family: "Anton", sans-serif; color: var(--yellow); letter-spacing: .5px; opacity: 1; text-transform: uppercase; }
+.footer-nap a { color: var(--cream); }
+.footer-nap a:hover { color: var(--yellow); }
+@media (max-width: 640px) { .footer-nap { flex-direction: column; align-items: flex-start; gap: 5px; } .footer-nap span + span::before { content: none; margin: 0; } }
 footer h4 { font-family:"Anton",sans-serif; color: var(--yellow); text-transform: uppercase; margin-bottom: 14px; font-size: 18px; letter-spacing: 1px; }
 footer a { display:block; padding: 4px 0; color: var(--cream); opacity: .85; }
 footer a:hover { color: var(--yellow); opacity: 1; }
