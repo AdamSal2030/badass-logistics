@@ -94,8 +94,6 @@
 
 <!-- ============ HERO ============ -->
 <section class="hero photo" style="background-image:url('assets/img/hero-home.jpg')">
-  <div class="hero-slides" aria-hidden="true">
-      <div class="slide" style="background-image:url('assets/img/loads/load-oversize-tank.jpg');animation-delay:0s"></div>
       <div class="slide" style="background-image:url('assets/img/loads/load-modular-building.jpg');animation-delay:8s"></div>
       <div class="slide" style="background-image:url('assets/img/loads/load-mri-rigging.jpg');animation-delay:16s"></div>
     </div>
@@ -276,25 +274,5 @@
   </div>
 </footer>
 
-<script>
-(function(){
-  var mq = matchMedia('(min-width: 861px)');
-  var rm = matchMedia('(prefers-reduced-motion: reduce)');
-  var sd = navigator.connection && navigator.connection.saveData;
-  if (!mq.matches || rm.matches || sd) return;
-  var hero = document.querySelector('.hero.photo');
-  if (!hero) return;
-  var wrap = document.createElement('div');
-  wrap.className = 'hero-video'; wrap.setAttribute('aria-hidden','true');
-  var v = document.createElement('video');
-  v.muted = true; v.loop = true; v.autoplay = true; v.playsInline = true;
-  v.setAttribute('playsinline',''); v.preload = 'auto';
-  v.src = 'assets/video/hero-loop.mp4';
-  wrap.appendChild(v);
-  var slides = hero.querySelector('.hero-slides');
-  slides ? slides.after(wrap) : hero.prepend(wrap);
-  v.play().catch(function(){ wrap.remove(); });
-})();
-</script>
 </body>
 </html>
