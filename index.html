@@ -271,23 +271,5 @@
   </div>
 </footer>
 
-<script>
-(function(){
-  if (matchMedia('(prefers-reduced-motion: reduce)').matches) return;
-  if (navigator.connection && navigator.connection.saveData) return;
-  var hero = document.querySelector('.hero.photo');
-  if (!hero) return;
-  var wide = matchMedia('(min-width: 861px)').matches;
-  var wrap = document.createElement('div');
-  wrap.className = 'hero-video'; wrap.setAttribute('aria-hidden','true');
-  var v = document.createElement('video');
-  v.muted = true; v.loop = true; v.autoplay = true; v.playsInline = true;
-  v.setAttribute('playsinline',''); v.setAttribute('muted',''); v.preload = 'auto';
-  v.src = wide ? 'assets/video/hero-wide.mp4' : 'assets/video/hero-tall.mp4';
-  wrap.appendChild(v);
-  hero.prepend(wrap);
-  var p = v.play(); if (p && p.catch) p.catch(function(){ wrap.remove(); });
-})();
-</script>
 </body>
 </html>
