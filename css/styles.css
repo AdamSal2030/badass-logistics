@@ -219,6 +219,32 @@ address { font-style: normal; opacity: .85; line-height: 1.7; }
   background-size: 30px 30px, 30px 30px;
 }
 .hero.photo .wrap, .page-hero.photo .wrap { position: relative; z-index: 2; }
+
+/* ---------- live heroes: Ken Burns slideshow + video loop ---------- */
+.hero-slides, .hero-video { position: absolute; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
+.hero-slides .slide {
+  position: absolute; inset: -7%;
+  background-size: cover; background-position: center;
+  opacity: 0; transform: scale(1);
+  animation: kburns var(--kbcycle, 24s) ease-in-out infinite;
+  filter: saturate(.8) contrast(1.06) brightness(.96);
+  will-change: transform, opacity;
+}
+@keyframes kburns {
+  0%   { opacity: 0; transform: scale(1) translateX(0); }
+  7%   { opacity: 1; }
+  34%  { opacity: 1; }
+  45%  { opacity: 0; transform: scale(1.1) translateX(-1.5%); }
+  100% { opacity: 0; transform: scale(1) translateX(0); }
+}
+.hero-video video { width: 100%; height: 100%; object-fit: cover; filter: saturate(.75) contrast(1.06) brightness(.9); }
+.hero.photo::after, .page-hero.photo::after { z-index: 1; }
+.hero.photo::before, .page-hero.photo::before { z-index: 1; }
+@media (prefers-reduced-motion: reduce) {
+  .hero-slides .slide { animation: none; opacity: 0; }
+  .hero-slides .slide:first-child { opacity: 1; transform: none; }
+  .hero-video { display: none; }
+}
 .hero.photo h1 .y, .page-hero.photo h1 .y { color: var(--yellow); -webkit-text-stroke: 0; }
 .hero.photo .lead, .page-hero.photo .lead { color: var(--cream); }
 .hero.photo .section-tag, .page-hero.photo .section-tag { color: var(--yellow); }
