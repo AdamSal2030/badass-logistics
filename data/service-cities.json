@@ -1,0 +1,74 @@
+[
+  {
+    "service": "cnc-machine-movers",
+    "city": "Detroit",
+    "state": "MI",
+    "url": "/services/cnc-machine-movers/detroit-mi"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Chicago",
+    "state": "IL",
+    "url": "/services/cnc-machine-movers/chicago-il"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Houston",
+    "state": "TX",
+    "url": "/services/cnc-machine-movers/houston-tx"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Dallas",
+    "state": "TX",
+    "url": "/services/cnc-machine-movers/dallas-tx"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Cleveland",
+    "state": "OH",
+    "url": "/services/cnc-machine-movers/cleveland-oh"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Charlotte",
+    "state": "NC",
+    "url": "/services/cnc-machine-movers/charlotte-nc"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Indianapolis",
+    "state": "IN",
+    "url": "/services/cnc-machine-movers/indianapolis-in"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Columbus",
+    "state": "OH",
+    "url": "/services/cnc-machine-movers/columbus-oh"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Milwaukee",
+    "state": "WI",
+    "url": "/services/cnc-machine-movers/milwaukee-wi"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Nashville",
+    "state": "TN",
+    "url": "/services/cnc-machine-movers/nashville-tn"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Pittsburgh",
+    "state": "PA",
+    "url": "/services/cnc-machine-movers/pittsburgh-pa"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Minneapolis",
+    "state": "MN",
+    "url": "/services/cnc-machine-movers/minneapolis-mn"
+  }
+]

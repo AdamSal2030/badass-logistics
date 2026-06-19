@@ -108,4 +108,18 @@
   <url><loc>https://badasslogistics.com/locations/pittsburgh-pa</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://badasslogistics.com/locations/new-york-ny</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://badasslogistics.com/locations/boston-ma</loc><lastmod>2026-06-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!--SVC_CITIES_START-->
+  <url><loc>https://badasslogistics.com/services/cnc-machine-movers/detroit-mi</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://badasslogistics.com/services/cnc-machine-movers/chicago-il</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://badasslogistics.com/services/cnc-machine-movers/houston-tx</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://badasslogistics.com/services/cnc-machine-movers/dallas-tx</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://badasslogistics.com/services/cnc-machine-movers/cleveland-oh</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://badasslogistics.com/services/cnc-machine-movers/charlotte-nc</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://badasslogistics.com/services/cnc-machine-movers/indianapolis-in</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://badasslogistics.com/services/cnc-machine-movers/columbus-oh</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://badasslogistics.com/services/cnc-machine-movers/milwaukee-wi</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://badasslogistics.com/services/cnc-machine-movers/nashville-tn</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://badasslogistics.com/services/cnc-machine-movers/pittsburgh-pa</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://badasslogistics.com/services/cnc-machine-movers/minneapolis-mn</loc><lastmod>2026-06-19</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!--SVC_CITIES_END-->
 </urlset>
