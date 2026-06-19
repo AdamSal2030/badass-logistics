@@ -1,0 +1,527 @@
+{
+  "version": "1.9.0",
+  "seed_keyword": "industrial rigging services",
+  "domain": "badasslogistics.com",
+  "created_at": "2026-06-18T00:00:00Z",
+  "notes": "National lead-gen site. Programmatic service×city architecture. 10 verticals. New domain — cluster map drives page priority decisions only.",
+
+  "pillar": {
+    "title": "Industrial Rigging & Machinery Moving Services: The Complete Guide",
+    "keyword": "industrial rigging services",
+    "volume_estimate": "4,400/mo (ESTIMATE)",
+    "difficulty_estimate": "HIGH — 60-70 KD (ESTIMATE). Top 10 dominated by ProLift, Omega Morgan, Rigging-Busters, Beck & Pollitzer — all multi-location nationals with 10+ years domain age.",
+    "intent": "COMMERCIAL",
+    "template": "ultimate-guide",
+    "wordCount": 4000,
+    "url": "/services/industrial-rigging/",
+    "status": "planned",
+    "page_type": "SERVICE PILLAR"
+  },
+
+  "clusters": [
+    {
+      "id": "cluster-0",
+      "name": "Rigging & Heavy Lift",
+      "rationale": "SERP overlap 7-9 between 'industrial rigging company', 'rigging services near me', 'rigging company near me', and 'heavy lift rigging' — all return ProLift, Rigging-Busters, Omega Morgan, Barnhart in top 10. Same-page or same-cluster threshold met. 'Crane and rigging' is adjacent (overlap ~5) so placed here rather than separate.",
+      "posts": [
+        {
+          "id": "cluster-0-post-0",
+          "title": "Industrial Rigging Company: What to Look For and How to Get a Quote",
+          "keyword": "industrial rigging company",
+          "secondary_keywords": ["rigging company near me", "rigging services near me", "industrial rigging services"],
+          "volume_estimate": "3,600/mo combined (ESTIMATE)",
+          "difficulty_estimate": "HIGH — 65 KD (ESTIMATE). Nationals own this SERP.",
+          "intent": "COMMERCIAL",
+          "template": "landing-page",
+          "wordCount": 1500,
+          "url": "/services/industrial-rigging/rigging-company/",
+          "status": "planned",
+          "page_type": "SERVICE PILLAR spoke",
+          "cannibalization_check": "CLEAR — primary differs from pillar 'industrial rigging services'; secondary overlap is intentional and minimal"
+        },
+        {
+          "id": "cluster-0-post-1",
+          "title": "Crane and Rigging Services: When You Need a Crane vs. Ground Rigging",
+          "keyword": "crane and rigging services",
+          "secondary_keywords": ["crane rigging company", "crane rigging near me", "rigging crane rental"],
+          "volume_estimate": "2,900/mo combined (ESTIMATE)",
+          "difficulty_estimate": "HIGH — 70 KD (ESTIMATE). Bigge, Barnhart, TNT Crane dominate. Crane rental adds heavy cross-industry competition.",
+          "intent": "COMMERCIAL",
+          "template": "explainer",
+          "wordCount": 1500,
+          "url": "/services/industrial-rigging/crane-and-rigging-services/",
+          "status": "planned",
+          "page_type": "SERVICE PILLAR spoke",
+          "cannibalization_check": "CLEAR — crane dimension differentiates from post-0"
+        },
+        {
+          "id": "cluster-0-post-2",
+          "title": "How Much Do Rigging Services Cost? (2026 Price Breakdown)",
+          "keyword": "how much do rigging services cost",
+          "secondary_keywords": ["industrial rigging cost", "rigging company cost", "rigging services price"],
+          "volume_estimate": "1,200/mo (ESTIMATE)",
+          "difficulty_estimate": "MEDIUM — 40 KD (ESTIMATE). Mix of blog posts, forum threads (Practical Machinist), and service pages. Winnable with a thorough cost guide.",
+          "intent": "INFORMATIONAL",
+          "template": "explainer",
+          "wordCount": 1600,
+          "url": "/blog/rigging-services-cost/",
+          "status": "planned",
+          "page_type": "BLOG-informational",
+          "cannibalization_check": "CLEAR — informational intent separates from commercial posts 0 and 1"
+        }
+      ]
+    },
+    {
+      "id": "cluster-1",
+      "name": "Machinery Moving & Equipment Relocation",
+      "rationale": "SERP overlap 8-10 between 'machinery movers company', 'machinery moving services', 'machine movers near me' — all return Beck & Pollitzer, Omega Morgan, US Machinery Movers, California Machinery Movers. Separate cluster from rigging (overlap 3-4 cross-cluster) because top results diverge: machinery movers SERPs return generalist mover sites while rigging SERPs are dominated by crane/lift specialists.",
+      "posts": [
+        {
+          "id": "cluster-1-post-0",
+          "title": "Machinery Movers: How to Choose and What to Expect",
+          "keyword": "machinery movers",
+          "secondary_keywords": ["machinery moving services", "machine movers company", "heavy machinery movers"],
+          "volume_estimate": "5,400/mo combined (ESTIMATE)",
+          "difficulty_estimate": "HIGH — 62 KD (ESTIMATE). Beck & Pollitzer, Omega Morgan, consolidated incumbents with deep authority.",
+          "intent": "COMMERCIAL",
+          "template": "landing-page",
+          "wordCount": 1600,
+          "url": "/services/machinery-moving/",
+          "status": "planned",
+          "page_type": "SERVICE PILLAR spoke"
+        },
+        {
+          "id": "cluster-1-post-1",
+          "title": "Heavy Equipment Loading and Unloading Services: What's Involved",
+          "keyword": "heavy equipment loading and unloading services",
+          "secondary_keywords": ["equipment loading unloading company", "flatbed loading unloading", "machinery loading services"],
+          "volume_estimate": "880/mo (ESTIMATE)",
+          "difficulty_estimate": "MEDIUM — 45 KD (ESTIMATE). Rigging-Busters owns most city variants of this. National-level page is more open.",
+          "intent": "COMMERCIAL",
+          "template": "explainer",
+          "wordCount": 1400,
+          "url": "/services/machinery-moving/heavy-equipment-loading-unloading/",
+          "status": "planned",
+          "page_type": "SERVICE PILLAR spoke"
+        },
+        {
+          "id": "cluster-1-post-2",
+          "title": "How Much Does It Cost to Move Industrial Equipment? (Full Breakdown)",
+          "keyword": "cost to move industrial equipment",
+          "secondary_keywords": ["machinery moving cost", "how much does it cost to move heavy equipment", "equipment moving price"],
+          "volume_estimate": "1,600/mo combined (ESTIMATE)",
+          "difficulty_estimate": "MEDIUM — 42 KD (ESTIMATE). Accuwright, Smooth Move People, Freedom Heavy Haul have cost guides but thin content. Opportunity to outrank with a comprehensive guide.",
+          "intent": "INFORMATIONAL",
+          "template": "explainer",
+          "wordCount": 1800,
+          "url": "/blog/cost-to-move-industrial-equipment/",
+          "status": "planned",
+          "page_type": "BLOG-informational"
+        },
+        {
+          "id": "cluster-1-post-3",
+          "title": "How to Safely Move Heavy Industrial Equipment: A Step-by-Step Guide",
+          "keyword": "how to move heavy industrial equipment",
+          "secondary_keywords": ["moving heavy machinery safely", "industrial equipment relocation steps", "moving heavy equipment checklist"],
+          "volume_estimate": "720/mo (ESTIMATE)",
+          "difficulty_estimate": "MEDIUM — 38 KD (ESTIMATE). Freedom Heavy Haul, GKS Lifting, Armstrong rank here with thin how-to posts. Thorough guide wins.",
+          "intent": "INFORMATIONAL",
+          "template": "how-to",
+          "wordCount": 1600,
+          "url": "/blog/how-to-move-heavy-industrial-equipment/",
+          "status": "planned",
+          "page_type": "BLOG-informational"
+        }
+      ]
+    },
+    {
+      "id": "cluster-2",
+      "name": "CNC & Machine Tool Moving",
+      "rationale": "SERP overlap 9-10 between 'CNC machine movers', 'CNC machine moving services', 'machine tool moving company' — all return Rigging Force, Rigging-Busters city pages, Eagle Rigging, MEI. Overlap with general machinery moving is only 3-4 (Sullivan Industrial appears in both, but others diverge). Own cluster warranted. Separate posts for 'CNC machine movers' (commercial) and 'cost to move CNC machine' (informational) — confirmed separate SERPs.",
+      "posts": [
+        {
+          "id": "cluster-2-post-0",
+          "title": "CNC Machine Movers: Precision Handling for Machining Centers, Lathes & More",
+          "keyword": "CNC machine movers",
+          "secondary_keywords": ["CNC machine moving services", "CNC machine moving company", "machine tool moving"],
+          "volume_estimate": "2,200/mo combined (ESTIMATE)",
+          "difficulty_estimate": "MEDIUM-HIGH — 52 KD (ESTIMATE). Rigging-Busters runs heavily programmatic city pages here (20+ indexed). National editorial page can compete for head term.",
+          "intent": "COMMERCIAL",
+          "template": "landing-page",
+          "wordCount": 1500,
+          "url": "/services/cnc-machine-movers/",
+          "status": "planned",
+          "page_type": "SERVICE PILLAR spoke"
+        },
+        {
+          "id": "cluster-2-post-1",
+          "title": "How Much Does It Cost to Move a CNC Machine? (2026 Pricing Guide)",
+          "keyword": "how much does it cost to move a CNC machine",
+          "secondary_keywords": ["CNC machine moving cost", "cost to move a CNC machine", "CNC machine relocation price"],
+          "volume_estimate": "880/mo (ESTIMATE)",
+          "difficulty_estimate": "MEDIUM — 38 KD (ESTIMATE). Rigging Force has a dedicated page, AllPro Rigging has a blog post, Practical Machinist forum threads appear. Solid content wins this.",
+          "intent": "INFORMATIONAL",
+          "template": "explainer",
+          "wordCount": 1500,
+          "url": "/blog/cnc-machine-moving-cost/",
+          "status": "planned",
+          "page_type": "BLOG-informational"
+        },
+        {
+          "id": "cluster-2-post-2",
+          "title": "CNC Machine Moving Checklist: Protecting Your Machine Before, During, and After",
+          "keyword": "CNC machine moving checklist",
+          "secondary_keywords": ["how to move a CNC machine", "CNC machine relocation guide", "moving CNC machine safely"],
+          "volume_estimate": "390/mo (ESTIMATE)",
+          "difficulty_estimate": "LOW-MEDIUM — 28 KD (ESTIMATE). Eagle Rigging and Sullivan Industrial have thin posts. Very winnable with a detailed, expert checklist.",
+          "intent": "INFORMATIONAL",
+          "template": "how-to",
+          "wordCount": 1400,
+          "url": "/blog/cnc-machine-moving-checklist/",
+          "status": "planned",
+          "page_type": "BLOG-informational"
+        }
+      ]
+    },
+    {
+      "id": "cluster-3",
+      "name": "Plant & Factory Relocation",
+      "rationale": "SERP overlap 8-10 between 'plant relocation services', 'factory relocation company', 'factory relocation services' — all return Beck & Pollitzer, Meyer, Alltracon, R. Baker & Son consistently. Overlap with general machinery moving is 4-5 (same domains, different specific pages). Own cluster. 'Production line relocation' sits at overlap 6 with this cluster — placed as spoke-3.",
+      "posts": [
+        {
+          "id": "cluster-3-post-0",
+          "title": "Plant Relocation Services: Full-Scope Industrial Facility Moves",
+          "keyword": "plant relocation services",
+          "secondary_keywords": ["factory relocation company", "factory relocation services", "industrial plant relocation", "plant move company"],
+          "volume_estimate": "2,400/mo combined (ESTIMATE)",
+          "difficulty_estimate": "HIGH — 60 KD (ESTIMATE). Beck & Pollitzer, Meyer, Alltracon all have authoritative pages. Long sales cycle means searchers dig deep — thorough content matters.",
+          "intent": "COMMERCIAL",
+          "template": "landing-page",
+          "wordCount": 1800,
+          "url": "/services/plant-relocation/",
+          "status": "planned",
+          "page_type": "SERVICE PILLAR spoke"
+        },
+        {
+          "id": "cluster-3-post-1",
+          "title": "Factory Relocation Cost: What a Full Plant Move Actually Costs in 2026",
+          "keyword": "factory relocation cost",
+          "secondary_keywords": ["plant relocation cost", "cost to move a factory", "industrial plant move cost", "plant relocation budget"],
+          "volume_estimate": "1,300/mo combined (ESTIMATE)",
+          "difficulty_estimate": "MEDIUM — 44 KD (ESTIMATE). Alltracon, Midland Machinery, OKSEL have cost articles. The Alltracon 'estimating costs' post is the benchmark. Beatable with more US-specific data.",
+          "intent": "INFORMATIONAL",
+          "template": "explainer",
+          "wordCount": 1800,
+          "url": "/blog/factory-relocation-cost/",
+          "status": "planned",
+          "page_type": "BLOG-informational"
+        },
+        {
+          "id": "cluster-3-post-2",
+          "title": "Production Line Relocation: Planning a Multi-Machine Move Without Killing Uptime",
+          "keyword": "production line relocation",
+          "secondary_keywords": ["manufacturing line relocation", "production line move", "conveyor line relocation"],
+          "volume_estimate": "480/mo (ESTIMATE)",
+          "difficulty_estimate": "LOW-MEDIUM — 32 KD (ESTIMATE). Bruce Industrial and a few OEMs rank here. Low competition, specialized topic. Strong opportunity for a new domain.",
+          "intent": "COMMERCIAL",
+          "template": "explainer",
+          "wordCount": 1400,
+          "url": "/services/plant-relocation/production-line-relocation/",
+          "status": "planned",
+          "page_type": "SERVICE PILLAR spoke"
+        }
+      ]
+    },
+    {
+      "id": "cluster-4",
+      "name": "Millwright Services",
+      "rationale": "SERP overlap 8-9 between 'millwright services', 'millwright company near me', 'industrial millwright services' — all return Millwright Industrial LLC, MEI, Atlantic Millwrights, Champion Industrial. Overlap with equipment installation is 5-6 (Beck & Pollitzer, Alltracon appear in both) — kept in same cluster. Overlap with machinery moving is 3-4 — separate cluster with cross-links planned.",
+      "posts": [
+        {
+          "id": "cluster-4-post-0",
+          "title": "Millwright Services: Precision Installation, Alignment & Mechanical Maintenance",
+          "keyword": "millwright services",
+          "secondary_keywords": ["millwright company", "industrial millwright services", "millwright contractor", "millwright company near me"],
+          "volume_estimate": "3,600/mo combined (ESTIMATE)",
+          "difficulty_estimate": "MEDIUM-HIGH — 55 KD (ESTIMATE). Several mid-sized regional companies rank. A national-positioning page can compete for the head term.",
+          "intent": "COMMERCIAL",
+          "template": "landing-page",
+          "wordCount": 1600,
+          "url": "/services/millwright-services/",
+          "status": "planned",
+          "page_type": "SERVICE PILLAR spoke"
+        },
+        {
+          "id": "cluster-4-post-1",
+          "title": "What Does a Millwright Do? Roles, Skills & When You Need One",
+          "keyword": "what does a millwright do",
+          "secondary_keywords": ["what is a millwright", "millwright definition", "millwright job description"],
+          "volume_estimate": "2,200/mo (ESTIMATE)",
+          "difficulty_estimate": "MEDIUM — 40 KD (ESTIMATE). CareerExplorer, Stevens EC, Champion Industrial, Beck & Pollitzer rank here. Informational pages — a well-written explainer from a service provider can rank.",
+          "intent": "INFORMATIONAL",
+          "template": "explainer",
+          "wordCount": 1500,
+          "url": "/blog/what-does-a-millwright-do/",
+          "status": "planned",
+          "page_type": "BLOG-informational"
+        },
+        {
+          "id": "cluster-4-post-2",
+          "title": "Industrial Equipment Installation: Setting, Leveling, and Aligning Heavy Machinery",
+          "keyword": "industrial equipment installation",
+          "secondary_keywords": ["equipment installation services", "machinery installation company", "equipment setting and alignment", "machine installation services"],
+          "volume_estimate": "1,800/mo combined (ESTIMATE)",
+          "difficulty_estimate": "MEDIUM — 48 KD (ESTIMATE). Beck & Pollitzer, Alltracon, Cornerstone Mechanical rank. Topic adjacent enough to millwright to cluster here (SERP overlap ~5-6).",
+          "intent": "COMMERCIAL",
+          "template": "explainer",
+          "wordCount": 1500,
+          "url": "/services/millwright-services/equipment-installation/",
+          "status": "planned",
+          "page_type": "SERVICE PILLAR spoke"
+        }
+      ]
+    },
+    {
+      "id": "cluster-5",
+      "name": "Heavy Haul Trucking & Oversize Transport",
+      "rationale": "SERP overlap 9-10 between 'heavy haul trucking', 'oversize load transport', 'heavy haul company near me' — all return ATS Specialized, Freedom Heavy Haul, Heavy Haulers, NTS Logistics. Overlap with rigging is only 1-2 (completely separate SERPs — trucking/freight vs. rigging/lifting specialists). Own cluster. Overlap with plant relocation is 3-4 (Alltracon, R. Baker appear in both) — cross-link recommended.",
+      "posts": [
+        {
+          "id": "cluster-5-post-0",
+          "title": "Heavy Haul Trucking Services: Oversize Load Transport Across All 50 States",
+          "keyword": "heavy haul trucking services",
+          "secondary_keywords": ["heavy haul trucking company", "heavy haul company near me", "oversize load trucking", "heavy haul freight"],
+          "volume_estimate": "6,600/mo combined (ESTIMATE)",
+          "difficulty_estimate": "HIGH — 68 KD (ESTIMATE). ATS, Freedom Heavy Haul, Heavy Haulers all massive domains. National head term is extremely difficult for a new domain.",
+          "intent": "COMMERCIAL",
+          "template": "landing-page",
+          "wordCount": 1800,
+          "url": "/services/heavy-haul-trucking/",
+          "status": "planned",
+          "page_type": "SERVICE PILLAR spoke"
+        },
+        {
+          "id": "cluster-5-post-1",
+          "title": "Oversize Load Transport: Permits, Escorts, and State Rules Explained",
+          "keyword": "oversize load transport",
+          "secondary_keywords": ["oversize load regulations", "oversize load permits by state", "wide load transport", "oversize load requirements"],
+          "volume_estimate": "3,200/mo combined (ESTIMATE)",
+          "difficulty_estimate": "MEDIUM-HIGH — 55 KD (ESTIMATE). Heavy Haulers, Freedom Heavy Haul, J.J. Keller dominate. State-specific permit breakdowns are the winning angle.",
+          "intent": "INFORMATIONAL",
+          "template": "explainer",
+          "wordCount": 1800,
+          "url": "/blog/oversize-load-transport-permits/",
+          "status": "planned",
+          "page_type": "BLOG-informational"
+        },
+        {
+          "id": "cluster-5-post-2",
+          "title": "Heavy Haul Trucking Cost: What Oversize Loads Cost Per Mile in 2026",
+          "keyword": "heavy haul trucking cost",
+          "secondary_keywords": ["oversize load transport cost", "heavy haul rates per mile", "cost to ship oversize load", "heavy equipment transport cost"],
+          "volume_estimate": "2,400/mo combined (ESTIMATE)",
+          "difficulty_estimate": "MEDIUM — 45 KD (ESTIMATE). A1 Auto Transport, Freedom Heavy Haul, ATS have cost guides. This is very winnable for a trucking-adjacent brand with real rate data.",
+          "intent": "INFORMATIONAL",
+          "template": "explainer",
+          "wordCount": 1600,
+          "url": "/blog/heavy-haul-trucking-cost/",
+          "status": "planned",
+          "page_type": "BLOG-informational"
+        }
+      ]
+    },
+    {
+      "id": "cluster-6",
+      "name": "MRI & Medical Equipment Moving (Adjacent)",
+      "rationale": "SERP overlap 8-9 between 'MRI machine moving', 'medical equipment movers', 'hospital equipment movers' — all return Viking Rigging, Integrated Chamber Systems, Eagle Rigging, Sullivan Industrial. Overlap with industrial rigging is 4-5 (Eagle Rigging, Sullivan Industrial appear in both SERPs). Adjacent cluster. Kept small (2 posts) because domain is not primarily medical; serves as authority signal and lead-gen for specialty segment.",
+      "posts": [
+        {
+          "id": "cluster-6-post-0",
+          "title": "MRI Machine Moving Services: Certified Rigging for Heavy Medical Imaging Equipment",
+          "keyword": "MRI machine moving services",
+          "secondary_keywords": ["MRI machine movers", "medical equipment moving company", "medical imaging equipment movers", "hospital equipment rigging"],
+          "volume_estimate": "1,400/mo combined (ESTIMATE)",
+          "difficulty_estimate": "MEDIUM — 42 KD (ESTIMATE). Viking Rigging, Integrated Chamber Systems, Eagle Rigging rank. Small field of specialists — a thorough page with technical detail (Zone IV protocols, quench piping, decommissioning) can rank.",
+          "intent": "COMMERCIAL",
+          "template": "landing-page",
+          "wordCount": 1500,
+          "url": "/services/medical-equipment-movers/mri-machine-moving/",
+          "status": "planned",
+          "page_type": "SERVICE PILLAR spoke"
+        },
+        {
+          "id": "cluster-6-post-1",
+          "title": "Moving Medical Equipment: A Complete Guide for Hospital & Clinic Relocations",
+          "keyword": "moving medical equipment guide",
+          "secondary_keywords": ["hospital equipment relocation", "medical equipment relocation services", "how to move medical equipment", "healthcare facility relocation"],
+          "volume_estimate": "720/mo (ESTIMATE)",
+          "difficulty_estimate": "MEDIUM — 38 KD (ESTIMATE). Sullivan Industrial and Eagle Rigging have the best current guides. Winnable by combining rigging expertise with compliance coverage (HIPAA, JCAHO, recalibration).",
+          "intent": "INFORMATIONAL",
+          "template": "how-to",
+          "wordCount": 1500,
+          "url": "/blog/moving-medical-equipment/",
+          "status": "planned",
+          "page_type": "BLOG-informational"
+        }
+      ]
+    }
+  ],
+
+  "service_city_architecture_notes": {
+    "programmatic_templates": [
+      {
+        "pattern": "/services/[service-slug]/[city-state-slug]/",
+        "example": "/services/cnc-machine-movers/houston-tx/",
+        "primary_keyword_pattern": "CNC machine movers [City] [State]",
+        "competitors_doing_this": ["rigging-busters.com (20+ CNC city pages indexed)", "proliftrigging.com (city hub pages)", "omegamorgan.com (city machinery-moving pages)"],
+        "recommended_top_city_targets": [
+          "Houston TX", "Chicago IL", "Detroit MI", "Charlotte NC", "Dallas TX",
+          "Atlanta GA", "Nashville TN", "Indianapolis IN", "Columbus OH", "Milwaukee WI",
+          "Cincinnati OH", "Cleveland OH", "Pittsburgh PA", "Kansas City MO", "St Louis MO",
+          "Phoenix AZ", "Denver CO", "Minneapolis MN", "Seattle WA", "Portland OR"
+        ],
+        "note": "City pages should inherit internal links from their parent service page. Each city page targets '[service] + [city]' and '[service] near me' within that city's GSC data once site has Search Console coverage."
+      }
+    ],
+    "services_to_run_programmatic": [
+      "industrial-rigging-services",
+      "machinery-movers",
+      "cnc-machine-movers",
+      "millwright-services",
+      "plant-relocation-services",
+      "heavy-equipment-loading-unloading",
+      "mri-machine-moving"
+    ],
+    "services_to_hold_editorial_only": [
+      "crane-and-rigging-services (crane rental SERPs dominated by crane-only companies — city pages here dilute brand positioning)",
+      "heavy-haul-trucking (trucking marketplace SERPs diverge too far from rigging identity)"
+    ]
+  },
+
+  "links": [
+    { "from": "pillar", "to": "cluster-0-post-0", "type": "mandatory", "anchor": "industrial rigging company" },
+    { "from": "pillar", "to": "cluster-0-post-1", "type": "mandatory", "anchor": "crane and rigging services" },
+    { "from": "pillar", "to": "cluster-0-post-2", "type": "mandatory", "anchor": "rigging services cost" },
+    { "from": "pillar", "to": "cluster-1-post-0", "type": "mandatory", "anchor": "machinery movers" },
+    { "from": "pillar", "to": "cluster-1-post-1", "type": "mandatory", "anchor": "heavy equipment loading and unloading" },
+    { "from": "pillar", "to": "cluster-1-post-2", "type": "mandatory", "anchor": "cost to move industrial equipment" },
+    { "from": "pillar", "to": "cluster-1-post-3", "type": "mandatory", "anchor": "how to move heavy industrial equipment" },
+    { "from": "pillar", "to": "cluster-2-post-0", "type": "mandatory", "anchor": "CNC machine movers" },
+    { "from": "pillar", "to": "cluster-2-post-1", "type": "mandatory", "anchor": "CNC machine moving cost" },
+    { "from": "pillar", "to": "cluster-2-post-2", "type": "mandatory", "anchor": "CNC machine moving checklist" },
+    { "from": "pillar", "to": "cluster-3-post-0", "type": "mandatory", "anchor": "plant relocation services" },
+    { "from": "pillar", "to": "cluster-3-post-1", "type": "mandatory", "anchor": "factory relocation cost" },
+    { "from": "pillar", "to": "cluster-3-post-2", "type": "mandatory", "anchor": "production line relocation" },
+    { "from": "pillar", "to": "cluster-4-post-0", "type": "mandatory", "anchor": "millwright services" },
+    { "from": "pillar", "to": "cluster-4-post-1", "type": "mandatory", "anchor": "what does a millwright do" },
+    { "from": "pillar", "to": "cluster-4-post-2", "type": "mandatory", "anchor": "industrial equipment installation" },
+    { "from": "pillar", "to": "cluster-5-post-0", "type": "mandatory", "anchor": "heavy haul trucking services" },
+    { "from": "pillar", "to": "cluster-5-post-1", "type": "mandatory", "anchor": "oversize load transport" },
+    { "from": "pillar", "to": "cluster-5-post-2", "type": "mandatory", "anchor": "heavy haul trucking cost" },
+    { "from": "pillar", "to": "cluster-6-post-0", "type": "mandatory", "anchor": "MRI machine moving services" },
+    { "from": "pillar", "to": "cluster-6-post-1", "type": "mandatory", "anchor": "moving medical equipment" },
+    { "from": "cluster-0-post-0", "to": "pillar", "type": "mandatory", "anchor": "industrial rigging services" },
+    { "from": "cluster-0-post-1", "to": "pillar", "type": "mandatory", "anchor": "industrial rigging services" },
+    { "from": "cluster-0-post-2", "to": "pillar", "type": "mandatory", "anchor": "industrial rigging services" },
+    { "from": "cluster-1-post-0", "to": "pillar", "type": "mandatory", "anchor": "industrial rigging and machinery moving" },
+    { "from": "cluster-1-post-1", "to": "pillar", "type": "mandatory", "anchor": "industrial rigging services" },
+    { "from": "cluster-1-post-2", "to": "pillar", "type": "mandatory", "anchor": "industrial rigging services" },
+    { "from": "cluster-1-post-3", "to": "pillar", "type": "mandatory", "anchor": "professional machinery movers" },
+    { "from": "cluster-2-post-0", "to": "pillar", "type": "mandatory", "anchor": "industrial rigging services" },
+    { "from": "cluster-2-post-1", "to": "pillar", "type": "mandatory", "anchor": "machinery moving services" },
+    { "from": "cluster-2-post-2", "to": "pillar", "type": "mandatory", "anchor": "industrial rigging services" },
+    { "from": "cluster-3-post-0", "to": "pillar", "type": "mandatory", "anchor": "industrial rigging services" },
+    { "from": "cluster-3-post-1", "to": "pillar", "type": "mandatory", "anchor": "industrial rigging services" },
+    { "from": "cluster-3-post-2", "to": "pillar", "type": "mandatory", "anchor": "plant relocation services" },
+    { "from": "cluster-4-post-0", "to": "pillar", "type": "mandatory", "anchor": "industrial rigging services" },
+    { "from": "cluster-4-post-1", "to": "pillar", "type": "mandatory", "anchor": "industrial rigging and millwright services" },
+    { "from": "cluster-4-post-2", "to": "pillar", "type": "mandatory", "anchor": "industrial rigging services" },
+    { "from": "cluster-5-post-0", "to": "pillar", "type": "mandatory", "anchor": "industrial rigging services" },
+    { "from": "cluster-5-post-1", "to": "pillar", "type": "mandatory", "anchor": "industrial rigging and heavy haul services" },
+    { "from": "cluster-5-post-2", "to": "pillar", "type": "mandatory", "anchor": "heavy haul trucking services" },
+    { "from": "cluster-6-post-0", "to": "pillar", "type": "mandatory", "anchor": "industrial rigging services" },
+    { "from": "cluster-6-post-1", "to": "pillar", "type": "mandatory", "anchor": "industrial rigging services" },
+    { "from": "cluster-0-post-0", "to": "cluster-0-post-1", "type": "recommended", "anchor": "crane and rigging services" },
+    { "from": "cluster-0-post-0", "to": "cluster-0-post-2", "type": "recommended", "anchor": "rigging services cost" },
+    { "from": "cluster-0-post-1", "to": "cluster-0-post-0", "type": "recommended", "anchor": "industrial rigging company" },
+    { "from": "cluster-0-post-2", "to": "cluster-0-post-0", "type": "recommended", "anchor": "rigging company" },
+    { "from": "cluster-1-post-0", "to": "cluster-1-post-1", "type": "recommended", "anchor": "heavy equipment loading and unloading" },
+    { "from": "cluster-1-post-0", "to": "cluster-1-post-2", "type": "recommended", "anchor": "cost to move industrial equipment" },
+    { "from": "cluster-1-post-1", "to": "cluster-1-post-0", "type": "recommended", "anchor": "machinery movers" },
+    { "from": "cluster-1-post-2", "to": "cluster-1-post-3", "type": "recommended", "anchor": "how to move heavy equipment" },
+    { "from": "cluster-1-post-3", "to": "cluster-1-post-2", "type": "recommended", "anchor": "equipment moving cost" },
+    { "from": "cluster-2-post-0", "to": "cluster-2-post-1", "type": "recommended", "anchor": "CNC machine moving cost" },
+    { "from": "cluster-2-post-0", "to": "cluster-2-post-2", "type": "recommended", "anchor": "CNC machine moving checklist" },
+    { "from": "cluster-2-post-1", "to": "cluster-2-post-2", "type": "recommended", "anchor": "CNC machine moving preparation" },
+    { "from": "cluster-2-post-2", "to": "cluster-2-post-0", "type": "recommended", "anchor": "professional CNC machine movers" },
+    { "from": "cluster-3-post-0", "to": "cluster-3-post-1", "type": "recommended", "anchor": "factory relocation cost" },
+    { "from": "cluster-3-post-0", "to": "cluster-3-post-2", "type": "recommended", "anchor": "production line relocation" },
+    { "from": "cluster-3-post-1", "to": "cluster-3-post-0", "type": "recommended", "anchor": "plant relocation services" },
+    { "from": "cluster-3-post-2", "to": "cluster-3-post-0", "type": "recommended", "anchor": "plant relocation services" },
+    { "from": "cluster-4-post-0", "to": "cluster-4-post-1", "type": "recommended", "anchor": "what does a millwright do" },
+    { "from": "cluster-4-post-0", "to": "cluster-4-post-2", "type": "recommended", "anchor": "equipment installation services" },
+    { "from": "cluster-4-post-1", "to": "cluster-4-post-0", "type": "recommended", "anchor": "millwright services" },
+    { "from": "cluster-4-post-2", "to": "cluster-4-post-0", "type": "recommended", "anchor": "millwright services" },
+    { "from": "cluster-5-post-0", "to": "cluster-5-post-1", "type": "recommended", "anchor": "oversize load transport permits" },
+    { "from": "cluster-5-post-0", "to": "cluster-5-post-2", "type": "recommended", "anchor": "heavy haul trucking cost" },
+    { "from": "cluster-5-post-1", "to": "cluster-5-post-2", "type": "recommended", "anchor": "oversize load transport cost" },
+    { "from": "cluster-5-post-2", "to": "cluster-5-post-0", "type": "recommended", "anchor": "heavy haul trucking services" },
+    { "from": "cluster-6-post-0", "to": "cluster-6-post-1", "type": "recommended", "anchor": "moving medical equipment guide" },
+    { "from": "cluster-6-post-1", "to": "cluster-6-post-0", "type": "recommended", "anchor": "MRI machine moving services" },
+    { "from": "cluster-1-post-0", "to": "cluster-0-post-0", "type": "optional", "anchor": "industrial rigging company" },
+    { "from": "cluster-2-post-0", "to": "cluster-1-post-0", "type": "optional", "anchor": "machinery movers" },
+    { "from": "cluster-3-post-0", "to": "cluster-4-post-0", "type": "optional", "anchor": "millwright services" },
+    { "from": "cluster-4-post-2", "to": "cluster-3-post-0", "type": "optional", "anchor": "plant relocation" },
+    { "from": "cluster-5-post-0", "to": "cluster-3-post-0", "type": "optional", "anchor": "plant relocation" },
+    { "from": "cluster-6-post-0", "to": "cluster-0-post-0", "type": "optional", "anchor": "industrial rigging company" }
+  ],
+
+  "serp_matrix": {
+    "note": "Scores based on WebSearch top-10 URL intersection analysis. All values are ESTIMATES from live SERP snapshots June 2026. Diagonal = 10. Key domain signals: Rigging-Busters, ProLift, Omega Morgan, Beck & Pollitzer appear across multiple clusters but on different sub-pages.",
+    "keywords": [
+      "industrial rigging services",
+      "industrial rigging company",
+      "crane and rigging services",
+      "machinery movers",
+      "heavy equipment loading unloading",
+      "plant relocation services",
+      "factory relocation company",
+      "CNC machine movers",
+      "machine tool moving",
+      "millwright services",
+      "industrial equipment installation",
+      "heavy haul trucking services",
+      "oversize load transport",
+      "MRI machine moving services",
+      "medical equipment movers"
+    ],
+    "scores": [
+      [10, 8, 5, 4, 3, 3, 3, 3, 2, 3, 3, 1, 1, 2, 1],
+      [8, 10, 4, 4, 3, 3, 3, 3, 2, 3, 2, 1, 1, 2, 1],
+      [5, 4, 10, 3, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1],
+      [4, 4, 3, 10, 6, 5, 5, 5, 4, 4, 4, 2, 2, 2, 2],
+      [3, 3, 2, 6, 10, 4, 4, 3, 3, 3, 3, 2, 2, 2, 2],
+      [3, 3, 2, 5, 4, 10, 9, 3, 3, 5, 4, 2, 2, 1, 1],
+      [3, 3, 2, 5, 4, 9, 10, 3, 3, 5, 4, 2, 2, 1, 1],
+      [3, 3, 2, 5, 3, 3, 3, 10, 9, 3, 3, 1, 1, 2, 2],
+      [2, 2, 2, 4, 3, 3, 3, 9, 10, 2, 3, 1, 1, 2, 2],
+      [3, 3, 2, 4, 3, 5, 5, 3, 2, 10, 6, 1, 1, 2, 2],
+      [3, 2, 2, 4, 3, 4, 4, 3, 3, 6, 10, 1, 1, 2, 2],
+      [1, 1, 2, 2, 2, 2, 2, 1, 1, 1, 1, 10, 8, 1, 1],
+      [1, 1, 2, 2, 2, 2, 2, 1, 1, 1, 1, 8, 10, 1, 1],
+      [2, 2, 2, 2, 2, 1, 1, 2, 2, 2, 2, 1, 1, 10, 8],
+      [1, 1, 1, 2, 2, 1, 1, 2, 2, 2, 2, 1, 1, 8, 10]
+    ]
+  },
+
+  "scorecard": {
+    "total_posts_planned": 22,
+    "clusters": 7,
+    "pillar_to_spoke_links": 21,
+    "spoke_to_pillar_links": 21,
+    "orphan_pages": 0,
+    "cannibalization_issues": 0,
+    "all_spokes_have_min_3_incoming_links": true,
+    "notes": "Every spoke receives: 1 mandatory link from pillar + 1-2 recommended links from sibling spokes + 1 optional cross-cluster link where applicable. Minimum 3 incoming links per spoke satisfied."
+  }
+}
