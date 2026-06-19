@@ -1,15 +1,159 @@
 [
   {
     "service": "cnc-machine-movers",
-    "city": "Detroit",
-    "state": "MI",
-    "url": "/services/cnc-machine-movers/detroit-mi"
+    "city": "Los Angeles",
+    "state": "CA",
+    "url": "/services/cnc-machine-movers/los-angeles-ca"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Bakersfield",
+    "state": "CA",
+    "url": "/services/cnc-machine-movers/bakersfield-ca"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Sacramento",
+    "state": "CA",
+    "url": "/services/cnc-machine-movers/sacramento-ca"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Portland",
+    "state": "OR",
+    "url": "/services/cnc-machine-movers/portland-or"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Seattle",
+    "state": "WA",
+    "url": "/services/cnc-machine-movers/seattle-wa"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Spokane",
+    "state": "WA",
+    "url": "/services/cnc-machine-movers/spokane-wa"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Boise",
+    "state": "ID",
+    "url": "/services/cnc-machine-movers/boise-id"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "url": "/services/cnc-machine-movers/salt-lake-city-ut"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Las Vegas",
+    "state": "NV",
+    "url": "/services/cnc-machine-movers/las-vegas-nv"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Phoenix",
+    "state": "AZ",
+    "url": "/services/cnc-machine-movers/phoenix-az"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Albuquerque",
+    "state": "NM",
+    "url": "/services/cnc-machine-movers/albuquerque-nm"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Denver",
+    "state": "CO",
+    "url": "/services/cnc-machine-movers/denver-co"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Casper",
+    "state": "WY",
+    "url": "/services/cnc-machine-movers/casper-wy"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Billings",
+    "state": "MT",
+    "url": "/services/cnc-machine-movers/billings-mt"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Fargo",
+    "state": "ND",
+    "url": "/services/cnc-machine-movers/fargo-nd"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Omaha",
+    "state": "NE",
+    "url": "/services/cnc-machine-movers/omaha-ne"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Minneapolis",
+    "state": "MN",
+    "url": "/services/cnc-machine-movers/minneapolis-mn"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Milwaukee",
+    "state": "WI",
+    "url": "/services/cnc-machine-movers/milwaukee-wi"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Kansas City",
+    "state": "MO",
+    "url": "/services/cnc-machine-movers/kansas-city-mo"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "St. Louis",
+    "state": "MO",
+    "url": "/services/cnc-machine-movers/st-louis-mo"
   },
   {
     "service": "cnc-machine-movers",
     "city": "Chicago",
     "state": "IL",
     "url": "/services/cnc-machine-movers/chicago-il"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Indianapolis",
+    "state": "IN",
+    "url": "/services/cnc-machine-movers/indianapolis-in"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Detroit",
+    "state": "MI",
+    "url": "/services/cnc-machine-movers/detroit-mi"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Columbus",
+    "state": "OH",
+    "url": "/services/cnc-machine-movers/columbus-oh"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Cleveland",
+    "state": "OH",
+    "url": "/services/cnc-machine-movers/cleveland-oh"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Louisville",
+    "state": "KY",
+    "url": "/services/cnc-machine-movers/louisville-ky"
   },
   {
     "service": "cnc-machine-movers",
@@ -25,33 +169,45 @@
   },
   {
     "service": "cnc-machine-movers",
-    "city": "Cleveland",
-    "state": "OH",
-    "url": "/services/cnc-machine-movers/cleveland-oh"
+    "city": "San Antonio",
+    "state": "TX",
+    "url": "/services/cnc-machine-movers/san-antonio-tx"
   },
   {
     "service": "cnc-machine-movers",
-    "city": "Charlotte",
-    "state": "NC",
-    "url": "/services/cnc-machine-movers/charlotte-nc"
+    "city": "Midland",
+    "state": "TX",
+    "url": "/services/cnc-machine-movers/midland-tx"
   },
   {
     "service": "cnc-machine-movers",
-    "city": "Indianapolis",
-    "state": "IN",
-    "url": "/services/cnc-machine-movers/indianapolis-in"
+    "city": "Oklahoma City",
+    "state": "OK",
+    "url": "/services/cnc-machine-movers/oklahoma-city-ok"
   },
   {
     "service": "cnc-machine-movers",
-    "city": "Columbus",
-    "state": "OH",
-    "url": "/services/cnc-machine-movers/columbus-oh"
+    "city": "Little Rock",
+    "state": "AR",
+    "url": "/services/cnc-machine-movers/little-rock-ar"
   },
   {
     "service": "cnc-machine-movers",
-    "city": "Milwaukee",
-    "state": "WI",
-    "url": "/services/cnc-machine-movers/milwaukee-wi"
+    "city": "New Orleans",
+    "state": "LA",
+    "url": "/services/cnc-machine-movers/new-orleans-la"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Jackson",
+    "state": "MS",
+    "url": "/services/cnc-machine-movers/jackson-ms"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Memphis",
+    "state": "TN",
+    "url": "/services/cnc-machine-movers/memphis-tn"
   },
   {
     "service": "cnc-machine-movers",
@@ -61,14 +217,362 @@
   },
   {
     "service": "cnc-machine-movers",
+    "city": "Birmingham",
+    "state": "AL",
+    "url": "/services/cnc-machine-movers/birmingham-al"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Atlanta",
+    "state": "GA",
+    "url": "/services/cnc-machine-movers/atlanta-ga"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Charleston",
+    "state": "SC",
+    "url": "/services/cnc-machine-movers/charleston-sc"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Charlotte",
+    "state": "NC",
+    "url": "/services/cnc-machine-movers/charlotte-nc"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Jacksonville",
+    "state": "FL",
+    "url": "/services/cnc-machine-movers/jacksonville-fl"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Miami",
+    "state": "FL",
+    "url": "/services/cnc-machine-movers/miami-fl"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Norfolk",
+    "state": "VA",
+    "url": "/services/cnc-machine-movers/norfolk-va"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Baltimore",
+    "state": "MD",
+    "url": "/services/cnc-machine-movers/baltimore-md"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Philadelphia",
+    "state": "PA",
+    "url": "/services/cnc-machine-movers/philadelphia-pa"
+  },
+  {
+    "service": "cnc-machine-movers",
     "city": "Pittsburgh",
     "state": "PA",
     "url": "/services/cnc-machine-movers/pittsburgh-pa"
   },
   {
     "service": "cnc-machine-movers",
+    "city": "New York",
+    "state": "NY",
+    "url": "/services/cnc-machine-movers/new-york-ny"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Boston",
+    "state": "MA",
+    "url": "/services/cnc-machine-movers/boston-ma"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Houston",
+    "state": "TX",
+    "url": "/services/machinery-moving/houston-tx"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Chicago",
+    "state": "IL",
+    "url": "/services/machinery-moving/chicago-il"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Detroit",
+    "state": "MI",
+    "url": "/services/machinery-moving/detroit-mi"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Dallas",
+    "state": "TX",
+    "url": "/services/machinery-moving/dallas-tx"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Atlanta",
+    "state": "GA",
+    "url": "/services/machinery-moving/atlanta-ga"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Cleveland",
+    "state": "OH",
+    "url": "/services/machinery-moving/cleveland-oh"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Charlotte",
+    "state": "NC",
+    "url": "/services/machinery-moving/charlotte-nc"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Indianapolis",
+    "state": "IN",
+    "url": "/services/machinery-moving/indianapolis-in"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Columbus",
+    "state": "OH",
+    "url": "/services/machinery-moving/columbus-oh"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Milwaukee",
+    "state": "WI",
+    "url": "/services/machinery-moving/milwaukee-wi"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Nashville",
+    "state": "TN",
+    "url": "/services/machinery-moving/nashville-tn"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Pittsburgh",
+    "state": "PA",
+    "url": "/services/machinery-moving/pittsburgh-pa"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Phoenix",
+    "state": "AZ",
+    "url": "/services/machinery-moving/phoenix-az"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Kansas City",
+    "state": "MO",
+    "url": "/services/machinery-moving/kansas-city-mo"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "St. Louis",
+    "state": "MO",
+    "url": "/services/machinery-moving/st-louis-mo"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Denver",
+    "state": "CO",
+    "url": "/services/machinery-moving/denver-co"
+  },
+  {
+    "service": "machinery-moving",
     "city": "Minneapolis",
     "state": "MN",
-    "url": "/services/cnc-machine-movers/minneapolis-mn"
+    "url": "/services/machinery-moving/minneapolis-mn"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Louisville",
+    "state": "KY",
+    "url": "/services/machinery-moving/louisville-ky"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "San Antonio",
+    "state": "TX",
+    "url": "/services/machinery-moving/san-antonio-tx"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Memphis",
+    "state": "TN",
+    "url": "/services/machinery-moving/memphis-tn"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Los Angeles",
+    "state": "CA",
+    "url": "/services/machinery-moving/los-angeles-ca"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Seattle",
+    "state": "WA",
+    "url": "/services/machinery-moving/seattle-wa"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Portland",
+    "state": "OR",
+    "url": "/services/machinery-moving/portland-or"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Birmingham",
+    "state": "AL",
+    "url": "/services/machinery-moving/birmingham-al"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Houston",
+    "state": "TX",
+    "url": "/services/plant-relocation/houston-tx"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Chicago",
+    "state": "IL",
+    "url": "/services/plant-relocation/chicago-il"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Detroit",
+    "state": "MI",
+    "url": "/services/plant-relocation/detroit-mi"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Dallas",
+    "state": "TX",
+    "url": "/services/plant-relocation/dallas-tx"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Atlanta",
+    "state": "GA",
+    "url": "/services/plant-relocation/atlanta-ga"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Cleveland",
+    "state": "OH",
+    "url": "/services/plant-relocation/cleveland-oh"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Charlotte",
+    "state": "NC",
+    "url": "/services/plant-relocation/charlotte-nc"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Indianapolis",
+    "state": "IN",
+    "url": "/services/plant-relocation/indianapolis-in"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Columbus",
+    "state": "OH",
+    "url": "/services/plant-relocation/columbus-oh"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Milwaukee",
+    "state": "WI",
+    "url": "/services/plant-relocation/milwaukee-wi"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Nashville",
+    "state": "TN",
+    "url": "/services/plant-relocation/nashville-tn"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Pittsburgh",
+    "state": "PA",
+    "url": "/services/plant-relocation/pittsburgh-pa"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Phoenix",
+    "state": "AZ",
+    "url": "/services/plant-relocation/phoenix-az"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Kansas City",
+    "state": "MO",
+    "url": "/services/plant-relocation/kansas-city-mo"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "St. Louis",
+    "state": "MO",
+    "url": "/services/plant-relocation/st-louis-mo"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Denver",
+    "state": "CO",
+    "url": "/services/plant-relocation/denver-co"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Minneapolis",
+    "state": "MN",
+    "url": "/services/plant-relocation/minneapolis-mn"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Louisville",
+    "state": "KY",
+    "url": "/services/plant-relocation/louisville-ky"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "San Antonio",
+    "state": "TX",
+    "url": "/services/plant-relocation/san-antonio-tx"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Memphis",
+    "state": "TN",
+    "url": "/services/plant-relocation/memphis-tn"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Los Angeles",
+    "state": "CA",
+    "url": "/services/plant-relocation/los-angeles-ca"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Seattle",
+    "state": "WA",
+    "url": "/services/plant-relocation/seattle-wa"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Portland",
+    "state": "OR",
+    "url": "/services/plant-relocation/portland-or"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Birmingham",
+    "state": "AL",
+    "url": "/services/plant-relocation/birmingham-al"
   }
 ]
