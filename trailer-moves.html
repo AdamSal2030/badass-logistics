@@ -71,13 +71,26 @@
   <span class="section-tag hand">// live board — updated as trailers land</span>
   <h1>Trailer <span class="y">Moves</span></h1>
   <p class="lead">Trailers ready to move, right now. Power only and tow-away lanes across the country — hook to one of ours, haul it to where it needs to be, get paid. The board below is live: when we post a trailer, you see it here.</p>
-  <div class="cta-row" style="margin-top:24px;"><a class="btn" href="mailto:trailermoves@badasslogistics.com?subject=Trailer%20Move%20Inquiry">Email the Trailer Desk</a><a class="btn ghost" href="tel:3072431750">Call (307) 243-1750</a></div>
+  <div class="cta-row" style="margin-top:24px;"><a class="btn" href="mailto:trailermoves@badasslogistics.com?subject=Trailer%20Move%20Inquiry">Email the Trailer Desk</a><a class="btn ghost" href="tel:3072431750">Call (307) 243-1750</a><a class="btn ghost" id="dlxls" href="#" role="button">⬇ Download List (XLS)</a></div>
 </div>
   <span class="annot hand tag warn a1">POWER ONLY ✓</span>
   <span class="annot hand a3">TOW-AWAY LANES</span>
   <span class="annot hand tag a4">HOOK &amp; ROLL</span>
   <span class="annot hand a6">LIVE BOARD ↓</span>
 </section>
+
+<section class="bg-paper notes-bg" style="border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);">
+  <span class="bgnote" style="top:8%;right:4%;transform:rotate(-4deg)">FRESH OFF THE YARD</span>
+  <span class="bgnote" style="bottom:8%;left:4%;transform:rotate(4deg)">FIRST COME — FIRST HOOKED</span>
+  <div class="wrap">
+  <span class="section-tag hand">the board</span>
+  <h2 class="section-title">Trailers available to move</h2>
+  <p class="section-intro">Live from our trailer desk. If a row is on this board, it's available — when it's gone, it's gone. Click <strong>Inquire</strong> on any row and a pre-written email opens with that trailer's details, ready to send. Or <a href="#" id="dlxls2" style="color:var(--yellow-deep);font-weight:700;">download the full list as an XLS</a>.</p>
+  <div class="board-wrap" id="boardwrap">
+    <div class="board-state" id="boardstate"><span class="hand">loading the board…</span>Pulling the latest trailers from the desk.</div>
+  </div>
+  <p class="updated-note" id="updatednote"></p>
+</div></section>
 
 <section class="notes-bg">
   <span class="bgnote" style="top:12%;right:5%;transform:rotate(-4deg)">KINGPIN READY</span>
@@ -95,19 +108,6 @@
   <div class="release-strip">
     <div>🔑 <strong>To get a trailer released:</strong> email <a href="mailto:trailermoves@badasslogistics.com">trailermoves@badasslogistics.com</a> or call <a href="tel:3072431750">(307) 243-1750</a>. We'll confirm the lane, walk you through the release requirements, and put everything in writing.</div>
   </div>
-</div></section>
-
-<section class="bg-paper notes-bg" style="border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);">
-  <span class="bgnote" style="top:8%;right:4%;transform:rotate(-4deg)">FRESH OFF THE YARD</span>
-  <span class="bgnote" style="bottom:8%;left:4%;transform:rotate(4deg)">FIRST COME — FIRST HOOKED</span>
-  <div class="wrap">
-  <span class="section-tag hand">the board</span>
-  <h2 class="section-title">Trailers available to move</h2>
-  <p class="section-intro">Live from our trailer desk. If a row is on this board, it's available — when it's gone, it's gone. Click <strong>Inquire</strong> on any row and a pre-written email opens with that trailer's details, ready to send.</p>
-  <div class="board-wrap" id="boardwrap">
-    <div class="board-state" id="boardstate"><span class="hand">loading the board…</span>Pulling the latest trailers from the desk.</div>
-  </div>
-  <p class="updated-note" id="updatednote"></p>
 </div></section>
 
 <section class="notes-bg">
@@ -147,6 +147,31 @@
 
   var wrap = document.getElementById('boardwrap');
   var state = document.getElementById('boardstate');
+  var boardData = null;
+
+  // Download the current board as an Excel-openable file (HTML-table .xls,
+  // no library needed). Uses the same live data shown on the board.
+  function downloadXls(ev){
+    if (ev) ev.preventDefault();
+    if (!boardData || !boardData.rows.length){
+      alert('The trailer board is still loading or is empty right now. Give it a moment, or email ' + DESK_EMAIL + ' for the current list.');
+      return;
+    }
+    var h = boardData.headers, rows = boardData.rows;
+    var tbl = '<table><thead><tr>' + h.map(function(x){ return '<th>' + esc(x) + '</th>'; }).join('') + '</tr></thead><tbody>'
+      + rows.map(function(r){ return '<tr>' + r.map(function(c){ return '<td>' + esc(c) + '</td>'; }).join('') + '</tr>'; }).join('')
+      + '</tbody></table>';
+    var html = '<html xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel">'
+      + '<head><meta charset="utf-8"></head><body>' + tbl + '</body></html>';
+    var blob = new Blob([html], { type: 'application/vnd.ms-excel' });
+    var a = document.createElement('a');
+    a.href = URL.createObjectURL(blob);
+    a.download = 'badass-trailers-' + new Date().toISOString().slice(0,10) + '.xls';
+    document.body.appendChild(a); a.click(); document.body.removeChild(a);
+    setTimeout(function(){ URL.revokeObjectURL(a.href); }, 1000);
+  }
+  var dl1 = document.getElementById('dlxls'); if (dl1) dl1.addEventListener('click', downloadXls);
+  var dl2 = document.getElementById('dlxls2'); if (dl2) dl2.addEventListener('click', downloadXls);
 
   function esc(s){ var d=document.createElement('div'); d.textContent=(s==null?'':String(s)); return d.innerHTML; }
   function val(c){ if(!c) return ''; return (c.f!=null?c.f:(c.v!=null?c.v:'')); }
@@ -211,6 +236,8 @@
       var bodyRows = rows.map(function(row){
         return keep.map(function(i){ return String(val(row.c[i])).trim(); });
       }).filter(function(cells){ return cells.some(function(v){ return v !== ''; }); });
+
+      boardData = { headers: headers, rows: bodyRows };
 
       if (!bodyRows.length){
         fallback('the board is clear right now');
