@@ -160,11 +160,13 @@ const SERVICES = {
   },
 };
 
-function page(serviceSlug, svc, loc, metro) {
+function page(serviceSlug, svc, loc, metro, hubStates) {
   const { city, state } = loc;
   const CS = `${city}, ${state}`;
   const slug = citySlug(city, state);
   const c = { city, state, CS, stName: stateName(state), ix: interstatesOf(state), angle: industryPhrase(metro && metro.industry), metro };
+  const stSlug = c.stName.toLowerCase().replace(/[^a-z0-9]+/g,'-');
+  const hasHub = hubStates && hubStates.has(state);
   const near = (loc.near || []).slice(0, 12);
   const url = `${DOMAIN}/services/${serviceSlug}/${slug}`;
   const cityHub = `/locations/${slug}`;
@@ -172,7 +174,10 @@ function page(serviceSlug, svc, loc, metro) {
   const title = `${svc.name} in ${CS} | Badass Logistics`;
   const desc = `${svc.name} in ${CS}. ${svc.serviceType} across ${city} and the surrounding metro — planned, rigged, hauled on permitted routes, and re-leveled to spec. Fast quotes.`;
   const svcSchema = {"@context":"https://schema.org","@type":"Service","serviceType":svc.serviceType,"areaServed":{"@type":"City","name":CS},"provider":{"@type":"LocalBusiness","@id":`${DOMAIN}/#organization`,"name":site.brand,"telephone":"+1-307-284-1332","url":`${DOMAIN}/`},"description":`${site.brand} provides ${svc.serviceType.toLowerCase()} across ${CS} and the surrounding metro.`};
-  const breadcrumb = {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":`${DOMAIN}/`},{"@type":"ListItem","position":2,"name":svc.name,"item":`${DOMAIN}/services/${serviceSlug}`},{"@type":"ListItem","position":3,"name":CS,"item":url}]};
+  const bcItems = [{"@type":"ListItem","position":1,"name":"Home","item":`${DOMAIN}/`},{"@type":"ListItem","position":2,"name":svc.name,"item":`${DOMAIN}/services/${serviceSlug}`}];
+  if (hasHub) bcItems.push({"@type":"ListItem","position":3,"name":c.stName,"item":`${DOMAIN}/services/${serviceSlug}/${stSlug}`});
+  bcItems.push({"@type":"ListItem","position":hasHub?4:3,"name":CS,"item":url});
+  const breadcrumb = {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":bcItems};
   const faqPairs = svc.faq(c);
   const faqSchema = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":faqPairs.map(([q,a])=>({"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a.replace(/<[^>]+>/g,'')}}))};
 
@@ -223,7 +228,7 @@ ${JSON.stringify(faqSchema,null,2)}
 <body>
 ${NAV}
 
-<div class="wrap breadcrumb"><a href="/">Home</a> / <a href="/services/${serviceSlug}">${svc.name}</a> / ${CS}</div>
+<div class="wrap breadcrumb"><a href="/">Home</a> / <a href="/services/${serviceSlug}">${svc.name}</a> / ${hasHub?`<a href="/services/${serviceSlug}/${stSlug}">${c.stName}</a> / `:``}${CS}</div>
 
 <section class="page-hero photo" style="background-image:url('${svc.hero}')"><div class="wrap">
   <span class="section-tag hand">// ${svc.tag} — ${city.toLowerCase()}</span>
@@ -273,7 +278,7 @@ ${near.length ? `<section class="notes-bg bg-paper" style="border-top:3px solid 
   <h2 class="section-title">${svc.coverageNoun} near ${city}</h2>
   <p class="section-intro">Service throughout ${city} and the surrounding manufacturing suburbs — including:</p>
   <div class="towns">${near.map(t=>`<span>${t}</span>`).join('')}</div>
-  <p style="margin-top:22px;font-weight:600;">Moving across the metro or out of state? See <a href="${cityHub}" style="color:var(--yellow-deep);text-decoration:underline;">all our ${city} services</a> or <a href="/contact" style="color:var(--yellow-deep);text-decoration:underline;">get a quote</a>.</p>
+  <p style="margin-top:22px;font-weight:600;">Moving across the metro or out of state? See <a href="${cityHub}" style="color:var(--yellow-deep);text-decoration:underline;">all our ${city} services</a>${hasHub?`, <a href="/services/${serviceSlug}/${stSlug}" style="color:var(--yellow-deep);text-decoration:underline;">${svc.name} across ${c.stName}</a>`:``} or <a href="/contact" style="color:var(--yellow-deep);text-decoration:underline;">get a quote</a>.</p>
 </div></section>` : ''}
 
 <section class="bg-paper" style="border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);"><div class="wrap">
@@ -419,6 +424,9 @@ const manifest = [];
 for (const [serviceSlug, wave] of Object.entries(WAVES)) {
   const svc = SERVICES[serviceSlug];
   const keys = wave === 'ALL' ? ALL_KEYS : wave;
+  const stateCounts = {};
+  keys.forEach(k => { const l = locByKey[k]; if (l) stateCounts[l.state] = (stateCounts[l.state]||0)+1; });
+  const hubStates = new Set(Object.entries(stateCounts).filter(([,n])=>n>=2).map(([s])=>s));
   const outDir = path.join(ROOT, 'services', serviceSlug);
   if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
   const built = [];
@@ -426,7 +434,7 @@ for (const [serviceSlug, wave] of Object.entries(WAVES)) {
     const loc = locByKey[key];
     if (!loc) { console.warn(`  ! skip ${key} (${serviceSlug}) — not in locations.json`); continue; }
     const slug = citySlug(loc.city, loc.state);
-    fs.writeFileSync(path.join(outDir, `${slug}.html`), page(serviceSlug, svc, loc, metroByKey[key]));
+    fs.writeFileSync(path.join(outDir, `${slug}.html`), page(serviceSlug, svc, loc, metroByKey[key], hubStates));
     built.push(loc);
     manifest.push({ service: serviceSlug, city: loc.city, state: loc.state, url: `/services/${serviceSlug}/${slug}` });
   }
