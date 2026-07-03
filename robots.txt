@@ -1,4 +1,6 @@
 User-agent: *
 Allow: /
 
+# AI/LLM guide: https://badasslogistics.com/llms.txt
+
 Sitemap: https://badasslogistics.com/sitemap.xml
