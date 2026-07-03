@@ -58,7 +58,7 @@ function industryPhrase(industry) {
   return 'manufacturing';
 }
 
-const NAVLINKS = [['/services/rigging','Rigging'],['/services/heavy-haul','Heavy Haul'],['/services/machinery-moving','Machinery Moving'],['/services/cnc-machine-movers','CNC Movers'],['/trailer-moves','Trailer Moves'],['/locations','Locations'],['/blog/','Blog'],['/about','About']];
+const NAVLINKS = [['/services/rigging','Rigging'],['/services/heavy-haul','Heavy Haul'],['/services/machinery-moving','Machinery Moving'],['/services/cnc-machine-movers','CNC Movers'],['/locations','Locations'],['/blog/','Blog'],['/about','About']];
 const NAV = `
 <div class="topbar"><div class="wrap"><div>📍 48 locations nationwide &nbsp;·&nbsp; <strong>All 50 states</strong></div><div><a href="tel:3072841045">📞 (307) 284-1045</a> &nbsp;·&nbsp; <a href="/contact"><strong>Get a Quote</strong></a></div></div></div>
 <header class="site-header"><div class="wrap">
@@ -73,7 +73,7 @@ const FOOTER = `
 <footer><div class="wrap"><div class="cols">
   <div><h4>Badass Logistics</h4><p style="opacity:.85;max-width:280px;">Rigging, heavy haul, dispatch &amp; freight moving. One-stop shop for everything oversized and overweight.</p></div>
   <div><h4>Services</h4><a href="/services/rigging">Industrial Rigging</a><a href="/services/heavy-haul">Heavy Haul Transport</a><a href="/services/machinery-moving">Machinery Moving</a><a href="/services/cnc-machine-movers">CNC Machine Movers</a><a href="/services/plant-relocation">Plant Relocation</a><a href="/services/dispatching">Truck Dispatching</a><a href="/services/freight-moving">Freight Moving</a></div>
-  <div><h4>Company</h4><a href="/about">About Us</a><a href="/trailer-moves">Trailer Moves</a><a href="/locations">Locations</a><a href="/blog/">Blog</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a></div>
+  <div><h4>Company</h4><a href="/about">About Us</a><a href="/locations">Locations</a><a href="/blog/">Blog</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a></div>
 </div><div class="covstrip">Coverage: <a href="/locations/texas">Texas</a> · <a href="/locations/california">California</a> · <a href="/locations/florida">Florida</a> · <a href="/locations/georgia">Georgia</a> · <a href="/locations/illinois">Illinois</a> · <a href="/locations/ohio">Ohio</a> · <a href="/locations/pennsylvania">Pennsylvania</a> · <a href="/locations/new-york">New York</a> · <a href="/locations"><strong>All 48 locations →</strong></a></div><div class="footer-nap"><span class="nap-name">Badass Logistics</span><span>${site.hqStreet}, ${site.hqCity}, ${site.hqState} ${site.hqZip}</span><span><a href="tel:3072841045">(307) 284-1045</a></span><span><a href="mailto:rigging@badasslogistics.com">rigging@badasslogistics.com</a></span></div>
 <div class="legal"><span>© 2022–2026 Badass Logistics. All rights reserved.</span><span class="hand">made to move heavy things.</span></div></div></footer>`;
 
