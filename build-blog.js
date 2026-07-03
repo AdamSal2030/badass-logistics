@@ -58,6 +58,15 @@ const BLOG_CSS = `<style>
   .related { border-top:3px solid var(--ink); margin-top:46px; padding-top:24px; }
   .related a { display:inline-block; margin:0 10px 10px 0; background:var(--ink); color:var(--white); padding:8px 14px; box-shadow:3px 3px 0 var(--yellow-deep); text-decoration:none; font-weight:700; font-size:15px; }
   .related a:hover { background:var(--yellow-deep); color:var(--ink); }
+  .tldr { border:3px solid var(--ink); background:var(--yellow,#ffd21e); box-shadow:var(--shadow); padding:18px 24px; margin:6px 0 30px; }
+  .tldr-tag { display:block; font-size:14px; letter-spacing:1px; text-transform:uppercase; opacity:.75; margin-bottom:4px; }
+  .tldr p { font-size:19px; line-height:1.6; font-weight:600; margin:0; }
+  .post-body figure { margin:26px 0; }
+  .post-body figure img { width:100%; height:auto; border:3px solid var(--ink); box-shadow:var(--shadow); display:block; }
+  .post-body figcaption { font-family:"Barlow",sans-serif; font-size:14px; opacity:.72; margin-top:8px; font-style:italic; }
+  .post-body .takeaways { border-left:6px solid var(--yellow-deep); background:var(--paper,#f7f4ea); padding:16px 22px; margin:24px 0; }
+  .post-body .takeaways h3 { margin:0 0 8px; font-size:18px; text-transform:uppercase; letter-spacing:.5px; }
+  .post-body .takeaways li { margin-bottom:6px; }
 </style>`;
 
 // ---------------------------------------------------------------------------
@@ -740,25 +749,56 @@ const cleanUrls = s => s
 function articleHtml(post) {
   const heroAbs = `${site.domain}/assets/img/${post.hero}`;
   const url = `${site.domain}/blog/${post.slug}.html`;
+  const modified = post.updated || post.date;
+  const wordCount = post.body.replace(/<[^>]+>/g, ' ').split(/\s+/).filter(Boolean).length;
   const faqList = post.faq.map(f => `
     <details><summary>${f.q}</summary><div class="a">${f.a}</div></details>`).join('');
+
+  // AEO: answer-first "quick answer" box — the passage answer engines lift
+  const tldrHtml = post.tldr ? `
+    <div class="tldr" id="quick-answer">
+      <span class="tldr-tag hand">// quick answer</span>
+      <p>${post.tldr}</p>
+    </div>` : '';
 
   const articleSchema = {
     "@context": "https://schema.org",
     "@type": "Article",
     "headline": post.title.replace(/&amp;/g, '&'),
     "description": post.desc,
-    "image": heroAbs,
+    "image": [heroAbs],
     "datePublished": post.date,
-    "dateModified": post.date,
+    "dateModified": modified,
+    "wordCount": wordCount,
+    "articleSection": post.cat,
+    "inLanguage": "en-US",
     "author": { "@type": "Organization", "name": site.brand, "url": site.domain + "/" },
     "publisher": {
       "@type": "Organization",
       "name": site.brand,
       "logo": { "@type": "ImageObject", "url": `${site.domain}/assets/logo.png` }
     },
-    "mainEntityOfPage": { "@type": "WebPage", "@id": url }
+    "mainEntityOfPage": { "@type": "WebPage", "@id": url },
+    "speakable": { "@type": "SpeakableSpecification", "cssSelector": ["h1", ".tldr", ".lead"] }
   };
+  if (post.keywords) articleSchema.keywords = post.keywords;
+
+  // AEO: HowTo schema for step-by-step posts (opt-in via post.howto)
+  const howToSchema = post.howto ? {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    "name": post.howto.name,
+    "description": post.howto.desc || post.desc,
+    "image": heroAbs,
+    ...(post.howto.totalTime ? { "totalTime": post.howto.totalTime } : {}),
+    "step": post.howto.steps.map((s, i) => ({
+      "@type": "HowToStep",
+      "position": i + 1,
+      "name": s.name,
+      "text": s.text,
+      "url": `${url}#step-${i + 1}`
+    }))
+  } : null;
   const breadcrumb = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
@@ -814,7 +854,10 @@ ${JSON.stringify(breadcrumb, null, 2)}
 </script>
 <script type="application/ld+json">
 ${JSON.stringify(faqSchema, null, 2)}
-</script>
+</script>${howToSchema ? `
+<script type="application/ld+json">
+${JSON.stringify(howToSchema, null, 2)}
+</script>` : ''}
 </head>
 <body>
 ${NAV}
@@ -836,7 +879,8 @@ ${NAV}
   <span class="bgnote" style="top:70%;right:4%;transform:rotate(-3deg)">FROM THE DISPATCH DESK</span>
   <div class="wrap">
   <article class="post prose post-body">
-    <p class="meta">${post.cat} · By the Badass Logistics crew · ${new Date(post.date + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+    <p class="meta">${post.cat} · By the Badass Logistics crew · ${new Date(post.date + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}${post.updated ? ` · Updated ${new Date(post.updated + 'T00:00:00').toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}` : ''}</p>
+    ${tldrHtml}
     ${post.body.trim()}
     <div class="faq" style="margin-top:40px;">
       <h2>Frequently asked questions</h2>

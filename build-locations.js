@@ -379,6 +379,7 @@ const staticPages = [
   { loc: '/services/freight-moving.html', p: '0.9', f: 'monthly' },
   { loc: '/services/machinery-moving.html', p: '0.9', f: 'monthly' },
   { loc: '/locations.html', p: '0.8', f: 'monthly' },
+  { loc: '/trailer-moves.html', p: '0.8', f: 'daily' },
   { loc: '/blog/index.html', p: '0.8', f: 'weekly' },
   { loc: '/about.html', p: '0.6', f: 'yearly' },
   { loc: '/contact.html', p: '0.7', f: 'yearly' },
