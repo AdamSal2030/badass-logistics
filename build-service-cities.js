@@ -300,6 +300,111 @@ ${FOOTER}
 </html>`;
 }
 
+// ---------- STATE HUB page (rolls up a state's city pages) ----------
+function statePage(serviceSlug, svc, st, cityMs) {
+  const stName = stateName(st), ix = interstatesOf(st);
+  const stSlug = stName.toLowerCase().replace(/[^a-z0-9]+/g,'-');
+  const url = `${DOMAIN}/services/${serviceSlug}/${stSlug}`;
+  const cities = cityMs.slice().sort((a,b)=>a.city.localeCompare(b.city));
+  const names = cities.map(m=>m.city);
+  const nameList = names.length>1 ? names.slice(0,-1).join(', ')+', and '+names.slice(-1) : names[0];
+  const title = `${svc.name} in ${stName} | Badass Logistics`;
+  const desc = `${svc.name} across ${stName} — ${svc.serviceType} in ${names.slice(0,3).join(', ')} and metros statewide. Permitted routes, re-leveled to spec. Fast quotes.`;
+  const svcSchema = {"@context":"https://schema.org","@type":"Service","serviceType":svc.serviceType,"areaServed":{"@type":"State","name":stName},"provider":{"@type":"LocalBusiness","@id":`${DOMAIN}/#organization`,"name":site.brand,"telephone":"+1-307-284-1332","url":`${DOMAIN}/`},"description":`${site.brand} provides ${svc.serviceType.toLowerCase()} across ${stName}.`};
+  const breadcrumb = {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":`${DOMAIN}/`},{"@type":"ListItem","position":2,"name":svc.name,"item":`${DOMAIN}/services/${serviceSlug}`},{"@type":"ListItem","position":3,"name":stName,"item":url}]};
+  const faqPairs = [
+    [`Do you provide ${svc.name.toLowerCase()} across ${stName}?`,`Yes — ${svc.serviceType.toLowerCase()} in ${nameList} and metros throughout ${stName}, backed by a nationwide network of 48 locations. <a href="/contact">Get a quote →</a>`],
+    [`Which ${stName} cities do you cover?`,`We run ${svc.tag} in ${nameList}, and reach the rest of ${stName} through our nationwide network. Pick your metro below for a local page.`],
+    [`Can you handle ${stName} oversize permits and transport?`,`Yes — when a load runs over legal dimensions on ${ix}, we handle ${stName} DOT permitting, routing, and escorts and haul it in-house, no hand-off.`],
+  ];
+  const faqSchema = {"@context":"https://schema.org","@type":"FAQPage","mainEntity":faqPairs.map(([q,a])=>({"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":a.replace(/<[^>]+>/g,'')}}))};
+  const cards = cities.map(m=>`    <a class="svc-card" href="${m.url.split('/').pop()}"><div class="num">// ${st}</div><h3>${m.city}, ${st}</h3><p>${svc.name} in ${m.city}</p><span class="more">${m.city} ${svc.cardNoun}</span></a>`).join('\n');
+
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${title}</title>
+<meta name="description" content="${desc}">
+<link rel="canonical" href="${url}">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#141414">
+<meta property="og:type" content="website">
+<meta property="og:title" content="${title}">
+<meta property="og:description" content="${svc.serviceType} across ${stName} — permitted, rigged, and re-leveled to spec.">
+<meta property="og:url" content="${url}">
+<meta property="og:image" content="${DOMAIN}${svc.hero}">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="${DOMAIN}${svc.hero}">
+<link rel="sitemap" type="application/xml" href="${DOMAIN}/sitemap.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Barlow:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Barlow:wght@400;500;600;700&display=swap"></noscript>
+<link rel="icon" href="/assets/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/css/styles.css">
+<script type="application/ld+json">
+${JSON.stringify(svcSchema,null,2)}
+</script>
+<script type="application/ld+json">
+${JSON.stringify(breadcrumb,null,2)}
+</script>
+<script type="application/ld+json">
+${JSON.stringify(faqSchema,null,2)}
+</script>
+<link rel="preload" as="image" href="${svc.hero}" fetchpriority="high">
+</head>
+<body>
+${NAV}
+
+<div class="wrap breadcrumb"><a href="/">Home</a> / <a href="/services/${serviceSlug}">${svc.name}</a> / ${stName}</div>
+
+<section class="page-hero photo" style="background-image:url('${svc.hero}')"><div class="wrap">
+  <span class="section-tag hand">// ${svc.tag} — ${stName.toLowerCase()}</span>
+  <h1>${svc.name} in <span class="y">${stName}</span></h1>
+  <p class="lead">${svc.serviceType} across ${stName} — from ${names.slice(0,3).join(', ')} to metros statewide. One accountable crew rigs it, permits it on the ${ix.split(' and ')[0]} corridors, hauls it, and sets it to spec.</p>
+  <div class="cta-row" style="margin-top:24px;"><a class="btn" href="/contact">Get a ${stName} ${svc.quote} Quote</a></div>
+</div>
+  <span class="annot hand tag warn a1">${stName.toUpperCase()}</span>
+  <span class="annot hand a4">${cities.length} METROS ✓</span>
+</section>
+
+<section><div class="wrap prose">
+  <h2>${svc.serviceType} statewide in ${stName}</h2>
+  <p>${stName}'s industrial base runs on machines that have to move — presses, machining centers, production lines, and the plants that house them. Badass Logistics provides ${svc.serviceType.toLowerCase()} in ${nameList}, and reaches every other corner of ${stName} through a nationwide network of 48 locations. One crew plans the lift, protects the floors, and sets the load to spec — and because we run rigging, <a href="/services/heavy-haul">heavy haul</a>, and <a href="/services/machinery-moving">machinery moving</a> in-house, an oversized ${stName} move gets permitted and hauled without a hand-off.</p>
+  <p>Loads that stay legal-dimension just get moved; anything over height, width, or weight has to be legal on every mile. We handle ${stName} DOT oversize and overweight permitting, route surveys, and escorts on the ${ix} corridors as part of the job — so the move reaches its new floor on a compliant route the first time.</p>
+</div></section>
+
+<section class="bg-paper" style="border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);"><div class="wrap">
+  <span class="section-tag hand">${svc.tag} by metro</span>
+  <h2 class="section-title">${svc.name} across ${stName}</h2>
+  <p class="section-intro">Local pages for the ${stName} metros we serve — pick yours for city-specific coverage, or <a href="/contact">get a quote</a> for anywhere in the state.</p>
+  <div class="grid-services" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));">
+${cards}
+  </div>
+</div></section>
+
+<section class="notes-bg"><div class="wrap">
+  <span class="section-tag hand">questions</span>
+  <h2 class="section-title">${stName} ${svc.quote} FAQ</h2>
+  <div class="faq">
+    ${faqPairs.map(([q,a],i)=>`<details${i===0?' open':''}><summary>${q}</summary><div class="a">${a}</div></details>`).join('\n    ')}
+  </div>
+</div></section>
+
+<div class="cta-band"><div class="wrap" style="padding-top:56px;padding-bottom:56px;text-align:center;">
+  <h2>Need ${svc.name.toLowerCase()} in ${stName}?</h2>
+  <p>Tell us what's moving and where. We'll route the nearest crew and quote it fast.</p>
+  <a class="btn dark" href="/contact">Get a ${stName} ${svc.quote} Quote</a>
+</div></div>
+${FOOTER}
+
+</body>
+</html>`;
+}
+
 // ---------- WAVES (which service × which metros) ----------
 const TOP24 = ALL_KEYS.slice(); // ordered by locations.json; we slice per-service below
 const WAVES = {
@@ -341,13 +446,29 @@ for (const [serviceSlug, wave] of Object.entries(WAVES)) {
   }
 }
 
+// ---------- STATE HUBS (roll-up: /services/<svc>/<state>) ----------
+const stateManifest = [];
+const byServiceState = {};
+manifest.forEach(m => { (byServiceState[m.service] = byServiceState[m.service] || {})[m.state] = (byServiceState[m.service][m.state] || []).concat(m); });
+for (const [serviceSlug, states] of Object.entries(byServiceState)) {
+  const svc = SERVICES[serviceSlug];
+  const outDir = path.join(ROOT, 'services', serviceSlug);
+  for (const [st, cityMs] of Object.entries(states)) {
+    if (cityMs.length < 2) continue;
+    const stSlug = stateName(st).toLowerCase().replace(/[^a-z0-9]+/g,'-');
+    fs.writeFileSync(path.join(outDir, `${stSlug}.html`), statePage(serviceSlug, svc, st, cityMs));
+    stateManifest.push({ service: serviceSlug, state: st, url: `/services/${serviceSlug}/${stSlug}` });
+  }
+}
+console.log(`✓ Built ${stateManifest.length} service×state hub pages`);
+
 fs.writeFileSync(path.join(ROOT, 'data/service-cities.json'), JSON.stringify(manifest, null, 2) + '\n');
 
 // sitemap append (idempotent)
 const smPath = path.join(ROOT, 'sitemap.xml');
 if (fs.existsSync(smPath)) {
   let sm = fs.readFileSync(smPath, 'utf8');
-  const block = manifest.map(m => `  <url><loc>${DOMAIN}${m.url}</loc><lastmod>${TODAY}</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>`).join('\n');
+  const block = [...manifest, ...stateManifest].map(m => `  <url><loc>${DOMAIN}${m.url}</loc><lastmod>${TODAY}</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>`).join('\n');
   sm = sm.replace(/\s*<!--SVC_CITIES_START-->[\s\S]*?<!--SVC_CITIES_END-->/, '');
   sm = sm.replace('</urlset>', `  <!--SVC_CITIES_START-->\n${block}\n  <!--SVC_CITIES_END-->\n</urlset>`);
   fs.writeFileSync(smPath, sm);
