@@ -1,5 +1,293 @@
 [
   {
+    "service": "rigging",
+    "city": "Los Angeles",
+    "state": "CA",
+    "url": "/services/rigging/los-angeles-ca"
+  },
+  {
+    "service": "rigging",
+    "city": "Bakersfield",
+    "state": "CA",
+    "url": "/services/rigging/bakersfield-ca"
+  },
+  {
+    "service": "rigging",
+    "city": "Sacramento",
+    "state": "CA",
+    "url": "/services/rigging/sacramento-ca"
+  },
+  {
+    "service": "rigging",
+    "city": "Portland",
+    "state": "OR",
+    "url": "/services/rigging/portland-or"
+  },
+  {
+    "service": "rigging",
+    "city": "Seattle",
+    "state": "WA",
+    "url": "/services/rigging/seattle-wa"
+  },
+  {
+    "service": "rigging",
+    "city": "Spokane",
+    "state": "WA",
+    "url": "/services/rigging/spokane-wa"
+  },
+  {
+    "service": "rigging",
+    "city": "Boise",
+    "state": "ID",
+    "url": "/services/rigging/boise-id"
+  },
+  {
+    "service": "rigging",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "url": "/services/rigging/salt-lake-city-ut"
+  },
+  {
+    "service": "rigging",
+    "city": "Las Vegas",
+    "state": "NV",
+    "url": "/services/rigging/las-vegas-nv"
+  },
+  {
+    "service": "rigging",
+    "city": "Phoenix",
+    "state": "AZ",
+    "url": "/services/rigging/phoenix-az"
+  },
+  {
+    "service": "rigging",
+    "city": "Albuquerque",
+    "state": "NM",
+    "url": "/services/rigging/albuquerque-nm"
+  },
+  {
+    "service": "rigging",
+    "city": "Denver",
+    "state": "CO",
+    "url": "/services/rigging/denver-co"
+  },
+  {
+    "service": "rigging",
+    "city": "Casper",
+    "state": "WY",
+    "url": "/services/rigging/casper-wy"
+  },
+  {
+    "service": "rigging",
+    "city": "Billings",
+    "state": "MT",
+    "url": "/services/rigging/billings-mt"
+  },
+  {
+    "service": "rigging",
+    "city": "Fargo",
+    "state": "ND",
+    "url": "/services/rigging/fargo-nd"
+  },
+  {
+    "service": "rigging",
+    "city": "Omaha",
+    "state": "NE",
+    "url": "/services/rigging/omaha-ne"
+  },
+  {
+    "service": "rigging",
+    "city": "Minneapolis",
+    "state": "MN",
+    "url": "/services/rigging/minneapolis-mn"
+  },
+  {
+    "service": "rigging",
+    "city": "Milwaukee",
+    "state": "WI",
+    "url": "/services/rigging/milwaukee-wi"
+  },
+  {
+    "service": "rigging",
+    "city": "Kansas City",
+    "state": "MO",
+    "url": "/services/rigging/kansas-city-mo"
+  },
+  {
+    "service": "rigging",
+    "city": "St. Louis",
+    "state": "MO",
+    "url": "/services/rigging/st-louis-mo"
+  },
+  {
+    "service": "rigging",
+    "city": "Chicago",
+    "state": "IL",
+    "url": "/services/rigging/chicago-il"
+  },
+  {
+    "service": "rigging",
+    "city": "Indianapolis",
+    "state": "IN",
+    "url": "/services/rigging/indianapolis-in"
+  },
+  {
+    "service": "rigging",
+    "city": "Detroit",
+    "state": "MI",
+    "url": "/services/rigging/detroit-mi"
+  },
+  {
+    "service": "rigging",
+    "city": "Columbus",
+    "state": "OH",
+    "url": "/services/rigging/columbus-oh"
+  },
+  {
+    "service": "rigging",
+    "city": "Cleveland",
+    "state": "OH",
+    "url": "/services/rigging/cleveland-oh"
+  },
+  {
+    "service": "rigging",
+    "city": "Louisville",
+    "state": "KY",
+    "url": "/services/rigging/louisville-ky"
+  },
+  {
+    "service": "rigging",
+    "city": "Houston",
+    "state": "TX",
+    "url": "/services/rigging/houston-tx"
+  },
+  {
+    "service": "rigging",
+    "city": "Dallas",
+    "state": "TX",
+    "url": "/services/rigging/dallas-tx"
+  },
+  {
+    "service": "rigging",
+    "city": "San Antonio",
+    "state": "TX",
+    "url": "/services/rigging/san-antonio-tx"
+  },
+  {
+    "service": "rigging",
+    "city": "Midland",
+    "state": "TX",
+    "url": "/services/rigging/midland-tx"
+  },
+  {
+    "service": "rigging",
+    "city": "Oklahoma City",
+    "state": "OK",
+    "url": "/services/rigging/oklahoma-city-ok"
+  },
+  {
+    "service": "rigging",
+    "city": "Little Rock",
+    "state": "AR",
+    "url": "/services/rigging/little-rock-ar"
+  },
+  {
+    "service": "rigging",
+    "city": "New Orleans",
+    "state": "LA",
+    "url": "/services/rigging/new-orleans-la"
+  },
+  {
+    "service": "rigging",
+    "city": "Jackson",
+    "state": "MS",
+    "url": "/services/rigging/jackson-ms"
+  },
+  {
+    "service": "rigging",
+    "city": "Memphis",
+    "state": "TN",
+    "url": "/services/rigging/memphis-tn"
+  },
+  {
+    "service": "rigging",
+    "city": "Nashville",
+    "state": "TN",
+    "url": "/services/rigging/nashville-tn"
+  },
+  {
+    "service": "rigging",
+    "city": "Birmingham",
+    "state": "AL",
+    "url": "/services/rigging/birmingham-al"
+  },
+  {
+    "service": "rigging",
+    "city": "Atlanta",
+    "state": "GA",
+    "url": "/services/rigging/atlanta-ga"
+  },
+  {
+    "service": "rigging",
+    "city": "Charleston",
+    "state": "SC",
+    "url": "/services/rigging/charleston-sc"
+  },
+  {
+    "service": "rigging",
+    "city": "Charlotte",
+    "state": "NC",
+    "url": "/services/rigging/charlotte-nc"
+  },
+  {
+    "service": "rigging",
+    "city": "Jacksonville",
+    "state": "FL",
+    "url": "/services/rigging/jacksonville-fl"
+  },
+  {
+    "service": "rigging",
+    "city": "Miami",
+    "state": "FL",
+    "url": "/services/rigging/miami-fl"
+  },
+  {
+    "service": "rigging",
+    "city": "Norfolk",
+    "state": "VA",
+    "url": "/services/rigging/norfolk-va"
+  },
+  {
+    "service": "rigging",
+    "city": "Baltimore",
+    "state": "MD",
+    "url": "/services/rigging/baltimore-md"
+  },
+  {
+    "service": "rigging",
+    "city": "Philadelphia",
+    "state": "PA",
+    "url": "/services/rigging/philadelphia-pa"
+  },
+  {
+    "service": "rigging",
+    "city": "Pittsburgh",
+    "state": "PA",
+    "url": "/services/rigging/pittsburgh-pa"
+  },
+  {
+    "service": "rigging",
+    "city": "New York",
+    "state": "NY",
+    "url": "/services/rigging/new-york-ny"
+  },
+  {
+    "service": "rigging",
+    "city": "Boston",
+    "state": "MA",
+    "url": "/services/rigging/boston-ma"
+  },
+  {
     "service": "cnc-machine-movers",
     "city": "Los Angeles",
     "state": "CA",
