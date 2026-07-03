@@ -50,6 +50,15 @@
   .related { border-top:3px solid var(--ink); margin-top:46px; padding-top:24px; }
   .related a { display:inline-block; margin:0 10px 10px 0; background:var(--ink); color:var(--white); padding:8px 14px; box-shadow:3px 3px 0 var(--yellow-deep); text-decoration:none; font-weight:700; font-size:15px; }
   .related a:hover { background:var(--yellow-deep); color:var(--ink); }
+  .tldr { border:3px solid var(--ink); background:var(--yellow,#ffd21e); box-shadow:var(--shadow); padding:18px 24px; margin:6px 0 30px; }
+  .tldr-tag { display:block; font-size:14px; letter-spacing:1px; text-transform:uppercase; opacity:.75; margin-bottom:4px; }
+  .tldr p { font-size:19px; line-height:1.6; font-weight:600; margin:0; }
+  .post-body figure { margin:26px 0; }
+  .post-body figure img { width:100%; height:auto; border:3px solid var(--ink); box-shadow:var(--shadow); display:block; }
+  .post-body figcaption { font-family:"Barlow",sans-serif; font-size:14px; opacity:.72; margin-top:8px; font-style:italic; }
+  .post-body .takeaways { border-left:6px solid var(--yellow-deep); background:var(--paper,#f7f4ea); padding:16px 22px; margin:24px 0; }
+  .post-body .takeaways h3 { margin:0 0 8px; font-size:18px; text-transform:uppercase; letter-spacing:.5px; }
+  .post-body .takeaways li { margin-bottom:6px; }
 </style>
 <script type="application/ld+json">
 {
@@ -57,9 +66,14 @@
   "@type": "Article",
   "headline": "How to Move a CNC Machine Without Wrecking It",
   "description": "Moving a CNC machine or machining center: OEM prep, rigging with toe jacks and skates, why you never lift from the wrong points, transport on air-ride, and re-leveling at the destination.",
-  "image": "https://badasslogistics.com/assets/img/loads/load-machine-loadout.jpg",
+  "image": [
+    "https://badasslogistics.com/assets/img/loads/load-machine-loadout.jpg"
+  ],
   "datePublished": "2026-06-10",
   "dateModified": "2026-06-10",
+  "wordCount": 452,
+  "articleSection": "Rigging",
+  "inLanguage": "en-US",
   "author": {
     "@type": "Organization",
     "name": "Badass Logistics",
@@ -76,6 +90,14 @@
   "mainEntityOfPage": {
     "@type": "WebPage",
     "@id": "https://badasslogistics.com/blog/how-to-move-a-cnc-machine"
+  },
+  "speakable": {
+    "@type": "SpeakableSpecification",
+    "cssSelector": [
+      "h1",
+      ".tldr",
+      ".lead"
+    ]
   }
 }
 </script>
@@ -168,6 +190,7 @@
   <div class="wrap">
   <article class="post prose post-body">
     <p class="meta">Rigging · By the Badass Logistics crew · June 10, 2026</p>
+    
     <p>A CNC machine is the worst combination of properties a load can have: extremely heavy (5,000 to 60,000+ lbs), top-heavy with a high center of gravity, full of precision-ground surfaces that hold tolerances in ten-thousandths — and usually parked in the middle of a working shop with 30 inches of clearance on either side. This is precisely the job <a href="what-is-industrial-rigging">industrial rigging</a> exists for.</p>
 
 <h2>Before anything moves: machine prep</h2>
@@ -224,8 +247,7 @@
   <div><h4>Company</h4><a href="../about">About Us</a><a href="../locations">Locations</a><a href="../blog/">Blog</a><a href="../contact">Contact</a><a href="../privacy">Privacy</a></div>
   
 </div><div class="covstrip">Coverage: <a href="../locations/texas">Texas</a> · <a href="../locations/california">California</a> · <a href="../locations/florida">Florida</a> · <a href="../locations/georgia">Georgia</a> · <a href="../locations/illinois">Illinois</a> · <a href="../locations/ohio">Ohio</a> · <a href="../locations/pennsylvania">Pennsylvania</a> · <a href="../locations/new-york">New York</a> · <a href="../locations"><strong>All 48 locations →</strong></a></div>
-<div class="footer-nap"><span class="nap-name">Badass Logistics</span><span>1001 S Main St, STE 500, Kalispell, MT 59901</span><span><a href="tel:3072841332">(307) 284-1332</a></span><span><a href="mailto:info@badasslogistics.com">info@badasslogistics.com</a></span></div>
-<div class="legal"><span>© 2022–2026 Badass Logistics. All rights reserved.</span><span class="hand">made to move heavy things.</span></div></div></footer>
+<div class="footer-nap"><span class="nap-name">Badass Logistics</span><span>1001 S Main St, STE 500, Kalispell, MT 59901</span><span><a href="tel:3072841332">(307) 284-1332</a></span><span><a href="mailto:info@badasslogistics.com">info@badasslogistics.com</a></span></div><div class="legal"><span>© 2022–2026 Badass Logistics. All rights reserved.</span><span class="hand">made to move heavy things.</span></div></div></footer>
 
 </body>
 </html>

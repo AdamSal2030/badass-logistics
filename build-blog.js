@@ -733,6 +733,512 @@ const POSTS = [
       { h: 'Get a Quote', u: '../contact.html' },
     ],
   },
+
+  {
+    slug: 'how-to-ship-industrial-machinery-on-a-flatbed',
+    cat: 'Heavy Haul',
+    hero: 'loads/heavy-haul-industrial-enclosures-flatbed.jpg',
+    date: '2026-06-27',
+    title: 'How to Ship Large Industrial Machinery on a Flatbed',
+    desc: 'Shipping oversized industrial equipment on a flatbed comes down to five things: the right trailer, a real load plan, blocking and bracing, secure tie-downs, and permits. Here is how a heavy, awkward machine gets from plant to plant intact.',
+    dek: 'Big, heavy, awkward — and it still has to ride legal and arrive undamaged. Here is how oversized machinery moves on a flatbed, step by step.',
+    tldr: 'To ship large industrial machinery on a flatbed: pick a trailer that keeps the load under 13\'6" tall (flatbed, step deck, or RGN), center the weight over the axles, block and brace against movement in every direction, strap or chain to the load\'s rated points, tarp against weather, and permit any dimension over legal limits before the wheels turn.',
+    keywords: 'ship industrial machinery, flatbed shipping, heavy equipment transport, oversized machinery, load securement, machinery moving',
+    howto: {
+      name: 'How to Ship Large Industrial Machinery on a Flatbed',
+      totalTime: 'P2D',
+      steps: [
+        { name: 'Spec the trailer', text: 'Choose a flatbed, step deck, or RGN based on the load height and weight so the shipment stays within the 13\'6" legal height and axle limits.' },
+        { name: 'Build the load plan', text: 'Position the machine so its weight sits over the trailer axles with a low, centered center of gravity before loading.' },
+        { name: 'Block and brace', text: 'Stop movement in every direction with hardwood dunnage, chocks, cleats, and cradles before applying any tie-down.' },
+        { name: 'Secure to rated points', text: 'Strap or chain the load to its engineered lash points or skid, with total tie-down capacity of at least half the cargo weight, using edge protectors.' },
+        { name: 'Tarp and mark', text: 'Tarp or shrink-wrap weather-sensitive equipment and add OVERSIZE LOAD banners, flags, and lights if any dimension exceeds legal limits.' },
+        { name: 'Permit and route', text: 'Pull oversize and overweight permits for every state on the route, survey for clearances, and book pilot cars where required.' },
+      ],
+    },
+    body: `
+<p>A CNC machine, a dust collector the size of a truck, a transformer, a fabricated skid — sooner or later it has to leave the plant on a truck. Flatbed shipping is how most oversized industrial equipment moves, and the difference between a clean delivery and a wrecked machine is all in the prep. Here is exactly how our crews put a big, heavy, awkward load on a deck and get it there legal and intact.</p>
+
+<figure>
+  <img src="../assets/img/loads/flatbed-industrial-dust-collectors-strapped.jpg" alt="Row of industrial dust-collector housings crated on wooden skids and strapped down across a gooseneck flatbed trailer" loading="lazy" width="1131" height="848">
+  <figcaption>Five industrial units, crated on skids, blocked and strapped as one stable load — a real Badass Logistics flatbed haul.</figcaption>
+</figure>
+
+<h2>1. Spec the right trailer</h2>
+<p>Trailer choice comes down to two numbers: <strong>height</strong> and <strong>weight</strong>. A standard flatbed sits about five feet off the ground, so anything much over 8'6" tall on a flatbed blows past the 13'6" legal height. Drop to a <strong>step deck</strong> and you gain roughly a foot of legal height; drop to an <strong>RGN (double-drop)</strong> and you gain several feet in the well for the tallest machines. Heavier than a standard axle setup can legally carry? Now you are into multi-axle RGNs and weight permits. We match the deck to the load — see <a href="flatbed-vs-step-deck-vs-rgn-trailers.html">flatbed vs step deck vs RGN</a> for the full breakdown.</p>
+
+<h2>2. Build the load plan before anything moves</h2>
+<p>Where the machine sits on the deck is not eyeballed. The weight has to sit <strong>over the trailer axles</strong> to stay within axle limits, with the center of gravity low and centered so the rig tracks straight. For an off-center or top-heavy machine, that plan also decides where the blocking goes and which tie-down points carry the load. Get it wrong and you either overload an axle or watch the load shift on the first hard brake.</p>
+
+<h2>3. Block, brace, and cradle</h2>
+<p>Securement starts with stopping movement in every direction before a single strap goes on. That means <strong>hardwood dunnage</strong> under and around the load, chocks and cleats nailed to the deck, and cradles for anything round or tippy. Crated machinery rides on its skid; uncrated machinery gets bearing points that match its frame — never its sheet metal.</p>
+
+<figure>
+  <img src="../assets/img/loads/flatbed-load-securement-yellow-straps.jpg" alt="Yellow ratchet straps, edge protectors, and wood dunnage securing crated industrial equipment to a flatbed deck" loading="lazy" width="1131" height="848">
+  <figcaption>Straps to the rated points, edge protection on every corner, dunnage carrying the weight — securement you can see.</figcaption>
+</figure>
+
+<h2>4. Strap or chain to rated points</h2>
+<p>Federal cargo-securement rules set the floor: total tie-down capacity has to be at least <strong>half the cargo weight</strong>, and heavy machinery needs tie-downs rated for the job. <strong>Straps</strong> handle crated and lighter loads; <strong>chains and binders</strong> handle heavy iron and anything that has to be pinned hard to the deck. Tie to the machine's <strong>engineered lift and lash points</strong> or its skid — never over a control panel, a casting, or thin sheet metal. Edge protectors keep straps from cutting on sharp corners.</p>
+
+<h2>5. Tarp and mark it</h2>
+<p>Weather-sensitive equipment gets <strong>tarped or shrink-wrapped</strong> — electronics, machined surfaces, and painted housings do not travel naked through road spray and grit. If any dimension crosses a legal limit, the load also gets <strong>OVERSIZE LOAD banners, flags, and lights</strong>, with the exact marker requirements riding on the permit.</p>
+
+<figure>
+  <img src="../assets/img/loads/gooseneck-flatbed-industrial-tanks.jpg" alt="Industrial enclosures loaded on a gooseneck flatbed trailer, deck height chosen to keep a tall load within legal limits" loading="lazy" width="1024" height="576">
+  <figcaption>Deck choice is a legal decision: the right trailer keeps a tall load under the 13'6" line without a height permit.</figcaption>
+</figure>
+
+<h2>6. Permit the load and survey the route</h2>
+<p>Anything over 8'6" wide, 13'6" tall, about 53' long, or 80,000 lbs gross needs a permit in <strong>every state it passes through</strong>, and wide or tall loads may need pilot cars. The route gets surveyed for low bridges, weight-restricted roads, and tight turns before dispatch — the shortest line on the map is not always the legal one. We handle permitting and escorts as part of the move; here is <a href="oversize-load-permits-guide.html">how oversize permitting actually works</a>.</p>
+
+<div class="takeaways">
+  <h3>Bottom line</h3>
+  <ul>
+    <li>Trailer is chosen by height and weight — flatbed, step deck, or RGN.</li>
+    <li>Weight rides over the axles; the load plan comes before the load.</li>
+    <li>Block and brace first, then strap or chain to rated points.</li>
+    <li>Tarp the sensitive stuff; permit and survey anything oversized.</li>
+  </ul>
+</div>
+
+<p>Have a machine that needs to move? This is exactly what our <a href="../services/machinery-moving.html">machinery moving</a> and <a href="../services/heavy-haul.html">heavy haul</a> crews do every week. <a href="../contact.html">Send the dimensions, weight, and a photo</a> and we will spec the trailer and quote the lane.</p>
+`,
+    faq: [
+      { q: 'What trailer is used to ship heavy industrial machinery?', a: 'It depends on height and weight. A standard flatbed works for loads under about 8\'6" tall; a step deck adds roughly a foot of legal height; an RGN (double-drop) carries the tallest and heaviest machines in its low well. Weight beyond standard limits moves on multi-axle RGNs with overweight permits.' },
+      { q: 'How is a machine secured on a flatbed?', a: 'It is blocked and braced with dunnage, chocks, and cradles to stop movement, then strapped or chained to its rated lash points or skid. Federal rules require total tie-down capacity of at least half the cargo weight, plus edge protection and, for heavy iron, chains and binders.' },
+      { q: 'Do I need a permit to ship a large machine?', a: 'Only if it crosses a legal limit — over 8\'6" wide, 13\'6" tall, about 53\' long, or 80,000 lbs gross. Then it needs an oversize and/or overweight permit for every state on the route, and wide or tall loads may require pilot cars. We handle permitting and escorts as part of the move.' },
+    ],
+    related: [
+      { h: 'Machinery Moving', u: '../services/machinery-moving.html' },
+      { h: 'Flatbed vs Step Deck vs RGN', u: 'flatbed-vs-step-deck-vs-rgn-trailers.html' },
+      { h: 'How Much Does Heavy Haul Cost?', u: 'how-much-does-heavy-haul-cost.html' },
+      { h: 'Get a Quote', u: '../contact.html' },
+    ],
+  },
+
+  {
+    slug: 'how-to-transport-a-ct-scanner',
+    cat: 'Specialized Rigging',
+    hero: 'loads/ct-scanner-medical-imaging-move.jpg',
+    date: '2026-06-29',
+    title: 'How to Transport a CT Scanner Without a Six-Figure Mistake',
+    desc: 'A CT scanner is heavy, precision-aligned, and worth more than the truck it rides in. Moving one means de-installing to OEM spec, rigging each component out through tight hospital corridors, air-ride transport, and reinstallation with recalibration. Here is the process.',
+    dek: 'Heavy, delicate, and worth more than the truck. Here is how a CT scanner comes off its pad, out of the building, and back online.',
+    tldr: 'Transporting a CT scanner means de-installing the gantry and table to the manufacturer\'s procedure, protecting and rigging each component through the building on skates, hauling on an enclosed air-ride trailer with shock and tilt indicators, then reinstalling and coordinating OEM recalibration on site. It is a rigging job first and a trucking job second.',
+    keywords: 'transport CT scanner, move CT scanner, medical imaging equipment moving, CT gantry rigging, hospital equipment relocation',
+    body: `
+<p>A CT scanner does not move like furniture. The gantry alone can run several thousand pounds, the components are precision-aligned, and the whole system is worth more than most of the vehicles on the road. Move it wrong and you are not paying for a repair — you are paying for a replacement plus the downtime of a dark imaging suite. Here is how it is done right.</p>
+
+<h2>It is a rigging job, not a delivery</h2>
+<p>The truck is the easy part. The hard part is getting a multi-thousand-pound gantry out of an imaging suite that was built <em>around</em> it — through doorways, around corners, down corridors never meant for something that size. That is <a href="../services/rigging.html">industrial rigging</a>: skates, stair-climbers, gantry lifts, and door-and-path measurements taken to the inch before anything moves.</p>
+
+<h2>1. De-install to the manufacturer's procedure</h2>
+<p>Imaging OEMs publish a de-installation procedure for a reason. The gantry and patient <strong>table</strong> come apart into defined transport components, covers come off or get protected, and moving locks go on to keep the rotating assembly from turning in transit. Skip a step here and alignment gets destroyed before the machine ever reaches the dock.</p>
+
+<figure>
+  <img src="../assets/img/loads/ct-scanner-medical-imaging-move.jpg" alt="GE Optima CT scanner gantry and patient table prepared for de-installation and rigging out of a hospital imaging suite" loading="lazy" width="1050" height="1400">
+  <figcaption>A GE Optima CT scanner staged for de-install — gantry and table separated and prepped before the rig-out.</figcaption>
+</figure>
+
+<h2>2. Rig it out of the building</h2>
+<p>Each component gets padded, wrapped, and moved on <strong>air-cushion skates or a stair-climber</strong> along the surveyed path. Floor protection goes down, door frames get protected, and the crew controls every pivot. This is where the clearances you measured on paper meet the real corner — and why the survey happens first.</p>
+
+<h2>3. Transport on air-ride, monitored</h2>
+<p>Imaging equipment rides on <strong>air-ride suspension</strong> only — the entire point is to keep road shock off precision components. The load is blocked, braced, and secured upright, usually with <strong>shock and tilt indicators</strong> on the crate so anyone can see if it was dropped or laid over. Sensitive electronics travel enclosed and shielded, not open to the weather.</p>
+
+<figure>
+  <img src="../assets/img/loads/ct-mri-scanner-enclosed-air-ride.jpg" alt="CT scanner shrink-wrapped and secured on lift equipment inside an enclosed air-ride trailer for hospital transport" loading="lazy" width="800" height="600">
+  <figcaption>Scanner secured upright inside an enclosed trailer on air-ride — shock kept off the components, weather kept out.</figcaption>
+</figure>
+
+<h2>4. Reinstall and recalibrate</h2>
+<p>At the destination the process reverses: rig in along a surveyed path, set on the pad, reassemble, and remove the moving locks. Then the <strong>OEM field engineer recalibrates</strong> and the scanner is re-qualified before it images a single patient. Our job is to deliver it undamaged and on schedule so recommissioning starts on time.</p>
+
+<div class="takeaways">
+  <h3>What actually matters</h3>
+  <ul>
+    <li>Follow the OEM de-install procedure — moving locks and defined components, not shortcuts.</li>
+    <li>Survey the path and rig each piece out on skates; measure clearances to the inch.</li>
+    <li>Air-ride, enclosed, upright, with shock and tilt indicators — every mile.</li>
+    <li>Coordinate reinstall with the OEM engineer so recalibration starts on time.</li>
+  </ul>
+</div>
+
+<p>Moving a CT, an <a href="how-to-move-an-mri-machine.html">MRI</a>, a C-arm, or a whole imaging department? Our <a href="../services/rigging.html">rigging</a> and <a href="../services/machinery-moving.html">machinery moving</a> crews handle medical imaging start to finish. <a href="../contact.html">Send the model and the site details</a> and we will build the plan.</p>
+`,
+    faq: [
+      { q: 'How much does a CT scanner weigh?', a: 'It varies by model, but the gantry alone commonly runs from roughly 2,000 to over 4,500 pounds, plus the patient table and covers. That weight, combined with tight imaging-suite clearances, is why moving one is a rigging job rather than a straight delivery.' },
+      { q: 'Can a CT scanner be moved without the manufacturer?', a: 'The physical de-install, rigging, transport, and reinstall are handled by a specialized rigging crew, but the final recalibration and re-qualification are performed by the OEM field engineer. Coordinating both is part of planning the move so the scanner comes back online on schedule.' },
+      { q: 'What kind of truck moves a CT scanner?', a: 'An enclosed, air-ride trailer. Air-ride suspension keeps road shock off the precision components, the enclosure protects against weather and road grit, and the load rides upright and braced, usually with shock and tilt indicators on the crate.' },
+    ],
+    related: [
+      { h: 'Industrial Rigging', u: '../services/rigging.html' },
+      { h: 'How to Move an MRI Machine', u: 'how-to-move-an-mri-machine.html' },
+      { h: 'Machinery Moving', u: '../services/machinery-moving.html' },
+      { h: 'Get a Quote', u: '../contact.html' },
+    ],
+  },
+
+  {
+    slug: 'white-glove-freight-and-custom-crating',
+    cat: 'Specialized Freight',
+    hero: 'loads/crating-shrink-wrap-electrical-equipment.jpg',
+    date: '2026-07-01',
+    title: 'White-Glove Freight and Custom Crating, Explained',
+    desc: 'Sensitive, high-value, or fragile equipment does not ship on a standard pallet and a prayer. White-glove freight means custom crating, cushioning, enclosed air-ride transport, and hand placement at the far end. Here is what you are actually paying for.',
+    dek: 'When "it got there" is not good enough. Custom crating, cushioning, air-ride, and a careful set-down — how fragile, high-value freight actually ships.',
+    tldr: 'White-glove freight is a service level, not a truck: fragile or high-value equipment gets custom crating and cushioning, shrink-wrap and moisture protection, enclosed air-ride transport, and hand placement (curbside, inside, or to the exact spot) at delivery — with the packaging engineered to the item, not stuffed into a standard box.',
+    keywords: 'white glove freight, custom crating, shrink wrap freight, fragile equipment shipping, inside delivery, air ride transport',
+    body: `
+<p>Some freight cannot ride on a standard pallet wrapped in a few turns of stretch film. A sensitive electrical cabinet, a piece of lab equipment, a control console — anything fragile, precise, or expensive needs packaging built for it and handling that treats it like it matters. That service level has a name: <strong>white-glove freight</strong>. Here is what it actually includes.</p>
+
+<figure>
+  <img src="../assets/img/loads/crating-shrink-wrap-electrical-equipment.jpg" alt="Badass Logistics crew member shrink-wrapping and crating a sensitive electrical enclosure before loading for transport" loading="lazy" width="600" height="800">
+  <figcaption>Custom crating in progress — the enclosure is wrapped and cased to its shape before it ever sees a truck.</figcaption>
+</figure>
+
+<h2>Custom crating, built to the item</h2>
+<p>White-glove starts with a crate <strong>engineered to the load</strong>, not a stock box it half-fits. That means a wooden crate or skid sized to the equipment, internal blocking so nothing shifts, and foam or cushioning wherever impact or vibration would do damage. Heavy items get a base a forklift or pallet jack can actually pick from the right points.</p>
+
+<h2>Wrap, cushion, and protect</h2>
+<p>Inside the crate, the equipment gets <strong>shrink-wrap and moisture barriers</strong> against road spray and humidity, corner and edge protection, and cushioning tuned to how fragile it is. For electronics and machined surfaces, that protection is the difference between plug-in-and-go and a warranty claim.</p>
+
+<figure>
+  <img src="../assets/img/loads/white-glove-crated-equipment-delivery.jpg" alt="Crated and shrink-wrapped electrical equipment staged on pallets at a curbside white-glove delivery" loading="lazy" width="800" height="600">
+  <figcaption>Crated, wrapped, and palletized for a controlled set-down — packaging engineered to the item, not the truck.</figcaption>
+</figure>
+
+<h2>Enclosed, air-ride transport</h2>
+<p>White-glove freight rides <strong>enclosed and on air-ride</strong> — out of the weather and off the road shock. It is blocked and braced so it cannot walk around the trailer, and high-value shipments can travel with shock indicators so any rough handling is visible on arrival. It is the same standard we hold for <a href="how-to-move-an-mri-machine.html">medical imaging</a> and precision machinery.</p>
+
+<h2>Delivery that does not stop at the tailgate</h2>
+<p>Standard freight ends when the pallet hits the dock. White-glove goes further: <strong>curbside, threshold, inside, or spot placement</strong> depending on what you booked, with the crew handling the last few feet as carefully as the last few hundred miles. Packaging and debris can be removed on request so you are left with the equipment, ready to install.</p>
+
+<figure>
+  <img src="../assets/img/loads/palletized-equipment-curbside-unload.jpg" alt="Palletized, shrink-wrapped industrial equipment and a metal control cabinet set down for curbside unloading" loading="lazy" width="800" height="600">
+  <figcaption>The last few feet handled with the same care as the haul — set down where it needs to go, not just dropped at a dock.</figcaption>
+</figure>
+
+<div class="takeaways">
+  <h3>What "white glove" buys you</h3>
+  <ul>
+    <li>A crate engineered to the item — blocking, foam, and a liftable base.</li>
+    <li>Shrink-wrap, moisture barriers, and cushioning against road shock and weather.</li>
+    <li>Enclosed, air-ride transport, blocked and braced, shock-indicator optional.</li>
+    <li>Placement past the tailgate — curbside, inside, or to the exact spot.</li>
+  </ul>
+</div>
+
+<p>Have something fragile, high-value, or one-of-a-kind to move? Our <a href="../services/freight-moving.html">freight moving</a> and <a href="../services/machinery-moving.html">machinery moving</a> crews crate it, haul it, and set it down right. <a href="../contact.html">Tell us what it is and where it is going.</a></p>
+`,
+    faq: [
+      { q: 'What does white-glove freight mean?', a: 'It is a premium handling level for fragile, high-value, or sensitive shipments. It typically includes custom crating and cushioning, enclosed air-ride transport, and hand placement at delivery — curbside, inside, or to a specific spot — instead of a standard drop at a loading dock.' },
+      { q: 'What is custom crating?', a: 'A shipping crate built to the specific item instead of a stock box. It is sized to the equipment with internal blocking, foam or cushioning where needed, moisture protection, and a base that can be safely lifted by forklift or pallet jack from the correct points.' },
+      { q: 'Does white-glove include inside delivery?', a: 'It can. Depending on the service level you book, delivery ranges from curbside set-down to threshold, inside, or exact-spot placement, with packaging and debris removed on request so the equipment is left ready to install.' },
+    ],
+    related: [
+      { h: 'Freight Moving', u: '../services/freight-moving.html' },
+      { h: 'Machinery Moving', u: '../services/machinery-moving.html' },
+      { h: 'How to Move an MRI Machine', u: 'how-to-move-an-mri-machine.html' },
+      { h: 'Get a Quote', u: '../contact.html' },
+    ],
+  },
+
+  {
+    slug: 'blocking-bracing-and-dunnage-explained',
+    cat: 'How It\'s Done',
+    hero: 'loads/blocking-bracing-dunnage-box-truck.jpg',
+    date: '2026-06-25',
+    title: 'Blocking, Bracing and Dunnage: How Heavy Loads Ride Safe',
+    desc: 'Straps get the credit, but blocking and bracing do the work. Dunnage, chocks, cradles, and shoring stop a load from shifting long before a tie-down is tensioned. Here is how cargo is actually kept still in a moving trailer.',
+    dek: 'Straps get the credit; blocking and bracing do the work. How dunnage, chocks, and shoring keep a heavy load from ever moving.',
+    tldr: 'Blocking and bracing physically stop cargo from moving; tie-downs only hold it against the blocking. Riggers use hardwood dunnage, chocks, cleats, cradles, and shoring to lock a load fore-aft and side-to-side, then add straps or chains rated to at least half the cargo weight. The goal is a load that cannot shift on a hard brake, a sharp turn, or a rough road.',
+    keywords: 'blocking and bracing, dunnage, cargo securement, load shifting, chocks, shoring, freight bracing',
+    howto: {
+      name: 'How to Block and Brace a Heavy Load',
+      steps: [
+        { name: 'Assess the load', text: 'Identify the load weight, center of gravity, and contact surfaces to decide bearing points and which directions it can move.' },
+        { name: 'Set the dunnage', text: 'Lay hardwood dunnage to create level bearing points and fill the gaps under and around the load.' },
+        { name: 'Block fore and aft', text: 'Nail chocks and cleats to the deck to stop the load from sliding forward under braking or backward on grades.' },
+        { name: 'Brace side to side', text: 'Add shoring, bracing bars, or cradles to stop lateral movement in curves and crosswinds.' },
+        { name: 'Add tie-downs', text: 'Strap or chain the load to rated points with total capacity of at least half the cargo weight, using edge protectors.' },
+      ],
+    },
+    body: `
+<p>Walk past a loaded flatbed and you notice the straps. But straps are the last thing that goes on, and on their own they do not stop a heavy load from moving — they hold it against something. That something is <strong>blocking and bracing</strong>, and it is the part of securement that actually keeps cargo still. Here is how it works.</p>
+
+<h2>Blocking and bracing vs. tie-downs</h2>
+<p>The two do different jobs. <strong>Blocking and bracing</strong> physically fill the space around a load so it cannot slide or tip — wedges, chocks, and structure that stop motion. <strong>Tie-downs</strong> (straps and chains) then clamp the load down against that structure. Rely on straps alone and a heavy machine can still rock, walk, and load-shift on a hard stop. Block it first, and the straps only have to keep it seated.</p>
+
+<figure>
+  <img src="../assets/img/loads/blocking-bracing-dunnage-box-truck.jpg" alt="Wooden dunnage, pallets, and blocking used to brace machinery inside a box truck to prevent shifting in transit" loading="lazy" width="640" height="480">
+  <figcaption>Hardwood dunnage and blocking filling the gaps so nothing can slide — inside a real Badass Logistics load-out.</figcaption>
+</figure>
+
+<h2>The tools of the trade</h2>
+<ul>
+  <li><strong>Dunnage.</strong> Hardwood beams and blocks that carry weight, fill gaps, and create bearing points. The backbone of most bracing.</li>
+  <li><strong>Chocks and cleats.</strong> Wedges nailed to a wooden deck that stop wheels, skids, and rounded loads from rolling or sliding.</li>
+  <li><strong>Cradles and racks.</strong> Shaped supports for coils, pipe, tanks, and anything that will not sit flat on its own.</li>
+  <li><strong>Shoring and bracing bars.</strong> Structure that braces a load against the trailer walls or a bulkhead in a van or box truck.</li>
+  <li><strong>Edge protectors and friction mats.</strong> Save straps from sharp corners and add grip so the load resists sliding in the first place.</li>
+</ul>
+
+<h2>Fore-aft, side-to-side, and up</h2>
+<p>A proper job controls movement in <strong>every direction</strong>. Hard braking throws a load forward; acceleration and hills push it back; curves and crosswinds shove it sideways; rough road tries to bounce it up. Each of those gets its own blocking or tie-down so no single event can start the load moving. Federal rules put a number on the down-force — total tie-down working load limit of at least half the cargo weight — but the blocking is what makes that number mean something.</p>
+
+<figure>
+  <img src="../assets/img/loads/enclosed-trailer-machinery-loaded.jpg" alt="Machinery and shrink-wrapped equipment blocked and braced inside an enclosed box trailer for damage-free transport" loading="lazy" width="640" height="480">
+  <figcaption>Machinery braced and seated inside an enclosed trailer — blocked so it cannot walk, then secured.</figcaption>
+</figure>
+
+<h2>Why it matters more than the strap count</h2>
+<p>A load that shifts is how equipment gets damaged, how trailers get unbalanced, and how cargo ends up on the shoulder. Good blocking and bracing is invisible when it works and obvious when it does not. It is also the difference between a machine that arrives ready to install and one that arrives with a cracked casting. This is standard on every <a href="how-to-ship-industrial-machinery-on-a-flatbed.html">machinery haul</a> and <a href="what-is-industrial-rigging.html">rigging</a> job we run.</p>
+
+<div class="takeaways">
+  <h3>The short version</h3>
+  <ul>
+    <li>Blocking and bracing stop movement; tie-downs hold the load against it.</li>
+    <li>Dunnage, chocks, cradles, and shoring are the tools — matched to the load.</li>
+    <li>Control every direction: forward, back, sideways, and up.</li>
+    <li>Tie-down capacity of at least half the cargo weight is the floor, not the plan.</li>
+  </ul>
+</div>
+
+<p>Want your load braced like it matters? <a href="../contact.html">Tell us what you are shipping</a> and our crews will build the securement around it.</p>
+`,
+    faq: [
+      { q: 'What is the difference between blocking and bracing?', a: 'Blocking uses wedges, chocks, and dunnage to fill the space under and around a load so it cannot slide; bracing adds structure — shoring, bars, cradles — that holds the load against the trailer or a bulkhead. Together they stop movement so tie-downs only have to keep the load seated.' },
+      { q: 'What is dunnage in shipping?', a: 'Dunnage is the hardwood beams, blocks, and boards used to support cargo, fill gaps, create bearing points, and keep a load off the deck. It is the backbone of most blocking and bracing on flatbeds, vans, and box trucks.' },
+      { q: 'How many straps does a load need?', a: 'Federal rules require total tie-down working load limit of at least half the cargo weight, with a minimum number based on length and weight. But strap count alone does not secure a load — proper blocking and bracing is what stops it from shifting in the first place.' },
+    ],
+    related: [
+      { h: 'How to Ship Industrial Machinery', u: 'how-to-ship-industrial-machinery-on-a-flatbed.html' },
+      { h: 'What Is Industrial Rigging?', u: 'what-is-industrial-rigging.html' },
+      { h: 'Heavy Haul Transport', u: '../services/heavy-haul.html' },
+      { h: 'Get a Quote', u: '../contact.html' },
+    ],
+  },
+
+  {
+    slug: 'enclosed-vs-flatbed-transport',
+    cat: 'Trailers & Equipment',
+    hero: 'loads/step-deck-industrial-air-handlers.jpg',
+    date: '2026-06-26',
+    title: 'Enclosed vs Flatbed Transport: Which One Does Your Equipment Need?',
+    desc: 'Flatbed is faster to load and handles oversized freight; enclosed protects sensitive equipment from weather, road grit, and eyes. The right call depends on size, fragility, and value. Here is how to choose.',
+    dek: 'Weather and security, or size and access? The honest trade-offs between enclosed and flatbed for machinery and freight.',
+    tldr: 'Choose flatbed when the load is large, heavy, or oversized and can handle the weather — it loads from any side and carries dimensions no box can. Choose enclosed (dry van, box truck, or air-ride) when the equipment is sensitive, high-value, or must stay clean and out of sight. Size and access push you to flatbed; fragility, value, and weather push you to enclosed.',
+    keywords: 'enclosed vs flatbed, dry van vs flatbed, machinery transport, air ride transport, equipment shipping options',
+    body: `
+<p>Two loads, two very different answers. One is a 40-foot fabricated skid that will never fit in a box; the other is a rack of electronics that cannot get rained on. "Enclosed or flatbed?" is one of the first questions we ask, because the trailer decides how your equipment travels, what it costs, and whether it arrives clean. Here is how to choose.</p>
+
+<figure>
+  <img src="../assets/img/loads/step-deck-industrial-air-handlers.jpg" alt="Large industrial air-handling units strapped on a step-deck flatbed trailer staged in a gravel yard" loading="lazy" width="1131" height="848">
+  <figcaption>Some loads only go one way: oversized industrial units on a step deck, open and accessible from every side.</figcaption>
+</figure>
+
+<h2>When flatbed wins</h2>
+<p>Flatbed — and its cousins step deck and RGN — is the answer when <strong>size and access</strong> drive the move:</p>
+<ul>
+  <li><strong>Oversized or over-height loads</strong> that no box could ever enclose.</li>
+  <li><strong>Heavy machinery</strong> that has to be craned or forklifted on from the side or top.</li>
+  <li><strong>Long, wide, or awkward</strong> freight — structural steel, tanks, fabricated skids.</li>
+  <li><strong>Fast loading</strong> from any angle, which matters on tight dock schedules.</li>
+</ul>
+<p>The trade-off: the load is exposed to weather and road grit unless it is tarped, and it is out in the open for anyone to see.</p>
+
+<h2>When enclosed wins</h2>
+<p>Enclosed transport — dry van, box truck, or air-ride — is the answer when <strong>protection and discretion</strong> matter:</p>
+<ul>
+  <li><strong>Sensitive equipment</strong> — electronics, medical imaging, precision machinery — that cannot take weather or shock.</li>
+  <li><strong>High-value or proprietary</strong> freight you would rather not advertise on the highway.</li>
+  <li><strong>Clean-required</strong> loads that must arrive free of dust, spray, and grime.</li>
+  <li><strong>Air-ride</strong> when vibration is the enemy, as it is with <a href="how-to-transport-a-ct-scanner.html">imaging equipment</a>.</li>
+</ul>
+<p>The trade-off: you are limited to what fits through the doors and inside the box, and loading is usually from the rear only.</p>
+
+<figure>
+  <img src="../assets/img/loads/enclosed-trailer-machinery-loaded.jpg" alt="Machinery and shrink-wrapped equipment loaded and braced inside an enclosed trailer, protected from weather and view" loading="lazy" width="640" height="480">
+  <figcaption>The other answer: sensitive equipment braced inside an enclosed trailer, out of the weather and out of sight.</figcaption>
+</figure>
+
+<h2>Enclosed vs flatbed at a glance</h2>
+<div class="keyfacts">
+  <h3>Quick comparison</h3>
+  <p><strong>Pick flatbed for:</strong> oversized, heavy, long, or awkward loads · top and side loading · crane and forklift access · anything that will not fit in a box.<br>
+  <strong>Pick enclosed for:</strong> weather-sensitive, high-value, or fragile equipment · air-ride for vibration-sensitive gear · security and discretion · clean delivery.</p>
+</div>
+
+<h2>Still not sure?</h2>
+<p>The deciding questions are simple: <strong>Does it fit in a box? Can it get wet? How fragile and how valuable is it?</strong> If it is too big for a van, flatbed it and tarp what needs covering. If it fits and it is delicate, enclose it — air-ride if vibration is a risk. When a load sits on the line, we will tell you which way we would send it and why. Compare the deck options in <a href="flatbed-vs-step-deck-vs-rgn-trailers.html">flatbed vs step deck vs RGN</a>.</p>
+
+<div class="takeaways">
+  <h3>Decide in one line</h3>
+  <ul>
+    <li>Too big for a box or needs crane/side access → flatbed.</li>
+    <li>Fragile, high-value, or must stay clean and unseen → enclosed.</li>
+    <li>Vibration-sensitive → enclosed on air-ride.</li>
+    <li>Exposed on a flatbed? Tarp it. Oversized? Permit it.</li>
+  </ul>
+</div>
+
+<p>Tell us the load and we will match the trailer. <a href="../contact.html">Send dimensions, weight, and how fragile it is</a> for a straight recommendation and a quote.</p>
+`,
+    faq: [
+      { q: 'Is flatbed or enclosed transport better for machinery?', a: 'It depends on the machine. Oversized or crane-loaded machinery goes on a flatbed, step deck, or RGN because it will not fit in a box and needs top or side access. Sensitive, high-value, or weather-vulnerable machinery goes enclosed, often on air-ride to control vibration.' },
+      { q: 'Does flatbed freight get protected from weather?', a: 'Yes, when needed. Weather-sensitive flatbed loads are tarped or shrink-wrapped to keep off rain, spray, and grit. But if a load must stay perfectly clean, dry, or out of sight, enclosed transport is the safer choice.' },
+      { q: 'What is air-ride transport?', a: 'Air-ride is an enclosed trailer with air suspension that cushions the load against road shock and vibration. It is the standard for medical imaging, electronics, and precision machinery, where vibration — not just impact — can cause damage.' },
+    ],
+    related: [
+      { h: 'Flatbed vs Step Deck vs RGN', u: 'flatbed-vs-step-deck-vs-rgn-trailers.html' },
+      { h: 'Machinery Moving', u: '../services/machinery-moving.html' },
+      { h: 'White-Glove Freight & Crating', u: 'white-glove-freight-and-custom-crating.html' },
+      { h: 'Get a Quote', u: '../contact.html' },
+    ],
+  },
+
+  {
+    slug: 'how-much-does-it-cost-to-move-a-cnc-machine',
+    cat: 'Machinery Moving',
+    hero: 'loads/enclosed-trailer-machinery-loaded.jpg',
+    date: '2026-06-30',
+    title: 'What Drives the Cost of Moving a CNC Machine?',
+    desc: 'There is no flat rate to move a CNC machine — the price is built from weight and size, rigging complexity at both ends, distance, transport type, and prep. Here are the levers that decide the number, and how to get an accurate quote.',
+    dek: 'No flat rate, no guesswork. The real levers behind a CNC machine move — and how to get a number you can trust.',
+    tldr: 'The cost of moving a CNC machine is driven by its weight and dimensions, the rigging complexity at both ends (clearances, floor capacity, crane vs. skate), the distance and transport type (air-ride vs. flatbed), and prep like disconnection, crating, and re-leveling. A small VMC across town and a 40,000-lb machining center across the country are different jobs — send the model and both site layouts for a real quote.',
+    keywords: 'cost to move a CNC machine, CNC machine moving cost, machinery moving quote, CNC relocation, machine rigging cost',
+    body: `
+<p>Ask "what does it cost to move a CNC machine" and the honest answer is the same as for any heavy haul: <strong>it depends on the machine and the two buildings it moves between</strong>. A benchtop mill and a 40,000-pound horizontal machining center are not the same job and should not carry the same price. What you can do is understand the levers — because once you know what drives the number, you can hand us the details that get you an accurate quote on the first call. We do not post flat rates, because a flat rate on a job this variable is just a wrong number waiting to happen.</p>
+
+<h2>What actually drives the price</h2>
+<ul>
+  <li><strong>Weight and size.</strong> Heavier, larger machines need bigger rigging gear, more crew, and sometimes a crane instead of skates. Weight also decides the trailer and whether the load needs permits.</li>
+  <li><strong>Rigging at both ends.</strong> This is the big one. Tight doorways, stairs, mezzanines, low ceilings, soft or weight-limited floors, and a long push from the machine pad to the truck all add labor and equipment. An easy dock-to-dock move and a machine buried three corners deep in an old building are worlds apart.</li>
+  <li><strong>Distance and transport type.</strong> Loaded miles matter, and so does how it rides — a precision machine on an <a href="enclosed-vs-flatbed-transport.html">air-ride enclosed trailer</a> is a different cost than an open flatbed.</li>
+  <li><strong>Disconnection and prep.</strong> Draining coolant and hydraulics, retracting axes, protecting the control, and setting shipping brackets per the manual. Some shops do this themselves; some want it handled.</li>
+  <li><strong>Crating and protection.</strong> Oversized or delicate machines may need <a href="white-glove-freight-and-custom-crating.html">custom crating</a>, shrink-wrap, and shock protection.</li>
+  <li><strong>Reinstall and leveling.</strong> Setting the machine on its new pad and <strong>leveling it to the builder's spec</strong> — because geometry and accuracy start from a level casting — is part of most moves.</li>
+</ul>
+
+<figure>
+  <img src="../assets/img/loads/crating-shrink-wrap-electrical-equipment.jpg" alt="Sensitive machine control enclosure being shrink-wrapped and crated before a machinery move" loading="lazy" width="600" height="800">
+  <figcaption>Prep and crating are real cost drivers — how a machine is protected depends on how sensitive it is.</figcaption>
+</figure>
+
+<h2>How to get an accurate quote</h2>
+<p>Give us these and we can turn a real number around fast:</p>
+<ul>
+  <li>Machine <strong>make, model, weight, and dimensions</strong> (the spec sheet is perfect).</li>
+  <li><strong>Both site layouts</strong> — doorway widths, path to the truck, stairs or elevators, floor type, and dock access.</li>
+  <li>Whether you need <strong>disconnection, crating, and re-leveling</strong> or just the transport.</li>
+  <li><strong>Pickup and delivery</strong> locations and your target dates.</li>
+  <li>A few <strong>photos</strong> of the machine and the path out — they answer a dozen questions at once.</li>
+</ul>
+<p>That is the same information our crews use to size the rigging gear, spec the trailer, and price the labor. The more precise you are, the tighter the quote — and the fewer surprises on move day.</p>
+
+<h2>Can you make it cheaper?</h2>
+<p>Sometimes. Doing your own disconnection and reconnection saves labor if your team is set up for it. Flexible dates let us schedule efficiently. And a clear path out — cleared aisles, a removed door, a known floor rating — cuts the rigging time that drives a big share of the cost. We will tell you straight where the savings are and where cutting a corner will cost you a machine.</p>
+
+<div class="takeaways">
+  <h3>The short version</h3>
+  <ul>
+    <li>No flat rate — weight, rigging difficulty, distance, and prep set the price.</li>
+    <li>Rigging at both ends (clearances, floors, crane vs. skate) is usually the biggest lever.</li>
+    <li>Send the model, both site layouts, and photos for an accurate quote.</li>
+    <li>Level to spec at the destination — it is part of a proper move, not an extra.</li>
+  </ul>
+</div>
+
+<p>Moving one machine or a whole shop? Our <a href="../services/cnc-machine-movers.html">CNC machine movers</a> and <a href="../services/machinery-moving.html">machinery moving</a> crews rig it, haul it, and set it back to spec. <a href="../contact.html">Send the model list and both floor plans</a> for a real number. For the how-to side, see <a href="how-to-move-a-cnc-machine.html">how to move a CNC machine without wrecking it</a>.</p>
+`,
+    faq: [
+      { q: 'How much does it cost to move a CNC machine?', a: 'There is no flat rate. The cost is built from the machine\'s weight and size, the rigging difficulty at both ends (doorways, floors, stairs, crane vs. skate), the distance and transport type, and prep like disconnection, crating, and re-leveling. Send the model and both site layouts for an accurate quote.' },
+      { q: 'What makes a CNC move more expensive?', a: 'Rigging difficulty is usually the biggest factor: tight or upstairs locations, weight-limited floors, low ceilings, and a long push to the truck all add labor and equipment. Heavier machines, air-ride transport, custom crating, and full disconnect-and-reinstall service also raise the price.' },
+      { q: 'Can I save money by preparing the machine myself?', a: 'Often, yes. Handling your own disconnection and reconnection, clearing the path out, and being flexible on dates all reduce the labor and time that drive the cost — as long as the prep is done correctly to protect the machine.' },
+    ],
+    related: [
+      { h: 'CNC Machine Movers', u: '../services/cnc-machine-movers.html' },
+      { h: 'How to Move a CNC Machine', u: 'how-to-move-a-cnc-machine.html' },
+      { h: 'Machinery Moving', u: '../services/machinery-moving.html' },
+      { h: 'Get a Quote', u: '../contact.html' },
+    ],
+  },
+
+  {
+    slug: 'plant-relocation-checklist',
+    cat: 'Plant Relocation',
+    hero: 'loads/gooseneck-flatbed-industrial-tanks.jpg',
+    date: '2026-07-02',
+    title: 'Plant Relocation: The Checklist for Moving an Entire Facility',
+    desc: 'Moving a plant is not one big move — it is dozens of coordinated moves in the right order, with the least downtime. Here is the checklist: survey and tag, sequence by production priority, disconnect, rig, transport, and recommission.',
+    dek: 'Moving a whole facility is a sequencing problem, not a muscle problem. The checklist for relocating a plant with the least downtime.',
+    tldr: 'A plant relocation is planned backward from production: survey and tag every asset, sequence the move so the last machine out is the first back online, then disconnect, rig, transport on the right trailers, and recommission in order. Downtime — not distance — is the real cost, so the plan protects the production schedule first.',
+    keywords: 'plant relocation, factory move, facility relocation, machinery moving, industrial move, production line move',
+    howto: {
+      name: 'How to Relocate a Plant',
+      steps: [
+        { name: 'Survey and tag assets', text: 'Walk the facility and inventory every machine with its weight, dimensions, utilities, and exit path; tag each asset and map it to the new floor plan.' },
+        { name: 'Sequence the move', text: 'Build the schedule backward from production so the equipment needed first at the new site is set first and shut down last at the old site.' },
+        { name: 'Disconnect and prep', text: 'Power down, lock out, drain, and disconnect each machine, set shipping brackets, and label everything to match the new floor plan.' },
+        { name: 'Rig and transport', text: 'Rig each machine out along its surveyed path and load it on the right trailer for its size and sensitivity, moving oversized pieces as permitted heavy haul.' },
+        { name: 'Set and recommission', text: 'Rig machines into place, level to the manufacturer spec, reconnect utilities, and recommission in production order.' },
+      ],
+    },
+    body: `
+<p>Relocating a plant is not one heroic heavy lift — it is <strong>dozens of moves in the right order</strong>, run so the business loses as little production as possible. The machines are the easy part. The hard part is sequencing: what comes down first, what ships when, and what has to be running again by Monday. Here is the checklist we work from.</p>
+
+<figure>
+  <img src="../assets/img/loads/gooseneck-flatbed-industrial-tanks.jpg" alt="Industrial process equipment loaded on a gooseneck flatbed during a plant relocation" loading="lazy" width="1024" height="576">
+  <figcaption>One asset of many — plant relocation is this, repeated in a planned sequence across a whole facility.</figcaption>
+</figure>
+
+<h2>1. Survey and tag every asset</h2>
+<p>Before anything moves, the facility gets walked and inventoried: every machine, its weight and dimensions, its utilities (power, air, water, data), and its condition. Each asset is <strong>tagged</strong> and mapped to a spot on the new floor plan. This is also where the exit path for each machine gets measured — doorways, aisles, docks, floor ratings.</p>
+
+<h2>2. Sequence the move around production</h2>
+<p>This is where a plant move is won or lost. The schedule is built <strong>backward from production</strong>: whatever needs to be running first at the new site is planned to arrive and be set first, which often means it is the <em>last</em> thing shut down at the old site. Non-critical and warehouse items move first as a dry run; the production line moves in a tight, staged window.</p>
+
+<figure>
+  <img src="../assets/img/loads/heavy-haul-industrial-enclosures-flatbed.jpg" alt="Large industrial equipment secured on a flatbed trailer during a staged plant relocation" loading="lazy" width="1131" height="848">
+  <figcaption>Production equipment staged and moved in sequence — the plan decides load order, not the loading dock.</figcaption>
+</figure>
+
+<h2>3. Disconnect and prep</h2>
+<p>Machines get powered down, locked out, drained, and disconnected from utilities — often with the plant's maintenance team or the OEM handling the technical side. Axes are retracted, shipping brackets set, controls protected, and everything <strong>labeled to match the new floor plan</strong> so reconnection is not a guessing game.</p>
+
+<h2>4. Rig, load, and transport</h2>
+<p>Each machine is rigged out along its surveyed path and loaded on the <strong>right trailer for its size and sensitivity</strong> — flatbed and RGN for the heavy iron, <a href="enclosed-vs-flatbed-transport.html">enclosed air-ride</a> for anything precision or delicate. Oversized pieces move as <a href="../services/heavy-haul.html">heavy haul</a> with permits and escorts. The convoy is sequenced so machines arrive in install order, not in a pile.</p>
+
+<h2>5. Set, level, and recommission</h2>
+<p>At the new site, machines are rigged into place, set on their pads, and <strong>leveled to spec</strong>, then reconnected to utilities and recommissioned in production order. The goal the whole way through: the line comes back up on schedule, not "eventually."</p>
+
+<div class="takeaways">
+  <h3>The checklist, condensed</h3>
+  <ul>
+    <li>Survey, weigh, and tag every asset; map it to the new floor plan.</li>
+    <li>Sequence backward from production — last out is first back online.</li>
+    <li>Disconnect and label so reconnection is not guesswork.</li>
+    <li>Match each machine to the right trailer; move oversized as heavy haul.</li>
+    <li>Set, level to spec, reconnect, and recommission in order.</li>
+  </ul>
+</div>
+
+<p>Planning a move? Our <a href="../services/plant-relocation.html">plant relocation</a> and <a href="../services/machinery-moving.html">machinery moving</a> crews handle the survey, the sequence, the <a href="../services/rigging.html">rigging</a>, and the transport as one project. <a href="../contact.html">Send us your asset list and both floor plans</a> and we will build the move plan.</p>
+`,
+    faq: [
+      { q: 'How do you minimize downtime in a plant relocation?', a: 'By sequencing the move backward from production. The equipment that must run first at the new site is planned to arrive and be set first — which usually means it is the last thing shut down at the old site — while non-critical items move first. Careful labeling and a staged convoy keep reconnection fast.' },
+      { q: 'How long does it take to relocate a plant?', a: 'It depends on the number and size of machines, the complexity of disconnection and reinstallation, and how much downtime the business can absorb. A tightly sequenced move can shrink the production gap significantly; the survey and asset list are what let us give a realistic schedule.' },
+      { q: 'Who disconnects and reconnects the machines?', a: 'The technical disconnection and reconnection are typically handled by the plant\'s maintenance team or the equipment OEM, while our crews handle rigging, loading, transport, and setting machines on their new pads. We coordinate the sequence so both sides line up.' },
+    ],
+    related: [
+      { h: 'Plant Relocation', u: '../services/plant-relocation.html' },
+      { h: 'Machinery Moving', u: '../services/machinery-moving.html' },
+      { h: 'Industrial Rigging', u: '../services/rigging.html' },
+      { h: 'Get a Quote', u: '../contact.html' },
+    ],
+  },
 ];
 
 // ---------------------------------------------------------------------------
