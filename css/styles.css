@@ -364,3 +364,8 @@ address { font-style: normal; opacity: .85; line-height: 1.7; }
 
 footer .covstrip { font-size: 14px; opacity: .85; margin-bottom: 16px; padding-top: 8px; border-top: 1px solid rgba(255,255,255,.15); }
 footer .covstrip a { display: inline; margin: 0; }
+
+/* AEO answer box */
+.answer-box{background:var(--yellow);border:3px solid var(--ink);box-shadow:var(--shadow);padding:16px 22px;margin:6px 0 28px}
+.answer-box p{margin:0;font-size:18px;line-height:1.55}
+.answer-box strong{text-transform:uppercase;letter-spacing:.4px}
