@@ -415,8 +415,8 @@ const TOP24 = ALL_KEYS.slice(); // ordered by locations.json; we slice per-servi
 const WAVES = {
   'rigging': 'ALL',
   'cnc-machine-movers': 'ALL',
-  'machinery-moving': metrosFile.metros.filter(m=>m.tier===1).sort((a,b)=>a.rank-b.rank).slice(0,24).map(m=>`${m.city}|${m.state}`),
-  'plant-relocation':  metrosFile.metros.filter(m=>m.tier===1).sort((a,b)=>a.rank-b.rank).slice(0,24).map(m=>`${m.city}|${m.state}`),
+  'machinery-moving': 'ALL',
+  'plant-relocation':  'ALL',
 };
 
 // ---------- build ----------
