@@ -425,4 +425,12 @@
   <url><loc>https://badasslogistics.com/services/heavy-haul/florida</loc><lastmod>2026-07-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://badasslogistics.com/services/heavy-haul/pennsylvania</loc><lastmod>2026-07-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <!--SVC_CITIES_END-->
+  <!--TRAILERS_START-->
+  <url><loc>https://badasslogistics.com/services/rgn-trailer</loc><lastmod>2026-07-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://badasslogistics.com/services/lowboy-trailer</loc><lastmod>2026-07-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://badasslogistics.com/services/step-deck-trailer</loc><lastmod>2026-07-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://badasslogistics.com/services/double-drop-trailer</loc><lastmod>2026-07-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://badasslogistics.com/services/flatbed-transport</loc><lastmod>2026-07-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://badasslogistics.com/services/multi-axle-transport</loc><lastmod>2026-07-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!--TRAILERS_END-->
 </urlset>
