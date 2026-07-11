@@ -1150,5 +1150,293 @@
     "city": "Boston",
     "state": "MA",
     "url": "/services/plant-relocation/boston-ma"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Los Angeles",
+    "state": "CA",
+    "url": "/services/heavy-haul/los-angeles-ca"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Bakersfield",
+    "state": "CA",
+    "url": "/services/heavy-haul/bakersfield-ca"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Sacramento",
+    "state": "CA",
+    "url": "/services/heavy-haul/sacramento-ca"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Portland",
+    "state": "OR",
+    "url": "/services/heavy-haul/portland-or"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Seattle",
+    "state": "WA",
+    "url": "/services/heavy-haul/seattle-wa"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Spokane",
+    "state": "WA",
+    "url": "/services/heavy-haul/spokane-wa"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Boise",
+    "state": "ID",
+    "url": "/services/heavy-haul/boise-id"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Salt Lake City",
+    "state": "UT",
+    "url": "/services/heavy-haul/salt-lake-city-ut"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Las Vegas",
+    "state": "NV",
+    "url": "/services/heavy-haul/las-vegas-nv"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Phoenix",
+    "state": "AZ",
+    "url": "/services/heavy-haul/phoenix-az"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Albuquerque",
+    "state": "NM",
+    "url": "/services/heavy-haul/albuquerque-nm"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Denver",
+    "state": "CO",
+    "url": "/services/heavy-haul/denver-co"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Casper",
+    "state": "WY",
+    "url": "/services/heavy-haul/casper-wy"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Billings",
+    "state": "MT",
+    "url": "/services/heavy-haul/billings-mt"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Fargo",
+    "state": "ND",
+    "url": "/services/heavy-haul/fargo-nd"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Omaha",
+    "state": "NE",
+    "url": "/services/heavy-haul/omaha-ne"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Minneapolis",
+    "state": "MN",
+    "url": "/services/heavy-haul/minneapolis-mn"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Milwaukee",
+    "state": "WI",
+    "url": "/services/heavy-haul/milwaukee-wi"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Kansas City",
+    "state": "MO",
+    "url": "/services/heavy-haul/kansas-city-mo"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "St. Louis",
+    "state": "MO",
+    "url": "/services/heavy-haul/st-louis-mo"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Chicago",
+    "state": "IL",
+    "url": "/services/heavy-haul/chicago-il"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Indianapolis",
+    "state": "IN",
+    "url": "/services/heavy-haul/indianapolis-in"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Detroit",
+    "state": "MI",
+    "url": "/services/heavy-haul/detroit-mi"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Columbus",
+    "state": "OH",
+    "url": "/services/heavy-haul/columbus-oh"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Cleveland",
+    "state": "OH",
+    "url": "/services/heavy-haul/cleveland-oh"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Louisville",
+    "state": "KY",
+    "url": "/services/heavy-haul/louisville-ky"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Houston",
+    "state": "TX",
+    "url": "/services/heavy-haul/houston-tx"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Dallas",
+    "state": "TX",
+    "url": "/services/heavy-haul/dallas-tx"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "San Antonio",
+    "state": "TX",
+    "url": "/services/heavy-haul/san-antonio-tx"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Midland",
+    "state": "TX",
+    "url": "/services/heavy-haul/midland-tx"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Oklahoma City",
+    "state": "OK",
+    "url": "/services/heavy-haul/oklahoma-city-ok"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Little Rock",
+    "state": "AR",
+    "url": "/services/heavy-haul/little-rock-ar"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "New Orleans",
+    "state": "LA",
+    "url": "/services/heavy-haul/new-orleans-la"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Jackson",
+    "state": "MS",
+    "url": "/services/heavy-haul/jackson-ms"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Memphis",
+    "state": "TN",
+    "url": "/services/heavy-haul/memphis-tn"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Nashville",
+    "state": "TN",
+    "url": "/services/heavy-haul/nashville-tn"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Birmingham",
+    "state": "AL",
+    "url": "/services/heavy-haul/birmingham-al"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Atlanta",
+    "state": "GA",
+    "url": "/services/heavy-haul/atlanta-ga"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Charleston",
+    "state": "SC",
+    "url": "/services/heavy-haul/charleston-sc"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Charlotte",
+    "state": "NC",
+    "url": "/services/heavy-haul/charlotte-nc"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Jacksonville",
+    "state": "FL",
+    "url": "/services/heavy-haul/jacksonville-fl"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Miami",
+    "state": "FL",
+    "url": "/services/heavy-haul/miami-fl"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Norfolk",
+    "state": "VA",
+    "url": "/services/heavy-haul/norfolk-va"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Baltimore",
+    "state": "MD",
+    "url": "/services/heavy-haul/baltimore-md"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Philadelphia",
+    "state": "PA",
+    "url": "/services/heavy-haul/philadelphia-pa"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Pittsburgh",
+    "state": "PA",
+    "url": "/services/heavy-haul/pittsburgh-pa"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "New York",
+    "state": "NY",
+    "url": "/services/heavy-haul/new-york-ny"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Boston",
+    "state": "MA",
+    "url": "/services/heavy-haul/boston-ma"
   }
 ]

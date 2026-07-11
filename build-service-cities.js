@@ -158,6 +158,25 @@ const SERVICES = {
     ],
     pillarFile:'services/rigging.html', sentinel:'RIG_METROS', cardNoun:'riggers',
   },
+  'heavy-haul': {
+    name:'Heavy Haul Trucking', serviceType:'Heavy Haul & Oversize Transport', hero:'/assets/img/heavyhaul-hero.jpg', band:'/assets/img/rgn-load.jpg',
+    tag:'heavy haul company', quote:'Heavy Haul', coverageNoun:'Heavy-haul loads',
+    lead:(c)=>`When a load is too wide, too tall, or too heavy for a standard flatbed, ${c.city} calls for heavy haul. Badass Logistics moves oversize and overweight freight across the ${c.city} metro on RGN, lowboy, step-deck, double-drop, and multi-axle trailers — permitted, escorted, and routed before we quote it.`,
+    introH2:(c)=>`Heavy haul trucking in ${c.CS}`,
+    introPs:(c)=>[
+      `${c.metro?`${c.city}'s ${c.metro.industry} base`:`The ${c.city} metro`} ships loads that break the rules — excavators, presses, transformers, tanks, and fabricated steel that run over width, height, or weight. Heavy haul is how they move: the right trailer for the dimensions, a permitted route down ${c.ix}, and escorts where the state requires them.`,
+      `Badass Logistics routes it before we quote it — bridge ratings, low clearances, and turn radii across ${c.stName} — then hauls it in-house with compliant, permitted carriers. And because we run <a href="/services/rigging">rigging</a> and <a href="/services/machinery-moving">machinery moving</a> too, an oversized machine gets lifted, loaded, hauled, and set without a single hand-off.`,
+    ],
+    movesH2:(c)=>`What we haul in ${c.city}`,
+    moves:[['oversize loads','Oversize Loads','Over-width, over-height, and over-length freight on the right trailer for the job'],['heavy equipment','Heavy Equipment','Excavators, dozers, cranes, and machinery hauled on RGN and lowboy'],['superloads','Superloads &amp; Permits','Multi-axle, permitted, and escorted moves that exceed standard oversize limits'],['industrial','Industrial &amp; Fabricated','Tanks, vessels, transformers, presses, and structural steel']],
+    faq:(c)=>[
+      [`Do you do heavy haul in ${c.city}?`,`Yes — oversize and overweight transport throughout ${c.CS} and the surrounding metro, serving its ${c.angle} base. RGN, lowboy, step-deck, double-drop, and multi-axle trailers. <a href="/contact">Get a quote →</a>`],
+      [`What trailer will my ${c.city} load ship on?`,`It depends on dimensions and weight: step-deck for tall freight, RGN or lowboy for tall/heavy equipment that rolls on, double-drop for extreme height, and multi-axle for superloads. We match the trailer to the load before we quote it.`],
+      [`Can you handle ${c.stName} oversize permits and escorts?`,`Yes — we handle ${c.stName} DOT oversize permitting, plan a legal route on ${c.ix}, and arrange pilot cars and police escorts where the state requires them.`],
+      [`How fast can you quote a ${c.city} heavy-haul load?`,`Send dimensions, weight, and pickup/drop and we'll route it and quote it fast. Every oversized move is priced after we see the specs.`],
+    ],
+    pillarFile:'services/heavy-haul.html', sentinel:'HH_METROS', cardNoun:'heavy haul',
+  },
 };
 
 function page(serviceSlug, svc, loc, metro, hubStates) {
@@ -417,6 +436,7 @@ const WAVES = {
   'cnc-machine-movers': 'ALL',
   'machinery-moving': 'ALL',
   'plant-relocation':  'ALL',
+  'heavy-haul':        'ALL',
 };
 
 // ---------- build ----------
