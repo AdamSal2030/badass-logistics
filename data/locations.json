@@ -1,50 +1,1519 @@
 [
-  { "city": "Los Angeles", "state": "CA", "hub": "ports & industry", "blurb": "From the Ports of LA and Long Beach inland, we rig and haul oversized and overweight loads across Southern California.", "near": ["Long Beach", "Anaheim", "Santa Ana", "Glendale", "Pasadena", "Torrance", "Pomona", "Ontario", "Carson", "City of Industry", "Santa Fe Springs", "Vernon"] },
-  { "city": "Bakersfield", "state": "CA", "hub": "oil & agriculture", "blurb": "Kern County oilfield and ag heavy haul — we move the iron that works California's Central Valley.", "near": ["Oildale", "Shafter", "Wasco", "Delano", "Taft", "Arvin", "Tehachapi", "McFarland", "Buttonwillow", "Lamont"] },
-  { "city": "Sacramento", "state": "CA", "hub": "construction & distribution", "blurb": "Rigging and heavy haul across the Sacramento Valley and Northern California.", "near": ["Roseville", "Elk Grove", "Folsom", "Rancho Cordova", "West Sacramento", "Davis", "Woodland", "Citrus Heights", "Stockton", "Lodi"] },
-  { "city": "Portland", "state": "OR", "hub": "manufacturing & port", "blurb": "Pacific Northwest rigging and heavy haul — port cargo, semiconductor tools, and industrial machinery.", "near": ["Gresham", "Hillsboro", "Beaverton", "Tigard", "Vancouver WA", "Clackamas", "Wilsonville", "Tualatin", "Troutdale", "Salem"] },
-  { "city": "Seattle", "state": "WA", "hub": "aerospace & port", "blurb": "Puget Sound rigging and heavy haul — aerospace tooling, port cargo, and oversized industrial loads.", "near": ["Tacoma", "Bellevue", "Kent", "Renton", "Auburn", "Everett", "Federal Way", "Sumner", "Fife", "Lakewood"] },
-  { "city": "Spokane", "state": "WA", "hub": "mining & manufacturing", "blurb": "Inland Northwest oversized transport and machinery moving across Eastern Washington.", "near": ["Spokane Valley", "Liberty Lake", "Cheney", "Airway Heights", "Deer Park", "Post Falls ID", "Coeur d'Alene ID", "Medical Lake"] },
-  { "city": "Boise", "state": "ID", "hub": "semiconductor & manufacturing", "blurb": "Treasure Valley rigging and heavy haul for semiconductor, manufacturing, and construction equipment.", "near": ["Nampa", "Meridian", "Caldwell", "Eagle", "Garden City", "Kuna", "Mountain Home", "Star", "Emmett"] },
-  { "city": "Salt Lake City", "state": "UT", "hub": "mining & industrial", "blurb": "Crossroads of the West — Salt Lake City rigging and heavy haul for mining and industrial equipment.", "near": ["West Valley City", "Sandy", "Ogden", "Provo", "Orem", "West Jordan", "Layton", "Tooele", "Lehi", "Clearfield"] },
-  { "city": "Las Vegas", "state": "NV", "hub": "construction & hospitality", "blurb": "Las Vegas rigging and heavy haul for construction, gaming, and large-scale equipment installs.", "near": ["Henderson", "North Las Vegas", "Paradise", "Boulder City", "Pahrump", "Mesquite", "Sunrise Manor", "Spring Valley"] },
-  { "city": "Phoenix", "state": "AZ", "hub": "semiconductor & construction", "blurb": "Valley of the Sun machinery moving — semiconductor tools, construction gear, and oversized freight.", "near": ["Mesa", "Chandler", "Glendale", "Tempe", "Scottsdale", "Gilbert", "Peoria", "Surprise", "Goodyear", "Buckeye", "Casa Grande"] },
-  { "city": "Albuquerque", "state": "NM", "hub": "energy & industrial", "blurb": "New Mexico rigging and heavy haul serving Southwest energy and industrial projects.", "near": ["Rio Rancho", "Santa Fe", "Los Lunas", "Belen", "Bernalillo", "Grants", "Edgewood", "Moriarty"] },
-  { "city": "Denver", "state": "CO", "hub": "energy & construction", "blurb": "Front Range rigging and heavy haul — energy equipment, construction machinery, and mountain-bound loads.", "near": ["Aurora", "Lakewood", "Commerce City", "Thornton", "Westminster", "Arvada", "Centennial", "Brighton", "Golden", "Boulder"] },
-  { "city": "Casper", "state": "WY", "hub": "oilfield & energy", "blurb": "Wyoming oilfield and energy heavy haul — drilling iron, frac gear, and oversized equipment.", "near": ["Mills", "Evansville", "Glenrock", "Douglas", "Bar Nunn", "Midwest", "Natrona", "Casper Mountain"] },
-  { "city": "Billings", "state": "MT", "hub": "energy & ag", "blurb": "Montana's largest city and our own backyard — Billings heavy haul for energy, ag, and industrial loads.", "near": ["Laurel", "Lockwood", "Shepherd", "Hardin", "Columbus", "Roundup", "Hysham", "Worden"] },
-  { "city": "Fargo", "state": "ND", "hub": "ag & energy", "blurb": "Red River Valley rigging and heavy haul serving North Dakota ag and Bakken energy work.", "near": ["West Fargo", "Moorhead MN", "Dilworth", "Casselton", "Mapleton", "Horace", "Wahpeton", "Valley City"] },
-  { "city": "Omaha", "state": "NE", "hub": "rail & ag", "blurb": "Omaha oversized transport and machinery moving at the crossroads of the Plains.", "near": ["Council Bluffs IA", "Bellevue", "Papillion", "La Vista", "Gretna", "Elkhorn", "Ralston", "Fremont"] },
-  { "city": "Minneapolis", "state": "MN", "hub": "manufacturing & distribution", "blurb": "Twin Cities rigging and heavy haul across the Upper Midwest's industrial corridor.", "near": ["St. Paul", "Bloomington", "Brooklyn Park", "Plymouth", "Eagan", "Maple Grove", "Eden Prairie", "Burnsville", "Shakopee", "Rogers"] },
-  { "city": "Milwaukee", "state": "WI", "hub": "heavy manufacturing", "blurb": "Milwaukee's heavy-equipment manufacturers count on us to rig and haul their largest machinery.", "near": ["Waukesha", "West Allis", "Wauwatosa", "Racine", "Kenosha", "New Berlin", "Oak Creek", "Menomonee Falls", "Germantown"] },
-  { "city": "Kansas City", "state": "MO", "hub": "rail & distribution", "blurb": "A national rail and freight crossroads — Kansas City oversized transport and machinery moving.", "near": ["Overland Park KS", "Olathe KS", "Independence", "Lee's Summit", "Shawnee KS", "Blue Springs", "Gardner KS", "Liberty", "Riverside"] },
-  { "city": "St. Louis", "state": "MO", "hub": "manufacturing & river", "blurb": "St. Louis rigging and heavy haul along the Mississippi's industrial and barge corridor.", "near": ["St. Charles", "Chesterfield", "Florissant", "O'Fallon", "Earth City", "Hazelwood", "Wentzville", "Fenton", "Granite City IL"] },
-  { "city": "Chicago", "state": "IL", "hub": "manufacturing & rail", "blurb": "Chicagoland machinery moving and oversized freight through the nation's busiest rail and industrial hub.", "near": ["Joliet", "Aurora", "Naperville", "Elgin", "Cicero", "Gary IN", "Hammond IN", "Bolingbrook", "Bedford Park", "Romeoville", "Elk Grove Village"] },
-  { "city": "Indianapolis", "state": "IN", "hub": "manufacturing & logistics", "blurb": "Central Indiana rigging and heavy haul serving the Midwest's manufacturing and distribution core.", "near": ["Carmel", "Fishers", "Greenwood", "Plainfield", "Noblesville", "Whitestown", "Avon", "Franklin", "Lebanon", "Anderson"] },
-  { "city": "Detroit", "state": "MI", "hub": "automotive", "blurb": "Motor City rigging and heavy haul — stamping presses, line equipment, and automotive machinery moves.", "near": ["Warren", "Dearborn", "Livonia", "Sterling Heights", "Troy", "Romulus", "Taylor", "Pontiac", "Southfield", "Flint"] },
-  { "city": "Columbus", "state": "OH", "hub": "distribution & manufacturing", "blurb": "Columbus oversized transport and machinery moving across central Ohio.", "near": ["Dublin", "Westerville", "Grove City", "Reynoldsburg", "Hilliard", "Gahanna", "Groveport", "Marysville", "Lancaster", "Newark"] },
-  { "city": "Cleveland", "state": "OH", "hub": "steel & automotive", "blurb": "Northeast Ohio rigging and heavy haul — steel, automotive, and heavy manufacturing equipment.", "near": ["Parma", "Akron", "Lorain", "Elyria", "Euclid", "Mentor", "Strongsville", "Lakewood", "Solon", "Canton"] },
-  { "city": "Louisville", "state": "KY", "hub": "logistics & manufacturing", "blurb": "Louisville rigging and heavy haul at the heart of the Ohio Valley's logistics network.", "near": ["Jeffersonville IN", "New Albany IN", "Shepherdsville", "Shively", "Jeffersontown", "Clarksville IN", "Elizabethtown", "Bardstown"] },
-  { "city": "Houston", "state": "TX", "hub": "energy & petrochemical", "blurb": "From the Houston Ship Channel refineries to the Energy Corridor, we rig and haul the heavy equipment that keeps Gulf Coast industry running.", "near": ["Pasadena", "Baytown", "Pearland", "Sugar Land", "The Woodlands", "Katy", "League City", "Channelview", "Deer Park", "La Porte", "Conroe"] },
-  { "city": "Dallas", "state": "TX", "hub": "manufacturing & distribution", "blurb": "Rigging and heavy haul across the Dallas–Fort Worth metroplex, one of the country's busiest freight corridors.", "near": ["Fort Worth", "Arlington", "Irving", "Garland", "Grand Prairie", "Mesquite", "Carrollton", "Richardson", "Denton", "Frisco", "Grapevine"] },
-  { "city": "San Antonio", "state": "TX", "hub": "manufacturing & energy", "blurb": "South Texas rigging and heavy haul — from Eagle Ford oilfield gear to full manufacturing plant relocations.", "near": ["New Braunfels", "Schertz", "Converse", "Seguin", "Boerne", "Universal City", "Cibolo", "Floresville", "Pleasanton"] },
-  { "city": "Midland", "state": "TX", "hub": "Permian Basin oilfield", "blurb": "Right in the heart of the Permian Basin, hauling oilfield equipment, frac components, and drilling iron across West Texas.", "near": ["Odessa", "Big Spring", "Andrews", "Stanton", "Gardendale", "Greenwood", "Crane", "Monahans"] },
-  { "city": "Oklahoma City", "state": "OK", "hub": "energy & aerospace", "blurb": "Central Oklahoma rigging and heavy haul — oilfield gear, aerospace tooling, and industrial machinery.", "near": ["Norman", "Edmond", "Moore", "Yukon", "Midwest City", "Del City", "Mustang", "El Reno", "Shawnee", "Stillwater"] },
-  { "city": "Little Rock", "state": "AR", "hub": "distribution & manufacturing", "blurb": "Central Arkansas rigging and heavy haul along the I-40 freight corridor.", "near": ["North Little Rock", "Conway", "Benton", "Bryant", "Jacksonville", "Sherwood", "Maumelle", "Cabot", "Hot Springs"] },
-  { "city": "New Orleans", "state": "LA", "hub": "port & energy", "blurb": "Gulf Coast project cargo, breakbulk, and rigging from the Port of New Orleans inland.", "near": ["Metairie", "Kenner", "Gretna", "Marrero", "Chalmette", "Harvey", "Slidell", "LaPlace", "Houma", "Boutte"] },
-  { "city": "Jackson", "state": "MS", "hub": "manufacturing & distribution", "blurb": "Central Mississippi rigging and heavy haul serving the Deep South's freight lanes.", "near": ["Pearl", "Ridgeland", "Madison", "Clinton", "Brandon", "Flowood", "Byram", "Canton", "Vicksburg"] },
-  { "city": "Memphis", "state": "TN", "hub": "logistics crossroads", "blurb": "Memphis is America's distribution crossroads — we move oversized and overweight freight through it every day.", "near": ["Bartlett", "Germantown", "Collierville", "Southaven MS", "Olive Branch MS", "Millington", "Horn Lake MS", "West Memphis AR", "Cordova"] },
-  { "city": "Nashville", "state": "TN", "hub": "auto & manufacturing", "blurb": "Middle Tennessee rigging and heavy haul, from auto-supplier equipment to industrial machinery moves.", "near": ["Murfreesboro", "Franklin", "Hendersonville", "Smyrna", "Brentwood", "Gallatin", "Lebanon", "La Vergne", "Mount Juliet", "Spring Hill"] },
-  { "city": "Birmingham", "state": "AL", "hub": "steel & manufacturing", "blurb": "Birmingham's steel and manufacturing roots run deep — we rig and haul the heavy iron that built them.", "near": ["Hoover", "Bessemer", "Tuscaloosa", "Trussville", "Vestavia Hills", "Gardendale", "Pelham", "Alabaster", "Leeds", "Pell City"] },
-  { "city": "Atlanta", "state": "GA", "hub": "distribution & manufacturing", "blurb": "Moving heavy machinery and oversized freight through the Southeast's largest logistics hub.", "near": ["Marietta", "Sandy Springs", "Roswell", "Alpharetta", "Decatur", "McDonough", "Lawrenceville", "Smyrna", "Kennesaw", "Stockbridge", "Duluth", "Conyers"] },
-  { "city": "Charleston", "state": "SC", "hub": "port & industrial", "blurb": "Port of Charleston breakbulk, project cargo, and rigging across the South Carolina Lowcountry.", "near": ["North Charleston", "Mount Pleasant", "Summerville", "Goose Creek", "Hanahan", "Ladson", "Moncks Corner", "Hollywood"] },
-  { "city": "Charlotte", "state": "NC", "hub": "energy & manufacturing", "blurb": "Carolinas machinery moving and oversized freight, from energy turbines to factory line relocations.", "near": ["Concord", "Gastonia", "Rock Hill SC", "Huntersville", "Matthews", "Monroe", "Mooresville", "Kannapolis", "Statesville", "Salisbury"] },
-  { "city": "Jacksonville", "state": "FL", "hub": "port & logistics", "blurb": "Northeast Florida rigging and oversized transport, from JAXPORT cargo to industrial plant equipment moves.", "near": ["Orange Park", "Fernandina Beach", "Yulee", "St. Augustine", "Middleburg", "Green Cove Springs", "Callahan", "Macclenny"] },
-  { "city": "Miami", "state": "FL", "hub": "trade & construction", "blurb": "South Florida heavy haul and machinery moving for construction, marine, and industrial loads.", "near": ["Hialeah", "Fort Lauderdale", "Hollywood", "Pompano Beach", "Doral", "Miami Gardens", "Homestead", "Medley", "Pembroke Pines", "Opa-locka"] },
-  { "city": "Norfolk", "state": "VA", "hub": "port & breakbulk", "blurb": "Hampton Roads heavy haul and rigging — port cargo and project loads out of Norfolk.", "near": ["Virginia Beach", "Chesapeake", "Portsmouth", "Hampton", "Newport News", "Suffolk", "Williamsburg", "Smithfield"] },
-  { "city": "Baltimore", "state": "MD", "hub": "port & industrial", "blurb": "Port of Baltimore breakbulk and machinery moving across the Mid-Atlantic.", "near": ["Towson", "Dundalk", "Glen Burnie", "Columbia", "Essex", "Catonsville", "Curtis Bay", "Sparrows Point", "Annapolis"] },
-  { "city": "Philadelphia", "state": "PA", "hub": "port & manufacturing", "blurb": "Philadelphia and the Delaware Valley — port cargo, refinery equipment, and machinery moving.", "near": ["Camden NJ", "Chester", "Norristown", "King of Prussia", "Bensalem", "Levittown", "Trenton NJ", "Conshohocken", "Essington"] },
-  { "city": "Pittsburgh", "state": "PA", "hub": "steel & energy", "blurb": "Steel City rigging and heavy haul — heavy industrial equipment and Marcellus energy gear.", "near": ["Monroeville", "Bethel Park", "McKeesport", "Cranberry Township", "Robinson", "Coraopolis", "Washington", "Greensburg", "Canonsburg"] },
-  { "city": "New York", "state": "NY", "hub": "construction & infrastructure", "blurb": "New York metro rigging and heavy haul — construction, infrastructure, and oversized equipment across the tri-state area.", "near": ["Newark NJ", "Jersey City NJ", "Yonkers", "Elizabeth NJ", "Brooklyn", "Bronx", "Edison NJ", "Secaucus NJ", "Bayonne NJ", "Long Island City"] },
-  { "city": "Boston", "state": "MA", "hub": "manufacturing & port", "blurb": "New England rigging and heavy haul — manufacturing, port cargo, and oversized loads across the Northeast.", "near": ["Cambridge", "Quincy", "Worcester", "Lowell", "Framingham", "Braintree", "Woburn", "Everett", "Chelsea", "Waltham"] }
+ {
+  "city": "Los Angeles",
+  "state": "CA",
+  "hub": "ports & industry",
+  "blurb": "From the Ports of LA and Long Beach inland, we rig and haul oversized and overweight loads across Southern California.",
+  "near": [
+   "Long Beach",
+   "Anaheim",
+   "Santa Ana",
+   "Glendale",
+   "Pasadena",
+   "Torrance",
+   "Pomona",
+   "Ontario",
+   "Carson",
+   "City of Industry",
+   "Santa Fe Springs",
+   "Vernon"
+  ]
+ },
+ {
+  "city": "Bakersfield",
+  "state": "CA",
+  "hub": "oil & agriculture",
+  "blurb": "Kern County oilfield and ag heavy haul \u2014 we move the iron that works California's Central Valley.",
+  "near": [
+   "Oildale",
+   "Shafter",
+   "Wasco",
+   "Delano",
+   "Taft",
+   "Arvin",
+   "Tehachapi",
+   "McFarland",
+   "Buttonwillow",
+   "Lamont"
+  ]
+ },
+ {
+  "city": "Sacramento",
+  "state": "CA",
+  "hub": "construction & distribution",
+  "blurb": "Rigging and heavy haul across the Sacramento Valley and Northern California.",
+  "near": [
+   "Roseville",
+   "Elk Grove",
+   "Folsom",
+   "Rancho Cordova",
+   "West Sacramento",
+   "Davis",
+   "Woodland",
+   "Citrus Heights",
+   "Stockton",
+   "Lodi"
+  ]
+ },
+ {
+  "city": "Portland",
+  "state": "OR",
+  "hub": "manufacturing & port",
+  "blurb": "Pacific Northwest rigging and heavy haul \u2014 port cargo, semiconductor tools, and industrial machinery.",
+  "near": [
+   "Gresham",
+   "Hillsboro",
+   "Beaverton",
+   "Tigard",
+   "Vancouver WA",
+   "Clackamas",
+   "Wilsonville",
+   "Tualatin",
+   "Troutdale",
+   "Salem"
+  ]
+ },
+ {
+  "city": "Seattle",
+  "state": "WA",
+  "hub": "aerospace & port",
+  "blurb": "Puget Sound rigging and heavy haul \u2014 aerospace tooling, port cargo, and oversized industrial loads.",
+  "near": [
+   "Tacoma",
+   "Bellevue",
+   "Kent",
+   "Renton",
+   "Auburn",
+   "Everett",
+   "Federal Way",
+   "Sumner",
+   "Fife",
+   "Lakewood"
+  ]
+ },
+ {
+  "city": "Spokane",
+  "state": "WA",
+  "hub": "mining & manufacturing",
+  "blurb": "Inland Northwest oversized transport and machinery moving across Eastern Washington.",
+  "near": [
+   "Spokane Valley",
+   "Liberty Lake",
+   "Cheney",
+   "Airway Heights",
+   "Deer Park",
+   "Post Falls ID",
+   "Coeur d'Alene ID",
+   "Medical Lake"
+  ]
+ },
+ {
+  "city": "Boise",
+  "state": "ID",
+  "hub": "semiconductor & manufacturing",
+  "blurb": "Treasure Valley rigging and heavy haul for semiconductor, manufacturing, and construction equipment.",
+  "near": [
+   "Nampa",
+   "Meridian",
+   "Caldwell",
+   "Eagle",
+   "Garden City",
+   "Kuna",
+   "Mountain Home",
+   "Star",
+   "Emmett"
+  ]
+ },
+ {
+  "city": "Salt Lake City",
+  "state": "UT",
+  "hub": "mining & industrial",
+  "blurb": "Crossroads of the West \u2014 Salt Lake City rigging and heavy haul for mining and industrial equipment.",
+  "near": [
+   "West Valley City",
+   "Sandy",
+   "Ogden",
+   "Provo",
+   "Orem",
+   "West Jordan",
+   "Layton",
+   "Tooele",
+   "Lehi",
+   "Clearfield"
+  ]
+ },
+ {
+  "city": "Las Vegas",
+  "state": "NV",
+  "hub": "construction & hospitality",
+  "blurb": "Las Vegas rigging and heavy haul for construction, gaming, and large-scale equipment installs.",
+  "near": [
+   "Henderson",
+   "North Las Vegas",
+   "Paradise",
+   "Boulder City",
+   "Pahrump",
+   "Mesquite",
+   "Sunrise Manor",
+   "Spring Valley"
+  ]
+ },
+ {
+  "city": "Phoenix",
+  "state": "AZ",
+  "hub": "semiconductor & construction",
+  "blurb": "Valley of the Sun machinery moving \u2014 semiconductor tools, construction gear, and oversized freight.",
+  "near": [
+   "Mesa",
+   "Chandler",
+   "Glendale",
+   "Tempe",
+   "Scottsdale",
+   "Gilbert",
+   "Peoria",
+   "Surprise",
+   "Goodyear",
+   "Buckeye",
+   "Casa Grande"
+  ]
+ },
+ {
+  "city": "Albuquerque",
+  "state": "NM",
+  "hub": "energy & industrial",
+  "blurb": "New Mexico rigging and heavy haul serving Southwest energy and industrial projects.",
+  "near": [
+   "Rio Rancho",
+   "Santa Fe",
+   "Los Lunas",
+   "Belen",
+   "Bernalillo",
+   "Grants",
+   "Edgewood",
+   "Moriarty"
+  ]
+ },
+ {
+  "city": "Denver",
+  "state": "CO",
+  "hub": "energy & construction",
+  "blurb": "Front Range rigging and heavy haul \u2014 energy equipment, construction machinery, and mountain-bound loads.",
+  "near": [
+   "Aurora",
+   "Lakewood",
+   "Commerce City",
+   "Thornton",
+   "Westminster",
+   "Arvada",
+   "Centennial",
+   "Brighton",
+   "Golden",
+   "Boulder"
+  ]
+ },
+ {
+  "city": "Casper",
+  "state": "WY",
+  "hub": "oilfield & energy",
+  "blurb": "Wyoming oilfield and energy heavy haul \u2014 drilling iron, frac gear, and oversized equipment.",
+  "near": [
+   "Mills",
+   "Evansville",
+   "Glenrock",
+   "Douglas",
+   "Bar Nunn",
+   "Midwest",
+   "Natrona",
+   "Casper Mountain"
+  ]
+ },
+ {
+  "city": "Billings",
+  "state": "MT",
+  "hub": "energy & ag",
+  "blurb": "Montana's largest city and our own backyard \u2014 Billings heavy haul for energy, ag, and industrial loads.",
+  "near": [
+   "Laurel",
+   "Lockwood",
+   "Shepherd",
+   "Hardin",
+   "Columbus",
+   "Roundup",
+   "Hysham",
+   "Worden"
+  ]
+ },
+ {
+  "city": "Fargo",
+  "state": "ND",
+  "hub": "ag & energy",
+  "blurb": "Red River Valley rigging and heavy haul serving North Dakota ag and Bakken energy work.",
+  "near": [
+   "West Fargo",
+   "Moorhead MN",
+   "Dilworth",
+   "Casselton",
+   "Mapleton",
+   "Horace",
+   "Wahpeton",
+   "Valley City"
+  ]
+ },
+ {
+  "city": "Omaha",
+  "state": "NE",
+  "hub": "rail & ag",
+  "blurb": "Omaha oversized transport and machinery moving at the crossroads of the Plains.",
+  "near": [
+   "Council Bluffs IA",
+   "Bellevue",
+   "Papillion",
+   "La Vista",
+   "Gretna",
+   "Elkhorn",
+   "Ralston",
+   "Fremont"
+  ]
+ },
+ {
+  "city": "Minneapolis",
+  "state": "MN",
+  "hub": "manufacturing & distribution",
+  "blurb": "Twin Cities rigging and heavy haul across the Upper Midwest's industrial corridor.",
+  "near": [
+   "St. Paul",
+   "Bloomington",
+   "Brooklyn Park",
+   "Plymouth",
+   "Eagan",
+   "Maple Grove",
+   "Eden Prairie",
+   "Burnsville",
+   "Shakopee",
+   "Rogers"
+  ]
+ },
+ {
+  "city": "Milwaukee",
+  "state": "WI",
+  "hub": "heavy manufacturing",
+  "blurb": "Milwaukee's heavy-equipment manufacturers count on us to rig and haul their largest machinery.",
+  "near": [
+   "Waukesha",
+   "West Allis",
+   "Wauwatosa",
+   "Racine",
+   "Kenosha",
+   "New Berlin",
+   "Oak Creek",
+   "Menomonee Falls",
+   "Germantown"
+  ]
+ },
+ {
+  "city": "Kansas City",
+  "state": "MO",
+  "hub": "rail & distribution",
+  "blurb": "A national rail and freight crossroads \u2014 Kansas City oversized transport and machinery moving.",
+  "near": [
+   "Overland Park KS",
+   "Olathe KS",
+   "Independence",
+   "Lee's Summit",
+   "Shawnee KS",
+   "Blue Springs",
+   "Gardner KS",
+   "Liberty",
+   "Riverside"
+  ]
+ },
+ {
+  "city": "St. Louis",
+  "state": "MO",
+  "hub": "manufacturing & river",
+  "blurb": "St. Louis rigging and heavy haul along the Mississippi's industrial and barge corridor.",
+  "near": [
+   "St. Charles",
+   "Chesterfield",
+   "Florissant",
+   "O'Fallon",
+   "Earth City",
+   "Hazelwood",
+   "Wentzville",
+   "Fenton",
+   "Granite City IL"
+  ]
+ },
+ {
+  "city": "Chicago",
+  "state": "IL",
+  "hub": "manufacturing & rail",
+  "blurb": "Chicagoland machinery moving and oversized freight through the nation's busiest rail and industrial hub.",
+  "near": [
+   "Joliet",
+   "Aurora",
+   "Naperville",
+   "Elgin",
+   "Cicero",
+   "Gary IN",
+   "Hammond IN",
+   "Bolingbrook",
+   "Bedford Park",
+   "Romeoville",
+   "Elk Grove Village"
+  ]
+ },
+ {
+  "city": "Indianapolis",
+  "state": "IN",
+  "hub": "manufacturing & logistics",
+  "blurb": "Central Indiana rigging and heavy haul serving the Midwest's manufacturing and distribution core.",
+  "near": [
+   "Carmel",
+   "Fishers",
+   "Greenwood",
+   "Plainfield",
+   "Noblesville",
+   "Whitestown",
+   "Avon",
+   "Franklin",
+   "Lebanon",
+   "Anderson"
+  ]
+ },
+ {
+  "city": "Detroit",
+  "state": "MI",
+  "hub": "automotive",
+  "blurb": "Motor City rigging and heavy haul \u2014 stamping presses, line equipment, and automotive machinery moves.",
+  "near": [
+   "Warren",
+   "Dearborn",
+   "Livonia",
+   "Sterling Heights",
+   "Troy",
+   "Romulus",
+   "Taylor",
+   "Pontiac",
+   "Southfield",
+   "Flint"
+  ]
+ },
+ {
+  "city": "Columbus",
+  "state": "OH",
+  "hub": "distribution & manufacturing",
+  "blurb": "Columbus oversized transport and machinery moving across central Ohio.",
+  "near": [
+   "Dublin",
+   "Westerville",
+   "Grove City",
+   "Reynoldsburg",
+   "Hilliard",
+   "Gahanna",
+   "Groveport",
+   "Marysville",
+   "Lancaster",
+   "Newark"
+  ]
+ },
+ {
+  "city": "Cleveland",
+  "state": "OH",
+  "hub": "steel & automotive",
+  "blurb": "Northeast Ohio rigging and heavy haul \u2014 steel, automotive, and heavy manufacturing equipment.",
+  "near": [
+   "Parma",
+   "Akron",
+   "Lorain",
+   "Elyria",
+   "Euclid",
+   "Mentor",
+   "Strongsville",
+   "Lakewood",
+   "Solon",
+   "Canton"
+  ]
+ },
+ {
+  "city": "Louisville",
+  "state": "KY",
+  "hub": "logistics & manufacturing",
+  "blurb": "Louisville rigging and heavy haul at the heart of the Ohio Valley's logistics network.",
+  "near": [
+   "Jeffersonville IN",
+   "New Albany IN",
+   "Shepherdsville",
+   "Shively",
+   "Jeffersontown",
+   "Clarksville IN",
+   "Elizabethtown",
+   "Bardstown"
+  ]
+ },
+ {
+  "city": "Houston",
+  "state": "TX",
+  "hub": "energy & petrochemical",
+  "blurb": "From the Houston Ship Channel refineries to the Energy Corridor, we rig and haul the heavy equipment that keeps Gulf Coast industry running.",
+  "near": [
+   "Pasadena",
+   "Baytown",
+   "Pearland",
+   "Sugar Land",
+   "The Woodlands",
+   "Katy",
+   "League City",
+   "Channelview",
+   "Deer Park",
+   "La Porte",
+   "Conroe"
+  ]
+ },
+ {
+  "city": "Dallas",
+  "state": "TX",
+  "hub": "manufacturing & distribution",
+  "blurb": "Rigging and heavy haul across the Dallas\u2013Fort Worth metroplex, one of the country's busiest freight corridors.",
+  "near": [
+   "Fort Worth",
+   "Arlington",
+   "Irving",
+   "Garland",
+   "Grand Prairie",
+   "Mesquite",
+   "Carrollton",
+   "Richardson",
+   "Denton",
+   "Frisco",
+   "Grapevine"
+  ]
+ },
+ {
+  "city": "San Antonio",
+  "state": "TX",
+  "hub": "manufacturing & energy",
+  "blurb": "South Texas rigging and heavy haul \u2014 from Eagle Ford oilfield gear to full manufacturing plant relocations.",
+  "near": [
+   "New Braunfels",
+   "Schertz",
+   "Converse",
+   "Seguin",
+   "Boerne",
+   "Universal City",
+   "Cibolo",
+   "Floresville",
+   "Pleasanton"
+  ]
+ },
+ {
+  "city": "Midland",
+  "state": "TX",
+  "hub": "Permian Basin oilfield",
+  "blurb": "Right in the heart of the Permian Basin, hauling oilfield equipment, frac components, and drilling iron across West Texas.",
+  "near": [
+   "Odessa",
+   "Big Spring",
+   "Andrews",
+   "Stanton",
+   "Gardendale",
+   "Greenwood",
+   "Crane",
+   "Monahans"
+  ]
+ },
+ {
+  "city": "Oklahoma City",
+  "state": "OK",
+  "hub": "energy & aerospace",
+  "blurb": "Central Oklahoma rigging and heavy haul \u2014 oilfield gear, aerospace tooling, and industrial machinery.",
+  "near": [
+   "Norman",
+   "Edmond",
+   "Moore",
+   "Yukon",
+   "Midwest City",
+   "Del City",
+   "Mustang",
+   "El Reno",
+   "Shawnee",
+   "Stillwater"
+  ]
+ },
+ {
+  "city": "Little Rock",
+  "state": "AR",
+  "hub": "distribution & manufacturing",
+  "blurb": "Central Arkansas rigging and heavy haul along the I-40 freight corridor.",
+  "near": [
+   "North Little Rock",
+   "Conway",
+   "Benton",
+   "Bryant",
+   "Jacksonville",
+   "Sherwood",
+   "Maumelle",
+   "Cabot",
+   "Hot Springs"
+  ]
+ },
+ {
+  "city": "New Orleans",
+  "state": "LA",
+  "hub": "port & energy",
+  "blurb": "Gulf Coast project cargo, breakbulk, and rigging from the Port of New Orleans inland.",
+  "near": [
+   "Metairie",
+   "Kenner",
+   "Gretna",
+   "Marrero",
+   "Chalmette",
+   "Harvey",
+   "Slidell",
+   "LaPlace",
+   "Houma",
+   "Boutte"
+  ]
+ },
+ {
+  "city": "Jackson",
+  "state": "MS",
+  "hub": "manufacturing & distribution",
+  "blurb": "Central Mississippi rigging and heavy haul serving the Deep South's freight lanes.",
+  "near": [
+   "Pearl",
+   "Ridgeland",
+   "Madison",
+   "Clinton",
+   "Brandon",
+   "Flowood",
+   "Byram",
+   "Canton",
+   "Vicksburg"
+  ]
+ },
+ {
+  "city": "Memphis",
+  "state": "TN",
+  "hub": "logistics crossroads",
+  "blurb": "Memphis is America's distribution crossroads \u2014 we move oversized and overweight freight through it every day.",
+  "near": [
+   "Bartlett",
+   "Germantown",
+   "Collierville",
+   "Southaven MS",
+   "Olive Branch MS",
+   "Millington",
+   "Horn Lake MS",
+   "West Memphis AR",
+   "Cordova"
+  ]
+ },
+ {
+  "city": "Nashville",
+  "state": "TN",
+  "hub": "auto & manufacturing",
+  "blurb": "Middle Tennessee rigging and heavy haul, from auto-supplier equipment to industrial machinery moves.",
+  "near": [
+   "Murfreesboro",
+   "Franklin",
+   "Hendersonville",
+   "Smyrna",
+   "Brentwood",
+   "Gallatin",
+   "Lebanon",
+   "La Vergne",
+   "Mount Juliet",
+   "Spring Hill"
+  ]
+ },
+ {
+  "city": "Birmingham",
+  "state": "AL",
+  "hub": "steel & manufacturing",
+  "blurb": "Birmingham's steel and manufacturing roots run deep \u2014 we rig and haul the heavy iron that built them.",
+  "near": [
+   "Hoover",
+   "Bessemer",
+   "Tuscaloosa",
+   "Trussville",
+   "Vestavia Hills",
+   "Gardendale",
+   "Pelham",
+   "Alabaster",
+   "Leeds",
+   "Pell City"
+  ]
+ },
+ {
+  "city": "Atlanta",
+  "state": "GA",
+  "hub": "distribution & manufacturing",
+  "blurb": "Moving heavy machinery and oversized freight through the Southeast's largest logistics hub.",
+  "near": [
+   "Marietta",
+   "Sandy Springs",
+   "Roswell",
+   "Alpharetta",
+   "Decatur",
+   "McDonough",
+   "Lawrenceville",
+   "Smyrna",
+   "Kennesaw",
+   "Stockbridge",
+   "Duluth",
+   "Conyers"
+  ]
+ },
+ {
+  "city": "Charleston",
+  "state": "SC",
+  "hub": "port & industrial",
+  "blurb": "Port of Charleston breakbulk, project cargo, and rigging across the South Carolina Lowcountry.",
+  "near": [
+   "North Charleston",
+   "Mount Pleasant",
+   "Summerville",
+   "Goose Creek",
+   "Hanahan",
+   "Ladson",
+   "Moncks Corner",
+   "Hollywood"
+  ]
+ },
+ {
+  "city": "Charlotte",
+  "state": "NC",
+  "hub": "energy & manufacturing",
+  "blurb": "Carolinas machinery moving and oversized freight, from energy turbines to factory line relocations.",
+  "near": [
+   "Concord",
+   "Gastonia",
+   "Rock Hill SC",
+   "Huntersville",
+   "Matthews",
+   "Monroe",
+   "Mooresville",
+   "Kannapolis",
+   "Statesville",
+   "Salisbury"
+  ]
+ },
+ {
+  "city": "Jacksonville",
+  "state": "FL",
+  "hub": "port & logistics",
+  "blurb": "Northeast Florida rigging and oversized transport, from JAXPORT cargo to industrial plant equipment moves.",
+  "near": [
+   "Orange Park",
+   "Fernandina Beach",
+   "Yulee",
+   "St. Augustine",
+   "Middleburg",
+   "Green Cove Springs",
+   "Callahan",
+   "Macclenny"
+  ]
+ },
+ {
+  "city": "Miami",
+  "state": "FL",
+  "hub": "trade & construction",
+  "blurb": "South Florida heavy haul and machinery moving for construction, marine, and industrial loads.",
+  "near": [
+   "Hialeah",
+   "Fort Lauderdale",
+   "Hollywood",
+   "Pompano Beach",
+   "Doral",
+   "Miami Gardens",
+   "Homestead",
+   "Medley",
+   "Pembroke Pines",
+   "Opa-locka"
+  ]
+ },
+ {
+  "city": "Norfolk",
+  "state": "VA",
+  "hub": "port & breakbulk",
+  "blurb": "Hampton Roads heavy haul and rigging \u2014 port cargo and project loads out of Norfolk.",
+  "near": [
+   "Virginia Beach",
+   "Chesapeake",
+   "Portsmouth",
+   "Hampton",
+   "Newport News",
+   "Suffolk",
+   "Williamsburg",
+   "Smithfield"
+  ]
+ },
+ {
+  "city": "Baltimore",
+  "state": "MD",
+  "hub": "port & industrial",
+  "blurb": "Port of Baltimore breakbulk and machinery moving across the Mid-Atlantic.",
+  "near": [
+   "Towson",
+   "Dundalk",
+   "Glen Burnie",
+   "Columbia",
+   "Essex",
+   "Catonsville",
+   "Curtis Bay",
+   "Sparrows Point",
+   "Annapolis"
+  ]
+ },
+ {
+  "city": "Philadelphia",
+  "state": "PA",
+  "hub": "port & manufacturing",
+  "blurb": "Philadelphia and the Delaware Valley \u2014 port cargo, refinery equipment, and machinery moving.",
+  "near": [
+   "Camden NJ",
+   "Chester",
+   "Norristown",
+   "King of Prussia",
+   "Bensalem",
+   "Levittown",
+   "Trenton NJ",
+   "Conshohocken",
+   "Essington"
+  ]
+ },
+ {
+  "city": "Pittsburgh",
+  "state": "PA",
+  "hub": "steel & energy",
+  "blurb": "Steel City rigging and heavy haul \u2014 heavy industrial equipment and Marcellus energy gear.",
+  "near": [
+   "Monroeville",
+   "Bethel Park",
+   "McKeesport",
+   "Cranberry Township",
+   "Robinson",
+   "Coraopolis",
+   "Washington",
+   "Greensburg",
+   "Canonsburg"
+  ]
+ },
+ {
+  "city": "New York",
+  "state": "NY",
+  "hub": "construction & infrastructure",
+  "blurb": "New York metro rigging and heavy haul \u2014 construction, infrastructure, and oversized equipment across the tri-state area.",
+  "near": [
+   "Newark NJ",
+   "Jersey City NJ",
+   "Yonkers",
+   "Elizabeth NJ",
+   "Brooklyn",
+   "Bronx",
+   "Edison NJ",
+   "Secaucus NJ",
+   "Bayonne NJ",
+   "Long Island City"
+  ]
+ },
+ {
+  "city": "Boston",
+  "state": "MA",
+  "hub": "manufacturing & port",
+  "blurb": "New England rigging and heavy haul \u2014 manufacturing, port cargo, and oversized loads across the Northeast.",
+  "near": [
+   "Cambridge",
+   "Quincy",
+   "Worcester",
+   "Lowell",
+   "Framingham",
+   "Braintree",
+   "Woburn",
+   "Everett",
+   "Chelsea",
+   "Waltham"
+  ]
+ },
+ {
+  "city": "Cincinnati",
+  "state": "OH",
+  "hub": "aviation & machine tools",
+  "blurb": "We rig and haul oversized and overweight loads across Greater Cincinnati, from the GE Aviation plants in Evendale to machine-tool shops along the I-75 corridor and the Ohio River terminals.",
+  "near": [
+   "Norwood",
+   "Blue Ash",
+   "Sharonville",
+   "Fairfield",
+   "Hamilton",
+   "Mason",
+   "Covington",
+   "Florence",
+   "West Chester"
+  ]
+ },
+ {
+  "city": "San Jose",
+  "state": "CA",
+  "hub": "semiconductor & tech",
+  "blurb": "We move oversized and overweight loads through Silicon Valley, hauling fab equipment and heavy machinery across San Jose and the tech corridors flanking US-101 and I-880.",
+  "near": [
+   "Santa Clara",
+   "Sunnyvale",
+   "Milpitas",
+   "Campbell",
+   "Cupertino",
+   "Mountain View",
+   "Fremont",
+   "Morgan Hill",
+   "Gilroy"
+  ]
+ },
+ {
+  "city": "Greenville",
+  "state": "SC",
+  "hub": "auto & advanced mfg",
+  "blurb": "We rig and haul oversized machinery across the Upstate, serving BMW and its auto suppliers along the I-85 corridor between Greenville and Spartanburg.",
+  "near": [
+   "Greer",
+   "Mauldin",
+   "Simpsonville",
+   "Spartanburg",
+   "Easley",
+   "Taylors",
+   "Anderson",
+   "Travelers Rest",
+   "Fountain Inn"
+  ]
+ },
+ {
+  "city": "Grand Rapids",
+  "state": "MI",
+  "hub": "furniture & auto mfg",
+  "blurb": "We move oversized and overweight loads across West Michigan, hauling for the office-furniture, automotive, and aerospace plants along the I-96 and US-131 corridors.",
+  "near": [
+   "Wyoming",
+   "Kentwood",
+   "Walker",
+   "Grandville",
+   "Holland",
+   "Hudsonville",
+   "Rockford",
+   "Cedar Springs",
+   "Byron Center"
+  ]
+ },
+ {
+  "city": "Peoria",
+  "state": "IL",
+  "hub": "heavy equipment mfg",
+  "blurb": "We rig and haul oversized and overweight loads across the Peoria area, serving Caterpillar and central Illinois heavy-equipment plants along the Illinois River and I-74.",
+  "near": [
+   "East Peoria",
+   "Pekin",
+   "Morton",
+   "Washington",
+   "Bartonville",
+   "Chillicothe",
+   "Bloomington",
+   "Normal",
+   "Galesburg"
+  ]
+ },
+ {
+  "city": "Wichita",
+  "state": "KS",
+  "hub": "aviation manufacturing",
+  "blurb": "We move oversized and overweight loads across the Air Capital, hauling for Spirit AeroSystems, Textron, and Bombardier plants along the I-135 and US-54 corridors.",
+  "near": [
+   "Derby",
+   "Andover",
+   "Haysville",
+   "Newton",
+   "Park City",
+   "Bel Aire",
+   "Goddard",
+   "Maize",
+   "Valley Center"
+  ]
+ },
+ {
+  "city": "Toledo",
+  "state": "OH",
+  "hub": "glass & automotive",
+  "blurb": "We rig and haul oversized and overweight loads across the Glass City, serving auto plants and glass makers along the I-75 corridor and the Port of Toledo on Lake Erie.",
+  "near": [
+   "Sylvania",
+   "Maumee",
+   "Perrysburg",
+   "Oregon",
+   "Rossford",
+   "Bowling Green",
+   "Northwood",
+   "Holland",
+   "Waterville"
+  ]
+ },
+ {
+  "city": "Chattanooga",
+  "state": "TN",
+  "hub": "automotive manufacturing",
+  "blurb": "We move oversized and overweight loads across the Chattanooga region, serving the Volkswagen assembly plant and manufacturers along the I-75 and I-24 interchange.",
+  "near": [
+   "East Ridge",
+   "Red Bank",
+   "Hixson",
+   "Ooltewah",
+   "Collegedale",
+   "Soddy-Daisy",
+   "Cleveland",
+   "Ringgold",
+   "Fort Oglethorpe"
+  ]
+ },
+ {
+  "city": "Huntsville",
+  "state": "AL",
+  "hub": "aerospace & defense",
+  "blurb": "We rig and haul oversized and overweight loads across the Rocket City, serving Redstone Arsenal, Cummings Research Park, and aerospace shops along I-565.",
+  "near": [
+   "Madison",
+   "Decatur",
+   "Athens",
+   "Meridianville",
+   "Hazel Green",
+   "Harvest",
+   "Owens Cross Roads",
+   "Priceville",
+   "Triana"
+  ]
+ },
+ {
+  "city": "Mobile",
+  "state": "AL",
+  "hub": "shipbuilding & port",
+  "blurb": "We move oversized and overweight loads across the Mobile Bay area, hauling for the Airbus final assembly line, shipyards, and the Port of Mobile along I-10 and I-65.",
+  "near": [
+   "Prichard",
+   "Saraland",
+   "Chickasaw",
+   "Theodore",
+   "Daphne",
+   "Spanish Fort",
+   "Tillmans Corner",
+   "Satsuma",
+   "Bay Minette"
+  ]
+ },
+ {
+  "city": "Tulsa",
+  "state": "OK",
+  "hub": "energy & aerospace MRO",
+  "blurb": "We rig and haul oversized and overweight loads across the Tulsa area, serving energy operators and the aerospace MRO base at Tulsa International along I-44 and the Arkansas River.",
+  "near": [
+   "Broken Arrow",
+   "Owasso",
+   "Sand Springs",
+   "Bixby",
+   "Jenks",
+   "Sapulpa",
+   "Claremore",
+   "Catoosa",
+   "Glenpool"
+  ]
+ },
+ {
+  "city": "Rockford",
+  "state": "IL",
+  "hub": "aerospace & machine tools",
+  "blurb": "We move oversized and overweight loads across the Rockford region, hauling for aerospace suppliers and machine-tool shops along I-90 and the Rock River.",
+  "near": [
+   "Loves Park",
+   "Machesney Park",
+   "Belvidere",
+   "Cherry Valley",
+   "Roscoe",
+   "Rockton",
+   "Freeport",
+   "Byron",
+   "South Beloit"
+  ]
+ },
+ {
+  "city": "Dayton",
+  "state": "OH",
+  "hub": "aerospace & auto parts",
+  "blurb": "We rig and haul oversized and overweight loads across the Dayton area, serving Wright-Patterson AFB, aerospace suppliers, and auto-parts plants along I-75 and I-70.",
+  "near": [
+   "Kettering",
+   "Beavercreek",
+   "Huber Heights",
+   "Fairborn",
+   "Miamisburg",
+   "Centerville",
+   "Vandalia",
+   "Springboro",
+   "Trotwood"
+  ]
+ },
+ {
+  "city": "San Diego",
+  "state": "CA",
+  "hub": "defense & precision mfg",
+  "blurb": "We move oversized and overweight loads across San Diego County, hauling for defense contractors, biotech campuses, and precision manufacturers along I-5, I-8, and I-15.",
+  "near": [
+   "Chula Vista",
+   "El Cajon",
+   "Oceanside",
+   "Escondido",
+   "Carlsbad",
+   "Vista",
+   "National City",
+   "Poway",
+   "San Marcos"
+  ]
+ },
+ {
+  "city": "Riverside",
+  "state": "CA",
+  "hub": "distribution & warehousing",
+  "blurb": "We rig and haul oversized and overweight loads across the Inland Empire, serving the massive distribution and warehousing hubs along I-10, I-15, and the 60 freeway.",
+  "near": [
+   "San Bernardino",
+   "Ontario",
+   "Fontana",
+   "Moreno Valley",
+   "Rialto",
+   "Rancho Cucamonga",
+   "Corona",
+   "Redlands",
+   "Jurupa Valley"
+  ]
+ },
+ {
+  "city": "Savannah",
+  "state": "GA",
+  "hub": "port project cargo",
+  "blurb": "We move oversized and overweight loads across the Savannah region, hauling project cargo from the Port of Savannah and area manufacturers along I-95 and I-16.",
+  "near": [
+   "Pooler",
+   "Garden City",
+   "Port Wentworth",
+   "Richmond Hill",
+   "Rincon",
+   "Hinesville",
+   "Bloomingdale",
+   "Springfield",
+   "Guyton"
+  ]
+ },
+ {
+  "city": "Baton Rouge",
+  "state": "LA",
+  "hub": "petrochemical & refining",
+  "blurb": "We rig and haul oversized and overweight loads across the Baton Rouge area, serving the refineries and petrochemical plants along the Mississippi River and I-10.",
+  "near": [
+   "Baker",
+   "Zachary",
+   "Central",
+   "Gonzales",
+   "Denham Springs",
+   "Prairieville",
+   "Port Allen",
+   "Walker",
+   "Plaquemine"
+  ]
+ },
+ {
+  "city": "Greensboro",
+  "state": "NC",
+  "hub": "aerospace & advanced mfg",
+  "blurb": "We move oversized and overweight loads across the Triad, hauling for aerospace and advanced-manufacturing plants along I-40, I-85, and the Piedmont Triad airport corridor.",
+  "near": [
+   "High Point",
+   "Winston-Salem",
+   "Burlington",
+   "Kernersville",
+   "Jamestown",
+   "Summerfield",
+   "Oak Ridge",
+   "Gibsonville",
+   "Archdale"
+  ]
+ },
+ {
+  "city": "Knoxville",
+  "state": "TN",
+  "hub": "mfg & DOE research",
+  "blurb": "We rig and haul oversized and overweight loads across East Tennessee, serving manufacturers and the Oak Ridge DOE complex along I-40, I-75, and the Tennessee River.",
+  "near": [
+   "Oak Ridge",
+   "Maryville",
+   "Alcoa",
+   "Farragut",
+   "Powell",
+   "Clinton",
+   "Lenoir City",
+   "Sevierville",
+   "Halls"
+  ]
+ },
+ {
+  "city": "Akron",
+  "state": "OH",
+  "hub": "polymers & rubber",
+  "blurb": "We move oversized and overweight loads across the Akron area, hauling for the polymer and rubber industry and heavy manufacturers along I-76, I-77, and the Ohio Turnpike.",
+  "near": [
+   "Cuyahoga Falls",
+   "Barberton",
+   "Stow",
+   "Green",
+   "Tallmadge",
+   "Fairlawn",
+   "Wadsworth",
+   "Kent",
+   "Norton"
+  ]
+ },
+ {
+  "city": "Fort Wayne",
+  "state": "IN",
+  "hub": "diversified mfg",
+  "blurb": "We rig and haul oversized and overweight loads across the Fort Wayne area, serving diversified manufacturers along I-69 and the US-30 and US-24 corridors.",
+  "near": [
+   "New Haven",
+   "Huntertown",
+   "Leo-Cedarville",
+   "Woodburn",
+   "Auburn",
+   "Columbia City",
+   "Bluffton",
+   "Grabill",
+   "Roanoke"
+  ]
+ },
+ {
+  "city": "Lansing",
+  "state": "MI",
+  "hub": "GM automotive",
+  "blurb": "We move oversized and overweight loads across the Lansing area, hauling for the GM assembly plants and their suppliers along I-96, I-69, and US-127.",
+  "near": [
+   "East Lansing",
+   "Okemos",
+   "Holt",
+   "Grand Ledge",
+   "Delta Township",
+   "Mason",
+   "Charlotte",
+   "DeWitt",
+   "Williamston"
+  ]
+ },
+ {
+  "city": "Buffalo",
+  "state": "NY",
+  "hub": "manufacturing & steel",
+  "blurb": "We rig and haul oversized and overweight loads across Western New York, serving steel and heavy manufacturers along the I-90 corridor and the Port of Buffalo.",
+  "near": [
+   "Cheektowaga",
+   "Amherst",
+   "Tonawanda",
+   "West Seneca",
+   "Lackawanna",
+   "Lancaster",
+   "Hamburg",
+   "Niagara Falls",
+   "Depew"
+  ]
+ },
+ {
+  "city": "Hartford",
+  "state": "CT",
+  "hub": "aerospace manufacturing",
+  "blurb": "We move oversized and overweight loads across the Hartford area, hauling for Pratt & Whitney, Sikorsky, and aerospace suppliers along I-91 and I-84.",
+  "near": [
+   "East Hartford",
+   "West Hartford",
+   "New Britain",
+   "Manchester",
+   "Bristol",
+   "Newington",
+   "Windsor",
+   "Wethersfield",
+   "Farmington"
+  ]
+ },
+ {
+  "city": "Allentown",
+  "state": "PA",
+  "hub": "logistics & mfg",
+  "blurb": "We rig and haul oversized and overweight loads across the Lehigh Valley, serving the logistics hubs and manufacturers along I-78 and Route 22 near Allentown, Bethlehem, and Easton.",
+  "near": [
+   "Bethlehem",
+   "Easton",
+   "Emmaus",
+   "Whitehall",
+   "Nazareth",
+   "Hellertown",
+   "Macungie",
+   "Northampton",
+   "Catasauqua"
+  ]
+ },
+ {
+  "city": "Erie",
+  "state": "PA",
+  "hub": "heavy manufacturing",
+  "blurb": "We move oversized and overweight loads across the Erie area, hauling for the locomotive and heavy-equipment plants and the Port of Erie along I-90 and I-79.",
+  "near": [
+   "Millcreek",
+   "Wesleyville",
+   "Lawrence Park",
+   "Harborcreek",
+   "Fairview",
+   "North East",
+   "Girard",
+   "Edinboro",
+   "Waterford"
+  ]
+ },
+ {
+  "city": "Richmond",
+  "state": "VA",
+  "hub": "manufacturing & port",
+  "blurb": "We rig and haul oversized and overweight loads across the Richmond area, serving manufacturers and the James River port terminals along I-95, I-64, and I-295.",
+  "near": [
+   "Henrico",
+   "Chesterfield",
+   "Petersburg",
+   "Colonial Heights",
+   "Mechanicsville",
+   "Midlothian",
+   "Glen Allen",
+   "Hopewell",
+   "Ashland"
+  ]
+ },
+ {
+  "city": "Tampa",
+  "state": "FL",
+  "hub": "port & phosphate",
+  "blurb": "We move oversized and overweight loads across the Tampa Bay area, hauling project cargo and phosphate freight from Port Tampa Bay along I-4, I-75, and I-275.",
+  "near": [
+   "St. Petersburg",
+   "Clearwater",
+   "Brandon",
+   "Plant City",
+   "Riverview",
+   "Wesley Chapel",
+   "Lakeland",
+   "Palm Harbor",
+   "Largo"
+  ]
+ },
+ {
+  "city": "Beaumont",
+  "state": "TX",
+  "hub": "refining & petrochemical",
+  "blurb": "We rig and haul oversized and overweight loads across the Golden Triangle, serving the refineries and petrochemical plants around Beaumont, Port Arthur, and Orange along I-10.",
+  "near": [
+   "Port Arthur",
+   "Orange",
+   "Nederland",
+   "Groves",
+   "Port Neches",
+   "Vidor",
+   "Bridge City",
+   "Lumberton",
+   "Silsbee"
+  ]
+ },
+ {
+  "city": "Corpus Christi",
+  "state": "TX",
+  "hub": "refining & port",
+  "blurb": "We move oversized and overweight loads across the Coastal Bend, hauling refinery and wind-energy freight from the Port of Corpus Christi along I-37 and US-181.",
+  "near": [
+   "Portland",
+   "Robstown",
+   "Ingleside",
+   "Aransas Pass",
+   "Gregory",
+   "Rockport",
+   "Alice",
+   "Kingsville",
+   "Bishop"
+  ]
+ },
+ {
+  "city": "El Paso",
+  "state": "TX",
+  "hub": "border manufacturing",
+  "blurb": "We rig and haul oversized and overweight loads across the El Paso border region, serving maquila and manufacturing plants along I-10 and the Santa Teresa port of entry.",
+  "near": [
+   "Socorro",
+   "Horizon City",
+   "San Elizario",
+   "Sunland Park",
+   "Santa Teresa",
+   "Anthony",
+   "Canutillo",
+   "Clint",
+   "Fabens"
+  ]
+ },
+ {
+  "city": "Reno",
+  "state": "NV",
+  "hub": "distribution & gigafactory",
+  "blurb": "We move oversized and overweight loads across the Reno-Sparks area, hauling for the distribution centers and the Tahoe-Reno Industrial Center along I-80 and US-395.",
+  "near": [
+   "Sparks",
+   "Carson City",
+   "Fernley",
+   "Sun Valley",
+   "Spanish Springs",
+   "Fallon",
+   "Dayton",
+   "Gardnerville",
+   "Cold Springs"
+  ]
+ },
+ {
+  "city": "Colorado Springs",
+  "state": "CO",
+  "hub": "aerospace & defense",
+  "blurb": "We rig and haul oversized and overweight loads across the Pikes Peak region, serving the defense and aerospace installations along I-25 and the Powers corridor.",
+  "near": [
+   "Fountain",
+   "Monument",
+   "Manitou Springs",
+   "Security-Widefield",
+   "Falcon",
+   "Woodland Park",
+   "Peyton",
+   "Cimarron Hills",
+   "Black Forest"
+  ]
+ },
+ {
+  "city": "Ogden",
+  "state": "UT",
+  "hub": "aerospace & defense",
+  "blurb": "We move oversized and overweight loads across the Ogden area, hauling for Hill Air Force Base and the aerospace and defense plants along I-15 and I-84.",
+  "near": [
+   "Roy",
+   "Clearfield",
+   "Layton",
+   "South Ogden",
+   "Clinton",
+   "Riverdale",
+   "Washington Terrace",
+   "West Haven",
+   "Sunset"
+  ]
+ },
+ {
+  "city": "Davenport",
+  "state": "IA",
+  "hub": "ag equipment mfg",
+  "blurb": "We rig and haul oversized and overweight loads across the Quad Cities, serving John Deere and ag-equipment plants along I-80, I-74, and the Mississippi River.",
+  "near": [
+   "Bettendorf",
+   "Moline",
+   "Rock Island",
+   "East Moline",
+   "Eldridge",
+   "Silvis",
+   "Milan",
+   "Le Claire",
+   "Blue Grass"
+  ]
+ },
+ {
+  "city": "Cedar Rapids",
+  "state": "IA",
+  "hub": "mfg & food processing",
+  "blurb": "We move oversized and overweight loads across the Cedar Rapids area, hauling for manufacturers and food-processing plants along I-380 and the Cedar River.",
+  "near": [
+   "Marion",
+   "Hiawatha",
+   "Robins",
+   "Fairfax",
+   "Ely",
+   "Mount Vernon",
+   "Center Point",
+   "Palo",
+   "Walford"
+  ]
+ },
+ {
+  "city": "Green Bay",
+  "state": "WI",
+  "hub": "paper & packaging mfg",
+  "blurb": "We rig and haul oversized and overweight loads across the Green Bay area, serving paper mills and packaging-machinery plants along I-41 and the Fox River.",
+  "near": [
+   "De Pere",
+   "Ashwaubenon",
+   "Bellevue",
+   "Howard",
+   "Allouez",
+   "Suamico",
+   "Hobart",
+   "Pulaski",
+   "Wrightstown"
+  ]
+ },
+ {
+  "city": "South Bend",
+  "state": "IN",
+  "hub": "mfg & RV production",
+  "blurb": "We move oversized and overweight loads across the South Bend area, hauling for manufacturers and the RV plants around Elkhart along the US-20 and US-31 corridors.",
+  "near": [
+   "Mishawaka",
+   "Granger",
+   "Elkhart",
+   "Osceola",
+   "Goshen",
+   "Niles",
+   "New Carlisle",
+   "Roseland",
+   "Bremen"
+  ]
+ },
+ {
+  "city": "Lexington",
+  "state": "KY",
+  "hub": "automotive manufacturing",
+  "blurb": "We rig and haul oversized and overweight loads across the Bluegrass, serving the Toyota assembly plant in Georgetown and area manufacturers along I-64 and I-75.",
+  "near": [
+   "Georgetown",
+   "Nicholasville",
+   "Richmond",
+   "Winchester",
+   "Versailles",
+   "Frankfort",
+   "Paris",
+   "Berea",
+   "Wilmore"
+  ]
+ },
+ {
+  "city": "Montgomery",
+  "state": "AL",
+  "hub": "automotive manufacturing",
+  "blurb": "We move oversized and overweight loads across the Montgomery area, hauling for the Hyundai assembly plant and its suppliers along I-65 and I-85.",
+  "near": [
+   "Prattville",
+   "Wetumpka",
+   "Millbrook",
+   "Pike Road",
+   "Selma",
+   "Tallassee",
+   "Deatsville",
+   "Elmore",
+   "Autaugaville"
+  ]
+ }
 ]

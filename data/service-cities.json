@@ -288,6 +288,246 @@
     "url": "/services/rigging/boston-ma"
   },
   {
+    "service": "rigging",
+    "city": "Cincinnati",
+    "state": "OH",
+    "url": "/services/rigging/cincinnati-oh"
+  },
+  {
+    "service": "rigging",
+    "city": "San Jose",
+    "state": "CA",
+    "url": "/services/rigging/san-jose-ca"
+  },
+  {
+    "service": "rigging",
+    "city": "Greenville",
+    "state": "SC",
+    "url": "/services/rigging/greenville-sc"
+  },
+  {
+    "service": "rigging",
+    "city": "Grand Rapids",
+    "state": "MI",
+    "url": "/services/rigging/grand-rapids-mi"
+  },
+  {
+    "service": "rigging",
+    "city": "Peoria",
+    "state": "IL",
+    "url": "/services/rigging/peoria-il"
+  },
+  {
+    "service": "rigging",
+    "city": "Wichita",
+    "state": "KS",
+    "url": "/services/rigging/wichita-ks"
+  },
+  {
+    "service": "rigging",
+    "city": "Toledo",
+    "state": "OH",
+    "url": "/services/rigging/toledo-oh"
+  },
+  {
+    "service": "rigging",
+    "city": "Chattanooga",
+    "state": "TN",
+    "url": "/services/rigging/chattanooga-tn"
+  },
+  {
+    "service": "rigging",
+    "city": "Huntsville",
+    "state": "AL",
+    "url": "/services/rigging/huntsville-al"
+  },
+  {
+    "service": "rigging",
+    "city": "Mobile",
+    "state": "AL",
+    "url": "/services/rigging/mobile-al"
+  },
+  {
+    "service": "rigging",
+    "city": "Tulsa",
+    "state": "OK",
+    "url": "/services/rigging/tulsa-ok"
+  },
+  {
+    "service": "rigging",
+    "city": "Rockford",
+    "state": "IL",
+    "url": "/services/rigging/rockford-il"
+  },
+  {
+    "service": "rigging",
+    "city": "Dayton",
+    "state": "OH",
+    "url": "/services/rigging/dayton-oh"
+  },
+  {
+    "service": "rigging",
+    "city": "San Diego",
+    "state": "CA",
+    "url": "/services/rigging/san-diego-ca"
+  },
+  {
+    "service": "rigging",
+    "city": "Riverside",
+    "state": "CA",
+    "url": "/services/rigging/riverside-ca"
+  },
+  {
+    "service": "rigging",
+    "city": "Savannah",
+    "state": "GA",
+    "url": "/services/rigging/savannah-ga"
+  },
+  {
+    "service": "rigging",
+    "city": "Baton Rouge",
+    "state": "LA",
+    "url": "/services/rigging/baton-rouge-la"
+  },
+  {
+    "service": "rigging",
+    "city": "Greensboro",
+    "state": "NC",
+    "url": "/services/rigging/greensboro-nc"
+  },
+  {
+    "service": "rigging",
+    "city": "Knoxville",
+    "state": "TN",
+    "url": "/services/rigging/knoxville-tn"
+  },
+  {
+    "service": "rigging",
+    "city": "Akron",
+    "state": "OH",
+    "url": "/services/rigging/akron-oh"
+  },
+  {
+    "service": "rigging",
+    "city": "Fort Wayne",
+    "state": "IN",
+    "url": "/services/rigging/fort-wayne-in"
+  },
+  {
+    "service": "rigging",
+    "city": "Lansing",
+    "state": "MI",
+    "url": "/services/rigging/lansing-mi"
+  },
+  {
+    "service": "rigging",
+    "city": "Buffalo",
+    "state": "NY",
+    "url": "/services/rigging/buffalo-ny"
+  },
+  {
+    "service": "rigging",
+    "city": "Hartford",
+    "state": "CT",
+    "url": "/services/rigging/hartford-ct"
+  },
+  {
+    "service": "rigging",
+    "city": "Allentown",
+    "state": "PA",
+    "url": "/services/rigging/allentown-pa"
+  },
+  {
+    "service": "rigging",
+    "city": "Erie",
+    "state": "PA",
+    "url": "/services/rigging/erie-pa"
+  },
+  {
+    "service": "rigging",
+    "city": "Richmond",
+    "state": "VA",
+    "url": "/services/rigging/richmond-va"
+  },
+  {
+    "service": "rigging",
+    "city": "Tampa",
+    "state": "FL",
+    "url": "/services/rigging/tampa-fl"
+  },
+  {
+    "service": "rigging",
+    "city": "Beaumont",
+    "state": "TX",
+    "url": "/services/rigging/beaumont-tx"
+  },
+  {
+    "service": "rigging",
+    "city": "Corpus Christi",
+    "state": "TX",
+    "url": "/services/rigging/corpus-christi-tx"
+  },
+  {
+    "service": "rigging",
+    "city": "El Paso",
+    "state": "TX",
+    "url": "/services/rigging/el-paso-tx"
+  },
+  {
+    "service": "rigging",
+    "city": "Reno",
+    "state": "NV",
+    "url": "/services/rigging/reno-nv"
+  },
+  {
+    "service": "rigging",
+    "city": "Colorado Springs",
+    "state": "CO",
+    "url": "/services/rigging/colorado-springs-co"
+  },
+  {
+    "service": "rigging",
+    "city": "Ogden",
+    "state": "UT",
+    "url": "/services/rigging/ogden-ut"
+  },
+  {
+    "service": "rigging",
+    "city": "Davenport",
+    "state": "IA",
+    "url": "/services/rigging/davenport-ia"
+  },
+  {
+    "service": "rigging",
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "url": "/services/rigging/cedar-rapids-ia"
+  },
+  {
+    "service": "rigging",
+    "city": "Green Bay",
+    "state": "WI",
+    "url": "/services/rigging/green-bay-wi"
+  },
+  {
+    "service": "rigging",
+    "city": "South Bend",
+    "state": "IN",
+    "url": "/services/rigging/south-bend-in"
+  },
+  {
+    "service": "rigging",
+    "city": "Lexington",
+    "state": "KY",
+    "url": "/services/rigging/lexington-ky"
+  },
+  {
+    "service": "rigging",
+    "city": "Montgomery",
+    "state": "AL",
+    "url": "/services/rigging/montgomery-al"
+  },
+  {
     "service": "cnc-machine-movers",
     "city": "Los Angeles",
     "state": "CA",
@@ -574,6 +814,246 @@
     "city": "Boston",
     "state": "MA",
     "url": "/services/cnc-machine-movers/boston-ma"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Cincinnati",
+    "state": "OH",
+    "url": "/services/cnc-machine-movers/cincinnati-oh"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "San Jose",
+    "state": "CA",
+    "url": "/services/cnc-machine-movers/san-jose-ca"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Greenville",
+    "state": "SC",
+    "url": "/services/cnc-machine-movers/greenville-sc"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Grand Rapids",
+    "state": "MI",
+    "url": "/services/cnc-machine-movers/grand-rapids-mi"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Peoria",
+    "state": "IL",
+    "url": "/services/cnc-machine-movers/peoria-il"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Wichita",
+    "state": "KS",
+    "url": "/services/cnc-machine-movers/wichita-ks"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Toledo",
+    "state": "OH",
+    "url": "/services/cnc-machine-movers/toledo-oh"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Chattanooga",
+    "state": "TN",
+    "url": "/services/cnc-machine-movers/chattanooga-tn"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Huntsville",
+    "state": "AL",
+    "url": "/services/cnc-machine-movers/huntsville-al"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Mobile",
+    "state": "AL",
+    "url": "/services/cnc-machine-movers/mobile-al"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Tulsa",
+    "state": "OK",
+    "url": "/services/cnc-machine-movers/tulsa-ok"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Rockford",
+    "state": "IL",
+    "url": "/services/cnc-machine-movers/rockford-il"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Dayton",
+    "state": "OH",
+    "url": "/services/cnc-machine-movers/dayton-oh"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "San Diego",
+    "state": "CA",
+    "url": "/services/cnc-machine-movers/san-diego-ca"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Riverside",
+    "state": "CA",
+    "url": "/services/cnc-machine-movers/riverside-ca"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Savannah",
+    "state": "GA",
+    "url": "/services/cnc-machine-movers/savannah-ga"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Baton Rouge",
+    "state": "LA",
+    "url": "/services/cnc-machine-movers/baton-rouge-la"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Greensboro",
+    "state": "NC",
+    "url": "/services/cnc-machine-movers/greensboro-nc"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Knoxville",
+    "state": "TN",
+    "url": "/services/cnc-machine-movers/knoxville-tn"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Akron",
+    "state": "OH",
+    "url": "/services/cnc-machine-movers/akron-oh"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Fort Wayne",
+    "state": "IN",
+    "url": "/services/cnc-machine-movers/fort-wayne-in"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Lansing",
+    "state": "MI",
+    "url": "/services/cnc-machine-movers/lansing-mi"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Buffalo",
+    "state": "NY",
+    "url": "/services/cnc-machine-movers/buffalo-ny"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Hartford",
+    "state": "CT",
+    "url": "/services/cnc-machine-movers/hartford-ct"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Allentown",
+    "state": "PA",
+    "url": "/services/cnc-machine-movers/allentown-pa"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Erie",
+    "state": "PA",
+    "url": "/services/cnc-machine-movers/erie-pa"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Richmond",
+    "state": "VA",
+    "url": "/services/cnc-machine-movers/richmond-va"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Tampa",
+    "state": "FL",
+    "url": "/services/cnc-machine-movers/tampa-fl"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Beaumont",
+    "state": "TX",
+    "url": "/services/cnc-machine-movers/beaumont-tx"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Corpus Christi",
+    "state": "TX",
+    "url": "/services/cnc-machine-movers/corpus-christi-tx"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "El Paso",
+    "state": "TX",
+    "url": "/services/cnc-machine-movers/el-paso-tx"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Reno",
+    "state": "NV",
+    "url": "/services/cnc-machine-movers/reno-nv"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Colorado Springs",
+    "state": "CO",
+    "url": "/services/cnc-machine-movers/colorado-springs-co"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Ogden",
+    "state": "UT",
+    "url": "/services/cnc-machine-movers/ogden-ut"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Davenport",
+    "state": "IA",
+    "url": "/services/cnc-machine-movers/davenport-ia"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "url": "/services/cnc-machine-movers/cedar-rapids-ia"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Green Bay",
+    "state": "WI",
+    "url": "/services/cnc-machine-movers/green-bay-wi"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "South Bend",
+    "state": "IN",
+    "url": "/services/cnc-machine-movers/south-bend-in"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Lexington",
+    "state": "KY",
+    "url": "/services/cnc-machine-movers/lexington-ky"
+  },
+  {
+    "service": "cnc-machine-movers",
+    "city": "Montgomery",
+    "state": "AL",
+    "url": "/services/cnc-machine-movers/montgomery-al"
   },
   {
     "service": "machinery-moving",
@@ -864,6 +1344,246 @@
     "url": "/services/machinery-moving/boston-ma"
   },
   {
+    "service": "machinery-moving",
+    "city": "Cincinnati",
+    "state": "OH",
+    "url": "/services/machinery-moving/cincinnati-oh"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "San Jose",
+    "state": "CA",
+    "url": "/services/machinery-moving/san-jose-ca"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Greenville",
+    "state": "SC",
+    "url": "/services/machinery-moving/greenville-sc"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Grand Rapids",
+    "state": "MI",
+    "url": "/services/machinery-moving/grand-rapids-mi"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Peoria",
+    "state": "IL",
+    "url": "/services/machinery-moving/peoria-il"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Wichita",
+    "state": "KS",
+    "url": "/services/machinery-moving/wichita-ks"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Toledo",
+    "state": "OH",
+    "url": "/services/machinery-moving/toledo-oh"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Chattanooga",
+    "state": "TN",
+    "url": "/services/machinery-moving/chattanooga-tn"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Huntsville",
+    "state": "AL",
+    "url": "/services/machinery-moving/huntsville-al"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Mobile",
+    "state": "AL",
+    "url": "/services/machinery-moving/mobile-al"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Tulsa",
+    "state": "OK",
+    "url": "/services/machinery-moving/tulsa-ok"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Rockford",
+    "state": "IL",
+    "url": "/services/machinery-moving/rockford-il"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Dayton",
+    "state": "OH",
+    "url": "/services/machinery-moving/dayton-oh"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "San Diego",
+    "state": "CA",
+    "url": "/services/machinery-moving/san-diego-ca"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Riverside",
+    "state": "CA",
+    "url": "/services/machinery-moving/riverside-ca"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Savannah",
+    "state": "GA",
+    "url": "/services/machinery-moving/savannah-ga"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Baton Rouge",
+    "state": "LA",
+    "url": "/services/machinery-moving/baton-rouge-la"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Greensboro",
+    "state": "NC",
+    "url": "/services/machinery-moving/greensboro-nc"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Knoxville",
+    "state": "TN",
+    "url": "/services/machinery-moving/knoxville-tn"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Akron",
+    "state": "OH",
+    "url": "/services/machinery-moving/akron-oh"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Fort Wayne",
+    "state": "IN",
+    "url": "/services/machinery-moving/fort-wayne-in"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Lansing",
+    "state": "MI",
+    "url": "/services/machinery-moving/lansing-mi"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Buffalo",
+    "state": "NY",
+    "url": "/services/machinery-moving/buffalo-ny"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Hartford",
+    "state": "CT",
+    "url": "/services/machinery-moving/hartford-ct"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Allentown",
+    "state": "PA",
+    "url": "/services/machinery-moving/allentown-pa"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Erie",
+    "state": "PA",
+    "url": "/services/machinery-moving/erie-pa"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Richmond",
+    "state": "VA",
+    "url": "/services/machinery-moving/richmond-va"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Tampa",
+    "state": "FL",
+    "url": "/services/machinery-moving/tampa-fl"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Beaumont",
+    "state": "TX",
+    "url": "/services/machinery-moving/beaumont-tx"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Corpus Christi",
+    "state": "TX",
+    "url": "/services/machinery-moving/corpus-christi-tx"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "El Paso",
+    "state": "TX",
+    "url": "/services/machinery-moving/el-paso-tx"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Reno",
+    "state": "NV",
+    "url": "/services/machinery-moving/reno-nv"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Colorado Springs",
+    "state": "CO",
+    "url": "/services/machinery-moving/colorado-springs-co"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Ogden",
+    "state": "UT",
+    "url": "/services/machinery-moving/ogden-ut"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Davenport",
+    "state": "IA",
+    "url": "/services/machinery-moving/davenport-ia"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "url": "/services/machinery-moving/cedar-rapids-ia"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Green Bay",
+    "state": "WI",
+    "url": "/services/machinery-moving/green-bay-wi"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "South Bend",
+    "state": "IN",
+    "url": "/services/machinery-moving/south-bend-in"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Lexington",
+    "state": "KY",
+    "url": "/services/machinery-moving/lexington-ky"
+  },
+  {
+    "service": "machinery-moving",
+    "city": "Montgomery",
+    "state": "AL",
+    "url": "/services/machinery-moving/montgomery-al"
+  },
+  {
     "service": "plant-relocation",
     "city": "Los Angeles",
     "state": "CA",
@@ -1152,6 +1872,246 @@
     "url": "/services/plant-relocation/boston-ma"
   },
   {
+    "service": "plant-relocation",
+    "city": "Cincinnati",
+    "state": "OH",
+    "url": "/services/plant-relocation/cincinnati-oh"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "San Jose",
+    "state": "CA",
+    "url": "/services/plant-relocation/san-jose-ca"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Greenville",
+    "state": "SC",
+    "url": "/services/plant-relocation/greenville-sc"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Grand Rapids",
+    "state": "MI",
+    "url": "/services/plant-relocation/grand-rapids-mi"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Peoria",
+    "state": "IL",
+    "url": "/services/plant-relocation/peoria-il"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Wichita",
+    "state": "KS",
+    "url": "/services/plant-relocation/wichita-ks"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Toledo",
+    "state": "OH",
+    "url": "/services/plant-relocation/toledo-oh"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Chattanooga",
+    "state": "TN",
+    "url": "/services/plant-relocation/chattanooga-tn"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Huntsville",
+    "state": "AL",
+    "url": "/services/plant-relocation/huntsville-al"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Mobile",
+    "state": "AL",
+    "url": "/services/plant-relocation/mobile-al"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Tulsa",
+    "state": "OK",
+    "url": "/services/plant-relocation/tulsa-ok"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Rockford",
+    "state": "IL",
+    "url": "/services/plant-relocation/rockford-il"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Dayton",
+    "state": "OH",
+    "url": "/services/plant-relocation/dayton-oh"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "San Diego",
+    "state": "CA",
+    "url": "/services/plant-relocation/san-diego-ca"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Riverside",
+    "state": "CA",
+    "url": "/services/plant-relocation/riverside-ca"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Savannah",
+    "state": "GA",
+    "url": "/services/plant-relocation/savannah-ga"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Baton Rouge",
+    "state": "LA",
+    "url": "/services/plant-relocation/baton-rouge-la"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Greensboro",
+    "state": "NC",
+    "url": "/services/plant-relocation/greensboro-nc"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Knoxville",
+    "state": "TN",
+    "url": "/services/plant-relocation/knoxville-tn"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Akron",
+    "state": "OH",
+    "url": "/services/plant-relocation/akron-oh"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Fort Wayne",
+    "state": "IN",
+    "url": "/services/plant-relocation/fort-wayne-in"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Lansing",
+    "state": "MI",
+    "url": "/services/plant-relocation/lansing-mi"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Buffalo",
+    "state": "NY",
+    "url": "/services/plant-relocation/buffalo-ny"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Hartford",
+    "state": "CT",
+    "url": "/services/plant-relocation/hartford-ct"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Allentown",
+    "state": "PA",
+    "url": "/services/plant-relocation/allentown-pa"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Erie",
+    "state": "PA",
+    "url": "/services/plant-relocation/erie-pa"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Richmond",
+    "state": "VA",
+    "url": "/services/plant-relocation/richmond-va"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Tampa",
+    "state": "FL",
+    "url": "/services/plant-relocation/tampa-fl"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Beaumont",
+    "state": "TX",
+    "url": "/services/plant-relocation/beaumont-tx"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Corpus Christi",
+    "state": "TX",
+    "url": "/services/plant-relocation/corpus-christi-tx"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "El Paso",
+    "state": "TX",
+    "url": "/services/plant-relocation/el-paso-tx"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Reno",
+    "state": "NV",
+    "url": "/services/plant-relocation/reno-nv"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Colorado Springs",
+    "state": "CO",
+    "url": "/services/plant-relocation/colorado-springs-co"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Ogden",
+    "state": "UT",
+    "url": "/services/plant-relocation/ogden-ut"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Davenport",
+    "state": "IA",
+    "url": "/services/plant-relocation/davenport-ia"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "url": "/services/plant-relocation/cedar-rapids-ia"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Green Bay",
+    "state": "WI",
+    "url": "/services/plant-relocation/green-bay-wi"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "South Bend",
+    "state": "IN",
+    "url": "/services/plant-relocation/south-bend-in"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Lexington",
+    "state": "KY",
+    "url": "/services/plant-relocation/lexington-ky"
+  },
+  {
+    "service": "plant-relocation",
+    "city": "Montgomery",
+    "state": "AL",
+    "url": "/services/plant-relocation/montgomery-al"
+  },
+  {
     "service": "heavy-haul",
     "city": "Los Angeles",
     "state": "CA",
@@ -1438,5 +2398,245 @@
     "city": "Boston",
     "state": "MA",
     "url": "/services/heavy-haul/boston-ma"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Cincinnati",
+    "state": "OH",
+    "url": "/services/heavy-haul/cincinnati-oh"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "San Jose",
+    "state": "CA",
+    "url": "/services/heavy-haul/san-jose-ca"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Greenville",
+    "state": "SC",
+    "url": "/services/heavy-haul/greenville-sc"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Grand Rapids",
+    "state": "MI",
+    "url": "/services/heavy-haul/grand-rapids-mi"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Peoria",
+    "state": "IL",
+    "url": "/services/heavy-haul/peoria-il"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Wichita",
+    "state": "KS",
+    "url": "/services/heavy-haul/wichita-ks"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Toledo",
+    "state": "OH",
+    "url": "/services/heavy-haul/toledo-oh"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Chattanooga",
+    "state": "TN",
+    "url": "/services/heavy-haul/chattanooga-tn"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Huntsville",
+    "state": "AL",
+    "url": "/services/heavy-haul/huntsville-al"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Mobile",
+    "state": "AL",
+    "url": "/services/heavy-haul/mobile-al"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Tulsa",
+    "state": "OK",
+    "url": "/services/heavy-haul/tulsa-ok"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Rockford",
+    "state": "IL",
+    "url": "/services/heavy-haul/rockford-il"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Dayton",
+    "state": "OH",
+    "url": "/services/heavy-haul/dayton-oh"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "San Diego",
+    "state": "CA",
+    "url": "/services/heavy-haul/san-diego-ca"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Riverside",
+    "state": "CA",
+    "url": "/services/heavy-haul/riverside-ca"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Savannah",
+    "state": "GA",
+    "url": "/services/heavy-haul/savannah-ga"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Baton Rouge",
+    "state": "LA",
+    "url": "/services/heavy-haul/baton-rouge-la"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Greensboro",
+    "state": "NC",
+    "url": "/services/heavy-haul/greensboro-nc"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Knoxville",
+    "state": "TN",
+    "url": "/services/heavy-haul/knoxville-tn"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Akron",
+    "state": "OH",
+    "url": "/services/heavy-haul/akron-oh"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Fort Wayne",
+    "state": "IN",
+    "url": "/services/heavy-haul/fort-wayne-in"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Lansing",
+    "state": "MI",
+    "url": "/services/heavy-haul/lansing-mi"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Buffalo",
+    "state": "NY",
+    "url": "/services/heavy-haul/buffalo-ny"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Hartford",
+    "state": "CT",
+    "url": "/services/heavy-haul/hartford-ct"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Allentown",
+    "state": "PA",
+    "url": "/services/heavy-haul/allentown-pa"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Erie",
+    "state": "PA",
+    "url": "/services/heavy-haul/erie-pa"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Richmond",
+    "state": "VA",
+    "url": "/services/heavy-haul/richmond-va"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Tampa",
+    "state": "FL",
+    "url": "/services/heavy-haul/tampa-fl"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Beaumont",
+    "state": "TX",
+    "url": "/services/heavy-haul/beaumont-tx"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Corpus Christi",
+    "state": "TX",
+    "url": "/services/heavy-haul/corpus-christi-tx"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "El Paso",
+    "state": "TX",
+    "url": "/services/heavy-haul/el-paso-tx"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Reno",
+    "state": "NV",
+    "url": "/services/heavy-haul/reno-nv"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Colorado Springs",
+    "state": "CO",
+    "url": "/services/heavy-haul/colorado-springs-co"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Ogden",
+    "state": "UT",
+    "url": "/services/heavy-haul/ogden-ut"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Davenport",
+    "state": "IA",
+    "url": "/services/heavy-haul/davenport-ia"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Cedar Rapids",
+    "state": "IA",
+    "url": "/services/heavy-haul/cedar-rapids-ia"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Green Bay",
+    "state": "WI",
+    "url": "/services/heavy-haul/green-bay-wi"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "South Bend",
+    "state": "IN",
+    "url": "/services/heavy-haul/south-bend-in"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Lexington",
+    "state": "KY",
+    "url": "/services/heavy-haul/lexington-ky"
+  },
+  {
+    "service": "heavy-haul",
+    "city": "Montgomery",
+    "state": "AL",
+    "url": "/services/heavy-haul/montgomery-al"
   }
 ]

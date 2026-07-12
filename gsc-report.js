@@ -86,7 +86,21 @@ function num(n) { return Number(n || 0).toLocaleString(); }
     console.log('Re-run this in a few days as Google crawls the new pages.\n');
   } else {
     const t = totals[0];
-    console.log(`TOTALS  clicks ${num(t.clicks)} · impressions ${num(t.impressions)} · CTR ${(t.ctr*100).toFixed(1)}% · avg position ${t.position.toFixed(1)}\n`);
+    // trend log: append this run + show delta vs the previous logged run
+    const trendPath = path.join(__dirname, 'data', 'gsc-trend.csv');
+    let prev = null;
+    try {
+      const lines = fs.readFileSync(trendPath, 'utf8').trim().split('\n').filter(Boolean);
+      const last = lines[lines.length - 1];
+      if (last && !last.startsWith('date')) { const [, c, i, , p] = last.split(','); prev = { clicks: +c, impressions: +i, position: +p }; }
+    } catch {}
+    const row = `${range.endDate},${Math.round(t.clicks)},${Math.round(t.impressions)},${(t.ctr*100).toFixed(2)},${t.position.toFixed(1)}\n`;
+    try {
+      if (!fs.existsSync(trendPath)) fs.writeFileSync(trendPath, 'date,clicks,impressions,ctr,position\n');
+      fs.appendFileSync(trendPath, row);
+    } catch {}
+    const d = (cur, was, inv=false) => { if (was == null) return ''; const diff = cur - was; if (Math.abs(diff) < 0.05) return ' (—)'; const up = inv ? diff < 0 : diff > 0; const sign = diff > 0 ? '+' : ''; return ` (${up?'▲':'▼'}${sign}${inv?diff.toFixed(1):num(Math.round(diff))} vs last)`; };
+    console.log(`TOTALS  clicks ${num(t.clicks)}${d(t.clicks, prev&&prev.clicks)} · impressions ${num(t.impressions)}${d(t.impressions, prev&&prev.impressions)} · CTR ${(t.ctr*100).toFixed(1)}% · avg position ${t.position.toFixed(1)}${d(t.position, prev&&prev.position, true)}\n`);
   }
 
   const queries = await query(token, { ...range, dimensions: ['query'], rowLimit: 30 });

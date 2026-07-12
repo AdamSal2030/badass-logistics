@@ -21,7 +21,7 @@ const citySlug = (city, st) => `${city.toLowerCase().replace(/[^a-z0-9]+/g,'-').
 const topMetros = locations.slice(0, 10);
 
 const NAV = `
-<div class="topbar"><div class="wrap"><div>📍 48 locations nationwide &nbsp;·&nbsp; <strong>All 50 states</strong></div><div><a href="tel:3072841332">📞 (307) 284-1332</a> &nbsp;·&nbsp; <a href="/contact"><strong>Get a Quote</strong></a></div></div></div>
+<div class="topbar"><div class="wrap"><div>📍 88 locations nationwide &nbsp;·&nbsp; <strong>All 50 states</strong></div><div><a href="tel:3072841332">📞 (307) 284-1332</a> &nbsp;·&nbsp; <a href="/contact"><strong>Get a Quote</strong></a></div></div></div>
 <header class="site-header"><div class="wrap">
   <a class="logo" href="/"><span class="brand"><span class="l1">BADASS</span><span class="l2">LOGISTICS</span></span></a>
   <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
@@ -137,6 +137,17 @@ const TRAILERS = [
   },
 ];
 
+// (a) cross-link each trailer hub to the most relevant blog guide — pushes authority
+// to the page-3 "mover" posts that are already pulling impressions (per GSC).
+const GUIDES = {
+  'rgn-trailer': ['how-to-ship-an-excavator', 'How to Ship an Excavator'],
+  'lowboy-trailer': ['how-to-ship-a-generator', 'How to Ship a Generator'],
+  'step-deck-trailer': ['step-deck-vs-drop-deck-trailers', 'Step-Deck vs Drop-Deck Trailers'],
+  'double-drop-trailer': ['step-deck-vs-drop-deck-trailers', 'Step-Deck vs Drop-Deck Trailers'],
+  'flatbed-transport': ['how-to-secure-a-load-on-a-flatbed', 'How to Secure a Load on a Flatbed'],
+  'multi-axle-transport': ['how-to-ship-a-generator', 'How to Ship a Generator'],
+};
+
 function schema(t){
   const url = `${DOMAIN}/services/${t.slug}`;
   const svc = {"@context":"https://schema.org","@type":"Service","serviceType":t.serviceType,"areaServed":"United States","provider":{"@type":"LocalBusiness","@id":`${DOMAIN}/#organization`,"name":site.brand,"telephone":"+1-307-284-1332","url":`${DOMAIN}/`},"description":t.quick};
@@ -229,6 +240,7 @@ ${NAV}
     ${others.map(o=>`<a href="/services/${o.slug}">${o.name.replace(' Transport','')}</a>`).join('\n    ')}
     <a href="/services/heavy-haul"><strong>All heavy haul →</strong></a>
   </div>
+  ${GUIDES[t.slug] ? `<p class="section-intro" style="margin-top:16px">Related field guide: <a href="/blog/${GUIDES[t.slug][0]}" style="color:var(--yellow-deep);text-decoration:underline;">${GUIDES[t.slug][1]} →</a></p>` : ''}
   <p class="section-intro" style="margin-top:22px">Heavy haul in your metro: ${topMetros.map(m=>`<a href="/services/heavy-haul/${citySlug(m.city,m.state)}">${m.city}</a>`).join(' · ')} · <a href="/locations"><strong>all 48 →</strong></a></p>
 </div></section>
 

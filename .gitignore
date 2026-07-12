@@ -6,3 +6,4 @@ content-drafts/
 
 # GSC service-account credential (never commit)
 gsc-key.json
+data/gsc-trend.csv

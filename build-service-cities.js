@@ -35,6 +35,7 @@ const STATE = {
   MS:{name:'Mississippi',ix:'I-55, I-20, I-10 and I-59'}, AL:{name:'Alabama',ix:'I-65, I-20, I-10 and I-59'}, TN:{name:'Tennessee',ix:'I-40, I-65, I-24 and I-75'}, GA:{name:'Georgia',ix:'I-75, I-85, I-20 and I-95'},
   SC:{name:'South Carolina',ix:'I-95, I-26, I-85 and I-20'}, NC:{name:'North Carolina',ix:'I-40, I-85, I-95 and I-77'}, FL:{name:'Florida',ix:'I-95, I-75, I-10 and I-4'}, KY:{name:'Kentucky',ix:'I-65, I-64, I-75 and I-71'},
   VA:{name:'Virginia',ix:'I-95, I-64, I-81 and I-66'}, MD:{name:'Maryland',ix:'I-95, I-70 and I-83'}, PA:{name:'Pennsylvania',ix:'I-76, I-80, I-81 and I-95'}, NY:{name:'New York',ix:'I-87, I-90, I-95 and I-81'}, MA:{name:'Massachusetts',ix:'I-90, I-95 and I-93'},
+  KS:{name:'Kansas',ix:'I-70, I-35 and I-135'}, CT:{name:'Connecticut',ix:'I-95, I-91 and I-84'}, IA:{name:'Iowa',ix:'I-80, I-35 and I-380'},
 };
 const stateName = (st) => (STATE[st] && STATE[st].name) || st;
 const interstatesOf = (st) => (STATE[st] && STATE[st].ix) || 'the Interstate system';
@@ -60,7 +61,7 @@ function industryPhrase(industry) {
 
 const NAVLINKS = [['/services/rigging','Rigging'],['/services/heavy-haul','Heavy Haul'],['/services/machinery-moving','Machinery Moving'],['/services/cnc-machine-movers','CNC Movers'],['/locations','Locations'],['/blog/','Blog'],['/about','About']];
 const NAV = `
-<div class="topbar"><div class="wrap"><div>📍 48 locations nationwide &nbsp;·&nbsp; <strong>All 50 states</strong></div><div><a href="tel:3072841332">📞 (307) 284-1332</a> &nbsp;·&nbsp; <a href="/contact"><strong>Get a Quote</strong></a></div></div></div>
+<div class="topbar"><div class="wrap"><div>📍 88 locations nationwide &nbsp;·&nbsp; <strong>All 50 states</strong></div><div><a href="tel:3072841332">📞 (307) 284-1332</a> &nbsp;·&nbsp; <a href="/contact"><strong>Get a Quote</strong></a></div></div></div>
 <header class="site-header"><div class="wrap">
   <a class="logo" href="/"><span class="brand"><span class="l1">BADASS</span><span class="l2">LOGISTICS</span></span></a>
   <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
@@ -74,7 +75,7 @@ const FOOTER = `
   <div><h4>Badass Logistics</h4><p style="opacity:.85;max-width:280px;">Rigging, heavy haul, dispatch &amp; freight moving. One-stop shop for everything oversized and overweight.</p></div>
   <div><h4>Services</h4><a href="/services/rigging">Industrial Rigging</a><a href="/services/heavy-haul">Heavy Haul Transport</a><a href="/services/machinery-moving">Machinery Moving</a><a href="/services/cnc-machine-movers">CNC Machine Movers</a><a href="/services/plant-relocation">Plant Relocation</a><a href="/services/dispatching">Truck Dispatching</a><a href="/services/freight-moving">Freight Moving</a></div>
   <div><h4>Company</h4><a href="/about">About Us</a><a href="/locations">Locations</a><a href="/blog/">Blog</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a></div>
-</div><div class="covstrip">Coverage: <a href="/locations/texas">Texas</a> · <a href="/locations/california">California</a> · <a href="/locations/florida">Florida</a> · <a href="/locations/georgia">Georgia</a> · <a href="/locations/illinois">Illinois</a> · <a href="/locations/ohio">Ohio</a> · <a href="/locations/pennsylvania">Pennsylvania</a> · <a href="/locations/new-york">New York</a> · <a href="/locations"><strong>All 48 locations →</strong></a></div><div class="footer-nap"><span class="nap-name">Badass Logistics</span><span>${site.hqStreet}, ${site.hqCity}, ${site.hqState} ${site.hqZip}</span><span><a href="tel:3072841332">(307) 284-1332</a></span><span><a href="mailto:rigging@badasslogistics.com">rigging@badasslogistics.com</a></span></div>
+</div><div class="covstrip">Coverage: <a href="/locations/texas">Texas</a> · <a href="/locations/california">California</a> · <a href="/locations/florida">Florida</a> · <a href="/locations/georgia">Georgia</a> · <a href="/locations/illinois">Illinois</a> · <a href="/locations/ohio">Ohio</a> · <a href="/locations/pennsylvania">Pennsylvania</a> · <a href="/locations/new-york">New York</a> · <a href="/locations"><strong>All 88 locations →</strong></a></div><div class="footer-nap"><span class="nap-name">Badass Logistics</span><span>${site.hqStreet}, ${site.hqCity}, ${site.hqState} ${site.hqZip}</span><span><a href="tel:3072841332">(307) 284-1332</a></span><span><a href="mailto:rigging@badasslogistics.com">rigging@badasslogistics.com</a></span></div>
 <div class="legal"><span>© 2022–2026 Badass Logistics. All rights reserved.</span><span class="hand">made to move heavy things.</span></div></div></footer>`;
 
 // ---------- SERVICES (genuinely distinct copy per vertical) ----------
@@ -283,7 +284,7 @@ ${NAV}
 <section><div class="wrap">
   <span class="section-tag hand">on the map</span>
   <h2 class="section-title">${svc.name} in ${city}</h2>
-  <p class="section-intro">Working throughout ${CS} and the surrounding metro — backed by a nationwide network of 48 locations when a move crosses state lines.</p>
+  <p class="section-intro">Working throughout ${CS} and the surrounding metro — backed by a nationwide network of 88 locations when a move crosses state lines.</p>
   <div class="map-frame" style="margin-top:24px;">
     <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="${CS} ${svc.name} map" src="https://maps.google.com/maps?q=${mapQ}&z=10&output=embed"></iframe>
   </div>
@@ -337,7 +338,7 @@ function statePage(serviceSlug, svc, st, cityMs) {
   const svcSchema = {"@context":"https://schema.org","@type":"Service","serviceType":svc.serviceType,"areaServed":{"@type":"State","name":stName},"provider":{"@type":"LocalBusiness","@id":`${DOMAIN}/#organization`,"name":site.brand,"telephone":"+1-307-284-1332","url":`${DOMAIN}/`},"description":`${site.brand} provides ${svc.serviceType.toLowerCase()} across ${stName}.`};
   const breadcrumb = {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":`${DOMAIN}/`},{"@type":"ListItem","position":2,"name":svc.name,"item":`${DOMAIN}/services/${serviceSlug}`},{"@type":"ListItem","position":3,"name":stName,"item":url}]};
   const faqPairs = [
-    [`Do you provide ${svc.name.toLowerCase()} across ${stName}?`,`Yes — ${svc.serviceType.toLowerCase()} in ${nameList} and metros throughout ${stName}, backed by a nationwide network of 48 locations. <a href="/contact">Get a quote →</a>`],
+    [`Do you provide ${svc.name.toLowerCase()} across ${stName}?`,`Yes — ${svc.serviceType.toLowerCase()} in ${nameList} and metros throughout ${stName}, backed by a nationwide network of 88 locations. <a href="/contact">Get a quote →</a>`],
     [`Which ${stName} cities do you cover?`,`We run ${svc.tag} in ${nameList}, and reach the rest of ${stName} through our nationwide network. Pick your metro below for a local page.`],
     [`Can you handle ${stName} oversize permits and transport?`,`Yes — when a load runs over legal dimensions on ${ix}, we handle ${stName} DOT permitting, routing, and escorts and haul it in-house, no hand-off.`],
   ];
@@ -397,7 +398,7 @@ ${NAV}
 
 <section><div class="wrap prose">
   <h2>${svc.serviceType} statewide in ${stName}</h2>
-  <p>${stName}'s industrial base runs on machines that have to move — presses, machining centers, production lines, and the plants that house them. Badass Logistics provides ${svc.serviceType.toLowerCase()} in ${nameList}, and reaches every other corner of ${stName} through a nationwide network of 48 locations. One crew plans the lift, protects the floors, and sets the load to spec — and because we run rigging, <a href="/services/heavy-haul">heavy haul</a>, and <a href="/services/machinery-moving">machinery moving</a> in-house, an oversized ${stName} move gets permitted and hauled without a hand-off.</p>
+  <p>${stName}'s industrial base runs on machines that have to move — presses, machining centers, production lines, and the plants that house them. Badass Logistics provides ${svc.serviceType.toLowerCase()} in ${nameList}, and reaches every other corner of ${stName} through a nationwide network of 88 locations. One crew plans the lift, protects the floors, and sets the load to spec — and because we run rigging, <a href="/services/heavy-haul">heavy haul</a>, and <a href="/services/machinery-moving">machinery moving</a> in-house, an oversized ${stName} move gets permitted and hauled without a hand-off.</p>
   <p>Loads that stay legal-dimension just get moved; anything over height, width, or weight has to be legal on every mile. We handle ${stName} DOT oversize and overweight permitting, route surveys, and escorts on the ${ix} corridors as part of the job — so the move reaches its new floor on a compliant route the first time.</p>
 </div></section>
 

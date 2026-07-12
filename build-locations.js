@@ -76,6 +76,9 @@ const STATE = {
   PA: { region: 'the Northeast',       ix: 'I-76, I-80, I-81 and I-95' },
   NY: { region: 'the Northeast',       ix: 'I-87, I-90, I-95 and I-81' },
   MA: { region: 'the Northeast',       ix: 'I-90, I-95 and I-93' },
+  KS: { region: 'the Plains',          ix: 'I-70, I-35 and I-135' },
+  CT: { region: 'the Northeast',       ix: 'I-95, I-91 and I-84' },
+  IA: { region: 'the Plains',          ix: 'I-80, I-35 and I-380' },
 };
 const regionOf = (st) => (STATE[st] && STATE[st].region) || 'the U.S.';
 const interstatesOf = (st) => (STATE[st] && STATE[st].ix) || 'the Interstate system';
@@ -90,7 +93,7 @@ const STATE_NAME = {
   TX: 'Texas', OK: 'Oklahoma', AR: 'Arkansas', LA: 'Louisiana', MS: 'Mississippi',
   AL: 'Alabama', TN: 'Tennessee', GA: 'Georgia', SC: 'South Carolina', NC: 'North Carolina',
   FL: 'Florida', KY: 'Kentucky', VA: 'Virginia', MD: 'Maryland', PA: 'Pennsylvania',
-  NY: 'New York', MA: 'Massachusetts',
+  NY: 'New York', MA: 'Massachusetts', KS: 'Kansas', CT: 'Connecticut', IA: 'Iowa',
 };
 const stateSlug = (st) => STATE_NAME[st].toLowerCase().replace(/ /g, '-');
 
@@ -100,7 +103,7 @@ const BANDS  = ['rigging-crane.jpg', 'rgn-load.jpg', 'heavyhaul-load.jpg', 'brok
 const pick = (arr, i) => arr[i % arr.length];
 
 const NAV = `
-<div class="topbar"><div class="wrap"><div>📍 48 locations nationwide &nbsp;·&nbsp; <strong>All 50 states</strong></div><div><a href="tel:${site.phoneHref}">📞 ${site.phone}</a> &nbsp;·&nbsp; <a href="../contact.html"><strong>Get a Quote</strong></a></div></div></div>
+<div class="topbar"><div class="wrap"><div>📍 88 locations nationwide &nbsp;·&nbsp; <strong>All 50 states</strong></div><div><a href="tel:${site.phoneHref}">📞 ${site.phone}</a> &nbsp;·&nbsp; <a href="../contact.html"><strong>Get a Quote</strong></a></div></div></div>
 <header class="site-header"><div class="wrap">
   <a class="logo" href="../index.html"><span class="brand"><span class="l1">BADASS</span><span class="l2">LOGISTICS</span></span></a>
   <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
@@ -116,7 +119,7 @@ const FOOTER = `
   <div><h4>Services</h4><a href="../services/rigging.html">Industrial Rigging</a><a href="../services/heavy-haul.html">Heavy Haul Transport</a><a href="../services/machinery-moving.html">Machinery Moving</a><a href="../services/dispatching.html">Truck Dispatching</a><a href="../services/freight-moving.html">Freight Moving</a></div>
   <div><h4>Company</h4><a href="../about.html">About Us</a><a href="../locations.html">Locations</a><a href="../blog/index.html">Blog</a><a href="../contact.html">Contact</a><a href="../privacy.html">Privacy</a></div>
   
-</div><div class="covstrip">Coverage: <a href="../locations/texas.html">Texas</a> · <a href="../locations/california.html">California</a> · <a href="../locations/florida.html">Florida</a> · <a href="../locations/georgia.html">Georgia</a> · <a href="../locations/illinois.html">Illinois</a> · <a href="../locations/ohio.html">Ohio</a> · <a href="../locations/pennsylvania.html">Pennsylvania</a> · <a href="../locations/new-york.html">New York</a> · <a href="../locations.html"><strong>All 48 locations →</strong></a></div>
+</div><div class="covstrip">Coverage: <a href="../locations/texas.html">Texas</a> · <a href="../locations/california.html">California</a> · <a href="../locations/florida.html">Florida</a> · <a href="../locations/georgia.html">Georgia</a> · <a href="../locations/illinois.html">Illinois</a> · <a href="../locations/ohio.html">Ohio</a> · <a href="../locations/pennsylvania.html">Pennsylvania</a> · <a href="../locations/new-york.html">New York</a> · <a href="../locations.html"><strong>All 88 locations →</strong></a></div>
 <div class="footer-nap"><span class="nap-name">Badass Logistics</span><span>1001 S Main St, STE 500, Kalispell, MT 59901</span><span><a href="tel:${site.phoneHref}">${site.phone}</a></span><span><a href="mailto:${site.email}">${site.email}</a></span></div><div class="legal"><span>© 2022–2026 Badass Logistics. All rights reserved.</span><span class="hand">made to move heavy things.</span></div></div></footer>`;
 
 const cleanUrls = s => s
@@ -180,7 +183,7 @@ function page(loc, i, all) {
       { "@type": "Question", "name": `Do you work in ${CS}?`, "acceptedAnswer": { "@type": "Answer", "text": `Yes — rigging, heavy haul, dispatch, and freight moving (FTL, LTL, partial, drayage) throughout ${CS}, the surrounding towns, and the wider ${state} market.` } },
       { "@type": "Question", "name": `How fast can you quote a ${city} load?`, "acceptedAnswer": { "@type": "Answer", "text": `Send us the dimensions, weight, pickup, and destination and we'll turn a quote around fast — usually same day for ${city} work.` } },
       { "@type": "Question", "name": `Can you handle oversized and overweight permits in ${state}?`, "acceptedAnswer": { "@type": "Answer", "text": `Yes — we handle ${state} permitting, routing, and escorts for oversize and overweight loads as part of the job.` } },
-      { "@type": "Question", "name": "Where are you based?", "acceptedAnswer": { "@type": "Answer", "text": `${site.brand} runs a nationwide network of 48 locations, moving oversized and overweight freight across all 50 states.` } }
+      { "@type": "Question", "name": "Where are you based?", "acceptedAnswer": { "@type": "Answer", "text": `${site.brand} runs a nationwide network of 88 locations, moving oversized and overweight freight across all 50 states.` } }
     ]
   };
 
@@ -278,7 +281,7 @@ ${NAV}
   <div class="wrap">
   <span class="section-tag hand">on the map</span>
   <h2 class="section-title">${city} rigging &amp; heavy haul</h2>
-  <p class="section-intro">Working throughout ${CS} and the wider ${state} market — rigging, heavy haul, dispatch, and freight moving, backed by a nationwide network of 48 locations.</p>
+  <p class="section-intro">Working throughout ${CS} and the wider ${state} market — rigging, heavy haul, dispatch, and freight moving, backed by a nationwide network of 88 locations.</p>
   <div class="map-frame" style="margin-top:24px;">
     <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="${CS} rigging &amp; heavy haul map" src="https://maps.google.com/maps?q=${mapQ}&z=10&output=embed"></iframe>
   </div>
@@ -314,7 +317,7 @@ ${NAV}
     <details open><summary>Do you work in ${CS}?</summary><div class="a">Yes — rigging, heavy haul, dispatch, and freight moving (FTL, LTL, partial, drayage) throughout ${CS}, the surrounding towns, and the wider ${state} market. <a href="../contact.html">Get a quote →</a></div></details>
     <details><summary>How fast can you quote a ${city} load?</summary><div class="a">Send us the dimensions, weight, pickup, and destination and we'll turn a quote around fast — usually same day for ${city} work.</div></details>
     <details><summary>Can you handle oversized &amp; overweight permits in ${state}?</summary><div class="a">Yes — we handle ${state} permitting, routing, and escorts for oversize and overweight loads as part of the job.</div></details>
-    <details><summary>Where are you based?</summary><div class="a">We run a nationwide network of 48 locations, moving oversized and overweight freight across all 50 states. <a href="../locations.html">See all locations →</a></div></details>
+    <details><summary>Where are you based?</summary><div class="a">We run a nationwide network of 88 locations, moving oversized and overweight freight across all 50 states. <a href="../locations.html">See all locations →</a></div></details>
   </div>
 </div></section>
 
