@@ -3,3 +3,6 @@ node_modules/
 .claude/
 *.log
 content-drafts/
+
+# GSC service-account credential (never commit)
+gsc-key.json
