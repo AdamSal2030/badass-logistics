@@ -180,6 +180,16 @@ const SERVICES = {
   },
 };
 
+// Per-service internal links to the highest-value blog "movers" (from GSC: pages already
+// pulling impressions on page 3-9). Every city page funnels authority to these → pushes them up.
+const CITY_GUIDES = {
+  'rigging': [['machine-leveling-and-alignment','Machine Leveling &amp; Alignment After a Move'],['how-to-move-an-mri-machine','How to Move an MRI Machine'],['how-to-move-a-cnc-machine','How to Move a CNC Machine']],
+  'cnc-machine-movers': [['how-to-move-a-cnc-machine','How to Move a CNC Machine'],['machine-leveling-and-alignment','Machine Leveling &amp; Alignment'],['how-to-move-a-lathe','How to Move a Metal Lathe']],
+  'machinery-moving': [['how-to-move-a-lathe','How to Move a Metal Lathe'],['machine-leveling-and-alignment','Machine Leveling &amp; Alignment'],['how-to-move-an-mri-machine','How to Move an MRI Machine']],
+  'plant-relocation': [['plant-relocation-checklist','The Plant Relocation Checklist'],['blocking-bracing-and-dunnage-explained','Blocking, Bracing &amp; Dunnage Explained'],['machine-leveling-and-alignment','Machine Leveling &amp; Alignment']],
+  'heavy-haul': [['step-deck-vs-drop-deck-trailers','Step-Deck vs Drop-Deck Trailers'],['how-to-ship-a-generator','How to Ship an Industrial Generator'],['how-to-secure-a-load-on-a-flatbed','How to Secure a Load on a Flatbed']],
+};
+
 function page(serviceSlug, svc, loc, metro, hubStates) {
   const { city, state } = loc;
   const CS = `${city}, ${state}`;
@@ -308,6 +318,14 @@ ${near.length ? `<section class="notes-bg bg-paper" style="border-top:3px solid 
     ${faqPairs.map(([q,a],i)=>`<details${i===0?' open':''}><summary>${q}</summary><div class="a">${a}</div></details>`).join('\n    ')}
   </div>
 </div></section>
+${(CITY_GUIDES[serviceSlug]||[]).length ? `
+<section><div class="wrap">
+  <span class="section-tag hand">field guides</span>
+  <h2 class="section-title">Before you move in ${city}</h2>
+  <div class="grid-services" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));">
+    ${(CITY_GUIDES[serviceSlug]||[]).map(([g,t])=>`<a class="svc-card" href="/blog/${g}"><div class="num">// field guide</div><h3>${t}</h3><span class="more">Read the guide →</span></a>`).join('\n    ')}
+  </div>
+</div></section>` : ''}
 
 <div class="photo-band" style="background-image:url('${svc.band}')">
   <span class="annot hand tag a1">${city.toUpperCase()} ✓</span>
