@@ -67,11 +67,13 @@
   <span class="bgnote" style="bottom:7%;right:9%;transform:rotate(5deg)">24/7 DISPATCH</span>
   <div class="wrap split">
   <div>
-    <!-- FORM: Formspree — submissions go to the connected inbox for form xrevapyy -->
-    <form class="form-grid" action="https://formspree.io/f/xrevapyy" method="POST">
+    <!-- FORM: FormSubmit.co — emails submissions to info@badasslogistics.com. Activate once via the email FormSubmit sends on the first submission, then it works forever (free, unlimited). -->
+    <form class="form-grid" action="https://formsubmit.co/info@badasslogistics.com" method="POST">
       <input type="hidden" name="_subject" value="🚛 New quote request — badasslogistics.com">
       <input type="hidden" name="_next" value="https://badasslogistics.com/thanks">
-      <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_captcha" value="false">
+      <input type="text" name="_honey" style="display:none" tabindex="-1" autocomplete="off">
       <div><label for="name">Name</label><input id="name" name="name" required></div>
       <div><label for="company">Company</label><input id="company" name="company"></div>
       <div><label for="email">Email</label><input id="email" name="email" type="email" required></div>
