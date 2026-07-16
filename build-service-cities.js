@@ -198,6 +198,8 @@ function page(serviceSlug, svc, loc, metro, hubStates) {
   const stSlug = c.stName.toLowerCase().replace(/[^a-z0-9]+/g,'-');
   const hasHub = hubStates && hubStates.has(state);
   const near = (loc.near || []).slice(0, 12);
+  // Other metros in the same state — real city→city internal links (hub-and-spoke mesh)
+  const nearbyMetros = locations.filter(l => l.state === state && l.city !== city).slice(0, 8);
   const url = `${DOMAIN}/services/${serviceSlug}/${slug}`;
   const cityHub = `/locations/${slug}`;
   const mapQ = encodeURIComponent(CS);
@@ -309,6 +311,16 @@ ${near.length ? `<section class="notes-bg bg-paper" style="border-top:3px solid 
   <p class="section-intro">Service throughout ${city} and the surrounding manufacturing suburbs — including:</p>
   <div class="towns">${near.map(t=>`<span>${t}</span>`).join('')}</div>
   <p style="margin-top:22px;font-weight:600;">Moving across the metro or out of state? See <a href="${cityHub}" style="color:var(--yellow-deep);text-decoration:underline;">all our ${city} services</a>${hasHub?`, <a href="/services/${serviceSlug}/${stSlug}" style="color:var(--yellow-deep);text-decoration:underline;">${svc.name} across ${c.stName}</a>`:``} or <a href="/contact" style="color:var(--yellow-deep);text-decoration:underline;">get a quote</a>.</p>
+</div></section>` : ''}
+${nearbyMetros.length ? `
+<section class="bg-paper" style="border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);"><div class="wrap">
+  <span class="section-tag hand">more ${c.stName} coverage</span>
+  <h2 class="section-title">${svc.name} across ${c.stName}</h2>
+  <p class="section-intro">We run ${svc.serviceType.toLowerCase()} in metros across ${c.stName} — pick the nearest crew:</p>
+  <div class="grid-services" style="grid-template-columns:repeat(auto-fit,minmax(220px,1fr));margin-top:22px;">
+    ${nearbyMetros.map(m=>`<a class="svc-card" href="/services/${serviceSlug}/${citySlug(m.city,m.state)}"><div class="num">// ${m.state}</div><h3>${m.city}</h3><span class="more">${m.city} ${svc.cardNoun} →</span></a>`).join('\n    ')}
+  </div>${hasHub?`
+  <p style="margin-top:22px;font-weight:600;"><a href="/services/${serviceSlug}/${stSlug}" style="color:var(--yellow-deep);text-decoration:underline;">See all ${svc.name} across ${c.stName} →</a></p>`:``}
 </div></section>` : ''}
 
 <section class="bg-paper" style="border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);"><div class="wrap">
