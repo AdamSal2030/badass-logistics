@@ -18,21 +18,13 @@ const TODAY = new Date().toISOString().slice(0, 10);
 const slugify = (city, state) =>
   `${city.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/(^-|-$)/g, '')}-${state.toLowerCase()}`;
 
-// Blog posts (kept in sync with /blog) — used for the sitemap.
-const BLOG_POSTS = [
-  'how-much-does-heavy-haul-cost',
-  'oversize-load-permits-guide',
-  'how-to-move-an-mri-machine',
-  'flatbed-vs-step-deck-vs-rgn-trailers',
-  'what-is-industrial-rigging',
-  'truck-dispatcher-vs-freight-broker',
-  'how-to-ship-an-excavator',
-  'ltl-vs-ftl-freight',
-  'what-is-drayage',
-  'hot-shot-trucking-explained',
-  'pilot-car-escort-requirements',
-  'how-to-move-a-cnc-machine',
-];
+// Blog posts — AUTO-DISCOVERED from /blog so the sitemap never goes stale.
+// (Previously a hand-maintained list that had drifted to 12 of 46 posts,
+//  hiding the newest permit + how-to guides from Google's sitemap discovery.)
+const BLOG_POSTS = fs.readdirSync(path.join(ROOT, 'blog'))
+  .filter(f => f.endsWith('.html') && f !== 'index.html')
+  .map(f => f.replace(/\.html$/, ''))
+  .sort();
 
 // State-level facts: region (for nearby-metro internal links) + the real
 // Interstate corridors that carry heavy haul through that state. These are
@@ -393,7 +385,9 @@ const distinctStates = [...new Set(built.map(l => l.state))];
 const urls = [
   ...staticPages.map(s => u(s.loc, s.p, s.f)),
   ...BLOG_POSTS.map(s => u(`/blog/${s}.html`, '0.7', 'monthly')),
-  ...distinctStates.map(st => u(`/locations/${stateSlug(st)}.html`, '0.75', 'monthly')),
+  ...distinctStates
+    .filter(st => fs.existsSync(path.join(ROOT, 'locations', `${stateSlug(st)}.html`)))
+    .map(st => u(`/locations/${stateSlug(st)}.html`, '0.75', 'monthly')),
   ...built.map(l => u(`/locations/${l.slug}.html`, '0.7', 'monthly')),
 ].join('\n');
 fs.writeFileSync(path.join(ROOT, 'sitemap.xml'),
