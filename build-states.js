@@ -54,6 +54,9 @@ const STATE = {
   PA: { name: 'Pennsylvania', region: 'the Northeast', ix: 'I-76, I-80, I-81 and I-95' },
   NY: { name: 'New York', region: 'the Northeast', ix: 'I-87, I-90, I-95 and I-81' },
   MA: { name: 'Massachusetts', region: 'the Northeast', ix: 'I-90, I-95 and I-93' },
+  KS: { name: 'Kansas', region: 'the Plains', ix: 'I-70, I-35 and I-135' },
+  CT: { name: 'Connecticut', region: 'the Northeast', ix: 'I-95, I-91 and I-84' },
+  IA: { name: 'Iowa', region: 'the Plains', ix: 'I-80, I-35 and I-380' },
 };
 
 const cleanUrls = (x) => x
@@ -80,15 +83,15 @@ const NAV = `
   <a class="logo" href="../index.html"><span class="brand"><span class="l1">BADASS</span><span class="l2">LOGISTICS</span></span></a>
   <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
   <nav class="main" id="nav">
-    <a href="../index.html">Home</a><a href="../services/rigging.html">Rigging</a><a href="../services/heavy-haul.html">Heavy Haul</a><a href="../services/dispatching.html">Dispatch</a><a href="../services/freight-moving.html">Freight Moving</a><a href="../locations.html">Locations</a><a href="../blog/index.html">Blog</a><a href="../about.html">About</a>
+    <a href="../index.html">Home</a><a href="../services/rigging.html">Rigging</a><a href="../services/heavy-haul.html">Heavy Haul</a><a href="../services/machinery-moving.html">Machinery Moving</a><a href="../locations.html">Locations</a><a href="../blog/index.html">Blog</a><a href="../about.html">About</a>
     <a class="btn" style="font-size:14px;padding:9px 16px;box-shadow:3px 3px 0 var(--ink)" href="../contact.html">Get a Quote</a>
   </nav>
 </div></header>`;
 
 const FOOTER = `
 <footer><div class="wrap"><div class="cols">
-  <div><h4>Badass Logistics</h4><p style="opacity:.85;max-width:280px;">Rigging, heavy haul, dispatch &amp; freight moving. One-stop shop for everything oversized and overweight.</p></div>
-  <div><h4>Services</h4><a href="../services/rigging.html">Industrial Rigging</a><a href="../services/heavy-haul.html">Heavy Haul Transport</a><a href="../services/machinery-moving.html">Machinery Moving</a><a href="../services/dispatching.html">Truck Dispatching</a><a href="../services/freight-moving.html">Freight Moving</a></div>
+  <div><h4>Badass Logistics</h4><p style="opacity:.85;max-width:280px;">Industrial rigging &amp; heavy haul — our own crews, machinery, and rigging gear, plus a network of specialized carriers for everything oversized and overweight.</p></div>
+  <div><h4>Services</h4><a href="../services/rigging.html">Industrial Rigging</a><a href="../services/heavy-haul.html">Heavy Haul Transport</a><a href="../services/machinery-moving.html">Machinery Moving</a><a href="../services/cnc-machine-movers.html">CNC Machine Movers</a><a href="../services/plant-relocation.html">Plant Relocation</a></div>
   <div><h4>Company</h4><a href="../about.html">About Us</a><a href="../locations.html">Locations</a><a href="../blog/index.html">Blog</a><a href="../contact.html">Contact</a><a href="../privacy.html">Privacy</a></div>
   
 </div><div class="covstrip">Coverage: <a href="../locations/texas.html">Texas</a> · <a href="../locations/california.html">California</a> · <a href="../locations/florida.html">Florida</a> · <a href="../locations/georgia.html">Georgia</a> · <a href="../locations/illinois.html">Illinois</a> · <a href="../locations/ohio.html">Ohio</a> · <a href="../locations/pennsylvania.html">Pennsylvania</a> · <a href="../locations/new-york.html">New York</a> · <a href="../locations.html"><strong>All 48 locations →</strong></a></div>
@@ -115,7 +118,7 @@ function statePage(st, cities, idx, allStates) {
   const neighbors = allStates.filter(s => s !== st && STATE[s].region === meta.region);
 
   const title = `${name} Heavy Haul, Rigging &amp; Freight Services | Badass Logistics`;
-  const desc = `Heavy haul trucking, industrial rigging, truck dispatching, and freight moving across ${name} — based out of ${cityList}. Oversize/overweight permits, machinery moving, FTL &amp; LTL. Fast quotes.`;
+  const desc = `Heavy haul, industrial rigging, machinery moving, and plant relocation across ${name} — based out of ${cityList}. Oversize/overweight permits, our own rigging crews, specialized carriers for the haul. Fast quotes.`;
 
   const svcSchema = {
     "@context": "https://schema.org",
@@ -123,7 +126,7 @@ function statePage(st, cities, idx, allStates) {
     "serviceType": "Heavy Haul, Rigging & Freight Services",
     "areaServed": { "@type": "State", "name": name },
     "provider": { "@type": "LocalBusiness", "@id": site.domain + "/#organization", "name": site.brand, "telephone": site.phone, "email": site.email, "url": site.domain + "/" },
-    "description": `${site.brand} provides rigging, heavy haul, dispatch and freight moving throughout ${name}.`
+    "description": `${site.brand} provides industrial rigging, heavy haul, and machinery moving throughout ${name}.`
   };
   const breadcrumb = {
     "@context": "https://schema.org",
@@ -162,12 +165,12 @@ function statePage(st, cities, idx, allStates) {
 <link rel="canonical" href="${pageUrl}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="${title}">
-<meta property="og:description" content="Statewide ${name} heavy haul, rigging, dispatch &amp; freight moving. Fast quotes, permits handled.">
+<meta property="og:description" content="Statewide ${name} heavy haul, rigging &amp; machinery moving. Fast quotes, permits handled.">
 <meta property="og:url" content="${pageUrl}">
 <meta property="og:image" content="${site.domain}/assets/img/og-default.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${title}">
-<meta name="twitter:description" content="Statewide ${name} heavy haul, rigging, dispatch &amp; freight moving.">
+<meta name="twitter:description" content="Statewide ${name} heavy haul, rigging &amp; machinery moving.">
 <meta name="twitter:image" content="${site.domain}/assets/img/og-default.jpg">
 <link rel="sitemap" type="application/xml" href="${site.domain}/sitemap.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -203,7 +206,7 @@ ${NAV}
 <section class="page-hero photo" style="background-image:url('../assets/img/${hero}')"><div class="wrap">
   <span class="section-tag hand">// statewide — ${name.toLowerCase()}</span>
   <h1>${name} <span class="y">Heavy Haul, Rigging &amp; Freight</span></h1>
-  <p class="lead">Rigging, heavy haul transportation, truck dispatching, and freight moving across ${name} — anchored in ${cityList} and working statewide. If it is oversized, overweight, or on a deadline, it is our kind of load.</p>
+  <p class="lead">Industrial rigging, heavy haul, and machinery moving across ${name} — anchored in ${cityList} and working statewide. If it is oversized, overweight, or on a deadline, it is our kind of load.</p>
   <div class="cta-row" style="margin-top:24px;"><a class="btn" href="../contact.html">Get a ${name} Quote</a></div>
 </div>
   <span class="annot hand tag warn a1">${st} • STATEWIDE</span>
@@ -216,7 +219,7 @@ ${NAV}
   <span class="bgnote" style="bottom:12%;right:7%;transform:rotate(-3deg)">STATEWIDE ✓</span>
   <div class="wrap prose">
   <h2>Heavy haul &amp; rigging across ${name}</h2>
-  <p>${site.brand} runs rigging, heavy haul, dispatch, and freight moving throughout ${name}, with local coverage built around ${cityList}. The state's freight moves on the ${meta.ix} corridors, and our crews move with it — machinery, oversize loads, plant relocations, and everyday FTL and LTL freight in the ${industries} ${plural ? 'markets' : 'market'}.</p>
+  <p>${site.brand} runs industrial rigging, heavy haul, and machinery moving throughout ${name}, with local coverage built around ${cityList}. The state's freight moves on the ${meta.ix} corridors, and our crews move with it — machinery, oversize loads, and plant relocations in the ${industries} ${plural ? 'markets' : 'market'}.</p>
   <p>Every oversize or overweight move through ${name} needs to be legal on every mile: state permits, routing around restricted bridges, travel-time windows, and escorts where dimensions require them. We handle the ${name} DOT paperwork, the route survey, and the pilot cars as part of the job — read our <a href="../blog/oversize-load-permits-guide.html">permit guide</a> and <a href="../blog/how-much-does-heavy-haul-cost.html">cost guide</a> for what to expect, then send us the load.</p>
 </div></section>
 
@@ -238,7 +241,7 @@ ${NAV}
   <div class="wrap">
   <span class="section-tag hand">on the map</span>
   <h2 class="section-title">${name} coverage map</h2>
-  <p class="section-intro">Statewide ${name} — rigging, heavy haul, dispatch, and freight moving, backed by a nationwide network of 48 locations.</p>
+  <p class="section-intro">Statewide ${name} — industrial rigging, heavy haul, and machinery moving, backed by a nationwide network of 48 locations.</p>
   <div class="map-frame" style="margin-top:24px;">
     <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="${name} heavy haul coverage map" src="https://maps.google.com/maps?q=${mapQ}&z=6&output=embed"></iframe>
   </div>

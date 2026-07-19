@@ -100,15 +100,15 @@ const NAV = `
   <a class="logo" href="../index.html"><span class="brand"><span class="l1">BADASS</span><span class="l2">LOGISTICS</span></span></a>
   <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
   <nav class="main" id="nav">
-    <a href="../index.html">Home</a><a href="../services/rigging.html">Rigging</a><a href="../services/heavy-haul.html">Heavy Haul</a><a href="../services/dispatching.html">Dispatch</a><a href="../services/freight-moving.html">Freight Moving</a><a href="../locations.html">Locations</a><a href="../blog/index.html">Blog</a><a href="../about.html">About</a>
+    <a href="../index.html">Home</a><a href="../services/rigging.html">Rigging</a><a href="../services/heavy-haul.html">Heavy Haul</a><a href="../services/machinery-moving.html">Machinery Moving</a><a href="../locations.html">Locations</a><a href="../blog/index.html">Blog</a><a href="../about.html">About</a>
     <a class="btn" style="font-size:14px;padding:9px 16px;box-shadow:3px 3px 0 var(--ink)" href="../contact.html">Get a Quote</a>
   </nav>
 </div></header>`;
 
 const FOOTER = `
 <footer><div class="wrap"><div class="cols">
-  <div><h4>Badass Logistics</h4><p style="opacity:.85;max-width:280px;">Rigging, heavy haul, dispatch &amp; freight moving. One-stop shop for everything oversized and overweight.</p></div>
-  <div><h4>Services</h4><a href="../services/rigging.html">Industrial Rigging</a><a href="../services/heavy-haul.html">Heavy Haul Transport</a><a href="../services/machinery-moving.html">Machinery Moving</a><a href="../services/dispatching.html">Truck Dispatching</a><a href="../services/freight-moving.html">Freight Moving</a></div>
+  <div><h4>Badass Logistics</h4><p style="opacity:.85;max-width:280px;">Industrial rigging &amp; heavy haul — our own crews, machinery, and rigging gear, plus a network of specialized carriers for everything oversized and overweight.</p></div>
+  <div><h4>Services</h4><a href="../services/rigging.html">Industrial Rigging</a><a href="../services/heavy-haul.html">Heavy Haul Transport</a><a href="../services/machinery-moving.html">Machinery Moving</a><a href="../services/cnc-machine-movers.html">CNC Machine Movers</a><a href="../services/plant-relocation.html">Plant Relocation</a></div>
   <div><h4>Company</h4><a href="../about.html">About Us</a><a href="../locations.html">Locations</a><a href="../blog/index.html">Blog</a><a href="../contact.html">Contact</a><a href="../privacy.html">Privacy</a></div>
   
 </div><div class="covstrip">Coverage: <a href="../locations/texas.html">Texas</a> · <a href="../locations/california.html">California</a> · <a href="../locations/florida.html">Florida</a> · <a href="../locations/georgia.html">Georgia</a> · <a href="../locations/illinois.html">Illinois</a> · <a href="../locations/ohio.html">Ohio</a> · <a href="../locations/pennsylvania.html">Pennsylvania</a> · <a href="../locations/new-york.html">New York</a> · <a href="../locations.html"><strong>All 88 locations →</strong></a></div>
@@ -134,7 +134,7 @@ function page(loc, i, all) {
   const region = regionOf(state);
   const interstates = interstatesOf(state);
   const title = `Rigging &amp; Heavy Haul in ${CS} | Badass Logistics`;
-  const desc = `Rigging, heavy haul transport, truck dispatching, and freight moving (FTL, LTL, partial, drayage) in ${CS} and across ${state}. Machinery moving and oversized/overweight loads — get a fast quote.`;
+  const desc = `Industrial rigging, heavy haul, machinery moving, and plant relocation in ${CS} and across ${state}. Our own crews and rigging gear, specialized carriers for the haul, oversized/overweight permits handled — get a fast quote.`;
   const pageUrl = `${site.domain}/locations/${slug}.html`;
 
   // nearby metros = other cities in the same region (real pages → internal-link cluster)
@@ -155,7 +155,7 @@ function page(loc, i, all) {
       "email": site.email,
       "url": `${site.domain}/`
     },
-    "description": `${site.brand} provides rigging, heavy haul, dispatch and freight moving across ${CS}.`
+    "description": `${site.brand} provides industrial rigging, heavy haul, and machinery moving across ${CS}.`
   };
 
   const breadcrumb = {
@@ -172,7 +172,7 @@ function page(loc, i, all) {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "mainEntity": [
-      { "@type": "Question", "name": `Do you work in ${CS}?`, "acceptedAnswer": { "@type": "Answer", "text": `Yes — rigging, heavy haul, dispatch, and freight moving (FTL, LTL, partial, drayage) throughout ${CS}, the surrounding towns, and the wider ${state} market.` } },
+      { "@type": "Question", "name": `Do you work in ${CS}?`, "acceptedAnswer": { "@type": "Answer", "text": `Yes — industrial rigging, heavy haul, machinery moving, and plant relocation throughout ${CS}, the surrounding towns, and the wider ${state} market.` } },
       { "@type": "Question", "name": `How fast can you quote a ${city} load?`, "acceptedAnswer": { "@type": "Answer", "text": `Send us the dimensions, weight, pickup, and destination and we'll turn a quote around fast — usually same day for ${city} work.` } },
       { "@type": "Question", "name": `Can you handle oversized and overweight permits in ${state}?`, "acceptedAnswer": { "@type": "Answer", "text": `Yes — we handle ${state} permitting, routing, and escorts for oversize and overweight loads as part of the job.` } },
       { "@type": "Question", "name": "Where are you based?", "acceptedAnswer": { "@type": "Answer", "text": `${site.brand} runs a nationwide network of 88 locations, moving oversized and overweight freight across all 50 states.` } }
@@ -191,12 +191,12 @@ function page(loc, i, all) {
 <link rel="canonical" href="${pageUrl}">
 <meta property="og:type" content="website">
 <meta property="og:title" content="${title}">
-<meta property="og:description" content="Rigging, heavy haul, dispatch &amp; freight moving in ${CS}. Oversized and overweight specialists — get a fast quote.">
+<meta property="og:description" content="Industrial rigging, heavy haul &amp; machinery moving in ${CS}. Oversized and overweight specialists — get a fast quote.">
 <meta property="og:url" content="${pageUrl}">
 <meta property="og:image" content="${site.domain}/assets/img/og-default.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="${title}">
-<meta name="twitter:description" content="Rigging, heavy haul, dispatch &amp; freight moving in ${CS}.">
+<meta name="twitter:description" content="Industrial rigging, heavy haul &amp; machinery moving in ${CS}.">
 <meta name="twitter:image" content="${site.domain}/assets/img/og-default.jpg">
 <link rel="sitemap" type="application/xml" href="${site.domain}/sitemap.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -232,9 +232,9 @@ ${NAV}
 <div class="wrap breadcrumb"><a href="../index.html">Home</a> / <a href="../locations.html">Locations</a> / ${CS}</div>
 
 <section class="page-hero photo" style="background-image:url('../assets/img/${hero}')"><div class="wrap">
-  <span class="section-tag hand">// rigging · heavy haul · dispatch · freight moving — ${city.toLowerCase()}</span>
+  <span class="section-tag hand">// rigging · heavy haul · machinery moving — ${city.toLowerCase()}</span>
   <h1>${city} <span class="y">Rigging, Heavy Haul &amp; Freight</span></h1>
-  <p class="lead">${blurb} Rigging, heavy haul transport, truck dispatching, and freight moving — one crew for everything oversized, overweight, and over-the-road in ${CS}.</p>
+  <p class="lead">${blurb} Industrial rigging, heavy haul, and machinery moving — our own crews and gear, hauled through specialized carriers — for everything oversized, overweight, and hard to move in ${CS}.</p>
   <div class="cta-row" style="margin-top:24px;"><a class="btn" href="../contact.html">Get a ${city} Quote</a></div>
 </div>
   <span class="annot hand tag warn a1">${state} • ${hub.toUpperCase()}</span>
@@ -247,7 +247,7 @@ ${NAV}
   <span class="bgnote" style="bottom:12%;right:7%;transform:rotate(-3deg)">SAME-DAY QUOTE</span>
   <div class="wrap prose">
   <h2>Heavy haul &amp; rigging in ${CS}</h2>
-  <p>${site.brand} handles full-service rigging, heavy haul transportation, truck dispatching, and freight moving — FTL, LTL, partial, and drayage — in ${CS} and across the ${state} ${hub} market. When a load is too heavy, too tall, too wide, or just too important to get wrong, our crews bring the equipment, the permits, and the plan to move it safely.</p>
+  <p>${site.brand} handles industrial rigging, heavy haul, machinery moving, and plant relocation in ${CS} and across the ${state} ${hub} market — with our own rigging crews and equipment, and a network of specialized heavy-haul carriers for the transport. When a load is too heavy, too tall, too wide, or just too important to get wrong, we bring the equipment, the permits, and the plan to move it safely.</p>
   <p>Tell us what's moving in ${city} and where it's going — we'll put the right crew and the right trailer on it. From a single machine to a full plant relocation, you get one accountable team from pickup to set.</p>
   <p>Heavy haul through ${state} runs the ${interstates} corridors, and every oversize or overweight move needs to be legal on every mile. We handle ${state} DOT oversize/overweight permitting, route surveys, height and bridge clearances, and pilot-car or escort coordination — so your load moves on a compliant route the first time, no roadside surprises. New to oversize freight? Start with our <a href="../blog/oversize-load-permits-guide.html">permit guide</a> and <a href="../blog/how-much-does-heavy-haul-cost.html">cost guide</a>, or see everything we cover across <a href="${stateSlug(state)}.html">${STATE_NAME[state] || state}</a>.</p>
 </div></section>
@@ -265,8 +265,6 @@ ${NAV}
     <a class="svc-card" href="../services/machinery-moving/${slug}.html"><div class="thumb" style="background-image:url('../assets/img/heavyhaul-real.jpg')"></div><div class="num">// 03</div><h3>Machinery Moving</h3><p>Presses, generators, compressors, and full production lines rigged, hauled, and re-leveled across ${city}.</p><span class="more">${city} Machinery Moving →</span></a>
     <a class="svc-card" href="../services/cnc-machine-movers/${slug}.html"><div class="thumb" style="background-image:url('../assets/img/rigging-crane.jpg')"></div><div class="num">// 04</div><h3>CNC Machine Movers</h3><p>VMCs, lathes, grinders, and full machine shops moved on air-ride and re-leveled to spec in ${city}.</p><span class="more">${city} CNC Movers →</span></a>
     <a class="svc-card" href="../services/plant-relocation/${slug}.html"><div class="thumb" style="background-image:url('../assets/img/heavyhaul-real.jpg')"></div><div class="num">// 05</div><h3>Plant Relocation</h3><p>Full facility and production-line relocations sequenced around ${city} uptime.</p><span class="more">${city} Plant Relocation →</span></a>
-    <a class="svc-card" href="../services/dispatching.html"><div class="thumb" style="background-image:url('../assets/img/dispatch-truck.jpg')"></div><div class="num">// 06</div><h3>Truck Dispatching</h3><p>Dispatch services keeping ${city}-area trucks loaded, routed, and rolling.</p><span class="more">Dispatch</span></a>
-    <a class="svc-card" href="../services/freight-moving.html"><div class="thumb" style="background-image:url('../assets/img/brokerage-flatbed.jpg')"></div><div class="num">// 07</div><h3>Freight Moving</h3><p>FTL, LTL, partial, and drayage — flatbed, reefer, and dry van freight moved in and out of ${city}.</p><span class="more">Freight Moving</span></a>
   </div>
 </div></section>
 
@@ -276,7 +274,7 @@ ${NAV}
   <div class="wrap">
   <span class="section-tag hand">on the map</span>
   <h2 class="section-title">${city} rigging &amp; heavy haul</h2>
-  <p class="section-intro">Working throughout ${CS} and the wider ${state} market — rigging, heavy haul, dispatch, and freight moving, backed by a nationwide network of 88 locations.</p>
+  <p class="section-intro">Working throughout ${CS} and the wider ${state} market — industrial rigging, heavy haul, and machinery moving, backed by a nationwide network of 88 locations.</p>
   <div class="map-frame" style="margin-top:24px;">
     <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="${CS} rigging &amp; heavy haul map" src="https://maps.google.com/maps?q=${mapQ}&z=10&output=embed"></iframe>
   </div>
@@ -287,7 +285,7 @@ ${NAV}
   <span class="bgnote" style="bottom:10%;left:4%;transform:rotate(4deg)">NEAREST CREW →</span>
   <div class="wrap">
   <span class="section-tag hand">towns we cover near ${city}</span>
-  <h2 class="section-title">Rigging, heavy haul, dispatch &amp; freight moving near ${city}</h2>
+  <h2 class="section-title">Industrial rigging, heavy haul &amp; machinery moving near ${city}</h2>
   <p class="section-intro">One crew for oversized, overweight, and everyday freight across ${CS} and the surrounding towns — including:</p>
   <div class="towns">${near.map(t => `<span>${t}</span>`).join('')}</div>
   <p style="margin-top:22px;font-weight:600;">Don't see your town? If it's anywhere around ${city}, we've got it covered — <a href="../contact.html" style="color:var(--yellow-deep);text-decoration:underline;">get a quote</a>.</p>
@@ -309,7 +307,7 @@ ${NAV}
   <span class="section-tag hand">questions</span>
   <h2 class="section-title">${city} heavy haul FAQ</h2>
   <div class="faq">
-    <details open><summary>Do you work in ${CS}?</summary><div class="a">Yes — rigging, heavy haul, dispatch, and freight moving (FTL, LTL, partial, drayage) throughout ${CS}, the surrounding towns, and the wider ${state} market. <a href="../contact.html">Get a quote →</a></div></details>
+    <details open><summary>Do you work in ${CS}?</summary><div class="a">Yes — industrial rigging, heavy haul, machinery moving, and plant relocation throughout ${CS}, the surrounding towns, and the wider ${state} market. <a href="../contact.html">Get a quote →</a></div></details>
     <details><summary>How fast can you quote a ${city} load?</summary><div class="a">Send us the dimensions, weight, pickup, and destination and we'll turn a quote around fast — usually same day for ${city} work.</div></details>
     <details><summary>Can you handle oversized &amp; overweight permits in ${state}?</summary><div class="a">Yes — we handle ${state} permitting, routing, and escorts for oversize and overweight loads as part of the job.</div></details>
     <details><summary>Where are you based?</summary><div class="a">We run a nationwide network of 88 locations, moving oversized and overweight freight across all 50 states. <a href="../locations.html">See all locations →</a></div></details>

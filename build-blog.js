@@ -20,15 +20,15 @@ const NAV = `
   <a class="logo" href="../index.html"><span class="brand"><span class="l1">BADASS</span><span class="l2">LOGISTICS</span></span></a>
   <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
   <nav class="main" id="nav">
-    <a href="../index.html">Home</a><a href="../services/rigging.html">Rigging</a><a href="../services/heavy-haul.html">Heavy Haul</a><a href="../services/dispatching.html">Dispatch</a><a href="../services/freight-moving.html">Freight Moving</a><a href="../locations.html">Locations</a><a href="../blog/index.html">Blog</a><a href="../about.html">About</a>
+    <a href="../index.html">Home</a><a href="../services/rigging.html">Rigging</a><a href="../services/heavy-haul.html">Heavy Haul</a><a href="../services/machinery-moving.html">Machinery Moving</a><a href="../locations.html">Locations</a><a href="../blog/index.html">Blog</a><a href="../about.html">About</a>
     <a class="btn" style="font-size:14px;padding:9px 16px;box-shadow:3px 3px 0 var(--ink)" href="../contact.html">Get a Quote</a>
   </nav>
 </div></header>`;
 
 const FOOTER = `
 <footer><div class="wrap"><div class="cols">
-  <div><h4>Badass Logistics</h4><p style="opacity:.85;max-width:280px;">Rigging, heavy haul, dispatch &amp; freight moving. One-stop shop for everything oversized and overweight.</p></div>
-  <div><h4>Services</h4><a href="../services/rigging.html">Industrial Rigging</a><a href="../services/heavy-haul.html">Heavy Haul Transport</a><a href="../services/machinery-moving.html">Machinery Moving</a><a href="../services/dispatching.html">Truck Dispatching</a><a href="../services/freight-moving.html">Freight Moving</a></div>
+  <div><h4>Badass Logistics</h4><p style="opacity:.85;max-width:280px;">Industrial rigging &amp; heavy haul — our own crews, machinery, and rigging gear, plus a network of specialized carriers for everything oversized and overweight.</p></div>
+  <div><h4>Services</h4><a href="../services/rigging.html">Industrial Rigging</a><a href="../services/heavy-haul.html">Heavy Haul Transport</a><a href="../services/machinery-moving.html">Machinery Moving</a><a href="../services/cnc-machine-movers.html">CNC Machine Movers</a><a href="../services/plant-relocation.html">Plant Relocation</a></div>
   <div><h4>Company</h4><a href="../about.html">About Us</a><a href="../locations.html">Locations</a><a href="../blog/index.html">Blog</a><a href="../contact.html">Contact</a><a href="../privacy.html">Privacy</a></div>
   
 </div><div class="covstrip">Coverage: <a href="../locations/texas.html">Texas</a> · <a href="../locations/california.html">California</a> · <a href="../locations/florida.html">Florida</a> · <a href="../locations/georgia.html">Georgia</a> · <a href="../locations/illinois.html">Illinois</a> · <a href="../locations/ohio.html">Ohio</a> · <a href="../locations/pennsylvania.html">Pennsylvania</a> · <a href="../locations/new-york.html">New York</a> · <a href="../locations.html"><strong>All 48 locations →</strong></a></div>
@@ -1805,7 +1805,7 @@ function indexHtml() {
     "@type": "Blog",
     "name": "Badass Logistics Blog",
     "url": `${site.domain}/blog/index.html`,
-    "description": "Guides on heavy haul, rigging, oversize permits, dispatch, and freight moving from Badass Logistics.",
+    "description": "Guides on heavy haul, rigging, oversize permits, machinery moving, and plant relocation from Badass Logistics.",
     "blogPost": POSTS.map(p => ({
       "@type": "BlogPosting",
       "headline": p.title.replace(/&amp;/g, '&'),
@@ -1826,7 +1826,7 @@ function indexHtml() {
 <link rel="canonical" href="${site.domain}/blog/index.html">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Badass Logistics Blog — Heavy Haul, Rigging &amp; Freight Guides">
-<meta property="og:description" content="Practical guides on heavy haul, rigging, oversize permits, dispatch, and freight moving.">
+<meta property="og:description" content="Practical guides on heavy haul, rigging, oversize permits, machinery moving, and plant relocation.">
 <meta property="og:url" content="${site.domain}/blog/index.html">
 <meta property="og:image" content="${OG}">
 <meta name="twitter:card" content="summary_large_image">
