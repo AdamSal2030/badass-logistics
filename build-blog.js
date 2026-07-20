@@ -307,7 +307,6 @@ const POSTS = [
     ],
     related: [
       { h: 'Heavy Haul Transport', u: '../services/heavy-haul.html' },
-      { h: 'Freight Moving', u: '../services/freight-moving.html' },
       { h: 'How Much Does Heavy Haul Cost?', u: 'how-much-does-heavy-haul-cost.html' },
       { h: 'Get a Quote', u: '../contact.html' },
     ],
@@ -407,7 +406,7 @@ const POSTS = [
 <p>If you are an owner-operator or small fleet and you want someone <strong>on your side of the table</strong> — keeping your wheels turning, fighting for your rate, and taking the admin off your plate — that is dispatching. If you are a shipper trying to move freight and you want someone to find capacity, that is a broker.</p>
 
 <h2>How we dispatch</h2>
-<p>We dispatch <em>for carriers</em> — you are the client, not the freight. Our <a href="../services/dispatching.html">truck dispatching service</a> sources loads, negotiates your rate up, and handles the paperwork, 24/7. And when you need actual capacity moved, our <a href="../services/freight-moving.html">freight moving</a> team can handle the load itself. Either way, you are dealing with a team that works for you.</p>
+<p>A truck dispatcher works <em>for the carrier</em> — you are the client, not the freight. A dispatching service sources loads, negotiates the rate up, and handles the paperwork, 24/7, so the driver can focus on driving.</p>
 
 <p><a href="../contact.html">Talk to us about dispatch</a> and we'll keep your trucks loaded and rolling.</p>
 `,
@@ -417,8 +416,6 @@ const POSTS = [
       { q: 'Do dispatchers get you better rates?', a: 'A good dispatcher negotiates on your behalf to push the rate up and reduce deadhead, and charges you a flat fee or percentage — versus a broker, whose margin comes from the spread between the shipper\'s rate and yours.' },
     ],
     related: [
-      { h: 'Truck Dispatching', u: '../services/dispatching.html' },
-      { h: 'Freight Moving', u: '../services/freight-moving.html' },
       { h: 'About Badass Logistics', u: '../about.html' },
       { h: 'Get a Quote', u: '../contact.html' },
     ],
@@ -482,7 +479,7 @@ const POSTS = [
 
   {
     slug: 'ltl-vs-ftl-freight',
-    cat: 'Freight Moving',
+    cat: 'Freight & Trucking',
     hero: 'brokerage-dryvan.jpg',
     date: '2026-06-10',
     title: 'LTL vs FTL Freight: Which One Actually Saves You Money?',
@@ -518,7 +515,7 @@ const POSTS = [
 <p>LTL pricing runs on freight class, dimensions, and accessorials — and the surprises live in the accessorials: liftgate fees, residential delivery, limited-access pickups, reweigh corrections, and detention. A quoted LTL rate can grow 30–40% by the time it hits your invoice. When you compare against FTL or partial, compare <em>landed</em> cost, not the base quote.</p>
 
 <h2>How we run it</h2>
-<p>Our <a href="../services/freight-moving.html">freight moving service</a> quotes FTL, LTL, and partial side by side, in dry van, reefer, and flatbed — and tells you straight which one the math favors for your lane. If it's oversized, it graduates to <a href="../services/heavy-haul.html">heavy haul</a>. Either way you get one answer instead of three vendors.</p>
+<p>We quote FTL, LTL, and partial side by side, in dry van, reefer, and flatbed — and tells you straight which one the math favors for your lane. If it's oversized, it graduates to <a href="../services/heavy-haul.html">heavy haul</a>. Either way you get one answer instead of three vendors.</p>
 
 <p><a href="../contact.html">Send us the pallet count, weight, and lane</a> — we'll price it both ways.</p>
 `,
@@ -528,7 +525,6 @@ const POSTS = [
       { q: 'What is partial truckload?', a: 'A shared trailer without terminal handling — your freight rides with one or two other direct shipments and stays on the same truck door to door. It typically beats LTL on speed and damage risk and beats FTL on price for 6–12 pallets.' },
     ],
     related: [
-      { h: 'Freight Moving', u: '../services/freight-moving.html' },
       { h: 'What Is Drayage?', u: 'what-is-drayage.html' },
       { h: 'Hot Shot Trucking Explained', u: 'hot-shot-trucking-explained.html' },
       { h: 'Get a Quote', u: '../contact.html' },
@@ -537,7 +533,7 @@ const POSTS = [
 
   {
     slug: 'what-is-drayage',
-    cat: 'Freight Moving',
+    cat: 'Freight & Trucking',
     hero: 'loads/load-reels-container.jpg',
     date: '2026-06-10',
     title: 'What Is Drayage? Container Trucking From Port to Door, Explained',
@@ -571,7 +567,7 @@ const POSTS = [
 <h2>Drayage + everything after it</h2>
 <p>A container rarely ends its journey at the first warehouse. We handle the dray, the <a href="ltl-vs-ftl-freight.html">LTL/FTL distribution</a> after deconsolidation, and — when what's inside the box is a machine — the <a href="../services/rigging.html">rigging</a> to take it off the floor and set it in place. Port cities like <a href="../locations/houston-tx.html">Houston</a>, <a href="../locations/charleston-sc.html">Charleston</a>, <a href="../locations/norfolk-va.html">Norfolk</a>, and <a href="../locations/los-angeles-ca.html">Los Angeles</a> are exactly where our drayage and heavy work overlap.</p>
 
-<p>Got boxes hitting a port? <a href="../services/freight-moving.html">See freight moving</a> or <a href="../contact.html">send us the ETA and the delivery address</a> — we'll keep the clocks at zero.</p>
+<p>Got boxes hitting a port? <a href="../contact.html">send us the ETA and the delivery address</a> — we'll keep the clocks at zero.</p>
 `,
     faq: [
       { q: 'What is the difference between drayage and trucking?', a: 'Drayage is a specialized subset of trucking: short-haul container moves to and from ports and rail ramps, requiring port credentials (TWIC), terminal appointments, interchange agreements, and chassis management that ordinary OTR trucking doesn\'t involve.' },
@@ -579,7 +575,6 @@ const POSTS = [
       { q: 'How much does drayage cost?', a: 'The truck move itself is priced by distance, port, and whether it\'s a live unload or a drop. The real budget risk is the fee side — demurrage, per diem, and chassis charges — which good scheduling avoids entirely.' },
     ],
     related: [
-      { h: 'Freight Moving', u: '../services/freight-moving.html' },
       { h: 'LTL vs FTL Freight', u: 'ltl-vs-ftl-freight.html' },
       { h: 'All Locations', u: '../locations.html' },
       { h: 'Get a Quote', u: '../contact.html' },
@@ -615,7 +610,7 @@ const POSTS = [
 <p>Hot shot is not a loophole. Run commercially across state lines and the rig needs <strong>DOT and MC operating authority</strong>, insurance, and — once the truck-plus-trailer combined weight rating crosses 26,001 lbs with a trailer over 10,000 lbs — a <strong>CDL</strong>. Hours-of-service and ELD rules apply like any other carrier. Loads still get secured to FMCSA standards, and an over-width piece on a gooseneck needs the same <a href="oversize-load-permits-guide.html">permits</a> as anything else.</p>
 
 <h2>Where dispatch makes or breaks hot shot</h2>
-<p>Hot shot economics live and die on deadhead. The truck only earns loaded, and small trucks burn margin fast running empty between jobs. That's exactly the problem our <a href="../services/dispatching.html">dispatch service</a> solves for owner-operators: keeping the calendar full, stacking loads in sensible lanes, negotiating the rate up, and handling the paperwork while the driver drives. And when a customer's load is too big for a hot shot, we move it on the right equipment through <a href="../services/freight-moving.html">freight moving</a> or <a href="../services/heavy-haul.html">heavy haul</a> instead of forcing it onto the wrong trailer.</p>
+<p>Hot shot economics live and die on deadhead. The truck only earns loaded, and small trucks burn margin fast running empty between jobs. That's exactly the problem a good dispatcher solves for owner-operators: keeping the calendar full, stacking loads in sensible lanes, negotiating the rate up, and handling the paperwork while the driver drives. And when a load is too big for a hot shot, we move it on the right equipment through <a href="../services/heavy-haul.html">heavy haul</a> instead of forcing it onto the wrong trailer.</p>
 
 <p>Need something moved yesterday — or running a hot shot rig that needs loads? <a href="../contact.html">Talk to us</a>; both sides of that problem are our job.</p>
 `,
@@ -625,8 +620,6 @@ const POSTS = [
       { q: 'Is hot shot cheaper than regular freight?', a: 'For small, urgent loads, usually — you avoid paying for a full semi or waiting for consolidation. For full or heavy loads, a semi\'s per-mile economics win. The decision is load size plus urgency.' },
     ],
     related: [
-      { h: 'Truck Dispatching', u: '../services/dispatching.html' },
-      { h: 'Freight Moving', u: '../services/freight-moving.html' },
       { h: 'Truck Dispatcher vs Freight Broker', u: 'truck-dispatcher-vs-freight-broker.html' },
       { h: 'Get a Quote', u: '../contact.html' },
     ],
@@ -930,7 +923,7 @@ const POSTS = [
   </ul>
 </div>
 
-<p>Have something fragile, high-value, or one-of-a-kind to move? Our <a href="../services/freight-moving.html">freight moving</a> and <a href="../services/machinery-moving.html">machinery moving</a> crews crate it, haul it, and set it down right. <a href="../contact.html">Tell us what it is and where it is going.</a></p>
+<p>Have something fragile, high-value, or one-of-a-kind to move? Our rigging and <a href="../services/machinery-moving.html">machinery moving</a> crews crate it, haul it, and set it down right. <a href="../contact.html">Tell us what it is and where it is going.</a></p>
 `,
     faq: [
       { q: 'What does white-glove freight mean?', a: 'It is a premium handling level for fragile, high-value, or sensitive shipments. It typically includes custom crating and cushioning, enclosed air-ride transport, and hand placement at delivery — curbside, inside, or to a specific spot — instead of a standard drop at a loading dock.' },
@@ -938,7 +931,6 @@ const POSTS = [
       { q: 'Does white-glove include inside delivery?', a: 'It can. Depending on the service level you book, delivery ranges from curbside set-down to threshold, inside, or exact-spot placement, with packaging and debris removed on request so the equipment is left ready to install.' },
     ],
     related: [
-      { h: 'Freight Moving', u: '../services/freight-moving.html' },
       { h: 'Machinery Moving', u: '../services/machinery-moving.html' },
       { h: 'How to Move an MRI Machine', u: 'how-to-move-an-mri-machine.html' },
       { h: 'Get a Quote', u: '../contact.html' },
@@ -1342,7 +1334,7 @@ const POSTS = [
   },
   {
     slug: "what-is-project-cargo",
-    cat: "Freight Moving",
+    cat: "Freight & Trucking",
     hero: "brokerage-flatbed.jpg",
     date: "2026-07-02",
     title: "What Is Project Cargo? Moving Oversized, Complex Shipments",
@@ -1352,7 +1344,7 @@ const POSTS = [
     keywords: "project cargo, oversized freight, heavy haul, breakbulk shipping, rigging, plant relocation, freight coordination",
     body: "<p>Ask ten people in freight what project cargo is and you'll get ten answers. From the dispatch desk, the definition is simple: project cargo is any shipment that has to be <strong>engineered instead of just booked</strong>. It's the big, heavy, high-value, usually multi-piece freight tied to a capital project — a plant build, a substation, a mine expansion, a refinery turnaround — where the cargo, the route, the equipment, and the delivery order all get planned as one program.</p><p>Standard freight lives inside the legal envelope: roughly 8'6\" wide, 13'6\" tall, about 53' of trailer, and 80,000 lbs gross vehicle weight. You book a truck, it loads, it delivers. Project cargo breaks that model in at least one direction — a single piece that blows past the envelope, or forty pieces that only work if they arrive in the right sequence.</p><h2>What actually qualifies as project cargo</h2><ul><li><strong>Energy equipment</strong> — turbines, generators, transformers, wind tower sections, nacelles</li><li><strong>Process equipment</strong> — pressure vessels, reactors, columns, boilers, heat exchangers</li><li><strong>Heavy machinery</strong> — presses, crushers, mills, kilns, complete production lines</li><li><strong>Fabricated structures</strong> — bridge girders, modular skids, pre-assembled pipe racks, storage tanks</li></ul><p>Size isn't the only trigger. A <a href=\"../services/plant-relocation.html\">plant relocation</a> that fills forty trailers is project cargo even when most loads are legal-dimension, because the machining centers have to land before the walls close in and the press line has to arrive in install order. The moment sequencing matters, you've left standard freight territory.</p><figure><img src=\"../assets/img/loads/gooseneck-flatbed-industrial-tanks.jpg\" alt=\"Industrial tanks chained and secured on a gooseneck flatbed trailer for a multi-piece project cargo move\" loading=\"lazy\" width=\"1024\" height=\"576\"><figcaption>Industrial tanks secured on a gooseneck flatbed — one truckload out of many on a typical multi-piece project move.</figcaption></figure><h2>Five things that separate it from standard freight</h2><p><strong>1. Engineering comes first.</strong> Before any truck gets booked, someone verifies the piece's weight, dimensions, and center of gravity against deck ratings and axle spacing. Overweight loads trigger axle-loading calculations. The heaviest moves can require engineered bridge reviews in some states. Lift plans get drawn for both ends before a wheel turns.</p><p><strong>2. The equipment is specialized.</strong> RGNs, multi-axle lowboys, stretch flatbeds, hydraulic platform trailers, dolly systems — the trailer is chosen off the drawing, not off what's parked nearby. A tall vessel that clears on a double-drop won't clear on a standard flatbed, and an overweight load may need extra axles just to spread the footprint legally.</p><p><strong>3. Permits and escorts rule the calendar.</strong> Every state issues its own oversize/overweight permits with its own approved routes, curfews, escort rules, and travel windows. Tall loads can require a height pole car and utility crews to lift wires. Permits get sequenced across every state on the route — one denial or route restriction can reroute the entire move.</p><p><strong>4. Multiple modes, one plan.</strong> The heaviest piece may ride barge or rail while everything else runs over the road, with a laydown yard and a crane transfer in between. Every mode change is its own rigging job with its own lift plan.</p><p><strong>5. Rigging is part of the shipment, not an afterthought.</strong> Pieces get disconnected, skated out of buildings, lifted, blocked, and secured at origin — then set by crane or gantry at destination, often into a scheduled window the installation crew is standing by for. A late piece doesn't just cost a delivery date; it idles millwrights and crane time.</p><h2>How an end-to-end move gets coordinated</h2><p>It starts with data: verified dimensions, weights, drawings, and center-of-gravity marks for every piece — not estimates off a spec sheet. Then the route survey, which for the biggest pieces means physically driving the route, measuring bridge clearances, and checking turn radii at every interchange. Equipment gets matched to each piece, permits get filed state by state, and escort and utility work gets scheduled around curfews and travel windows.</p><p>Then execution: rigging crews load out at origin, trucks run their permitted windows, and the destination crane sets each piece in install order. The value of a single coordinator — the <a href=\"../services/heavy-haul.html\">heavy haul</a> and brokerage role — is that carriers, riggers, permit services, and the site schedule all answer to one plan. When the schedule moves, one desk re-sequences everything instead of five vendors pointing at each other.</p><h2>What drives the cost</h2><p>No two project moves price the same, but the drivers are consistent: how far the piece exceeds the legal envelope (which dictates axle count, permits, and escorts), how many states the route crosses, whether bridge engineering or route modifications are required, the crane and rigging scope at both ends, laydown or storage between modes, and how compressed the schedule is. Weight and width cost money. Surprises cost more. The cheapest project move is the one measured correctly the first time.</p><div class=\"takeaways\"><h3>Bottom line</h3><ul><li>Project cargo is freight that has to be engineered, not just booked — oversized, overweight, high-value, or sequence-critical multi-piece moves.</li><li>Anything past 8'6\" wide, 13'6\" tall, ~53' long, or 80,000 lbs gross leaves standard freight and enters permit territory.</li><li>Permits, escorts, route surveys, and rigging windows drive the schedule — start with verified dimensions and weights, not estimates.</li><li>One coordinator owning carriers, riggers, and permits end to end is what keeps a forty-load program on sequence.</li></ul></div><p>Planning a plant build, equipment install, or multi-piece industrial move? Start with the drawings and <a href=\"../contact.html\">get a quote</a> — or if your load fits on a single trailer, read our guide on <a href=\"how-to-ship-industrial-machinery-on-a-flatbed.html\">shipping industrial machinery on a flatbed</a>.</p>",
     faq: [{"q": "Is project cargo the same thing as heavy haul?", "a": "No. Heavy haul is one discipline inside project cargo — moving a single overdimensional or overweight piece on specialized trailers. Project cargo is the whole program: multiple pieces, multiple trailers or modes, rigging at both ends, and a delivery sequence tied to an installation schedule. A single transformer move is heavy haul; that transformer plus the switchgear, skids, and control buildings arriving in set order is project cargo."}, {"q": "How far in advance should a project cargo move be planned?", "a": "As early as possible — ideally while the equipment is still being fabricated. The longest lead items are permits and engineering on the heaviest pieces: superload permits, bridge reviews, and utility coordination for wire lifts all take longer than booking trucks. Route surveys can also change the plan entirely, so locking dimensions and weights early prevents re-permitting later."}, {"q": "Does every piece in a project move need oversize permits?", "a": "No. Only pieces that exceed the legal envelope — generally 8'6\" wide, 13'6\" tall, about 53' long, or 80,000 lbs gross — need oversize/overweight permits. Legal-dimension pieces move as standard freight. But they still get sequenced into the same delivery plan, because the install schedule doesn't care which loads were permitted."}],
-    related: [{"h": "Heavy Haul Transport", "u": "../services/heavy-haul.html"}, {"h": "Plant Relocation", "u": "../services/plant-relocation.html"}, {"h": "Freight Moving", "u": "../services/freight-moving.html"}, {"h": "How to Ship Industrial Machinery on a Flatbed", "u": "how-to-ship-industrial-machinery-on-a-flatbed.html"}],
+    related: [{"h": "Heavy Haul Transport", "u": "../services/heavy-haul.html"}, {"h": "Plant Relocation", "u": "../services/plant-relocation.html"}, {"h": "How to Ship Industrial Machinery on a Flatbed", "u": "how-to-ship-industrial-machinery-on-a-flatbed.html"}],
   },
   {
     slug: "how-to-move-a-lathe",
@@ -1502,7 +1494,7 @@ const POSTS = [
   },
   {
     slug: "freight-broker-vs-forwarder-vs-3pl",
-    cat: "Freight Moving",
+    cat: "Freight & Trucking",
     hero: "brokerage-hero.jpg",
     date: "2026-07-03",
     title: "Freight Broker vs Freight Forwarder vs 3PL: What's the Difference?",
@@ -1512,7 +1504,7 @@ const POSTS = [
     keywords: "freight broker vs freight forwarder, freight broker vs 3pl, 3pl vs freight broker, what is a freight forwarder, freight brokerage, logistics",
     body: "<p>\"Freight broker,\" \"freight forwarder,\" and \"3PL\" get thrown around like synonyms on quote requests every week. They're not. The difference comes down to one question: <strong>who takes possession of your freight, and how much of your logistics do they run?</strong></p>\n<h2>Freight broker: the matchmaker</h2>\n<p>A freight broker <strong>arranges the transport but never takes possession of the goods</strong>. They connect you (the shipper) with a carrier that has the right equipment, insurance, and lane — and handle the booking, the paperwork, the rate, and the coordination as a single point of contact. On specialized freight — heavy haul, oversize, sensitive equipment — a good broker earns their keep by knowing which carriers can actually run your load and handling the permits and escorts. The freight goes straight from your dock onto the carrier's truck; the broker orchestrates it.</p>\n<figure><img src=\"../assets/img/brokerage-dryvan.jpg\" alt=\"Freight trailers at a distribution yard illustrating brokered transport\" loading=\"lazy\" width=\"1200\" height=\"800\"><figcaption>A broker matches your load to the right carrier and coordinates the move — without ever taking possession of the freight.</figcaption></figure>\n<h2>Freight forwarder: takes possession</h2>\n<p>A freight forwarder <strong>takes possession of your goods</strong> and manages their movement — often consolidating multiple shipments, handling documentation, customs, and re-shipping. Forwarders are the standard for <strong>international freight</strong>: ocean and air, customs clearance, container consolidation, and the hand-offs between modes and borders. The key legal difference from a broker is that the forwarder handles the cargo itself rather than just arranging a carrier to.</p>\n<h2>3PL: runs your logistics</h2>\n<p>A third-party logistics provider (3PL) is the broadest of the three. A 3PL <strong>runs outsourced logistics as an ongoing partner</strong> — which can include warehousing, inventory, order fulfillment, and transportation management, not just a single move. Where a broker solves one load and a forwarder moves goods across a border, a 3PL is who a company hands its whole supply-chain operation to. Many 3PLs include brokerage and forwarding among their services.</p>\n<h2>Which one do you need?</h2>\n<ul>\n  <li><strong>Broker</strong> — you have freight to move (especially specialized, heavy, or oversized) and want someone to find the right carrier and run the move.</li>\n  <li><strong>Forwarder</strong> — your freight is crossing borders, going ocean or air, or needs consolidation and customs handling.</li>\n  <li><strong>3PL</strong> — you want to outsource ongoing logistics: warehousing, fulfillment, and transportation as a managed operation.</li>\n</ul>\n<p>Badass Logistics operates on the brokerage side — coordinating carriers, permits, and equipment for <a href=\"../services/heavy-haul.html\">heavy haul</a>, <a href=\"../services/machinery-moving.html\">machinery</a>, and <a href=\"../services/freight-moving.html\">freight</a> moves, and running <a href=\"../services/dispatching.html\">dispatch</a> in-house. Related reading: <a href=\"truck-dispatcher-vs-freight-broker.html\">dispatcher vs. freight broker</a>.</p>\n<div class=\"takeaways\"><h3>Bottom line</h3><ul>\n  <li>Broker: arranges transport, never touches the freight. Best for moving a load.</li>\n  <li>Forwarder: takes possession, consolidates, clears customs. Best for international.</li>\n  <li>3PL: runs outsourced logistics end to end — warehousing, fulfillment, transport.</li>\n  <li>The dividing line is possession of the goods and scope of what they manage.</li>\n</ul></div>\n<p>Need freight moved or an oversized load coordinated? <a href=\"../contact.html\">Send us the details</a> for a fast quote.</p>",
     faq: [{"q": "What is the difference between a freight broker and a freight forwarder?", "a": "A freight broker arranges transport by matching your load to a carrier but never takes possession of the goods. A freight forwarder takes possession of the freight, often consolidates it, handles documentation and customs, and re-ships it — which is why forwarders are the standard for international ocean and air freight."}, {"q": "Is a 3PL the same as a freight broker?", "a": "No. A freight broker arranges individual moves. A 3PL (third-party logistics provider) runs outsourced logistics as an ongoing partner — which can include warehousing, inventory, fulfillment, and transportation management. Many 3PLs offer brokerage as one of their services, but a broker is not a full 3PL."}, {"q": "Which do I need to move a piece of heavy equipment?", "a": "A freight broker — specifically one that handles heavy haul. For a domestic oversized or heavy load, a broker finds the carrier with the right trailer and insurance, and handles the permits, routing, and escorts. A forwarder is for international/multi-modal freight, and a 3PL is for outsourcing ongoing logistics operations."}],
-    related: [{"h": "Truck Dispatcher vs Freight Broker", "u": "truck-dispatcher-vs-freight-broker.html"}, {"h": "Freight Moving", "u": "../services/freight-moving.html"}, {"h": "LTL vs FTL Freight", "u": "ltl-vs-ftl-freight.html"}, {"h": "Get a Quote", "u": "../contact.html"}],
+    related: [{"h": "Truck Dispatcher vs Freight Broker", "u": "truck-dispatcher-vs-freight-broker.html"}, {"h": "LTL vs FTL Freight", "u": "ltl-vs-ftl-freight.html"}, {"h": "Get a Quote", "u": "../contact.html"}],
   },
   {
     slug: "how-to-move-a-boiler-or-chiller",
