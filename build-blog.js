@@ -130,6 +130,7 @@ const POSTS = [
       { h: 'Heavy Haul Transport', u: '../services/heavy-haul.html' },
       { h: 'Oversize Load Permits Guide', u: 'oversize-load-permits-guide.html' },
       { h: 'Flatbed vs Step Deck vs RGN', u: 'flatbed-vs-step-deck-vs-rgn-trailers.html' },
+      { h: 'Trailer Selector Tool', u: '../trailer-selector.html' },
       { h: 'Get a Quote', u: '../contact.html' },
     ],
   },
@@ -472,6 +473,7 @@ const POSTS = [
     related: [
       { h: 'Heavy Haul Transport', u: '../services/heavy-haul.html' },
       { h: 'Flatbed vs Step Deck vs RGN', u: 'flatbed-vs-step-deck-vs-rgn-trailers.html' },
+      { h: 'Trailer Selector Tool', u: '../trailer-selector.html' },
       { h: 'Oversize Load Permits Guide', u: 'oversize-load-permits-guide.html' },
       { h: 'Get a Quote', u: '../contact.html' },
     ],
@@ -805,6 +807,7 @@ const POSTS = [
     related: [
       { h: 'Machinery Moving', u: '../services/machinery-moving.html' },
       { h: 'Flatbed vs Step Deck vs RGN', u: 'flatbed-vs-step-deck-vs-rgn-trailers.html' },
+      { h: 'Trailer Selector Tool', u: '../trailer-selector.html' },
       { h: 'How Much Does Heavy Haul Cost?', u: 'how-much-does-heavy-haul-cost.html' },
       { h: 'Get a Quote', u: '../contact.html' },
     ],
@@ -1085,6 +1088,7 @@ const POSTS = [
     ],
     related: [
       { h: 'Flatbed vs Step Deck vs RGN', u: 'flatbed-vs-step-deck-vs-rgn-trailers.html' },
+      { h: 'Trailer Selector Tool', u: '../trailer-selector.html' },
       { h: 'Machinery Moving', u: '../services/machinery-moving.html' },
       { h: 'White-Glove Freight & Crating', u: 'white-glove-freight-and-custom-crating.html' },
       { h: 'Get a Quote', u: '../contact.html' },

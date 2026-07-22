@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Heavy-Haul Trailer Selector — Which Trailer Do I Need? | Badass Logistics</title>
+<meta name="description" content="Free trailer selector: enter your load's length, width, height, and weight and see which heavy-haul trailer it needs — flatbed, step-deck, RGN, lowboy, or multi-axle — plus which oversize and overweight permits apply. Then get a real quote.">
+<link rel="canonical" href="https://badasslogistics.com/trailer-selector">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#141414">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Heavy-Haul Trailer Selector — Which Trailer Do I Need?">
+<meta property="og:description" content="Enter your load's dimensions and weight and see which trailer it needs, plus which oversize/overweight permits apply. Free planning tool from Badass Logistics.">
+<meta property="og:url" content="https://badasslogistics.com/trailer-selector">
+<meta property="og:image" content="https://badasslogistics.com/assets/img/og-default.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Heavy-Haul Trailer Selector — Which Trailer Do I Need?">
+<meta name="twitter:description" content="Enter your load's dimensions and weight and see which trailer it needs, plus the permits that apply.">
+<meta name="twitter:image" content="https://badasslogistics.com/assets/img/og-default.jpg">
+<link rel="sitemap" type="application/xml" href="https://badasslogistics.com/sitemap.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Barlow:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Architects+Daughter&family=Barlow:wght@400;500;600;700&display=swap"></noscript>
+<link rel="icon" href="/assets/favicon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
+<link rel="stylesheet" href="/css/styles.css">
+<style>
+  .ts-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px 20px;max-width:640px;margin-top:8px}
+  .ts-grid .full{grid-column:1/-1}
+  .ts label{display:block;font-family:"Anton",sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:.5px;margin:0 0 5px}
+  .ts .dim{display:flex;gap:8px;align-items:center}
+  .ts .dim input{width:100%}
+  .ts .dim span{font-family:"Anton",sans-serif;color:#6b6656;font-size:14px}
+  .ts input,.ts select{width:100%;padding:12px 13px;border:3px solid var(--ink);background:var(--white);font-family:"Barlow",sans-serif;font-size:16px}
+  .ts input:focus,.ts select:focus{outline:3px solid var(--yellow)}
+  .ts .hint{font-size:13px;color:#6b6656;margin:4px 0 0}
+  .ts-run{margin-top:22px;background:var(--ink);color:var(--yellow);font-family:"Anton",sans-serif;text-transform:uppercase;font-size:19px;letter-spacing:.5px;padding:15px 30px;border:3px solid var(--ink);box-shadow:5px 5px 0 var(--yellow-deep,#c98f02);cursor:pointer}
+  .ts-run:hover{transform:translate(1px,1px);box-shadow:4px 4px 0 var(--yellow-deep,#c98f02)}
+  .ts-toggle{display:flex;gap:16px;flex-wrap:wrap;margin-top:4px}
+  .ts-toggle label{display:inline-flex;align-items:center;gap:7px;font-family:"Barlow",sans-serif;text-transform:none;font-size:15px;font-weight:600;cursor:pointer;margin:0}
+  .ts-toggle input{width:auto}
+  #ts-result{display:none;margin-top:34px}
+  .ts-card{border:3px solid var(--ink);box-shadow:8px 8px 0 rgba(0,0,0,.4);background:var(--white)}
+  .ts-card .head{background:var(--ink);color:#fff;padding:22px 26px}
+  .ts-card .head .lbl{font-family:"Architects Daughter",cursive;color:var(--yellow);font-size:18px;display:block;margin-bottom:2px}
+  .ts-card .head h2{font-family:"Anton",sans-serif;text-transform:uppercase;font-size:clamp(26px,4vw,38px);margin:0;line-height:1.05}
+  .ts-card .head h2 .y{color:var(--yellow)}
+  .ts-card .body{padding:24px 26px}
+  .ts-card .why{font-size:17px;line-height:1.55;margin:0 0 18px}
+  .ts-flags{list-style:none;padding:0;margin:0 0 8px}
+  .ts-flags li{border:3px solid var(--ink);padding:12px 15px;margin-bottom:10px;display:flex;gap:12px;align-items:flex-start}
+  .ts-flags li.warn{background:var(--yellow,#ffd21e)}
+  .ts-flags li.ok{background:var(--paper,#f7f4ea)}
+  .ts-flags .tag{font-family:"Anton",sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:.5px;white-space:nowrap;padding-top:2px}
+  .ts-flags .txt{font-size:15px;line-height:1.5}
+  .ts-spec{display:flex;flex-wrap:wrap;gap:8px 22px;font-family:"Barlow",sans-serif;font-size:15px;color:#4a463b;border-top:2px dashed #cfc9b8;padding-top:14px;margin-top:6px}
+  .ts-spec b{font-family:"Anton",sans-serif;font-weight:400;text-transform:uppercase;font-size:12px;letter-spacing:.5px;color:#6b6656;display:block}
+  .ts-cta{background:var(--yellow);border:3px solid var(--ink);box-shadow:6px 6px 0 var(--ink);padding:22px 26px;margin-top:22px;text-align:center}
+  .ts-cta h3{font-family:"Anton",sans-serif;text-transform:uppercase;font-size:24px;margin:0 0 6px}
+  .ts-cta p{margin:0 0 16px;font-size:16px}
+  .disclaimer{font-size:13px;color:#6b6656;margin-top:16px;line-height:1.5}
+  .ref-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;margin-top:20px}
+  .ref-tile{border:3px solid var(--ink);box-shadow:var(--shadow);background:var(--white);padding:18px 20px}
+  .ref-tile h3{font-family:"Anton",sans-serif;text-transform:uppercase;font-size:18px;margin:0 0 6px}
+  .ref-tile p{margin:0 0 8px;color:#4a463b;font-size:14.5px;line-height:1.5}
+  .ref-tile a{font-family:"Anton",sans-serif;text-transform:uppercase;font-size:13px;letter-spacing:.5px;color:var(--yellow-deep,#c98f02);text-decoration:none}
+  details.tq{border:3px solid var(--ink);background:var(--white);margin-bottom:12px;box-shadow:4px 4px 0 var(--ink)}
+  details.tq summary{cursor:pointer;font-family:"Anton",sans-serif;text-transform:uppercase;font-size:16px;padding:14px 16px;list-style:none}
+  details.tq summary::-webkit-details-marker{display:none}
+  details.tq[open] summary{border-bottom:2px solid var(--ink)}
+  details.tq div{padding:14px 16px;color:#4a463b;line-height:1.6}
+  @media(max-width:640px){.ts-grid{grid-template-columns:1fr}}
+</style>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebApplication","name":"Heavy-Haul Trailer Selector","url":"https://badasslogistics.com/trailer-selector","applicationCategory":"BusinessApplication","operatingSystem":"Any (web browser)","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"},"description":"Enter a load's length, width, height, and weight and see which heavy-haul trailer it needs — flatbed, step-deck, RGN, lowboy, or multi-axle — plus which oversize and overweight permits apply.","provider":{"@type":"LocalBusiness","@id":"https://badasslogistics.com/#organization","name":"Badass Logistics","telephone":"+1-307-284-1332","url":"https://badasslogistics.com/"}}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://badasslogistics.com/"},{"@type":"ListItem","position":2,"name":"Trailer Selector","item":"https://badasslogistics.com/trailer-selector"}]}
+</script>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+{"@type":"Question","name":"How do I know which trailer my load needs?","acceptedAnswer":{"@type":"Answer","text":"Trailer choice comes down to loaded height, weight, and whether the equipment rolls on its own wheels. A load stays legal on a flatbed if it clears 13'6\" total height on a ~5 ft deck and weighs under about 48,000 lbs. Taller loads move to a step-deck; taller or heavier still goes to a double-drop, lowboy, or RGN; and self-propelled machines like excavators and dozers drive onto an RGN whose gooseneck detaches into a ramp."}},
+{"@type":"Question","name":"What makes a load oversize or overweight?","acceptedAnswer":{"@type":"Answer","text":"In the U.S., a load is legally oversize once it exceeds 8'6\" wide, 13'6\" tall, or roughly 53 ft long, and overweight once the gross combination passes 80,000 lbs. Anything beyond those limits needs a state permit, and larger loads add escorts, height poles, or bridge analysis. Thresholds vary by state, so the exact permit is confirmed when the route is set."}},
+{"@type":"Question","name":"What is a superload?","acceptedAnswer":{"@type":"Answer","text":"A superload is a load so large or heavy that normal oversize permits don't cover it — commonly over about 16 ft wide, 16 ft tall, 150 ft long, or 200,000 lbs, though each state sets its own line. Superloads typically require engineering review, bridge analysis, police escorts, and route-specific approval."}},
+{"@type":"Question","name":"Is this trailer selector exact?","acceptedAnswer":{"@type":"Answer","text":"It's a planning estimate that applies standard U.S. legal limits and typical trailer deck heights, so it gets you to the right category quickly. The final trailer, axle configuration, and permits are confirmed once we have the exact dimensions, weight, lift points, and route for your load."}}
+]}
+</script>
+</head>
+<body>
+
+<div class="topbar"><div class="wrap"><div>📍 88 locations nationwide &nbsp;·&nbsp; <strong>All 50 states</strong></div><div><a href="tel:3072841332">📞 (307) 284-1332</a> &nbsp;·&nbsp; <a href="/contact"><strong>Get a Quote</strong></a></div></div></div>
+<header class="site-header"><div class="wrap">
+  <a class="logo" href="/"><span class="brand"><span class="l1">BADASS</span><span class="l2">LOGISTICS</span></span></a>
+  <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
+  <nav class="main" id="nav">
+    <a href="/">Home</a><a href="/services/rigging">Rigging</a><a href="/services/heavy-haul">Heavy Haul</a><a href="/locations">Locations</a><a href="/blog/">Blog</a><a href="/about">About</a>
+    <a class="btn" style="font-size:14px;padding:9px 16px;box-shadow:3px 3px 0 var(--ink)" href="/contact">Get a Quote</a>
+  </nav>
+</div></header>
+
+<div class="wrap breadcrumb"><a href="/">Home</a> / Trailer Selector</div>
+
+<section class="page-hero notes-bg">
+  <span class="bgnote" style="top:16%;right:6%;transform:rotate(-4deg)">DIMS × WEIGHT</span>
+  <span class="bgnote" style="bottom:18%;left:4%;transform:rotate(4deg)">FLATBED → RGN → LOWBOY</span>
+  <div class="wrap">
+  <span class="section-tag hand">// free planning tool</span>
+  <h1>Which trailer does your load <span class="y">actually need?</span></h1>
+  <p class="lead">Punch in the load's length, width, height, and weight. We'll tell you the right heavy-haul trailer, flag any oversize or overweight permits, and get you a real quote — no guesswork.</p>
+</div></section>
+
+<section class="ts"><div class="wrap">
+  <form id="ts-form" onsubmit="return runSelector(event)">
+    <div class="ts-grid">
+      <div><label for="ts-name">What are you moving? <span style="font-weight:400;text-transform:none;color:#8a8574">(optional)</span></label><input id="ts-name" placeholder="e.g. CNC machining center, excavator, transformer"></div>
+      <div>
+        <label>Weight (lbs)</label>
+        <input id="ts-weight" type="number" min="0" inputmode="numeric" placeholder="e.g. 42000">
+        <p class="hint">Cargo weight — not counting the trailer.</p>
+      </div>
+      <div>
+        <label>Length</label>
+        <div class="dim"><input id="ts-len-ft" type="number" min="0" inputmode="numeric" placeholder="ft"><span>ft</span><input id="ts-len-in" type="number" min="0" max="11" inputmode="numeric" placeholder="in"><span>in</span></div>
+      </div>
+      <div>
+        <label>Width</label>
+        <div class="dim"><input id="ts-wid-ft" type="number" min="0" inputmode="numeric" placeholder="ft"><span>ft</span><input id="ts-wid-in" type="number" min="0" max="11" inputmode="numeric" placeholder="in"><span>in</span></div>
+      </div>
+      <div>
+        <label>Height</label>
+        <div class="dim"><input id="ts-hgt-ft" type="number" min="0" inputmode="numeric" placeholder="ft"><span>ft</span><input id="ts-hgt-in" type="number" min="0" max="11" inputmode="numeric" placeholder="in"><span>in</span></div>
+      </div>
+      <div class="full">
+        <label>Does it roll on its own wheels/tracks?</label>
+        <div class="ts-toggle">
+          <label><input type="radio" name="ts-self" value="no" checked> No — it's crated, skidded, or lifted on</label>
+          <label><input type="radio" name="ts-self" value="yes"> Yes — it drives/rolls on (excavator, dozer, crane)</label>
+        </div>
+      </div>
+    </div>
+    <button class="ts-run" type="submit">Find My Trailer →</button>
+  </form>
+
+  <div id="ts-result" aria-live="polite"></div>
+
+  <p class="disclaimer" id="ts-disc" style="display:none">This is a planning estimate based on standard U.S. legal limits (8'6" wide, 13'6" tall, ~53 ft long, 80,000 lbs gross) and typical trailer deck heights. Real routing, axle configuration, and permits depend on the exact load, lift points, and states involved — we confirm all of it on your quote.</p>
+</div></section>
+
+<section class="notes-bg" style="background:#f4f1e6;border-top:3px solid var(--ink);border-bottom:3px solid var(--ink)"><div class="wrap">
+  <span class="section-tag hand">// quick reference</span>
+  <h2 style="font-family:'Anton',sans-serif;text-transform:uppercase;font-size:28px;margin:6px 0 4px">The heavy-haul trailers, in plain English</h2>
+  <div class="ref-grid">
+    <div class="ref-tile"><h3>Flatbed</h3><p>Open 48–53 ft deck (~5 ft high). Legal-height, legal-weight loads that can take the weather — steel, pipe, machinery under ~8'6" tall and ~48,000 lbs.</p><a href="/services/flatbed-transport">Flatbed transport →</a></div>
+    <div class="ref-tile"><h3>Step-Deck / Drop-Deck</h3><p>Lower rear deck (~3'3") buys you height. Machinery up to about 10 ft tall often ships without a height permit.</p><a href="/services/step-deck-trailer">Step-deck transport →</a></div>
+    <div class="ref-tile"><h3>RGN (Removable Gooseneck)</h3><p>The nose detaches into a ramp so tall, heavy, self-propelled equipment drives on. Excavators, dozers, cranes; extra axles carry heavier loads.</p><a href="/services/rgn-trailer">RGN transport →</a></div>
+    <div class="ref-tile"><h3>Lowboy / Double-Drop</h3><p>Ultra-low well for the tallest loads — up to ~11'6"–12' — and stretch versions for very long freight like beams and blades.</p><a href="/services/double-drop-trailer">Double-drop transport →</a></div>
+    <div class="ref-tile"><h3>Multi-Axle &amp; Superload</h3><p>Jeeps and boosters spread superheavy weight across more axles for transformers, vessels, and the heaviest machinery.</p><a href="/services/multi-axle-transport">Multi-axle transport →</a></div>
+    <div class="ref-tile"><h3>Not sure?</h3><p>Send the dimensions and weight and we'll spec the trailer, the permits, and the route for you — usually the same day.</p><a href="/contact">Get a quote →</a></div>
+  </div>
+</div></section>
+
+<section><div class="wrap" style="max-width:820px">
+  <span class="section-tag hand">// quick answers</span>
+  <h2 style="font-family:'Anton',sans-serif;text-transform:uppercase;font-size:28px;margin:6px 0 18px">Trailer &amp; permit FAQ</h2>
+  <details class="tq" open><summary>How do I know which trailer my load needs?</summary><div>It comes down to three things: loaded height, weight, and whether the equipment rolls on its own wheels. A load stays legal on a flatbed if it clears 13'6" total height on a ~5 ft deck and weighs under about 48,000 lbs. Taller loads step down to a step-deck; taller or heavier still moves to a double-drop, lowboy, or RGN; and self-propelled machines drive onto an RGN whose gooseneck detaches into a ramp. This tool applies those rules for you.</div></details>
+  <details class="tq"><summary>What makes a load oversize or overweight?</summary><div>A load is legally oversize once it passes 8'6" wide, 13'6" tall, or roughly 53 ft long, and overweight once the gross combination tops 80,000 lbs. Past those limits you need a state permit; bigger loads add pilot cars, height poles, or bridge analysis. Exact thresholds vary by state, so the permit is confirmed once the route is set.</div></details>
+  <details class="tq"><summary>What is a superload?</summary><div>A superload is too big or heavy for normal oversize permits — generally over about 16 ft wide, 16 ft tall, 150 ft long, or 200,000 lbs, though each state draws its own line. Superloads usually need engineering review, bridge analysis, police escorts, and route-specific approval.</div></details>
+  <details class="tq"><summary>Is this selector exact?</summary><div>It's a planning estimate that uses standard U.S. legal limits and typical trailer deck heights to get you to the right category fast. The final trailer, axle setup, and permits are confirmed once we have the exact dimensions, weight, lift points, and route.</div></details>
+</div></section>
+
+<footer><div class="wrap"><div class="cols">
+  <div><h4>Badass Logistics</h4><p style="opacity:.85;max-width:280px;">Industrial rigging &amp; heavy haul — our own crews, machinery, and rigging gear, plus a network of specialized carriers for everything oversized and overweight.</p></div>
+  <div><h4>Services</h4><a href="/services/rigging">Industrial Rigging</a><a href="/services/heavy-haul">Heavy Haul Transport</a><a href="/services/machinery-moving">Machinery Moving</a></div>
+  <div><h4>Company</h4><a href="/about">About Us</a><a href="/locations">Locations</a><a href="/blog/">Blog</a><a href="/contact">Contact</a></div>
+</div><div class="footer-nap"><span class="nap-name">Badass Logistics</span><span>1001 S Main St, STE 500, Kalispell, MT 59901</span><span><a href="tel:3072841332">(307) 284-1332</a></span><span><a href="mailto:info@badasslogistics.com">info@badasslogistics.com</a></span></div>
+<div class="legal"><span>© 2022–2026 Badass Logistics. All rights reserved.</span><span class="hand">made to move heavy things.</span></div></div></footer>
+
+<script>
+(function(){
+  var LEGAL_W=102, LEGAL_H=162, LEGAL_L=636, LEGAL_WT=80000; // inches / lbs
+  var DECK={flatbed:60, stepdeck:39, rgn:20, lowboy:22};
+  function inches(ft,inn){ return (parseFloat(ft)||0)*12 + (parseFloat(inn)||0); }
+  function fi(totalIn){ var f=Math.floor(totalIn/12), i=Math.round(totalIn-f*12); if(i===12){f++;i=0;} return f+"'"+(i?(" "+i+'"'):''); }
+  function esc(s){ return (s||'').replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];}); }
+
+  window.runSelector=function(e){
+    e.preventDefault();
+    var name=document.getElementById('ts-name').value.trim();
+    var wt=parseFloat(document.getElementById('ts-weight').value)||0;
+    var L=inches(document.getElementById('ts-len-ft').value,document.getElementById('ts-len-in').value);
+    var W=inches(document.getElementById('ts-wid-ft').value,document.getElementById('ts-wid-in').value);
+    var H=inches(document.getElementById('ts-hgt-ft').value,document.getElementById('ts-hgt-in').value);
+    var self=document.querySelector('input[name="ts-self"]:checked').value==='yes';
+
+    if(!H && !wt){ alert('Enter at least a height and weight so we can spec a trailer.'); return false; }
+
+    // choose trailer
+    var trailer,slug,deck,note;
+    if(self && (H>102 || wt>48000)){
+      trailer='RGN (Removable Gooseneck)'; slug='rgn-trailer'; deck=DECK.rgn;
+      note='Because it rolls on its own wheels, an RGN lets it drive straight on — the gooseneck drops into a ramp, and extra axles carry the weight.';
+    } else if(wt>80000){
+      trailer='Multi-Axle / Superload rig'; slug='multi-axle-transport'; deck=DECK.lowboy;
+      note='At this weight the load needs jeeps and boosters to spread it across more axles and stay road-legal.';
+    } else if(H+DECK.flatbed<=LEGAL_H && wt<=48000){
+      trailer='Flatbed'; slug='flatbed-transport'; deck=DECK.flatbed;
+      note='It clears legal height on a standard flatbed and is within flatbed payload, so it loads from any side and needs no height permit.';
+    } else if(H+DECK.stepdeck<=LEGAL_H && wt<=48000){
+      trailer='Step-Deck (Drop Deck)'; slug='step-deck-trailer'; deck=DECK.stepdeck;
+      note='The lower rear deck keeps it under 13\'6" total, so it often ships without a height permit where a flatbed would not.';
+    } else if(self){
+      trailer='RGN (Removable Gooseneck)'; slug='rgn-trailer'; deck=DECK.rgn;
+      note='The low RGN deck keeps a tall or heavy self-propelled machine legal, and it can drive right on.';
+    } else {
+      trailer='Double-Drop / Lowboy'; slug='double-drop-trailer'; deck=DECK.lowboy;
+      note='The ultra-low well drops the load into legal height range and handles the heavier, taller machinery a flatbed or step-deck cannot.';
+    }
+    var loadedH = H ? H+deck : 0;
+
+    // permit flags
+    var flags=[];
+    if(W>LEGAL_W){ flags.push(['warn','Oversize width', fi(W)+' wide is over the 8\'6" legal limit — needs an oversize width permit'+(W>144?', and at this width, pilot-car escorts':'')+'.']); }
+    else if(W){ flags.push(['ok','Width OK', fi(W)+' is within the 8\'6" legal width — no width permit.']); }
+    if(loadedH>LEGAL_H){ flags.push(['warn','Over-height', 'Loaded height is about '+fi(loadedH)+' on a '+trailer.split(' ')[0].toLowerCase()+' deck — over 13\'6", so it needs a height permit and a route survey for bridges and wires.']); }
+    else if(loadedH){ flags.push(['ok','Height OK', 'Loaded height is about '+fi(loadedH)+' — under 13\'6", so no height permit on this trailer.']); }
+    if(L>LEGAL_L){ flags.push(['warn','Oversize length', fi(L)+' long is past ~53 ft — length permits apply and vary by state.']); }
+    if(wt>LEGAL_WT){ flags.push(['warn','Overweight', (wt).toLocaleString()+' lbs of cargo puts the rig over 80,000 lbs gross — overweight permits and added axles required.']); }
+    else if(wt){ flags.push(['ok','Weight OK', (wt).toLocaleString()+' lbs is within typical legal gross once loaded on the right trailer.']); }
+    // superload
+    var superhit=[];
+    if(W>16*12) superhit.push('over ~16 ft wide');
+    if(loadedH>16*12) superhit.push('over ~16 ft tall');
+    if(L>150*12) superhit.push('over ~150 ft long');
+    if(wt>200000) superhit.push('over 200,000 lbs');
+    if(superhit.length){ flags.push(['warn','Superload', 'This crosses superload territory ('+superhit.join(', ')+') — expect engineering review, bridge analysis, police escorts, and state-by-state routing.']); }
+
+    var flagsHtml=flags.map(function(f){ return '<li class="'+f[0]+'"><span class="tag">'+(f[0]==='warn'?'⚠ ':'✓ ')+esc(f[1])+'</span><span class="txt">'+esc(f[2])+'</span></li>'; }).join('');
+    var specBits=[];
+    if(L) specBits.push('<span><b>Length</b>'+fi(L)+'</span>');
+    if(W) specBits.push('<span><b>Width</b>'+fi(W)+'</span>');
+    if(H) specBits.push('<span><b>Height</b>'+fi(H)+'</span>');
+    if(loadedH) specBits.push('<span><b>Loaded height</b>~'+fi(loadedH)+'</span>');
+    if(wt) specBits.push('<span><b>Weight</b>'+wt.toLocaleString()+' lbs</span>');
+
+    var html=''+
+      '<div class="ts-card">'+
+        '<div class="head"><span class="lbl">recommended trailer'+(name?' for your '+esc(name):'')+'</span><h2>'+trailer.replace(/\(([^)]+)\)/,'<span class="y">($1)</span>')+'</h2></div>'+
+        '<div class="body">'+
+          '<p class="why">'+esc(note)+'</p>'+
+          '<ul class="ts-flags">'+flagsHtml+'</ul>'+
+          '<div class="ts-spec">'+specBits.join('')+'</div>'+
+        '</div>'+
+      '</div>'+
+      '<div class="ts-cta">'+
+        '<h3>Get this quoted for real</h3>'+
+        '<p>Send us the load and we\'ll confirm the exact trailer, permits, and route — usually the same day.</p>'+
+        '<a class="btn" href="/contact">Get My Quote →</a> &nbsp; <a class="btn ghost" href="tel:3072841332">Call (307) 284-1332</a>'+
+      '</div>';
+
+    var box=document.getElementById('ts-result');
+    box.innerHTML=html; box.style.display='block';
+    document.getElementById('ts-disc').style.display='block';
+    box.scrollIntoView({behavior:'smooth',block:'start'});
+    return false;
+  };
+})();
+</script>
+
+</body>
+</html>
