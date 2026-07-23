@@ -78,7 +78,7 @@ const BANDS  = ['rigging-crane.jpg', 'rgn-load.jpg', 'heavyhaul-load.jpg', 'brok
 const pick = (arr, i) => arr[i % arr.length];
 
 const NAV = `
-<div class="topbar"><div class="wrap"><div>📍 48 locations nationwide &nbsp;·&nbsp; <strong>All 50 states</strong></div><div><a href="tel:${site.phoneHref}">📞 ${site.phone}</a> &nbsp;·&nbsp; <a href="../contact.html"><strong>Get a Quote</strong></a></div></div></div>
+<div class="topbar"><div class="wrap"><div>📍 88 locations nationwide &nbsp;·&nbsp; <strong>All 50 states</strong></div><div><a href="tel:${site.phoneHref}">📞 ${site.phone}</a> &nbsp;·&nbsp; <a href="../contact.html"><strong>Get a Quote</strong></a></div></div></div>
 <header class="site-header"><div class="wrap">
   <a class="logo" href="../index.html"><span class="brand"><span class="l1">BADASS</span><span class="l2">LOGISTICS</span></span></a>
   <button class="nav-toggle" aria-label="Menu" onclick="document.getElementById('nav').classList.toggle('open')">☰</button>
@@ -94,7 +94,7 @@ const FOOTER = `
   <div><h4>Services</h4><a href="../services/rigging.html">Industrial Rigging</a><a href="../services/heavy-haul.html">Heavy Haul Transport</a><a href="../services/machinery-moving.html">Machinery Moving</a><a href="../services/cnc-machine-movers.html">CNC Machine Movers</a><a href="../services/plant-relocation.html">Plant Relocation</a></div>
   <div><h4>Company</h4><a href="../about.html">About Us</a><a href="../locations.html">Locations</a><a href="../blog/index.html">Blog</a><a href="../contact.html">Contact</a><a href="../privacy.html">Privacy</a></div>
   
-</div><div class="covstrip">Coverage: <a href="../locations/texas.html">Texas</a> · <a href="../locations/california.html">California</a> · <a href="../locations/florida.html">Florida</a> · <a href="../locations/georgia.html">Georgia</a> · <a href="../locations/illinois.html">Illinois</a> · <a href="../locations/ohio.html">Ohio</a> · <a href="../locations/pennsylvania.html">Pennsylvania</a> · <a href="../locations/new-york.html">New York</a> · <a href="../locations.html"><strong>All 48 locations →</strong></a></div>
+</div><div class="covstrip">Coverage: <a href="../locations/texas.html">Texas</a> · <a href="../locations/california.html">California</a> · <a href="../locations/florida.html">Florida</a> · <a href="../locations/georgia.html">Georgia</a> · <a href="../locations/illinois.html">Illinois</a> · <a href="../locations/ohio.html">Ohio</a> · <a href="../locations/pennsylvania.html">Pennsylvania</a> · <a href="../locations/new-york.html">New York</a> · <a href="../locations.html"><strong>All 88 locations →</strong></a></div>
 <div class="footer-nap"><span class="nap-name">Badass Logistics</span><span>1001 S Main St, STE 500, Kalispell, MT 59901</span><span><a href="tel:${site.phoneHref}">${site.phone}</a></span><span><a href="mailto:${site.email}">${site.email}</a></span></div><div class="legal"><span>© 2022–2026 Badass Logistics. All rights reserved.</span><span class="hand">made to move heavy things.</span></div></div></footer>`;
 
 function statePage(st, cities, idx, allStates) {
@@ -237,11 +237,11 @@ ${NAV}
 
 <section class="notes-bg">
   <span class="bgnote" style="top:14%;right:5%;transform:rotate(-4deg)">EVERY MILE LEGAL ✓</span>
-  <span class="bgnote" style="bottom:12%;left:4%;transform:rotate(4deg)">48 LOCATIONS NATIONWIDE</span>
+  <span class="bgnote" style="bottom:12%;left:4%;transform:rotate(4deg)">88 LOCATIONS NATIONWIDE</span>
   <div class="wrap">
   <span class="section-tag hand">on the map</span>
   <h2 class="section-title">${name} coverage map</h2>
-  <p class="section-intro">Statewide ${name} — industrial rigging, heavy haul, and machinery moving, backed by a nationwide network of 48 locations.</p>
+  <p class="section-intro">Statewide ${name} — industrial rigging, heavy haul, and machinery moving, backed by a nationwide network of 88 locations.</p>
   <div class="map-frame" style="margin-top:24px;">
     <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="${name} heavy haul coverage map" src="https://maps.google.com/maps?q=${mapQ}&z=6&output=embed"></iframe>
   </div>

@@ -83,6 +83,7 @@ const SERVICES = {
   'cnc-machine-movers': {
     name:'CNC Machine Movers', serviceType:'CNC Machine Moving', hero:'/assets/img/loads/load-machine-loadout.jpg', band:'/assets/img/rigging-crane.jpg',
     tag:'cnc machine movers', quote:'CNC', coverageNoun:'Machine-tool moves',
+    snippet:`We move VMCs, HMCs, lathes, grinders, and full machine shops — lifted from the OEM's points, hauled on air-ride, and re-leveled to spec.`,
     lead:(c)=>`${c.city}'s ${c.angle} shops run on CNC — and their tolerances don't get a day off. We move VMCs, HMCs, lathes, and full machine shops across the ${c.city} metro, lifted from the OEM's points, hauled on air-ride, and re-leveled to spec so the spindle cuts true the morning you power back up.`,
     introH2:(c)=>`Machine-tool moving in ${c.CS}`,
     introPs:(c)=>[
@@ -103,6 +104,7 @@ const SERVICES = {
   'machinery-moving': {
     name:'Machinery Movers', serviceType:'Machinery Moving', hero:'/assets/img/loads/load-machine-loadout.jpg', band:'/assets/img/heavyhaul-load.jpg',
     tag:'machinery movers', quote:'Machinery', coverageNoun:'Machinery moves',
+    snippet:`We disconnect, rig, haul, and re-level presses, generators, compressors, and full production lines as one accountable job.`,
     lead:(c)=>`Every hour a ${c.city} production floor sits idle costs money. From ${c.angle} plants to job shops, we rig, haul, and set industrial machinery across the ${c.city} metro — one accountable crew from disconnect to re-level, built to get your line back up on schedule.`,
     introH2:(c)=>`Machinery moving in ${c.CS}`,
     introPs:(c)=>[
@@ -123,6 +125,7 @@ const SERVICES = {
   'plant-relocation': {
     name:'Plant Relocation', serviceType:'Plant & Factory Relocation', hero:'/assets/img/heavyhaul-hero.jpg', band:'/assets/img/rgn-load.jpg',
     tag:'plant & factory relocation', quote:'Plant Relocation', coverageNoun:'Plant moves',
+    snippet:`We plan and run full plant and production-line moves — disconnect, sequenced transport, reinstall, and recommission — so the floor is down only for the move window.`,
     lead:(c)=>`When a ${c.city} ${c.angle} operation expands, consolidates, or relocates, the whole floor moves — production lines, machines, utilities and all. We plan and run full plant and production-line relocations across the ${c.city} metro, sequenced so the line is down only for the move window, not a day longer.`,
     introH2:(c)=>`Plant &amp; factory relocation in ${c.CS}`,
     introPs:(c)=>[
@@ -143,6 +146,7 @@ const SERVICES = {
   'rigging': {
     name:'Industrial Rigging', serviceType:'Industrial Rigging', hero:'/assets/img/rigging-hero.jpg', band:'/assets/img/rigging-crane2.jpg',
     tag:'rigging company', quote:'Rigging', coverageNoun:'Rigging jobs',
+    snippet:`We handle engineered lifts, machine setting, and heavy moves from a few hundred pounds to 200,000 lbs and beyond, set and leveled to spec.`,
     lead:(c)=>`When a machine is too heavy, too tall, or too tight to move safely, ${c.city} calls a rigger. Badass Logistics plans and executes precision lifts, machine setting, and heavy moves across the ${c.city} metro — from a few hundred pounds to 200,000 lbs and beyond, rigged, hauled, and set by one accountable crew.`,
     introH2:(c)=>`Industrial rigging in ${c.CS}`,
     introPs:(c)=>[
@@ -162,6 +166,7 @@ const SERVICES = {
   'heavy-haul': {
     name:'Heavy Haul Trucking', serviceType:'Heavy Haul & Oversize Transport', hero:'/assets/img/heavyhaul-hero.jpg', band:'/assets/img/rgn-load.jpg',
     tag:'heavy haul company', quote:'Heavy Haul', coverageNoun:'Heavy-haul loads',
+    snippet:`We move oversize and overweight freight on RGN, lowboy, step-deck, double-drop, and multi-axle trailers — permitted, escorted, and routed before we quote it.`,
     lead:(c)=>`When a load is too wide, too tall, or too heavy for a standard flatbed, ${c.city} calls for heavy haul. Badass Logistics moves oversize and overweight freight across the ${c.city} metro on RGN, lowboy, step-deck, double-drop, and multi-axle trailers — permitted, escorted, and routed before we quote it.`,
     introH2:(c)=>`Heavy haul trucking in ${c.CS}`,
     introPs:(c)=>[
@@ -272,7 +277,11 @@ ${NAV}
   <span class="annot hand a4">${city.toUpperCase()} ✓</span>
 </section>
 
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","url":"${url}","name":"${title}","speakable":{"@type":"SpeakableSpecification","cssSelector":["h1",".answer-box"]}}
+</script>
 <section><div class="wrap prose">
+  <div class="answer-box"><p><strong>Quick answer:</strong> ${site.brand} provides ${svc.serviceType.toLowerCase()} in ${CS} and the surrounding metro. ${svc.snippet} Serving ${city} and nearby ${c.stName} metros, with ${c.stName} permits and routing handled where a move needs them — usually quoted the same day. Call (307) 284-1332.</p></div>
   <h2>${svc.introH2(c)}</h2>
   ${svc.introPs(c).map(p=>`<p>${p}</p>`).join('\n  ')}
 </div></section>
