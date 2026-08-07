@@ -210,7 +210,10 @@ function page(serviceSlug, svc, loc, metro, hubStates) {
   const cityHub = `/locations/${slug}`;
   const mapQ = encodeURIComponent(CS);
   const title = `${svc.name} in ${CS} | Badass Logistics`;
-  const desc = `${svc.name} in ${CS}. ${svc.serviceType} across ${city} and the surrounding metro — planned, rigged, hauled on permitted routes, and re-leveled to spec. Fast quotes.`;
+  // Keep under ~155 chars so Google doesn't truncate mid-sentence, and don't
+  // repeat svc.name/svc.serviceType back-to-back (they're identical for several
+  // services, which produced a stuttering snippet on 87 pages).
+  const desc = `${svc.name} in ${CS} — planned, rigged, hauled on permitted routes, and re-leveled to spec. Same-day quotes: (307) 284-1332.`;
   const svcSchema = {"@context":"https://schema.org","@type":"Service","serviceType":svc.serviceType,"areaServed":{"@type":"City","name":CS},"provider":{"@type":"LocalBusiness","@id":`${DOMAIN}/#organization`,"name":site.brand,"telephone":"+1-307-284-1332","url":`${DOMAIN}/`},"description":`${site.brand} provides ${svc.serviceType.toLowerCase()} across ${CS} and the surrounding metro.`};
   const bcItems = [{"@type":"ListItem","position":1,"name":"Home","item":`${DOMAIN}/`},{"@type":"ListItem","position":2,"name":svc.name,"item":`${DOMAIN}/services/${serviceSlug}`}];
   if (hasHub) bcItems.push({"@type":"ListItem","position":3,"name":c.stName,"item":`${DOMAIN}/services/${serviceSlug}/${stSlug}`});
@@ -374,7 +377,9 @@ function statePage(serviceSlug, svc, st, cityMs) {
   const names = cities.map(m=>m.city);
   const nameList = names.length>1 ? names.slice(0,-1).join(', ')+', and '+names.slice(-1) : names[0];
   const title = `${svc.name} in ${stName} | Badass Logistics`;
-  const desc = `${svc.name} across ${stName} — ${svc.serviceType} in ${names.slice(0,3).join(', ')} and metros statewide. Permitted routes, re-leveled to spec. Fast quotes.`;
+  // No phone here — the city list already eats the character budget and these
+  // ran past 160 (truncated) with it.
+  const desc = `${svc.name} across ${stName} — ${names.slice(0,3).join(', ')} and metros statewide. Permitted routes, re-leveled to spec. Same-day quotes.`;
   const svcSchema = {"@context":"https://schema.org","@type":"Service","serviceType":svc.serviceType,"areaServed":{"@type":"State","name":stName},"provider":{"@type":"LocalBusiness","@id":`${DOMAIN}/#organization`,"name":site.brand,"telephone":"+1-307-284-1332","url":`${DOMAIN}/`},"description":`${site.brand} provides ${svc.serviceType.toLowerCase()} across ${stName}.`};
   const breadcrumb = {"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":`${DOMAIN}/`},{"@type":"ListItem","position":2,"name":svc.name,"item":`${DOMAIN}/services/${serviceSlug}`},{"@type":"ListItem","position":3,"name":stName,"item":url}]};
   const faqPairs = [
