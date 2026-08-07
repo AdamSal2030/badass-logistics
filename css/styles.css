@@ -181,9 +181,14 @@ section { padding: 64px 0; }
 .cta-band h2 { font-size: clamp(30px, 5vw, 60px); }
 .cta-band p { font-size: 19px; margin: 14px 0 26px; font-weight: 600; }
 
+/* ---------- trailer-type link grid (city pages, blog, trailer hubs) ---------- */
+.tt-grid { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 8px; }
+.tt-grid a { background: var(--white); border: 2px solid var(--ink); box-shadow: 3px 3px 0 var(--ink); padding: 8px 14px; font-weight: 700; font-size: 14px; text-decoration: none; color: var(--ink); }
+.tt-grid a:hover { background: var(--yellow); }
+
 /* ---------- footer ---------- */
 footer { background: var(--ink); color: var(--cream); padding: 56px 0 28px; }
-footer .cols { display: grid; grid-template-columns: 1.6fr 1fr 1fr; gap: 32px; }
+footer .cols { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 32px; }
 .footer-nap { display: flex; flex-wrap: wrap; align-items: center; column-gap: 0; row-gap: 8px; border-top: 1px solid rgba(255,255,255,.15); margin-top: 30px; padding-top: 22px; font-size: 15px; line-height: 1.5; }
 .footer-nap a { display: inline; padding: 0; color: var(--cream); opacity: 1; }
 .footer-nap a:hover { color: var(--yellow); }

@@ -241,7 +241,7 @@ ${NAV}
     <a href="/services/heavy-haul"><strong>All heavy haul →</strong></a>
   </div>
   ${GUIDES[t.slug] ? `<p class="section-intro" style="margin-top:16px">Related field guide: <a href="/blog/${GUIDES[t.slug][0]}" style="color:var(--yellow-deep);text-decoration:underline;">${GUIDES[t.slug][1]} →</a></p>` : ''}
-  <p class="section-intro" style="margin-top:22px">Heavy haul in your metro: ${topMetros.map(m=>`<a href="/services/heavy-haul/${citySlug(m.city,m.state)}">${m.city}</a>`).join(' · ')} · <a href="/locations"><strong>all 48 →</strong></a></p>
+  <p class="section-intro" style="margin-top:22px">Heavy haul in your metro: ${topMetros.map(m=>`<a href="/services/heavy-haul/${citySlug(m.city,m.state)}">${m.city}</a>`).join(' · ')} · <a href="/locations"><strong>all 88 →</strong></a></p>
 </div></section>
 
 <div class="cta-band"><div class="wrap" style="padding-top:56px;padding-bottom:56px;text-align:center;">
@@ -283,9 +283,19 @@ ${grid}
   ${E}
   </div>
 </div></section>\n\n`;
-    hh = hh.replace(anchor, section + anchor);
+    if (!hh.includes(anchor)) {
+      // Fail loudly: a silent no-op here is how the trailer grid can vanish
+      // from heavy-haul.html without anyone noticing the pages went orphaned.
+      console.error(`✖ heavy-haul.html: no sentinel and the metros anchor did not match — trailer grid NOT injected.`);
+      process.exitCode = 1;
+    } else {
+      hh = hh.replace(anchor, section + anchor);
+    }
   }
   fs.writeFileSync(hhPath, hh);
+} else {
+  console.error(`✖ ${hhPath} not found — trailer grid not injected.`);
+  process.exitCode = 1;
 }
 
 // sitemap (idempotent, own sentinel)

@@ -13,7 +13,7 @@
    + state Interstates/DOT permits — and each SERVICE supplies genuinely
    distinct copy so same-city pages across services don't cannibalize.
 
-   Add a service: add a SERVICES{} block + a WAVES{} entry. ('ALL' = all 48.)
+   Add a service: add a SERVICES{} block + a WAVES{} entry. ('ALL' = all 88.)
    Run AFTER build-locations.js (it owns sitemap.xml). Re-run any time.
    =========================================================== */
 const fs = require('fs');
@@ -74,6 +74,7 @@ const FOOTER = `
 <footer><div class="wrap"><div class="cols">
   <div><h4>Badass Logistics</h4><p style="opacity:.85;max-width:280px;">Industrial rigging &amp; heavy haul — our own crews, machinery, and rigging gear, plus a network of specialized carriers for everything oversized and overweight.</p></div>
   <div><h4>Services</h4><a href="/services/rigging">Industrial Rigging</a><a href="/services/heavy-haul">Heavy Haul Transport</a><a href="/services/machinery-moving">Machinery Moving</a><a href="/services/cnc-machine-movers">CNC Machine Movers</a><a href="/services/plant-relocation">Plant Relocation</a></div>
+  <div><h4>Trailer Types</h4><a href="/services/rgn-trailer">RGN Transport</a><a href="/services/lowboy-trailer">Lowboy Transport</a><a href="/services/step-deck-trailer">Step-Deck Transport</a><a href="/services/double-drop-trailer">Double-Drop &amp; Stretch</a><a href="/services/flatbed-transport">Flatbed Transport</a><a href="/services/multi-axle-transport">Multi-Axle &amp; Superload</a></div>
   <div><h4>Company</h4><a href="/about">About Us</a><a href="/locations">Locations</a><a href="/blog/">Blog</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a></div>
 </div><div class="covstrip">Coverage: <a href="/locations/texas">Texas</a> · <a href="/locations/california">California</a> · <a href="/locations/florida">Florida</a> · <a href="/locations/georgia">Georgia</a> · <a href="/locations/illinois">Illinois</a> · <a href="/locations/ohio">Ohio</a> · <a href="/locations/pennsylvania">Pennsylvania</a> · <a href="/locations/new-york">New York</a> · <a href="/locations"><strong>All 88 locations →</strong></a></div><div class="footer-nap"><span class="nap-name">Badass Logistics</span><span>${site.hqStreet}, ${site.hqCity}, ${site.hqState} ${site.hqZip}</span><span><a href="tel:3072841332">(307) 284-1332</a></span><span><a href="mailto:rigging@badasslogistics.com">rigging@badasslogistics.com</a></span></div>
 <div class="legal"><span>© 2022–2026 Badass Logistics. All rights reserved.</span><span class="hand">made to move heavy things.</span></div></div></footer>`;

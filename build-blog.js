@@ -29,6 +29,7 @@ const FOOTER = `
 <footer><div class="wrap"><div class="cols">
   <div><h4>Badass Logistics</h4><p style="opacity:.85;max-width:280px;">Industrial rigging &amp; heavy haul — our own crews, machinery, and rigging gear, plus a network of specialized carriers for everything oversized and overweight.</p></div>
   <div><h4>Services</h4><a href="../services/rigging.html">Industrial Rigging</a><a href="../services/heavy-haul.html">Heavy Haul Transport</a><a href="../services/machinery-moving.html">Machinery Moving</a><a href="../services/cnc-machine-movers.html">CNC Machine Movers</a><a href="../services/plant-relocation.html">Plant Relocation</a></div>
+  <div><h4>Trailer Types</h4><a href="/services/rgn-trailer">RGN Transport</a><a href="/services/lowboy-trailer">Lowboy Transport</a><a href="/services/step-deck-trailer">Step-Deck Transport</a><a href="/services/double-drop-trailer">Double-Drop &amp; Stretch</a><a href="/services/flatbed-transport">Flatbed Transport</a><a href="/services/multi-axle-transport">Multi-Axle &amp; Superload</a></div>
   <div><h4>Company</h4><a href="../about.html">About Us</a><a href="../locations.html">Locations</a><a href="../blog/index.html">Blog</a><a href="../contact.html">Contact</a><a href="../privacy.html">Privacy</a></div>
   
 </div><div class="covstrip">Coverage: <a href="../locations/texas.html">Texas</a> · <a href="../locations/california.html">California</a> · <a href="../locations/florida.html">Florida</a> · <a href="../locations/georgia.html">Georgia</a> · <a href="../locations/illinois.html">Illinois</a> · <a href="../locations/ohio.html">Ohio</a> · <a href="../locations/pennsylvania.html">Pennsylvania</a> · <a href="../locations/new-york.html">New York</a> · <a href="../locations.html"><strong>All 88 locations →</strong></a></div>
@@ -180,7 +181,7 @@ const POSTS = [
 <p>Loads also need proper <strong>"OVERSIZE LOAD" banners, red/orange flags, and lights</strong>, and overweight loads may be routed around weight-restricted bridges entirely.</p>
 
 <h2>Who handles all this?</h2>
-<p>We do. Permitting, route surveys, clearance checks, and escort coordination are part of every <a href="../services/heavy-haul.html">heavy haul move</a> we run — across all 48 of our <a href="../locations.html">locations</a> and all 50 states. You tell us the load and the lane; we make sure it is legal on every mile. Curious what the permits add to the price? See <a href="how-much-does-heavy-haul-cost.html">how heavy haul cost is calculated</a>.</p>
+<p>We do. Permitting, route surveys, clearance checks, and escort coordination are part of every <a href="../services/heavy-haul.html">heavy haul move</a> we run — across all 88 of our <a href="../locations.html">locations</a> and all 50 states. You tell us the load and the lane; we make sure it is legal on every mile. Curious what the permits add to the price? See <a href="how-much-does-heavy-haul-cost.html">how heavy haul cost is calculated</a>.</p>
 
 <p><a href="../contact.html">Send us your load and route</a> and we'll handle the paperwork.</p>
 `,
