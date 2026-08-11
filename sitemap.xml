@@ -184,6 +184,15 @@
   <url><loc>https://badasslogistics.com/locations/south-bend-in</loc><lastmod>2026-08-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://badasslogistics.com/locations/lexington-ky</loc><lastmod>2026-08-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://badasslogistics.com/locations/montgomery-al</loc><lastmod>2026-08-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <!--TRAILERS_START-->
+  <url><loc>https://badasslogistics.com/services/rgn-trailer</loc><lastmod>2026-08-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://badasslogistics.com/services/lowboy-trailer</loc><lastmod>2026-08-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://badasslogistics.com/services/step-deck-trailer</loc><lastmod>2026-08-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://badasslogistics.com/services/double-drop-trailer</loc><lastmod>2026-08-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://badasslogistics.com/services/flatbed-transport</loc><lastmod>2026-08-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://badasslogistics.com/services/multi-axle-transport</loc><lastmod>2026-08-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://badasslogistics.com/services/conestoga-trailer</loc><lastmod>2026-08-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <!--TRAILERS_END-->
   <!--SVC_CITIES_START-->
   <url><loc>https://badasslogistics.com/services/rigging/los-angeles-ca</loc><lastmod>2026-08-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://badasslogistics.com/services/rigging/bakersfield-ca</loc><lastmod>2026-08-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
@@ -751,13 +760,4 @@
   <url><loc>https://badasslogistics.com/services/heavy-haul/new-york</loc><lastmod>2026-08-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <url><loc>https://badasslogistics.com/services/heavy-haul/iowa</loc><lastmod>2026-08-11</lastmod><changefreq>monthly</changefreq><priority>0.7</priority></url>
   <!--SVC_CITIES_END-->
-  <!--TRAILERS_START-->
-  <url><loc>https://badasslogistics.com/services/rgn-trailer</loc><lastmod>2026-08-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://badasslogistics.com/services/lowboy-trailer</loc><lastmod>2026-08-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://badasslogistics.com/services/step-deck-trailer</loc><lastmod>2026-08-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://badasslogistics.com/services/double-drop-trailer</loc><lastmod>2026-08-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://badasslogistics.com/services/flatbed-transport</loc><lastmod>2026-08-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://badasslogistics.com/services/multi-axle-transport</loc><lastmod>2026-08-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://badasslogistics.com/services/conestoga-trailer</loc><lastmod>2026-08-11</lastmod><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <!--TRAILERS_END-->
 </urlset>
