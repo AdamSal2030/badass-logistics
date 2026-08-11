@@ -29,7 +29,7 @@ const FOOTER = `
 <footer><div class="wrap"><div class="cols">
   <div><h4>Badass Logistics</h4><p style="opacity:.85;max-width:280px;">Industrial rigging &amp; heavy haul — our own crews, machinery, and rigging gear, plus a network of specialized carriers for everything oversized and overweight.</p></div>
   <div><h4>Services</h4><a href="../services/rigging.html">Industrial Rigging</a><a href="../services/heavy-haul.html">Heavy Haul Transport</a><a href="../services/machinery-moving.html">Machinery Moving</a><a href="../services/cnc-machine-movers.html">CNC Machine Movers</a><a href="../services/plant-relocation.html">Plant Relocation</a></div>
-  <div><h4>Trailer Types</h4><a href="/services/rgn-trailer">RGN Transport</a><a href="/services/lowboy-trailer">Lowboy Transport</a><a href="/services/step-deck-trailer">Step-Deck Transport</a><a href="/services/double-drop-trailer">Double-Drop &amp; Stretch</a><a href="/services/flatbed-transport">Flatbed Transport</a><a href="/services/multi-axle-transport">Multi-Axle &amp; Superload</a></div>
+  <div><h4>Trailer Types</h4><a href="/services/rgn-trailer">RGN Transport</a><a href="/services/lowboy-trailer">Lowboy Transport</a><a href="/services/step-deck-trailer">Step-Deck Transport</a><a href="/services/double-drop-trailer">Double-Drop &amp; Stretch</a><a href="/services/flatbed-transport">Flatbed Transport</a><a href="/services/conestoga-trailer">Conestoga Transport</a><a href="/services/multi-axle-transport">Multi-Axle &amp; Superload</a></div>
   <div><h4>Company</h4><a href="../about.html">About Us</a><a href="../locations.html">Locations</a><a href="../blog/index.html">Blog</a><a href="../contact.html">Contact</a><a href="../privacy.html">Privacy</a></div>
   
 </div><div class="covstrip">Coverage: <a href="../locations/texas.html">Texas</a> · <a href="../locations/california.html">California</a> · <a href="../locations/florida.html">Florida</a> · <a href="../locations/georgia.html">Georgia</a> · <a href="../locations/illinois.html">Illinois</a> · <a href="../locations/ohio.html">Ohio</a> · <a href="../locations/pennsylvania.html">Pennsylvania</a> · <a href="../locations/new-york.html">New York</a> · <a href="../locations.html"><strong>All 88 locations →</strong></a></div>
@@ -1614,6 +1614,242 @@ const POSTS = [
     body: "<p>Texas moves more oversized freight than almost any state in the country — energy equipment, wind components, fabricated skids, construction iron — and its permitting reflects that. If your load is crossing Texas, here's what actually triggers a permit and how the state handles it.</p>\n<h2>What needs a permit in Texas</h2>\n<p>A load is legal in Texas up to <strong>8'6\" wide, 14' tall, 65' long, and 80,000 lbs gross</strong>. Note the height — Texas allows 14 feet, a foot more than the 13'6\" you'll hit in most eastern states, which matters the moment your route crosses a state line. Exceed any of those and you're into a permit for every mile inside Texas.</p>\n<ul>\n  <li><strong>Oversize</strong> — over width, height, or length limits.</li>\n  <li><strong>Overweight</strong> — over 80,000 lbs gross, or over the axle and bridge-formula limits underneath it.</li>\n</ul>\n<figure><img src=\"../assets/img/loads/gooseneck-flatbed-industrial-tanks.jpg\" alt=\"Oversized industrial load on a flatbed trailer routed through Texas on a permitted route\" loading=\"lazy\" width=\"1024\" height=\"576\"><figcaption>Texas permits are issued per load and per route through the TxDMV — dimensions lock to the permit.</figcaption></figure>\n<h2>How permits are issued</h2>\n<p>Texas oversize/overweight permits run through the <strong>TxDMV</strong> and its online TxPROS system. <strong>Single-trip permits</strong> cover one specific load on one route and are the standard for a one-off oversized move. Carriers who run oversized freight regularly can hold <strong>annual/blanket permits</strong> within set dimension limits. The permit ties to your exact width, height, length, and weight — change the load and the permit has to change with it.</p>\n<h2>Escorts, height poles, and curfews</h2>\n<p>Escort requirements scale with the load. As a working rule in Texas: loads get a <strong>front or rear escort</strong> as width climbs past roughly 14 feet on most highways, with escorts front and rear for the widest loads, and a <strong>height-pole escort</strong> out front for anything over-height to check clearances before the load reaches them. Over-length loads pull escorts too. Travel is generally <strong>daylight-only</strong> for oversized loads, with curfews through major metros like Houston, Dallas–Fort Worth, San Antonio, and Austin during rush hours, and restrictions on some holidays.</p>\n<h2>Superloads</h2>\n<p>When a load exceeds the ceilings a routine permit covers — extreme width, height, or weight — Texas reviews it as a <strong>superload</strong>: engineered route analysis, bridge review, and sometimes utility coordination, with lead times measured in weeks, not hours. See <a href=\"what-is-a-superload.html\">what a superload is</a> for the full picture.</p>\n<h2>The routes</h2>\n<p>Most Texas oversized freight runs the <strong>I-10, I-20, I-35, and I-45</strong> corridors that connect the Gulf ports, the metros, and the Permian Basin. The permit specifies the approved route; a load that's legal-dimension can run any legal road, but anything over height or weight has to stick to the surveyed path around low bridges and weight-restricted structures.</p>\n<div class=\"takeaways\"><h3>Bottom line</h3><ul>\n  <li>Texas legal limits: 8'6\" wide, 14' tall, 65' long, 80,000 lbs gross — permits start past any of them.</li>\n  <li>Permits issue through the TxDMV / TxPROS; single-trip covers most moves.</li>\n  <li>Escorts scale with width; height poles for over-height; daylight-only with metro curfews.</li>\n  <li>Extreme loads route as superloads with engineered review and long lead times.</li>\n</ul></div>\n<p>We handle Texas DOT permitting, routing, and escorts as part of every oversized move we run through the state — see <a href=\"../services/heavy-haul.html\">heavy haul transport</a> or <a href=\"../contact.html\">send your load and route</a> for a fast quote.</p>",
     faq: [{"q": "How tall can a load be in Texas without a permit?", "a": "Texas allows a legal height of 14 feet — a foot more than the 13'6\" limit in most eastern states. Above 14 feet, the load needs an oversize permit and a height-pole escort to verify clearances on the route."}, {"q": "Who issues oversize permits in Texas?", "a": "The Texas Department of Motor Vehicles (TxDMV), through its online TxPROS permitting system. Single-trip permits cover one load on one route; carriers running regular oversized freight can hold annual permits within set limits."}, {"q": "Does Texas require escorts for oversize loads?", "a": "Yes, above certain thresholds. Escort vehicles are required as width increases (generally past ~14 feet on most highways, with front and rear escorts for the widest loads), a height-pole car runs ahead of over-height loads, and the largest superloads can require police escorts."}],
     related: [{"h": "Oversize Load Permits Guide", "u": "oversize-load-permits-guide.html"}, {"h": "What Is Considered an Oversize Load?", "u": "what-is-considered-an-oversize-load.html"}, {"h": "Pilot Car & Escort Requirements", "u": "pilot-car-escort-requirements.html"}, {"h": "Heavy Haul Transport", "u": "../services/heavy-haul.html"}],
+  },
+
+  {
+    slug: 'how-to-load-and-secure-a-conestoga-trailer',
+    cat: 'How It\'s Done',
+    hero: 'loads/conestoga-rolled-back-tank-palletized-freight.jpg',
+    date: '2026-08-11',
+    title: 'How to Load, Secure and Ship Freight in a Conestoga Trailer',
+    desc: 'A Conestoga gives you flatbed loading with van-style weather protection — but only if the load is packed, blocked, and strapped for it. Here is how we prep, load, and secure machinery in a rolling-tarp trailer.',
+    dek: 'Crane it in from the top, roll the curtain shut, and skip the tarp crew. Here is how the load actually gets built.',
+    tldr: 'A Conestoga is a flatbed or step-deck with a retractable tarp on a rolling frame. You load it from the top or the sides like an open deck, then roll the curtain closed for weather protection — no manual tarping. Freight still gets wrapped, blocked, and strapped to the deck exactly like a flatbed load: tie-downs go to the deck rails and winches, never to the tarp frame, with total working load limit of at least half the cargo weight. Expect roughly 2,000-3,500 lbs less payload and about 8 ft of usable interior height on a standard deck.',
+    keywords: 'conestoga trailer, rolling tarp trailer, curtain side trailer, conestoga shipping, conestoga load securement, how to load a conestoga',
+    howto: {
+      name: 'How to Load and Secure Freight in a Conestoga Trailer',
+      steps: [
+        { name: 'Measure against the tarp frame', text: 'Check cargo height and width against the interior envelope under the bows, not the open-deck legal limits. The frame is the constraint, not the 13 foot 6 inch road height.' },
+        { name: 'Wrap and protect the freight', text: 'Shrink-wrap the equipment, add moisture barrier and desiccant for long runs, and pad every corner and machined surface before anything touches a strap.' },
+        { name: 'Roll the curtain fully back', text: 'Retract the tarp system to the front or rear so the deck is open for crane or forklift access from the top and both sides.' },
+        { name: 'Set the load on dunnage and block it', text: 'Land the freight on hardwood dunnage over the deck, position it for axle weight distribution, and block and brace it fore-aft and side-to-side.' },
+        { name: 'Strap to the deck, not the frame', text: 'Run straps or chains to the deck rails, stake pockets, and winches with aggregate working load limit of at least half the cargo weight, using edge protectors at every contact point.' },
+        { name: 'Close, latch, and re-check', text: 'Roll the curtain closed, latch and tension it, then re-check tie-downs within the first 50 miles and at every stop.' },
+      ],
+    },
+    body: `
+<p>A Conestoga solves a problem that costs open-deck shippers money every week: freight that needs to be loaded like a flatbed load but has to arrive dry and clean. It is a flatbed or step-deck with a rolling tarp system built onto it — a curtain on a sliding frame that retracts to one end and rolls back over the load. Crane the machine in from the top, roll the curtain shut, done. No tarp crew, no two guys on top of a load in the wind.</p>
+
+<p>What it does not do is secure the freight for you. Everything below the curtain is still an open-deck load, and it gets built like one.</p>
+
+<figure>
+  <img src="../assets/img/loads/conestoga-rolled-back-tank-palletized-freight.jpg" alt="Conestoga trailer with the rolling tarp retracted, loaded with a shrink-wrapped process tank on an orange skid and palletized crated equipment secured with yellow straps" loading="lazy" width="1400" height="1050">
+  <figcaption>Curtain rolled forward, deck wide open — a wrapped process tank on its skid and palletized freight, strapped before the tarp ever closes.</figcaption>
+</figure>
+
+<h2>What a Conestoga actually is</h2>
+<p>The name comes from the original manufacturer and has become the industry shorthand for any rolling-tarp trailer; you will also hear <strong>curtain-side</strong> and <strong>roll-tarp</strong>. Mechanically it is simple: a set of bows carries a heavy vinyl curtain on rollers, and the whole assembly slides along rails on the trailer deck. Retracted, it stacks into about 8 feet at one end and leaves the rest of the deck completely open.</p>
+<p>They are built on both platforms:</p>
+<ul>
+  <li><strong>Flatbed Conestoga</strong> — deck around 5 ft off the ground, 48 to 53 ft long. The default.</li>
+  <li><strong>Step-deck (drop-deck) Conestoga</strong> — lower rear deck around 3.5 ft, which buys back the interior height the tarp frame takes away. This is the one you want for tall machinery.</li>
+</ul>
+
+<h2>The two numbers that decide the trailer</h2>
+<p>People get burned on Conestoga loads in exactly two ways, and both are measurement problems.</p>
+<p><strong>Height.</strong> On an open flatbed you measure against the 13'6" legal road height and you have roughly 8'6" of cargo height to play with. Inside a Conestoga you are measuring against <em>the bows</em>. Usable interior height on a standard flatbed Conestoga runs roughly <strong>8 ft over the deck</strong>, and the frame narrows the usable width to a bit over 8 ft. A drop-deck Conestoga opens that up to roughly 9'6" to 10 ft. If your machine is 8'4" tall, it fits on a flatbed and does not fit under a standard Conestoga curtain — measure the crate, not the machine, and measure to the highest point including skids and lifting lugs.</p>
+<p><strong>Weight.</strong> The tarp system is not free. It adds roughly <strong>2,000 to 3,500 lbs of tare weight</strong>, which comes straight off your payload. A flatbed that hauls 48,000 lbs legal becomes a Conestoga that hauls closer to 44,000 lbs. On a heavy machine that is the difference between one truck and a permit conversation.</p>
+
+<h2>Packing: the load is protected before it is loaded</h2>
+<p>The curtain keeps rain and road grit off. It does not keep condensation, vibration, or a forklift driver off. Every machine we put in a Conestoga gets the same prep as an enclosed move:</p>
+<ul>
+  <li><strong>Shrink-wrap or stretch-wrap</strong> over the whole unit, sealed at the base so moisture cannot wick up.</li>
+  <li><strong>Desiccant packs and a moisture barrier</strong> on anything with bare machined surfaces, electronics, or a long run ahead of it. Temperature swings between a Texas afternoon and a Midwest night put water on cold steel.</li>
+  <li><strong>Padding at every contact point</strong> — corner boards, moving blankets, and edge protectors between the wrap and any strap. Webbing under tension will cut through wrap and mark paint.</li>
+  <li><strong>Fluids drained or capped</strong>, loose components removed and crated separately, doors and panels latched or banded.</li>
+</ul>
+<p>Full method in our guide on <a href="how-to-prepare-a-machine-for-shipping.html">preparing a machine for shipping</a>.</p>
+
+<figure>
+  <img src="../assets/img/loads/conestoga-shrink-wrapped-machinery-strapped.jpg" alt="Shrink-wrapped industrial machinery inside a Conestoga trailer secured with a yellow strap marked working load limit 5,400 lbs and chain tie-downs at the deck" loading="lazy" width="800" height="600">
+  <figcaption>Wrapped, padded, and strapped. That yellow webbing is a 4-inch strap stamped WLL 5,400 lbs — the number that has to add up across the whole load.</figcaption>
+</figure>
+
+<h2>Loading: open the deck, then treat it like a flatbed</h2>
+<p>The whole advantage of a Conestoga is access. Roll the curtain fully to one end and you have a bare deck that takes a crane pick from directly overhead or a forklift from either side — the same freedom as an open flatbed, which a dry van simply cannot offer. Nothing has to be pushed in end-first down a 53 ft box.</p>
+<p>Sequence that matters:</p>
+<ol>
+  <li><strong>Plan the placement before the pick.</strong> Heaviest item over or slightly ahead of the trailer axles, weight spread so no axle group runs over its limit. A Conestoga's lighter payload ceiling makes axle math tighter, not looser.</li>
+  <li><strong>Land on hardwood dunnage.</strong> Dunnage creates level bearing points, keeps forks and slings retrievable, and stops the load from point-loading the deck.</li>
+  <li><strong>Block and brace before you strap.</strong> Chocks and cleats fore-aft, bracing side-to-side. Blocking stops movement; straps only hold the load against the blocking. This is the part people skip — see <a href="blocking-bracing-and-dunnage-explained.html">blocking, bracing and dunnage</a>.</li>
+  <li><strong>Leave curtain clearance.</strong> Nothing should touch the curtain or the bows. A load rubbing vinyl at 65 mph tears the system and voids the weather protection you paid for.</li>
+</ol>
+
+<h2>Securement: strap to the deck, never to the frame</h2>
+<p>This is the one rule people get wrong on a rolling-tarp trailer. <strong>The tarp frame is weather protection, not structure.</strong> Bows, rails, and curtain hardware are not rated tie-down points. Every strap and chain goes to the deck: stake pockets, rub rails, D-rings, winches, and rated anchor points on the frame of the trailer itself.</p>
+<p>The federal numbers are the same as any open deck under <strong>49 CFR 393</strong>:</p>
+<ul>
+  <li><strong>Aggregate working load limit of at least 50% of cargo weight.</strong> A 20,000 lb machine needs tie-downs totalling at least 10,000 lbs of WLL. Four of those 5,400 lb straps gets you 21,600 — comfortable. Two does not.</li>
+  <li><strong>Minimum tie-down count by size.</strong> One per 10 ft of article length, with a floor of two on anything over 5 ft or over 1,100 lbs, and an additional tie-down for each further 10 ft or part of it.</li>
+  <li><strong>Edge protection everywhere</strong> webbing crosses a corner, a machined edge, or bare steel.</li>
+  <li><strong>Chain for heavy iron, webbing for finished surfaces.</strong> Chains and binders on skids and frames; 4-inch straps over wrapped and padded machinery.</li>
+</ul>
+<p>Then re-check. Tie-downs relax as a load settles — the first 50 miles pull the most slack out of any strap.</p>
+
+<figure>
+  <img src="../assets/img/loads/conestoga-interior-load-securement-strap.jpg" alt="Interior view of a Conestoga trailer showing the roof bows, curtain rails, and a yellow strap running across shrink-wrapped machinery on the deck" loading="lazy" width="800" height="600">
+  <figcaption>Looking down the deck under the bows. The strap crosses the load and lands on the deck rail — the frame overhead carries nothing.</figcaption>
+</figure>
+
+<h2>When a Conestoga is the right call — and when it is not</h2>
+<p><strong>Use one when:</strong> the freight has to be crane- or side-loaded but must stay dry; the equipment is high-value, painted, wrapped, or partly exposed; you are moving in and out of plants where tarping on site is impractical; or you want to keep the load out of sight. It also removes the tarping delay entirely, which on a multi-stop machinery run is real hours.</p>
+<p><strong>Skip it when:</strong> the load is over-dimensional and will not fit the frame envelope — a Conestoga cannot carry anything wider or taller than its own curtain, so genuine oversize freight goes on an open <a href="../services/flatbed-transport.html">flatbed</a>, <a href="../services/step-deck-trailer.html">step-deck</a>, or <a href="../services/lowboy-trailer.html">lowboy</a> and gets tarped or shipped bare. Skip it too when you need every pound of payload, or when the freight is dirty, raw, or weather-indifferent steel where tarping is not worth the rate premium.</p>
+<p>Conestoga capacity is also thinner than flatbed capacity in most lanes, so it books further out and prices above a standard flatbed. Worth it on the right load; wasteful on the wrong one. If the equipment is sensitive enough to need real climate and security control, the answer is an <a href="enclosed-vs-flatbed-transport.html">enclosed or air-ride van</a> instead.</p>
+
+<figure>
+  <img src="../assets/img/loads/conestoga-wrapped-equipment-inside-curtain.jpg" alt="Green shrink-wrapped equipment loaded on the deck of a Conestoga curtain-side trailer with the side curtain open" loading="lazy" width="800" height="600">
+  <figcaption>Loaded, wrapped, and clear of the curtain — the gap on the right is deliberate.</figcaption>
+</figure>
+
+<div class="takeaways">
+  <h3>The short version</h3>
+  <ul>
+    <li>A Conestoga is a flatbed or step-deck with a retractable tarp — flatbed loading, van-style weather protection, zero manual tarping.</li>
+    <li>Measure against the bows, not the road. Roughly 8 ft of interior height on a standard deck, more on a drop-deck.</li>
+    <li>Budget 2,000 to 3,500 lbs of lost payload for the tarp system.</li>
+    <li>Wrap, pad, dunnage, and block the freight exactly as you would for an open deck.</li>
+    <li>Tie-downs go to deck rails and winches — never to the tarp frame — at 50% of cargo weight in aggregate WLL, minimum.</li>
+  </ul>
+</div>
+
+<p>Got machinery that needs to load like a flatbed and arrive like a van shipment? Send dimensions, weight, and both site conditions and we will spec the trailer, the wrap, and the securement around it — <a href="../contact.html">get a quote</a>.</p>
+`,
+    faq: [
+      { q: 'What is a Conestoga trailer?', a: 'A Conestoga is a flatbed or step-deck trailer fitted with a retractable tarp system — a vinyl curtain on bows that rolls along rails on the deck. It retracts to one end so the trailer loads from the top and sides like an open flatbed, then rolls closed to protect the freight from weather and road grit without any manual tarping.' },
+      { q: 'How much can a Conestoga trailer haul?', a: 'The rolling tarp system adds roughly 2,000 to 3,500 lbs of tare weight, so a Conestoga typically carries around 44,000 lbs where a comparable flatbed carries about 48,000. Usable interior height is roughly 8 feet over a standard flatbed deck, or about 9.5 to 10 feet on a drop-deck Conestoga.' },
+      { q: 'Can you strap a load to the Conestoga tarp frame?', a: 'No. The bows, rails, and curtain hardware are weather protection, not rated tie-down points. All straps and chains must go to the trailer deck — stake pockets, rub rails, D-rings, and winches — with aggregate working load limit of at least half the cargo weight, the same as any open-deck load under 49 CFR 393.' },
+      { q: 'Is a Conestoga better than tarping a flatbed?', a: 'For repeat machinery loads, usually yes — it removes 30 to 60 minutes of tarping labor per load, eliminates the fall risk of working on top of freight, and protects better than a tarp that can flap or tear. For a one-off load, or anything over-dimensional that will not fit under the curtain, tarping an open flatbed is cheaper and often the only option.' },
+      { q: 'Does freight in a Conestoga still need to be wrapped?', a: 'Yes. The curtain stops rain and road spray, but not condensation, vibration, or handling damage. Machinery still gets shrink-wrapped, sealed at the base, padded at every contact point, and given desiccant and a moisture barrier on long runs or anything with bare machined surfaces.' },
+    ],
+    related: [
+      { h: 'Conestoga Trailer Transport', u: '../services/conestoga-trailer.html' },
+      { h: 'How to Tarp a Flatbed Load', u: 'how-to-tarp-a-flatbed-load.html' },
+      { h: 'Blocking, Bracing & Dunnage', u: 'blocking-bracing-and-dunnage-explained.html' },
+      { h: 'Enclosed vs Flatbed Transport', u: 'enclosed-vs-flatbed-transport.html' },
+      { h: 'Get a Quote', u: '../contact.html' },
+    ],
+  },
+
+  {
+    slug: 'how-to-tarp-a-flatbed-load',
+    cat: 'How It\'s Done',
+    hero: 'loads/tarped-machinery-flatbed-rear-view.jpg',
+    date: '2026-08-11',
+    title: 'How to Tarp a Flatbed Load (And When You Actually Need To)',
+    desc: 'Tarping is weather protection, not securement — and it happens after the load is chained down. Steel tarps vs lumber tarps, how a load gets covered, what tarping costs, and when to skip it for a Conestoga.',
+    dek: 'Straps first, tarp second, and never the other way around. How a load actually gets covered.',
+    tldr: 'Tarping protects freight from rain, road salt, and debris — it does not secure anything. The load is blocked, chained, and strapped first, sharp edges are padded so the vinyl does not tear, then tarps go on front-to-back so seams shed water like shingles and get bungeed tight with no loose flapping edges. Steel tarps are shorter and heavier for machinery and coils; lumber tarps are longer with drop skirts for tall stacked freight. Expect roughly $50 to $150 in tarp pay per load and 30 to 60 minutes each way.',
+    keywords: 'how to tarp a flatbed load, flatbed tarping, steel tarp, lumber tarp, tarp pay, tarping freight, secure and tarp',
+    howto: {
+      name: 'How to Tarp a Flatbed Load',
+      steps: [
+        { name: 'Secure the load completely first', text: 'Block, brace, chain, and strap the freight to full working load limit before any tarp comes out. Tarping is never a securement step.' },
+        { name: 'Pad every sharp edge and corner', text: 'Cover corners, lugs, and machined edges with corner boards, carpet, or belting so the vinyl cannot be punctured by wind flutter.' },
+        { name: 'Choose the right tarps', text: 'Steel tarps for dense machinery and coils, lumber tarps with drop skirts for tall stacked freight. Check for tears and confirm coverage before climbing up.' },
+        { name: 'Set tarps front to back', text: 'Start at the front of the load and overlap each tarp rearward so seams shed water backward like shingles instead of scooping it.' },
+        { name: 'Tie down and eliminate flap', text: 'Bungee the D-rings to the rub rail and stake pockets, tension every edge, and tuck loose corners so nothing can catch air.' },
+        { name: 'Re-check on the road', text: 'Inspect the tarp and tie-downs within the first 50 miles and at every stop; retension anything that has worked loose.' },
+      ],
+    },
+    body: `
+<p>Tarping is the least glamorous part of open-deck freight and the part that damages the most cargo when it is done badly. It is worth being precise about what a tarp is for: <strong>a tarp is weather protection. It secures nothing.</strong> Everything underneath is held by chains, straps, and blocking, and the tarp goes on last, over a load that is already finished.</p>
+
+<figure>
+  <img src="../assets/img/loads/tarped-machinery-flatbed-rear-view.jpg" alt="Rear view of a flatbed trailer carrying machinery tarped in black vinyl, tucked and strapped down for over-the-road transport" loading="lazy" width="800" height="800">
+  <figcaption>Squared off the back, edges tucked, nothing loose to catch air at highway speed.</figcaption>
+</figure>
+
+<h2>When a load gets tarped</h2>
+<p>Not everything needs it. Tarping is standard when the freight is:</p>
+<ul>
+  <li><strong>Machinery and equipment</strong> with painted surfaces, electronics, bearings, or machined faces that rust.</li>
+  <li><strong>Anything the shipper or receiver requires covered</strong> — many plants and OEMs write it into the BOL, and an untarped arrival is a rejected delivery.</li>
+  <li><strong>Steel, coils, and finished metal</strong> that road salt and rain will stain or pit.</li>
+  <li><strong>Lumber, drywall, and building material</strong> that absorbs water and is scrapped when it does.</li>
+  <li><strong>Anything running a winter route</strong> where brine and de-icer spray off the road for hundreds of miles.</li>
+</ul>
+<p>Skip it on raw structural steel, pipe, rebar, concrete products, and used construction equipment where a little weather changes nothing — and where a tarp just adds cost and load time.</p>
+
+<h2>Steel tarps vs lumber tarps</h2>
+<p>The two standard types are sized for two different load shapes.</p>
+<ul>
+  <li><strong>Steel tarps</strong> — commonly around 24 ft x 27 ft in a 4-piece set, heavier vinyl, shorter drop. Built for dense, low freight: machinery, coils, plate, castings. They are the ones you want over equipment.</li>
+  <li><strong>Lumber tarps</strong> — commonly around 24 ft x 27 ft with a 6 ft or 8 ft drop skirt, in 8-piece sets. The long skirt covers tall stacked freight down the sides.</li>
+</ul>
+<p>Vinyl runs 14 to 18 oz; heavier resists tearing but a full set weighs 130 to 200 lbs a tarp, which is a real handling consideration and a real payload consideration. Smoke tarps — a short tarp over the front of the load — protect the leading face from exhaust and road spray on freight that does not need full coverage.</p>
+
+<h2>The sequence that keeps freight dry</h2>
+<p>Order matters more than technique here.</p>
+<ol>
+  <li><strong>Finish the securement.</strong> Blocking and bracing set, chains and straps to at least 50% of cargo weight in aggregate working load limit, edge protection in place. If a strap needs adjusting after the tarp is on, the tarp comes off.</li>
+  <li><strong>Kill every sharp edge.</strong> Corner boards, carpet scraps, and belting over corners, lugs, brackets, and cut steel. A tarp does not tear from rain — it tears from a sharp edge working against vinyl that is fluttering at 65 mph. This single step prevents most tarp failures.</li>
+  <li><strong>Front to back, overlapping rearward.</strong> Set the first tarp at the front of the load and lap each following tarp <em>over</em> the one behind it, shingle-style, so airflow and water run off the back instead of being scooped into a seam.</li>
+  <li><strong>Tension and tie.</strong> Bungees from the tarp D-rings to the rub rail and stake pockets, pulled tight enough that nothing flaps. Loose vinyl is what destroys tarps and what peels a corner open at speed.</li>
+  <li><strong>Tuck the corners and square the back.</strong> A tarp that ends in a loose flap at the rear is an air scoop. Fold, tuck, and secure it flat.</li>
+  <li><strong>Re-check within 50 miles</strong> and at every stop, tarp and tie-downs both.</li>
+</ol>
+
+<figure>
+  <img src="../assets/img/loads/tarped-flatbed-load-blue-kenworth.jpg" alt="Two tarped machinery loads secured on a flatbed trailer behind a blue Kenworth tractor, tarps tensioned with no loose edges" loading="lazy" width="800" height="800">
+  <figcaption>Two units on one deck. Each is secured on its own, then covered — with the seam lapping rearward.</figcaption>
+</figure>
+
+<h2>What tarping costs and what it costs you</h2>
+<p><strong>Tarp pay</strong> is typically <strong>$50 to $150 per load</strong> on top of the line haul, more for multi-piece or awkward coverage. That is the visible cost. The invisible ones matter as much:</p>
+<ul>
+  <li><strong>Time.</strong> 30 to 60 minutes to tarp and again to untarp, per load, per stop. On a multi-drop machinery run that compounds fast.</li>
+  <li><strong>Payload.</strong> A full tarp set is 400 to 800 lbs of deck weight.</li>
+  <li><strong>Risk.</strong> Tarping means a person on top of a load, often in wind or rain. It is one of the highest injury-rate tasks in open-deck trucking, and some shippers now prohibit it on their property outright.</li>
+  <li><strong>Weather delay.</strong> Nobody tarps well in a crosswind, and a load that gets tarped wet arrives wet.</li>
+</ul>
+
+<h2>The alternative: don't tarp at all</h2>
+<p>If you ship covered machinery regularly, the honest answer is often to stop tarping. A <a href="../services/conestoga-trailer.html">Conestoga</a> — a flatbed or step-deck with a rolling tarp on a frame — loads from the top and sides like an open deck and then closes over the freight in a couple of minutes. No climbing, no bungees, no tarp pay, and better protection than vinyl that can flap or tear. The trade is roughly 2,000 to 3,500 lbs of payload and a rate premium, and the load has to fit under the curtain. Full breakdown in <a href="how-to-load-and-secure-a-conestoga-trailer.html">how to load and secure a Conestoga trailer</a>.</p>
+<p>For freight that is genuinely sensitive — precision equipment, imaging machines, anything that cannot see weather at all — the answer is <a href="enclosed-vs-flatbed-transport.html">enclosed or air-ride</a>, not a better tarp.</p>
+
+<figure>
+  <img src="../assets/img/loads/tarped-machinery-flatbed-warehouse-loadout.jpg" alt="Flatbed trailer loaded with two black-tarped machinery loads staged outside a warehouse before departure" loading="lazy" width="640" height="640">
+  <figcaption>Load-out finished and staged. Covered, checked, and ready before the truck leaves the yard.</figcaption>
+</figure>
+
+<div class="takeaways">
+  <h3>The short version</h3>
+  <ul>
+    <li>Tarps are weather protection, never securement. Chain and strap the load first, always.</li>
+    <li>Pad every sharp edge — that is what actually destroys tarps, not the weather.</li>
+    <li>Lap tarps front to back like shingles so water sheds off the rear.</li>
+    <li>Tension everything; a flapping edge at 65 mph is a peeled tarp.</li>
+    <li>Steel tarps for machinery and coils, lumber tarps with drop skirts for tall stacked freight.</li>
+    <li>If you tarp machinery every week, price a Conestoga instead — the tarp pay and the hours add up.</li>
+  </ul>
+</div>
+
+<p>Need a load covered, or want to stop paying to tarp the same freight every week? <a href="../contact.html">Tell us what you are shipping</a> and we will put it on the right deck.</p>
+`,
+    faq: [
+      { q: 'Does tarping a load count as securement?', a: 'No. Tarps are weather protection only and carry no working load limit. Cargo must be fully blocked, braced, chained, or strapped under 49 CFR 393 — with aggregate tie-down capacity of at least half the cargo weight — before any tarp goes on.' },
+      { q: 'What is the difference between a steel tarp and a lumber tarp?', a: 'Steel tarps are heavier vinyl with a short drop, sized for dense low freight like machinery, coils, and plate, usually in 4-piece sets. Lumber tarps are the same footprint but add a 6 to 8 foot drop skirt to cover tall stacked freight down the sides, usually in 8-piece sets.' },
+      { q: 'How much does tarping a flatbed load cost?', a: 'Tarp pay generally runs $50 to $150 per load on top of the line haul, more for multi-piece or awkward coverage. Add 30 to 60 minutes of labor each way, 400 to 800 lbs of deck weight for a full tarp set, and the safety exposure of working on top of a load.' },
+      { q: 'Why do tarps tear on the road?', a: 'Almost always because a sharp edge was not padded and the vinyl fluttered against it at highway speed, or because an edge was left loose and caught air. Corner protection and full tension on every edge prevent the large majority of tarp failures.' },
+      { q: 'Which loads have to be tarped?', a: 'Machinery and equipment with painted or machined surfaces, finished steel and coils, lumber and building materials, and anything the shipper or receiver specifies on the bill of lading. Raw structural steel, pipe, rebar, and used construction equipment normally ship uncovered.' },
+    ],
+    related: [
+      { h: 'How to Load & Secure a Conestoga', u: 'how-to-load-and-secure-a-conestoga-trailer.html' },
+      { h: 'Conestoga Trailer Transport', u: '../services/conestoga-trailer.html' },
+      { h: 'How to Secure a Load on a Flatbed', u: 'how-to-secure-a-load-on-a-flatbed.html' },
+      { h: 'Flatbed Transport', u: '../services/flatbed-transport.html' },
+      { h: 'Get a Quote', u: '../contact.html' },
+    ],
   },
 ];
 

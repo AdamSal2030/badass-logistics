@@ -30,6 +30,7 @@ const TRAILERS = [
   { slug: 'step-deck-trailer',    label: 'Step-Deck Transport' },
   { slug: 'double-drop-trailer',  label: 'Double-Drop &amp; Stretch' },
   { slug: 'flatbed-transport',    label: 'Flatbed Transport' },
+  { slug: 'conestoga-trailer',     label: 'Conestoga Transport' },
   { slug: 'multi-axle-transport', label: 'Multi-Axle &amp; Superload' },
 ];
 
@@ -123,7 +124,9 @@ if (fs.existsSync(hhDir)) {
 const BLOG_LINKS = {
   'step-deck-vs-drop-deck-trailers.html': ['step-deck-trailer', 'double-drop-trailer'],
   'flatbed-vs-step-deck-vs-rgn-trailers.html': ['flatbed-transport', 'step-deck-trailer', 'rgn-trailer'],
-  'enclosed-vs-flatbed-transport.html': ['flatbed-transport'],
+  'enclosed-vs-flatbed-transport.html': ['flatbed-transport', 'conestoga-trailer'],
+  'how-to-load-and-secure-a-conestoga-trailer.html': ['conestoga-trailer', 'flatbed-transport', 'step-deck-trailer'],
+  'how-to-tarp-a-flatbed-load.html': ['flatbed-transport', 'conestoga-trailer', 'step-deck-trailer'],
   'how-to-secure-a-load-on-a-flatbed.html': ['flatbed-transport'],
   'what-is-considered-an-oversize-load.html': ['multi-axle-transport', 'rgn-trailer'],
 };

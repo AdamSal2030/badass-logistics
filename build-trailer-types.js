@@ -2,7 +2,7 @@
 /* ===========================================================
    Badass Logistics — TRAILER / TRUCK-TYPE hub pages
    Distinct national service pages for each heavy-haul trailer type
-   (RGN, lowboy, step-deck, double-drop/stretch, flatbed, multi-axle).
+   (RGN, lowboy, step-deck, double-drop/stretch, flatbed, multi-axle, Conestoga).
    These are genuinely different topics — NOT near-duplicate city pages —
    so they rank for "RGN transport", "lowboy trailer", "step deck", etc.
    without cannibalizing the heavy-haul city matrix.
@@ -33,7 +33,7 @@ const NAV = `
 const FOOTER = `
 <footer><div class="wrap"><div class="cols">
   <div><h4>Badass Logistics</h4><p style="opacity:.85;max-width:280px;">Industrial rigging &amp; heavy haul — our own crews, machinery, and rigging gear, plus a network of specialized carriers for everything oversized and overweight.</p></div>
-  <div><h4>Trailer Types</h4><a href="/services/rgn-trailer">RGN Transport</a><a href="/services/lowboy-trailer">Lowboy Transport</a><a href="/services/step-deck-trailer">Step-Deck Transport</a><a href="/services/double-drop-trailer">Double-Drop &amp; Stretch</a><a href="/services/flatbed-transport">Flatbed Transport</a><a href="/services/multi-axle-transport">Multi-Axle &amp; Superload</a></div>
+  <div><h4>Trailer Types</h4><a href="/services/rgn-trailer">RGN Transport</a><a href="/services/lowboy-trailer">Lowboy Transport</a><a href="/services/step-deck-trailer">Step-Deck Transport</a><a href="/services/double-drop-trailer">Double-Drop &amp; Stretch</a><a href="/services/flatbed-transport">Flatbed Transport</a><a href="/services/conestoga-trailer">Conestoga Transport</a><a href="/services/multi-axle-transport">Multi-Axle &amp; Superload</a></div>
   <div><h4>Company</h4><a href="/about">About Us</a><a href="/locations">Locations</a><a href="/blog/">Blog</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a></div>
 </div><div class="footer-nap"><span class="nap-name">Badass Logistics</span><span>${site.hqStreet}, ${site.hqCity}, ${site.hqState} ${site.hqZip}</span><span><a href="tel:3072841332">(307) 284-1332</a></span><span><a href="mailto:rigging@badasslogistics.com">rigging@badasslogistics.com</a></span></div></div></footer>`;
 
@@ -133,6 +133,22 @@ const TRAILERS = [
       ['How heavy can you go?',`With enough axles, well past 200,000 lb. The exact configuration depends on the load weight, its footprint, and the axle limits along the route.`],
       ['What does a superload require?',`Engineered routing and bridge analysis, state superload permits, and usually police escorts and utility coordination. We manage the whole package.`],
       ['How far ahead should I book a superload?',`As early as possible — superload permits and route approvals take time. Send weight and dimensions and we'll start the routing.`],
+    ],
+  },
+  {
+    slug:'conestoga-trailer', name:'Conestoga Trailer Transport', h1:'Conestoga <span class="y">Transport</span>',
+    serviceType:'Conestoga (Rolling Tarp) Transport', hero:'/assets/img/loads/conestoga-rolled-back-tank-palletized-freight.jpg', tag:'rolling tarp / curtain side',
+    lead:`Flatbed loading with van-style weather protection. The curtain rolls back so a crane can pick straight down onto the deck, then rolls closed over the freight — no tarp crew, no climbing, no wet machinery.`,
+    quick:`A Conestoga is a flatbed or step-deck trailer with a retractable tarp on a rolling frame. It loads from the top and both sides like an open deck, then the curtain closes to protect freight from rain, road salt, and debris without any manual tarping.`,
+    what:[`On a Conestoga, a vinyl curtain rides on bows that slide along rails built into the deck. Retracted, the whole system stacks into roughly eight feet at one end and leaves the deck completely open — so machinery gets craned in from directly overhead or forked on from either side, exactly like a <a href="/services/flatbed-transport">flatbed</a>. Then it rolls shut in a couple of minutes and the freight is covered for the whole run.`,
+      `The trade-offs are real and worth knowing up front. The tarp system adds roughly 2,000–3,500 lb of tare weight, so payload lands nearer 44,000 lb than a flatbed's 48,000. Usable height under the bows is about 8 ft over a standard deck — a drop-deck Conestoga buys that back to roughly 10 ft. And nothing over-dimensional fits: a load wider or taller than the curtain goes on an open deck and gets tarped instead.`],
+    uses:[['Machinery &amp; CNC Equipment','Painted, wrapped, or precision freight that must stay dry'],['Crated &amp; Palletized Freight','Side-loaded pallets that a dry van can only load end-first'],['Steel, Coils &amp; Finished Metal','Surfaces that road salt and rain will stain or pit'],['Plant &amp; Facility Moves','Repeat loads where on-site tarping is impractical or prohibited']],
+    specs:[['Deck length','48–53 ft'],['Interior height','~8 ft (std)'],['Drop-deck version','~10 ft'],['Typical payload','~44,000 lb']],
+    faq:[
+      ['What is a Conestoga trailer?',`A Conestoga is a flatbed or step-deck fitted with a retractable tarp system — a vinyl curtain on bows that rolls along rails on the deck. It opens for top and side loading like an open deck, then closes to protect the freight from weather without manual tarping.`],
+      ['Conestoga vs tarping a flatbed — which is better?',`For repeat machinery loads, a Conestoga wins: it removes 30–60 minutes of tarping each way, eliminates the fall risk of working on top of a load, and protects better than vinyl that can flap or tear. For a one-off, or anything over-dimensional that won't fit under the curtain, tarping an open <a href="/services/flatbed-transport">flatbed</a> is cheaper. Full comparison in our <a href="/blog/how-to-tarp-a-flatbed-load">tarping guide</a>.`],
+      ['How much can a Conestoga haul?',`Around 44,000 lb typically — the rolling tarp system costs roughly 2,000–3,500 lb of payload versus a bare flatbed. Interior height is about 8 ft over a standard deck, or roughly 10 ft on a drop-deck Conestoga.`],
+      ['Can freight be strapped to the Conestoga frame?',`No. The bows and curtain rails are weather protection, not rated tie-down points. Every strap and chain goes to the trailer deck — stake pockets, rub rails, D-rings, and winches — at an aggregate working load limit of at least half the cargo weight. See <a href="/blog/how-to-load-and-secure-a-conestoga-trailer">how we load and secure a Conestoga</a>.`],
     ],
   },
 ];

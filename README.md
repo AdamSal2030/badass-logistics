@@ -15,8 +15,8 @@ Plain static HTML/CSS on GitHub Pages — no framework, no build step for the co
 | `build-locations.js` | 128 city/location pages + `locations.html` grid + `sitemap.xml` |
 | `build-states.js` | state hub pages + state chips (run after build-locations) |
 | `build-service-cities.js` | 565 service × city pages (incl. 113 heavy-haul) |
-| `build-trailer-types.js` | 6 trailer-type hubs + trailer grid in `services/heavy-haul.html` |
-| `build-blog.js` | 45 field-guide articles + blog index |
+| `build-trailer-types.js` | 7 trailer-type hubs + trailer grid in `services/heavy-haul.html` |
+| `build-blog.js` | 47 field-guide articles + blog index |
 | `seo-polish.js` | idempotent head/footer upgrades for hand-written pages |
 | `link-trailer-hubs.js` | trailer-hub internal link mesh — **must run last** |
 
