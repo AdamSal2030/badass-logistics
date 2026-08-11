@@ -19,6 +19,7 @@ Plain static HTML/CSS on GitHub Pages — no framework, no build step for the co
 | `build-blog.js` | 47 field-guide articles + blog index |
 | `seo-polish.js` | idempotent head/footer upgrades for hand-written pages |
 | `link-trailer-hubs.js` | trailer-hub internal link mesh — **must run last** |
+| `ping-search-engines.js` | IndexNow (Bing) + Google sitemap resubmit — run after a content push |
 
 Data lives in `data/locations.json` (88 entries) + `data/site.json`. Rebuild everything:
 
@@ -35,5 +36,16 @@ pass. All of it is idempotent and sentinel-guarded, so re-running is safe.
 
 `node gsc-report.js 28` prints the Search Console scoreboard and appends a row
 to `data/gsc-trend.csv`. Needs `gsc-key.json` (service-account key, git-ignored).
+
+After pushing content, `node ping-search-engines.js` submits the changed URLs to
+IndexNow (Bing/Yandex) and resubmits the sitemap to Google. Pass paths explicitly
+(`node ping-search-engines.js /blog/new-post`) or let it default to today's
+`lastmod` entries. GitHub Pages has no ping hook, so without this the site waits
+to be recrawled — the trailer hubs sat 4 weeks between crawls.
+
+> Each pillar page (`services/<svc>.html`) must keep its `<!--*_METROS_START-->`
+> sentinel pair — that is where `build-service-cities.js` writes the 88 city-card
+> links. `machinery-moving.html` lost its pair at some point and silently shipped
+> with zero links to its city children until 2026-08-11.
 
 © 2022–2026 Badass Logistics.
