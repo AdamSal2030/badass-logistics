@@ -196,6 +196,78 @@ const CITY_GUIDES = {
   'heavy-haul': [['step-deck-vs-drop-deck-trailers','Step-Deck vs Drop-Deck Trailers'],['how-to-ship-a-generator','How to Ship an Industrial Generator'],['how-to-secure-a-load-on-a-flatbed','How to Secure a Load on a Flatbed']],
 };
 
+// ---------- SIBLING-SERVICE MESH ----------
+// Every city has 5 service pages, and until now none of them linked to each other —
+// 440 city pages × 4 siblings = 1,760 contextual internal links that simply didn't exist.
+// Each page was an island: it linked UP to its pillar and state hub, but never sideways to
+// the same crew's other work in the same metro. GSC shows the cost of that — Savannah rigging
+// (pos 25.7) and Savannah machinery-moving (pos 26.7) were competing alone instead of
+// reinforcing each other on the exact same local intent.
+//
+// `pitch` is written from the perspective of a *different* service page in the same city,
+// so the link reads as a genuine next step rather than a footer dump. Anchors rotate by a
+// stable per-city hash so 440 pages don't ship one identical anchor-text pattern.
+const CROSS = {
+  'rigging': {
+    short:'Industrial Rigging', noun:'riggers',
+    pitch:(c)=>`Machine has to come off the floor, through the door, or onto a pad before it travels? That's the rigging side of the same ${c} crew.`,
+    anchors:(c)=>[`industrial rigging in ${c}`,`${c} riggers`,`rigging contractors in ${c}`,`${c} industrial rigging`],
+  },
+  'heavy-haul': {
+    short:'Heavy Haul Trucking', noun:'heavy haul',
+    pitch:(c)=>`Once it's rigged and loaded, an over-dimension load still needs permits, a routed corridor, and escorts out of ${c}. We haul it in-house — no hand-off.`,
+    anchors:(c)=>[`heavy haul trucking in ${c}`,`${c} heavy haul transport`,`oversize load hauling in ${c}`,`${c} heavy haul`],
+  },
+  'machinery-moving': {
+    short:'Machinery Movers', noun:'machinery movers',
+    pitch:(c)=>`Presses, compressors, generators, full production lines — disconnected, rigged, hauled, and re-leveled across ${c} as one accountable job.`,
+    anchors:(c)=>[`machinery moving in ${c}`,`${c} machinery movers`,`industrial machinery movers in ${c}`,`${c} machinery moving company`],
+  },
+  'cnc-machine-movers': {
+    short:'CNC Machine Movers', noun:'CNC movers',
+    pitch:(c)=>`Machine tools are instruments, not freight. VMCs, lathes, and grinders moved on air-ride and squared back to the builder's spec in ${c}.`,
+    anchors:(c)=>[`CNC machine movers in ${c}`,`${c} CNC machine moving`,`machine tool movers in ${c}`,`${c} CNC movers`],
+  },
+  'plant-relocation': {
+    short:'Plant Relocation', noun:'plant relocation',
+    pitch:(c)=>`Moving the whole floor instead of one machine? Phased teardown, sequenced loads, and reinstallation planning for ${c} plants.`,
+    anchors:(c)=>[`plant relocation in ${c}`,`${c} plant &amp; factory relocation`,`factory relocation in ${c}`,`${c} plant relocation`],
+  },
+};
+const CROSS_ORDER = ['rigging','heavy-haul','machinery-moving','cnc-machine-movers','plant-relocation'];
+
+// Stable string hash → picks an anchor variant per (city, target service) so the mesh
+// doesn't ship 440 copies of the same anchor text.
+function hashPick(str, n) {
+  let h = 0;
+  for (let i = 0; i < str.length; i++) h = (h * 31 + str.charCodeAt(i)) >>> 0;
+  return h % n;
+}
+
+function siblingMesh(serviceSlug, svc, city, slug) {
+  const sibs = CROSS_ORDER.filter(s => s !== serviceSlug);
+  const cards = sibs.map(s => {
+    const x = CROSS[s];
+    const variants = x.anchors(city);
+    const anchor = variants[hashPick(slug + s, variants.length)];
+    return `    <a class="svc-card" href="/services/${s}/${slug}"><div class="num">// also in ${city}</div><h3>${x.short}</h3><p>${x.pitch(city)}</p><span class="more">${anchor} &rarr;</span></a>`;
+  }).join('\n');
+  const inline = sibs.map(s =>
+    `<a href="/services/${s}/${slug}" style="color:var(--yellow-deep);text-decoration:underline;">${CROSS[s].noun}</a>`
+  );
+  const inlineList = inline.slice(0, -1).join(', ') + ', and ' + inline[inline.length - 1];
+  return `
+<section><div class="wrap">
+  <span class="section-tag hand">same crew, same city</span>
+  <h2 class="section-title">Other heavy work we do in ${city}</h2>
+  <p class="section-intro">Most ${city} jobs don't stop at one service. The crew that rigs a machine is the crew that hauls it and sets it back down — so you're dealing with one company from the disconnect to the re-level, not three subcontractors pointing at each other.</p>
+  <div class="grid-services" style="grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:22px;">
+${cards}
+  </div>
+  <p style="margin-top:22px;font-weight:600;">In ${city} we also run ${inlineList} &mdash; or see <a href="/locations/${slug}" style="color:var(--yellow-deep);text-decoration:underline;">every service we offer in ${city}</a>.</p>
+</div></section>`;
+}
+
 function page(serviceSlug, svc, loc, metro, hubStates) {
   const { city, state } = loc;
   const CS = `${city}, ${state}`;
@@ -335,6 +407,7 @@ ${nearbyMetros.length ? `
   </div>${hasHub?`
   <p style="margin-top:22px;font-weight:600;"><a href="/services/${serviceSlug}/${stSlug}" style="color:var(--yellow-deep);text-decoration:underline;">See all ${svc.name} across ${c.stName} →</a></p>`:``}
 </div></section>` : ''}
+${siblingMesh(serviceSlug, svc, city, slug)}
 
 <section class="bg-paper" style="border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);"><div class="wrap">
   <span class="section-tag hand">questions</span>

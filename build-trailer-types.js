@@ -37,6 +37,89 @@ const FOOTER = `
   <div><h4>Company</h4><a href="/about">About Us</a><a href="/locations">Locations</a><a href="/blog/">Blog</a><a href="/contact">Contact</a><a href="/privacy">Privacy</a></div>
 </div><div class="footer-nap"><span class="nap-name">Badass Logistics</span><span>${site.hqStreet}, ${site.hqCity}, ${site.hqState} ${site.hqZip}</span><span><a href="tel:3072841332">(307) 284-1332</a></span><span><a href="mailto:rigging@badasslogistics.com">rigging@badasslogistics.com</a></span></div></div></footer>`;
 
+// ---------- SPEC MATRIX ----------
+// GSC (Aug 2026): the trailer hubs shipped ~600 words each and stalled — rgn-trailer fell to
+// zero impressions, step-deck sat at pos 78.8, lowboy at 79. These are spec-intent queries:
+// someone searching "RGN trailer" or "step deck vs drop deck" wants deck height, capacity, and
+// what fits under 13'6". A 600-word page with a 4-tile strip can't answer that, so it never
+// earns the snippet. One shared matrix drives both the per-page spec table and the comparison
+// table, so every trailer is described on identical axes and the numbers can't drift apart.
+//
+// Figures are industry-standard ranges for legal-dimension equipment; exact numbers vary by
+// trailer build and route, which the pages say explicitly rather than implying false precision.
+const SPEC_KEYS = ['Deck / well height','Usable deck length','Legal payload','Max cargo height (legal)','Loading method','Axles (base)'];
+const SPEC_MATRIX = {
+  'flatbed-transport':     ['~5 ft (60 in)','48–53 ft','48,000–52,000 lb',`~8'6"`,'Crane, forklift, or side-load','2 (tandem)'],
+  'step-deck-trailer':     ['~3.5 ft (42 in) lower deck','37–43 ft lower + ~11 ft upper','~48,000 lb',`~10'`,'Crane, forklift, or ramps','2 (tandem)'],
+  'conestoga-trailer':     ['~5 ft (60 in); ~3.5 ft drop-deck','48–53 ft','~44,000 lb',`~8' interior (~10' drop-deck)`,'Rolling tarp — load from any side or top','2 (tandem)'],
+  'double-drop-trailer':   ['~18–24 in in the well','25–29 ft well (stretchable)','~45,000 lb',`~11'6"`,'Crane or ramp','2–3'],
+  'lowboy-trailer':        ['~18–24 in','24–29 ft well','40,000 lb base — 100,000 lb+ with axles',`~11'6"–12'`,'Crane-loaded (best height clearance)','2–3'],
+  'rgn-trailer':           ['~18–24 in','~29 ft well','40,000–50,000 lb base — 150,000 lb+ with axles',`~11'6"`,'Drive-on — gooseneck detaches into a ramp','3'],
+  'multi-axle-transport':  ['Follows the base RGN / lowboy deck','Configurable — stretchable','200,000 lb+',`Route-engineered`,'Drive-on or crane, per base trailer','4–13+ (jeeps + boosters)'],
+};
+// Display order = lightest/simplest → heaviest, so the comparison table reads as an escalation.
+const COMPARE_ORDER = ['flatbed-transport','step-deck-trailer','conestoga-trailer','double-drop-trailer','lowboy-trailer','rgn-trailer','multi-axle-transport'];
+const SHORT_NAME = {
+  'flatbed-transport':'Flatbed','step-deck-trailer':'Step-Deck','conestoga-trailer':'Conestoga',
+  'double-drop-trailer':'Double-Drop','lowboy-trailer':'Lowboy','rgn-trailer':'RGN','multi-axle-transport':'Multi-Axle / Superload',
+};
+const PICK_WHEN = {
+  'flatbed-transport':'Load is under legal height and width and can be loaded from any side.',
+  'step-deck-trailer':`Freight is too tall for a flatbed but still under ~10'.`,
+  'conestoga-trailer':'Load needs weather protection but still has to be crane- or side-loaded.',
+  'double-drop-trailer':`Freight is tall enough to need a well, and may need extra length.`,
+  'lowboy-trailer':'Height clearance is the binding constraint and the load is crane-loaded.',
+  'rgn-trailer':'Equipment drives on and off under its own power.',
+  'multi-axle-transport':'Weight exceeds what any single trailer can carry legally.',
+};
+
+// One comparison table, rendered on every hub with the current trailer highlighted. This is the
+// asset that targets the "X vs Y" queries directly — "step deck vs drop deck trailers" was
+// already pulling 139 impressions as a blog post with no spec table behind it.
+function compareTable(currentSlug) {
+  const rows = COMPARE_ORDER.map(s => {
+    const m = SPEC_MATRIX[s], me = s === currentSlug;
+    const label = me
+      ? `<strong>${SHORT_NAME[s]}</strong> <span class="you">you are here</span>`
+      : `<a href="/services/${s}">${SHORT_NAME[s]}</a>`;
+    return `      <tr${me ? ' class="me"' : ''}><th scope="row">${label}</th><td>${m[0]}</td><td>${m[2]}</td><td>${m[3]}</td><td>${PICK_WHEN[s]}</td></tr>`;
+  }).join('\n');
+  return `
+<section class="bg-paper" style="border-top:3px solid var(--ink);border-bottom:3px solid var(--ink);"><div class="wrap">
+  <span class="section-tag hand">side by side</span>
+  <h2 class="section-title">Heavy-haul trailer comparison</h2>
+  <p class="section-intro">Deck height is what decides most loads. The lower the deck, the taller the machine you can carry and still clear ${`13'6"`} without a height permit — which is why the heavy stuff rides in a well.</p>
+  <div class="cmp-wrap">
+  <table class="cmp">
+    <caption class="sr-only">Heavy-haul trailer types compared by deck height, payload, legal cargo height, and best use</caption>
+    <thead><tr><th scope="col">Trailer</th><th scope="col">Deck height</th><th scope="col">Legal payload</th><th scope="col">Max cargo height</th><th scope="col">Pick it when</th></tr></thead>
+    <tbody>
+${rows}
+    </tbody>
+  </table>
+  </div>
+  <p class="section-intro" style="margin-top:18px">Ranges cover standard builds — exact capacity depends on the trailer, the axle spacing, and the bridge formula on your route. Send dimensions and weight and we'll tell you which one your load actually needs.</p>
+</div></section>`;
+}
+
+// Federal baseline. This is the context that makes every number above mean something, and it's
+// the passage most likely to get pulled into an AI Overview — a direct, self-contained answer.
+function legalLimits() {
+  return `
+<section class="notes-bg"><div class="wrap prose">
+  <span class="section-tag hand">the numbers that decide it</span>
+  <h2>Legal limits: when your load needs a permit</h2>
+  <p>Before trailer choice matters, the load has to be measured against the federal legal envelope. Stay inside it and the load moves as ordinary freight. Break any one of these and it becomes an oversize or overweight move that needs a permit, and often a routed corridor and escorts:</p>
+  <div class="specs">
+    <div><div class="k">Max width</div><div class="v">8&#39;6&quot;</div></div>
+    <div><div class="k">Max height</div><div class="v">13&#39;6&quot;</div></div>
+    <div><div class="k">Max gross weight</div><div class="v">80,000 lb</div></div>
+  </div>
+  <p style="margin-top:22px">Height is where trailer choice earns its money. Cargo height is measured from the pavement, not the deck — so a 12-foot machine on a 5-foot flatbed stands 17 feet tall and is illegal everywhere, while the same machine in a 2-foot well stands 14 feet and clears most routes. That single difference is why heavy equipment rides on a <a href="/services/lowboy-trailer">lowboy</a> or <a href="/services/rgn-trailer">RGN</a> instead of a <a href="/services/flatbed-transport">flatbed</a>.</p>
+  <p>Weight works the same way, but the ceiling is the federal bridge formula, not just the 80,000 lb gross — it governs how much weight may sit on a given axle group over a given distance. That's why heavier loads get more axles rather than a bigger trailer: spreading the weight across <a href="/services/multi-axle-transport">jeeps and boosters</a> keeps each axle group legal. Some western states allow 14&#39; height without a permit, and every state writes its own overweight rules, so we check the actual route before quoting rather than assuming the federal baseline.</p>
+</div></section>`;
+}
+
 // ---------- TRAILER TYPES (genuinely distinct copy) ----------
 const TRAILERS = [
   {
@@ -211,6 +294,19 @@ function hubPage(t){
   .specs .v{font-family:'Anton',sans-serif;font-size:22px;margin-top:4px}
   .tt-grid{display:flex;flex-wrap:wrap;gap:10px;margin-top:8px}
   .tt-grid a{background:var(--white);border:2px solid var(--ink);box-shadow:3px 3px 0 var(--ink);padding:8px 14px;font-weight:700;font-size:14px;text-decoration:none;color:var(--ink)}
+  /* Wide tables scroll inside their own container so the page body never scrolls sideways on mobile. */
+  .cmp-wrap,.spectable-wrap{overflow-x:auto;margin-top:24px;border:3px solid var(--ink);box-shadow:var(--shadow);background:var(--white)}
+  .cmp,.spectable{border-collapse:collapse;width:100%;font-size:15px;min-width:640px}
+  .spectable{min-width:0}
+  .cmp th,.cmp td,.spectable th,.spectable td{border-bottom:2px solid var(--ink);padding:12px 14px;text-align:left;vertical-align:top}
+  .cmp thead th{background:var(--ink);color:var(--white);font-family:'Anton',sans-serif;font-size:13px;letter-spacing:.06em;text-transform:uppercase}
+  .cmp tbody th,.spectable th{font-weight:700;white-space:nowrap}
+  .spectable th{width:38%;background:var(--paper,#f7f3e3)}
+  .cmp tbody tr:last-child th,.cmp tbody tr:last-child td,.spectable tr:last-child th,.spectable tr:last-child td{border-bottom:0}
+  .cmp tr.me{background:var(--yellow,#f2c744)}
+  .cmp .you{font-family:'Architects Daughter',cursive;font-size:12px;font-weight:400;display:block;opacity:.75}
+  .cmp a{color:var(--ink);text-decoration:underline}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
 </style>
 ${schema(t)}
 <link rel="preload" as="image" href="${t.hero}" fetchpriority="high">
@@ -233,6 +329,15 @@ ${NAV}
   <div class="specs">
     ${t.specs.map(([k,v])=>`<div><div class="k">${k}</div><div class="v">${v}</div></div>`).join('\n    ')}
   </div>
+  <h3 style="margin-top:34px">${SHORT_NAME[t.slug]} specifications</h3>
+  <div class="spectable-wrap">
+  <table class="spectable">
+    <caption class="sr-only">${SHORT_NAME[t.slug]} trailer specifications</caption>
+    <tbody>
+      ${SPEC_KEYS.map((k,i)=>`<tr><th scope="row">${k}</th><td>${SPEC_MATRIX[t.slug][i]}</td></tr>`).join('\n      ')}
+    </tbody>
+  </table>
+  </div>
 </div></section>
 
 <section><div class="wrap">
@@ -242,6 +347,8 @@ ${NAV}
     ${t.uses.map(([h,p])=>`<div class="svc-card static"><h3>${h}</h3><p>${p}</p></div>`).join('\n    ')}
   </div>
 </div></section>
+${compareTable(t.slug)}
+${legalLimits()}
 
 <section class="notes-bg"><div class="wrap prose">
   <span class="section-tag hand">questions</span>
