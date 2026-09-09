@@ -1851,6 +1851,204 @@ const POSTS = [
       { h: 'Get a Quote', u: '../contact.html' },
     ],
   },
+  {
+    slug: 'step-deck-trailer-dimensions',
+    cat: 'Trailers',
+    hero: 'loads/flatbed-industrial-dust-collectors-strapped.jpg',
+    date: '2026-09-09',
+    title: 'Step-Deck Trailer Dimensions: Deck Height, Max Load Height & Ground Clearance',
+    desc: 'A step-deck trailer runs a 41-foot lower deck about 41 inches off the ground and an 11-foot upper deck at roughly 60 inches. That lower deck buys you about 10 feet of legal cargo height instead of the 8.5 feet a flatbed gives you. Full spec sheet below.',
+    dek: 'Every number you need before you book a step deck — deck heights, usable lengths, legal cargo height, and the ground clearance question nobody answers straight.',
+    tldr: 'A standard 53-foot step-deck trailer has a 41-foot lower deck sitting about 41 inches (3 ft 5 in) off the ground and an 11-to-12-foot upper deck at roughly 60 inches. Legal cargo height on the lower deck is about 10 feet before you need a permit, versus roughly 8 feet 6 inches on a flatbed. Payload runs about 48,000 lbs on a tandem.',
+    keywords: 'step deck dimensions, step deck max height, step deck ground clearance, what is a step deck truck, drop deck dimensions, step deck trailer specs',
+    body: `
+<p>Most step-deck questions are really one question: <strong>will my load go down the road legally without a permit?</strong> That comes down to deck height, and step-deck deck height is the whole reason the trailer exists.</p>
+
+<h2>What is a step-deck truck?</h2>
+<p>A step-deck — also called a drop deck — is a flatbed with two levels. The front section sits at standard flatbed height to clear the tractor's fifth wheel. Behind that, the deck steps down closer to the ground. That step is worth about a foot and a half of cargo height, and a foot and a half is the difference between a routine legal move and a permitted oversize load.</p>
+<p>There is no curtain, no roof, no walls. It loads from the top with a crane, from the side with a forklift, or up ramps from the back. It is the workhorse for freight that is too tall for a flatbed but nowhere near tall enough to justify an RGN.</p>
+
+<h2>Step-deck trailer dimensions</h2>
+<table>
+  <tr><th>Spec</th><th>Typical</th></tr>
+  <tr><td>Overall length</td><td>48 ft or 53 ft</td></tr>
+  <tr><td>Lower deck length</td><td>37–43 ft (41 ft is most common on a 53)</td></tr>
+  <tr><td>Upper deck length</td><td>10–12 ft</td></tr>
+  <tr><td>Lower deck height off ground</td><td>~41 in (3 ft 5 in)</td></tr>
+  <tr><td>Upper deck height off ground</td><td>~60 in (5 ft)</td></tr>
+  <tr><td>Deck width</td><td>8 ft 6 in</td></tr>
+  <tr><td>Max legal cargo height, lower deck</td><td>~10 ft</td></tr>
+  <tr><td>Max legal cargo height, upper deck</td><td>~8 ft 6 in</td></tr>
+  <tr><td>Payload (tandem)</td><td>~48,000 lb</td></tr>
+</table>
+<p>Those are typical numbers, not universal ones. Deck heights vary an inch or two by manufacturer, by suspension, and by how worn the tires are. If your load is within two inches of legal, measure the actual trailer — do not trust a spec sheet, and do not trust this one.</p>
+
+<h2>Step-deck max height, explained properly</h2>
+<p>The federal legal height limit on most routes is <strong>13 feet 6 inches</strong> from pavement to the highest point of the load. Some western states allow 14 feet. Your usable cargo height is that limit minus the deck height.</p>
+<ul>
+  <li><strong>Lower deck at 41 inches:</strong> 13'6" minus 3'5" leaves roughly <strong>10 feet 1 inch</strong> of cargo height.</li>
+  <li><strong>Upper deck at 60 inches:</strong> 13'6" minus 5'0" leaves roughly <strong>8 feet 6 inches</strong> — the same as a standard flatbed.</li>
+  <li><strong>Standard flatbed at 60 inches:</strong> roughly <strong>8 feet 6 inches</strong>.</li>
+</ul>
+<p>So the honest way to say it: a step deck does not make your load shorter, it lowers the floor underneath it by about 19 inches. Everything above 10 feet on the lower deck is permit territory, and past roughly 12 feet you are looking at a <a href="../services/double-drop-trailer">double-drop or stretch trailer</a> instead.</p>
+
+<h2>What about ground clearance?</h2>
+<p>This is the question that gets asked constantly and answered badly, because "ground clearance" means two different things.</p>
+<p><strong>Deck height</strong> is how far the loading surface sits off the pavement — about 41 inches on the lower deck. That is the number you use for height math.</p>
+<p><strong>Actual under-trailer clearance</strong> — the gap between the lowest structural point of the trailer and the road — is much smaller, usually somewhere around 5 to 8 inches under the frame rails when loaded. That is the number that matters for steep driveway aprons, railroad crossings, speed bumps, and loading-dock ramps.</p>
+<p>A loaded step deck will drag on a sharp break-over that a flatbed clears without a thought. If your pickup or delivery has a steep apron, say so before the truck is dispatched. Fixing it at the gate means a second trip.</p>
+
+<h2>When a step deck is the wrong call</h2>
+<ul>
+  <li><strong>Load under 8'6" tall.</strong> A standard <a href="../services/flatbed-transport">flatbed</a> hauls it for less. Do not pay for deck you are not using.</li>
+  <li><strong>Load over about 10 feet.</strong> You want an <a href="../services/rgn-trailer">RGN</a> or a double-drop, which put the well even lower.</li>
+  <li><strong>Load over 48,000 lbs.</strong> Now it is an axle problem, not a height problem — that is <a href="../services/multi-axle-transport">multi-axle</a> territory.</li>
+  <li><strong>Weather-sensitive freight.</strong> A <a href="../services/conestoga-trailer">Conestoga</a> gives you a rolling curtain instead of a tarp crew.</li>
+</ul>
+<p>If you are not sure which side of the line you land on, our <a href="../trailer-selector.html">trailer selector</a> takes your dimensions and weight and tells you straight.</p>
+`,
+    faq: [
+      { q: 'What is the max height on a step deck trailer?', a: 'On the lower deck, roughly 10 feet of cargo height before you need an oversize permit — that is the 13\'6" legal limit minus about 41 inches of deck height. On the upper deck it drops to about 8 feet 6 inches. Some western states allow 14 feet overall, which buys you another six inches.' },
+      { q: 'How tall is a step deck trailer deck?', a: 'The lower deck sits about 41 inches (3 ft 5 in) off the ground and the upper deck about 60 inches (5 ft). Exact heights vary an inch or two by manufacturer, suspension, and tire wear, so measure the actual trailer if your load is borderline.' },
+      { q: 'What is the ground clearance of a step deck trailer?', a: 'Two different numbers. Deck height — the loading surface — is about 41 inches on the lower deck. Actual clearance under the frame is much less, typically 5 to 8 inches loaded, which is what matters for steep driveway aprons and railroad crossings.' },
+      { q: 'Is a step deck the same as a drop deck?', a: 'Yes. Step deck and drop deck are the same trailer under two names. A double drop is a different trailer with a lowered well between the axles for taller freight.' },
+    ],
+    related: [
+      { h: 'Step-Deck Transport', u: '../services/step-deck-trailer' },
+      { h: 'Step Deck vs Drop Deck', u: 'step-deck-vs-drop-deck-trailers.html' },
+      { h: 'Flatbed vs Step Deck vs RGN', u: 'flatbed-vs-step-deck-vs-rgn-trailers.html' },
+      { h: 'What Is an Oversize Load?', u: 'what-is-considered-an-oversize-load.html' },
+      { h: 'Trailer Selector Tool', u: '../trailer-selector.html' },
+      { h: 'Get a Quote', u: '../contact.html' },
+    ],
+  },
+  {
+    slug: 'drop-deck-vs-flatbed',
+    cat: 'Trailers',
+    hero: 'loads/flatbed-load-securement-yellow-straps.jpg',
+    date: '2026-09-09',
+    title: 'Drop Deck vs Flatbed: Which One Does Your Load Actually Need?',
+    desc: 'A flatbed gives you about 8 feet 6 inches of legal cargo height. A drop deck gives you about 10 feet, because its lower deck sits 19 inches closer to the ground. If your load is under 8\'6", the flatbed is cheaper. Here is where the line falls.',
+    dek: 'One number decides this, and it is not price. Here is how to pick without paying for deck you do not need.',
+    tldr: 'Pick a flatbed if your load is under about 8 feet 6 inches tall — it is cheaper and more available. Pick a drop deck (step deck) if your load is between roughly 8\'6" and 10 feet, because its lower deck sits about 19 inches closer to the ground and keeps you under the 13\'6" legal height limit without a permit.',
+    keywords: 'drop deck vs flatbed, flatbed vs drop deck, step deck vs flatbed, difference between drop deck and flatbed, drop deck trailer',
+    body: `
+<p>Freight brokers ask this backwards. They ask which trailer is cheaper. The right question is <strong>which trailer keeps your load legal</strong>, because a permit costs more than the trailer upgrade ever will.</p>
+
+<h2>The one number that decides it</h2>
+<p>Federal legal height on most routes is 13 feet 6 inches, pavement to the top of the load. Both trailers are 8'6" wide and both haul about 48,000 lbs. The only meaningful difference is how far off the ground the deck sits.</p>
+<table>
+  <tr><th></th><th>Flatbed</th><th>Drop Deck</th></tr>
+  <tr><td>Deck height</td><td>~60 in (5 ft)</td><td>~41 in (3 ft 5 in) lower deck</td></tr>
+  <tr><td>Legal cargo height</td><td>~8 ft 6 in</td><td>~10 ft</td></tr>
+  <tr><td>Deck length</td><td>48–53 ft flat</td><td>~41 ft lower + ~11 ft upper</td></tr>
+  <tr><td>Payload</td><td>~48,000 lb</td><td>~48,000 lb</td></tr>
+  <tr><td>Availability</td><td>Highest</td><td>Common</td></tr>
+  <tr><td>Cost</td><td>Lowest</td><td>Modest premium</td></tr>
+</table>
+<p>That is the whole comparison. Same width, same weight, roughly 19 inches of difference in deck height — and those 19 inches decide whether you file permits.</p>
+
+<h2>Pick a flatbed when</h2>
+<ul>
+  <li>Your load is <strong>under 8 feet 6 inches</strong> tall.</li>
+  <li>You need continuous deck length — steel, pipe, lumber, long structural material that does not want a step in the middle.</li>
+  <li>You are loading from the side with a forklift and want the simplest possible approach.</li>
+  <li>You want the cheapest legal option and the widest pool of available trucks.</li>
+</ul>
+
+<h2>Pick a drop deck when</h2>
+<ul>
+  <li>Your load is <strong>between about 8'6" and 10 feet</strong> tall — the exact band where a flatbed would push you into permit territory.</li>
+  <li>You are hauling mid-height machinery, forklifts, telehandlers, HVAC units, or crated equipment.</li>
+  <li>You want to avoid oversize permits, pilot cars, and daylight-only travel restrictions.</li>
+</ul>
+<p>Note the trap: a drop deck's <em>upper</em> deck is the same height as a flatbed. Loading tall freight on the front section buys you nothing. The height advantage only exists on the lower deck.</p>
+
+<h2>What about "step deck"?</h2>
+<p>Same trailer. Drop deck and <a href="step-deck-vs-drop-deck-trailers.html">step deck</a> are two names for the same equipment, and carriers use them interchangeably. A <strong>double drop</strong> is different — it has a lowered well between the axles and handles freight up to roughly 11 or 12 feet tall.</p>
+
+<h2>When neither one works</h2>
+<p>If your load is over about 10 feet tall, you are past what a drop deck can do legally. That is when you move to a <a href="../services/double-drop-trailer">double-drop</a> or an <a href="../services/rgn-trailer">RGN</a>, which drops the well low enough to haul tall machinery and lets you drive equipment on from the front. Over 48,000 lbs and it becomes an axle-count problem — see <a href="../services/multi-axle-transport">multi-axle transport</a>.</p>
+<p>Not sure where you land? Put your dimensions into the <a href="../trailer-selector.html">trailer selector</a>, or send them over and we will tell you which trailer your load rides on before we quote it.</p>
+`,
+    faq: [
+      { q: 'What is the difference between a drop deck and a flatbed?', a: 'Deck height. A flatbed deck sits about 60 inches off the ground; a drop deck lower deck sits about 41 inches. That 19-inch difference raises your legal cargo height from roughly 8 feet 6 inches to roughly 10 feet under the 13\'6" limit.' },
+      { q: 'Is a drop deck more expensive than a flatbed?', a: 'Usually a modest premium, because there are fewer of them and they are more specialized. But if a drop deck keeps you out of oversize permits, pilot cars, and daylight-only travel, it is almost always the cheaper move overall.' },
+      { q: 'Is a drop deck the same as a step deck?', a: 'Yes — the same trailer under two names. A double drop is a different trailer, with a lowered well between the axles for freight up to about 11 or 12 feet tall.' },
+      { q: 'How tall can a load be on a flatbed?', a: 'About 8 feet 6 inches before you need an oversize permit, working from the 13\'6" federal legal limit minus roughly 5 feet of deck height.' },
+    ],
+    related: [
+      { h: 'Flatbed Transport', u: '../services/flatbed-transport' },
+      { h: 'Step-Deck Transport', u: '../services/step-deck-trailer' },
+      { h: 'Step Deck Trailer Dimensions', u: 'step-deck-trailer-dimensions.html' },
+      { h: 'Flatbed vs Step Deck vs RGN', u: 'flatbed-vs-step-deck-vs-rgn-trailers.html' },
+      { h: 'Trailer Selector Tool', u: '../trailer-selector.html' },
+      { h: 'Get a Quote', u: '../contact.html' },
+    ],
+  },
+  {
+    slug: 'conestoga-shipping-guide',
+    cat: 'Trailers',
+    hero: 'loads/conestoga-wrapped-equipment-inside-curtain.jpg',
+    date: '2026-09-09',
+    title: 'Conestoga Shipping: When the Rolling Tarp Beats a Flatbed or a Dry Van',
+    desc: 'A Conestoga is a flatbed with a rolling curtain on a frame. You load from the top or the side like a flatbed, then close it in minutes with no tarp crew. Here is what it costs you in payload and height, and when it is worth it.',
+    dek: 'Weather protection without losing crane access — and without a two-hour tarping job in the rain.',
+    tldr: 'A Conestoga is a flatbed with a retractable tarp on a rolling frame. It gives you dry-van weather protection with flatbed loading access — crane from above, forklift from the side — and closes in minutes instead of a two-hour tarp job. You give up roughly 6 to 10 inches of cargo height and about 2,000 to 4,000 lbs of payload to the system.',
+    keywords: 'conestoga shipping, conestoga trailer, rolling tarp trailer, curtain side trailer, double drop conestoga, conestoga vs flatbed',
+    body: `
+<p>A Conestoga solves one specific problem: freight that needs weather protection but cannot be loaded through the back doors of a dry van. Instead of tarping a flatbed by hand, you roll a curtain over the load on a frame.</p>
+
+<h2>How it actually works</h2>
+<p>The trailer is a flatbed underneath. Over it sits a tarp stretched on a rolling steel frame that retracts to one end like a concertina. Open, it is a flatbed — crane from directly overhead, forklift from either side. Closed, the load is sealed against rain, road spray, and dust.</p>
+<p>Opening or closing takes one person a few minutes. Tarping an equivalent flatbed load properly takes two people the better part of an hour or two, in whatever weather is happening at the time. On a multi-stop run, that difference compounds fast.</p>
+
+<h2>What it costs you</h2>
+<p>Nothing is free. The frame and curtain take up space and weight:</p>
+<table>
+  <tr><th>Spec</th><th>Typical</th></tr>
+  <tr><td>Deck length</td><td>48–53 ft</td></tr>
+  <tr><td>Usable width inside curtain</td><td>~8 ft 2 in</td></tr>
+  <tr><td>Usable cargo height</td><td>~8 ft (standard deck)</td></tr>
+  <tr><td>Payload</td><td>~42,000–45,000 lb</td></tr>
+  <tr><td>Close/open time</td><td>Minutes, one person</td></tr>
+</table>
+<p>So you lose roughly 6 to 10 inches of height to the frame and somewhere around 2,000 to 4,000 lbs of payload compared to a bare <a href="../services/flatbed-transport">flatbed</a>. If your load is right at the legal or weight ceiling, that matters. If it is not, you will never notice.</p>
+
+<h2>Conestoga vs the alternatives</h2>
+<ul>
+  <li><strong>vs flatbed:</strong> Same loading access, far better weather protection, no tarp crew. Costs more, and you give up a little height and payload.</li>
+  <li><strong>vs dry van:</strong> Same weather protection, but you can load from the top and both sides instead of only through the rear doors. Critical for anything a forklift cannot roll in — machinery that has to be craned or slid on from the side.</li>
+  <li><strong>vs tarped flatbed:</strong> Same protection on paper, but tarps chafe, pool water, and tear in transit. A curtain does not. On repeat lanes the labor savings alone usually pay the difference.</li>
+</ul>
+
+<h2>What about a double-drop Conestoga?</h2>
+<p>They exist, and they are genuinely rare. A double-drop Conestoga puts the rolling curtain over a lowered well, so you get weather protection for freight taller than a standard deck allows — roughly 10 feet inside the curtain instead of 8. Availability is thin and lead times are longer, so book early. For most tall covered freight, a <a href="../services/double-drop-trailer">double-drop</a> with a purpose-built cover or shrink wrap moves sooner and costs less.</p>
+
+<h2>When to use one</h2>
+<ul>
+  <li>Machinery, control panels, or electrical gear that cannot get wet but must be craned or side-loaded.</li>
+  <li>Palletized freight that would need tarping on every leg of a multi-stop run.</li>
+  <li>Finished or painted goods where tarp chafe would damage the surface.</li>
+  <li>Any lane where weather is unpredictable and tarping time is eating your schedule.</li>
+</ul>
+<p>If you are weighing it against a tarped flatbed on a specific lane, send us the load and the route — the <a href="how-to-load-and-secure-a-conestoga-trailer.html">securement approach</a> differs from a flatbed, and it changes the math. Or start with the <a href="../trailer-selector.html">trailer selector</a>.</p>
+`,
+    faq: [
+      { q: 'What is Conestoga shipping?', a: 'Shipping on a flatbed fitted with a retractable tarp on a rolling frame. You load from the top or the sides like a flatbed, then roll the curtain closed for weather protection — no tarping crew required.' },
+      { q: 'How much height do you lose on a Conestoga?', a: 'Roughly 6 to 10 inches compared to a bare flatbed, because the frame and curtain sit above the deck. Usable cargo height inside the curtain is typically about 8 feet on a standard deck.' },
+      { q: 'Is a Conestoga better than a dry van?', a: 'For weather protection they are comparable. The Conestoga wins when the freight cannot be loaded through rear doors — anything that has to be craned from above or forklifted from the side. A dry van is usually cheaper and more available for standard palletized freight.' },
+      { q: 'Does a Conestoga cost more than a flatbed?', a: 'Yes, typically a premium over a bare flatbed. But it removes the tarping labor and the tarp-damage risk, so on repeat lanes or multi-stop runs it often comes out ahead.' },
+    ],
+    related: [
+      { h: 'Conestoga Transport', u: '../services/conestoga-trailer' },
+      { h: 'Loading & Securing a Conestoga', u: 'how-to-load-and-secure-a-conestoga-trailer.html' },
+      { h: 'Enclosed vs Flatbed Transport', u: 'enclosed-vs-flatbed-transport.html' },
+      { h: 'How to Tarp a Flatbed Load', u: 'how-to-tarp-a-flatbed-load.html' },
+      { h: 'Trailer Selector Tool', u: '../trailer-selector.html' },
+      { h: 'Get a Quote', u: '../contact.html' },
+    ],
+  },
 ];
 
 // ---------------------------------------------------------------------------
